@@ -8,11 +8,6 @@ package org.msrg.raccoon.matrix;
 
 import java.util.Random;
 
-import org.msrg.raccoon.matrix.DATATYPES;
-import org.msrg.raccoon.matrix.DoubleMatrix;
-import org.msrg.raccoon.matrix.MatrixFactory;
-import org.msrg.raccoon.matrix.TypedMatrix;
-
 public class DoubleMatrix extends TypedMatrix<Float>{
 
 	public DoubleMatrix(Float[][] b) {

@@ -6,8 +6,6 @@
 
 package org.msrg.raccoon.matrix;
 
-import org.msrg.raccoon.matrix.TypedMatrix;
-
 public class MatrixFactory {
 
 	public static TypedMatrix<?> multiply(TypedMatrix m1, TypedMatrix m2) {

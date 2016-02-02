@@ -6,9 +6,6 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.msrg.raccoon.engine.ICodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
@@ -16,12 +13,13 @@ import org.msrg.raccoon.engine.task.result.BulkMatrix_CodingResult;
 import org.msrg.raccoon.engine.task.result.CodingResult;
 import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
 import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskType;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class MultiplyBulkMatrix_SequentialCodingTask extends SequentialCodingTask {

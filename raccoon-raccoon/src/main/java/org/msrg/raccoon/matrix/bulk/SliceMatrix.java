@@ -6,17 +6,15 @@
 
 package org.msrg.raccoon.matrix.bulk;
 
+import org.msrg.raccoon.CodedCoefficients;
+import org.msrg.raccoon.CodedPiece;
+import org.msrg.raccoon.utils.BytesUtil;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Random;
-
-import org.msrg.raccoon.CodedCoefficients;
-import org.msrg.raccoon.CodedPiece;
-
-import org.msrg.raccoon.matrix.bulk.SliceMatrix;
-import org.msrg.raccoon.utils.BytesUtil;
 
 
 public class SliceMatrix implements Serializable {
@@ -77,8 +75,7 @@ public class SliceMatrix implements Serializable {
 	protected static Random _RANDOM = new Random();
 	public static SliceMatrix createRandomSliceMatrix(int cols) {
 		byte[] b = new byte[cols];
-		for(int i=0 ; i<b.length ; i++)
-			_RANDOM.nextBytes(b);
+		for (byte aB : b) _RANDOM.nextBytes(b);
 		
 		SliceMatrix sm = new SliceMatrix(b);
 		return sm;

@@ -6,10 +6,6 @@
 
 package org.msrg.raccoon.matrix.bulk;
 
-import org.msrg.raccoon.matrix.bulk.BulkMatrix;
-import org.msrg.raccoon.matrix.bulk.BulkMatrix1D;
-import org.msrg.raccoon.matrix.bulk.SliceMatrix;
-
 public class BulkMatrix1D extends BulkMatrix {
 
 	/**

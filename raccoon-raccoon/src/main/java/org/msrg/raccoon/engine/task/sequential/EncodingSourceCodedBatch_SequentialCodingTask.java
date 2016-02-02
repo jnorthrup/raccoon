@@ -15,7 +15,6 @@ import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
 import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.sequential.Encoding_SequentialCodingTask;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 

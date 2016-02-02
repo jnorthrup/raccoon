@@ -6,14 +6,11 @@
 
 package org.msrg.raccoon.engine.thread;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.task.CodingTask;
 
-import org.msrg.raccoon.engine.thread.ThreadId;
-import org.msrg.raccoon.engine.thread.ThreadType;
+import java.util.LinkedList;
+import java.util.List;
 
 public abstract class CodingThread extends Thread {
 

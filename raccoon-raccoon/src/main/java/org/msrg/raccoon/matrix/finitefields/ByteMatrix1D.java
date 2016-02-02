@@ -6,8 +6,6 @@
 
 package org.msrg.raccoon.matrix.finitefields;
 
-import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
-
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 

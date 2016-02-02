@@ -8,8 +8,6 @@ package org.msrg.raccoon.engine.task.result;
 
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.CodingTask;
-import org.msrg.raccoon.engine.task.result.CodingResult;
-import org.msrg.raccoon.engine.task.result.CodingResultsType;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
 
 

@@ -6,8 +6,6 @@
 
 package org.msrg.raccoon.engine.thread;
 
-import org.msrg.raccoon.engine.thread.ThreadId;
-
 public class ThreadId {
 
 	private static int _lastId = 0;

@@ -6,10 +6,6 @@
 
 package org.msrg.raccoon;
 
-import org.msrg.raccoon.CodedBatch;
-import org.msrg.raccoon.CodedBatchType;
-import org.msrg.raccoon.CodedPiece;
-
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 
 public class SourceCodedBatch extends CodedBatch {

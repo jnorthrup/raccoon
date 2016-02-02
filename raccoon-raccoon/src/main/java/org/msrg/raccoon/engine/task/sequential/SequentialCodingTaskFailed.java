@@ -8,7 +8,6 @@ package org.msrg.raccoon.engine.task.sequential;
 
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskFailed;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
 
 public class SequentialCodingTaskFailed extends CodingTaskFailed {
 

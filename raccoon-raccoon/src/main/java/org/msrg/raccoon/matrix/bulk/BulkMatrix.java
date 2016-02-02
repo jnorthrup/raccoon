@@ -12,9 +12,6 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Random;
 
-import org.msrg.raccoon.matrix.bulk.BulkMatrix;
-import org.msrg.raccoon.matrix.bulk.SliceMatrix;
-
 public class BulkMatrix implements Serializable {
 
 	/**

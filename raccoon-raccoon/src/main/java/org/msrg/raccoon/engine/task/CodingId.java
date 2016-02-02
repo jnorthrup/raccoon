@@ -6,8 +6,6 @@
 
 package org.msrg.raccoon.engine.task;
 
-import org.msrg.raccoon.engine.task.CodingId;
-
 public class CodingId {
 
 	private static int _lastId = 0;

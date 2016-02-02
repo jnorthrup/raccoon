@@ -9,8 +9,6 @@ package org.msrg.raccoon.engine.task.result;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.CodingTask;
-import org.msrg.raccoon.engine.task.result.CodingResult;
-import org.msrg.raccoon.engine.task.result.CodingResultsType;
 
 
 public class CodedSlice_CodingResult extends CodingResult {

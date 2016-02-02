@@ -8,10 +8,6 @@ package org.msrg.raccoon.engine;
 
 import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
 
-import org.msrg.raccoon.engine.CodingEngineEvent;
-import org.msrg.raccoon.engine.CodingEngineEventType;
-import org.msrg.raccoon.engine.CodingEngineEvent_SequentialCodingTaskEvents;
-
 public abstract class CodingEngineEvent_SequentialCodingTaskEvents extends CodingEngineEvent {
 
 	public final SequentialCodingTask _seqCodingTask;

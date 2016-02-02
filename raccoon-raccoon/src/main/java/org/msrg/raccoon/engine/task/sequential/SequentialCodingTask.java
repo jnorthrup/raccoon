@@ -6,9 +6,6 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
@@ -16,7 +13,9 @@ import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskType;
 import org.msrg.raccoon.engine.task.result.CodingResult;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskType;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 public abstract class SequentialCodingTask extends CodingTask implements ICodingListener {

@@ -6,15 +6,12 @@
 
 package org.msrg.raccoon;
 
-import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.util.Random;
-
-import org.msrg.raccoon.CodedCoefficients;
-
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
 import org.msrg.raccoon.utils.BytesUtil;
+
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.Random;
 
 public class CodedCoefficients extends ByteMatrix1D {
 

@@ -6,8 +6,6 @@
 
 package org.msrg.raccoon.engine.task;
 
-import org.msrg.raccoon.engine.task.CodingTask;
-
 public class CodingTaskFailed extends UnknownError {
 
 	/**

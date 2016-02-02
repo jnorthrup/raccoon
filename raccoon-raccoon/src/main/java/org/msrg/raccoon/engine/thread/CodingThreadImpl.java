@@ -7,11 +7,7 @@
 package org.msrg.raccoon.engine.thread;
 
 import org.msrg.raccoon.engine.CodingEngine;
-import org.msrg.raccoon.engine.task.CodingTask;
-import org.msrg.raccoon.engine.task.CodingTaskType;
-import org.msrg.raccoon.engine.task.Inverse_CodingTask;
-import org.msrg.raccoon.engine.task.Multiply_CodingTask;
-import org.msrg.raccoon.engine.task.SlicesEqual_CodingTask;
+import org.msrg.raccoon.engine.task.*;
 import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
 import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
 import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
@@ -20,8 +16,6 @@ import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
-
-import org.msrg.raccoon.engine.thread.CodingThread;
 
 public class CodingThreadImpl extends CodingThread {
 

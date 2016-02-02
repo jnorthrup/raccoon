@@ -6,9 +6,6 @@
 
 package org.msrg.raccoon;
 
-import org.msrg.raccoon.CodedCoefficients;
-import org.msrg.raccoon.CodedPiece;
-
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;

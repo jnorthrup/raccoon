@@ -6,17 +6,12 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
-import org.msrg.raccoon.CodedBatch;
-import org.msrg.raccoon.CodedBatchType;
-import org.msrg.raccoon.CodedCoefficients;
-import org.msrg.raccoon.CodedPiece;
-import org.msrg.raccoon.ReceivedCodedBatch;
+import org.msrg.raccoon.*;
 import org.msrg.raccoon.engine.ICodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
 import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.sequential.Encoding_SequentialCodingTask;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 

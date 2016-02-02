@@ -6,8 +6,6 @@
 
 package org.msrg.raccoon.engine;
 
-import java.util.*;
-
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskFailed;
 import org.msrg.raccoon.engine.task.CodingTaskStatus;
@@ -15,6 +13,8 @@ import org.msrg.raccoon.engine.task.result.CodingResult;
 import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
 import org.msrg.raccoon.engine.thread.CodingThread;
 import org.msrg.raccoon.engine.thread.CodingThreadImpl;
+
+import java.util.*;
 
 /**
  * This abstract class implements ICodingEngine and deals with management of

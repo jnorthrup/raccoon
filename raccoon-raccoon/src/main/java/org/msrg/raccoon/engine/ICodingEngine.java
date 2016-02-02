@@ -8,17 +8,11 @@ package org.msrg.raccoon.engine;
 
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.ReceivedCodedBatch;
-import org.msrg.raccoon.engine.task.result.BulkMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
-import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
-import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
+import org.msrg.raccoon.engine.task.result.*;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
-
-import org.msrg.raccoon.engine.ICodingListener;
 
 public interface ICodingEngine {
 

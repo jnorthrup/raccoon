@@ -6,10 +6,6 @@
 
 package org.msrg.raccoon.engine.task;
 
-import org.msrg.raccoon.engine.task.CodingId;
-import org.msrg.raccoon.engine.task.CodingTask;
-import org.msrg.raccoon.engine.task.CodingTaskType;
-
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
 import org.msrg.raccoon.engine.task.result.CodingResult;

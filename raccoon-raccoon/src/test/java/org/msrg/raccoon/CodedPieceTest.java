@@ -29,7 +29,6 @@ public class CodedPieceTest extends TestCase {
 	
 	public void testCodedPiece() {
 		System.out.println(_bm);
-		for(int i=0 ; i<_cp.length ; i++)
-			System.out.println(_cp[i]);
+		for (CodedPiece a_cp : _cp) System.out.println(a_cp);
 	}
 }

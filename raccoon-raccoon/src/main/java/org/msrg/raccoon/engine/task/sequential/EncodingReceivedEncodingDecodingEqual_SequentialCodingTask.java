@@ -6,10 +6,6 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.msrg.raccoon.ReceivedCodedBatch;
 import org.msrg.raccoon.SourceCodedBatch;
 import org.msrg.raccoon.engine.ICodingEngine;
@@ -18,8 +14,9 @@ import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
 import org.msrg.raccoon.engine.task.result.CodingResult;
 import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskType;
+
+import java.util.Collection;
+import java.util.HashSet;
 
 
 public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends

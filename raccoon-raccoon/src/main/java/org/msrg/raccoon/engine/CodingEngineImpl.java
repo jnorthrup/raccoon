@@ -8,39 +8,14 @@ package org.msrg.raccoon.engine;
 
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.ReceivedCodedBatch;
-import org.msrg.raccoon.engine.task.CodingId;
-import org.msrg.raccoon.engine.task.CodingTask;
-import org.msrg.raccoon.engine.task.CodingTaskStatus;
-import org.msrg.raccoon.engine.task.Inverse_CodingTask;
-import org.msrg.raccoon.engine.task.Multiply_CodingTask;
-import org.msrg.raccoon.engine.task.SlicesEqual_CodingTask;
-import org.msrg.raccoon.engine.task.result.BulkMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
-import org.msrg.raccoon.engine.task.result.CodingResult;
-import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
-import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
-import org.msrg.raccoon.engine.task.sequential.BulkMatrixEqual_CodingTask;
-import org.msrg.raccoon.engine.task.sequential.Decoding_SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.Encoding_SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.MultiplyBulkMatrix_SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
+import org.msrg.raccoon.engine.task.*;
+import org.msrg.raccoon.engine.task.result.*;
+import org.msrg.raccoon.engine.task.sequential.*;
 import org.msrg.raccoon.engine.thread.CodingThread;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
-
-import org.msrg.raccoon.engine.CodingEngine;
-import org.msrg.raccoon.engine.CodingEngineEvent;
-import org.msrg.raccoon.engine.CodingEngineEvent_BusyThreadEvent;
-import org.msrg.raccoon.engine.CodingEngineEvent_ExecutionEvent;
-import org.msrg.raccoon.engine.CodingEngineEvent_FreeThreadEvent;
-import org.msrg.raccoon.engine.CodingEngineEvent_NewCodingTask;
-import org.msrg.raccoon.engine.CodingEngineEvent_NewThreadEvent;
-import org.msrg.raccoon.engine.CodingEngineEvent_SequentialCodingTaskFailed;
-import org.msrg.raccoon.engine.CodingEngineEvent_SequentialCodingTaskFinished;
-import org.msrg.raccoon.engine.ICodingListener;
 
 public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 	

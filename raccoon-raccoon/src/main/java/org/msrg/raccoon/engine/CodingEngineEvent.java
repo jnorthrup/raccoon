@@ -10,10 +10,6 @@ import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskStatus;
 import org.msrg.raccoon.engine.thread.CodingThread;
 
-import org.msrg.raccoon.engine.CodingEngineEvent;
-import org.msrg.raccoon.engine.CodingEngineEventType;
-import org.msrg.raccoon.engine.CodingEngineEvent_ThreadEvent;
-
 public abstract class CodingEngineEvent {
 	
 	public final CodingEngineEventType _eventType;

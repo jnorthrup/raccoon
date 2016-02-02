@@ -13,11 +13,6 @@ import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
 import org.msrg.raccoon.engine.task.result.CodingResult;
-import org.msrg.raccoon.engine.task.sequential.EncodingReceivedCodedBatch_SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.EncodingSourceCodedBatch_SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.Encoding_SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskType;
 
 
 public abstract class Encoding_SequentialCodingTask extends SequentialCodingTask {

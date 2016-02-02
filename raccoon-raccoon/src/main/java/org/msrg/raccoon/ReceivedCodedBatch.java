@@ -6,21 +6,17 @@
 
 package org.msrg.raccoon;
 
+import org.msrg.raccoon.matrix.bulk.BulkMatrix;
+import org.msrg.raccoon.matrix.bulk.SliceMatrix;
+import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
+import org.msrg.raccoon.utils.BytesUtil;
+
 import java.io.IOException;
 import java.io.Writer;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.Vector;
-
-import org.msrg.raccoon.CodedBatch;
-import org.msrg.raccoon.CodedBatchType;
-import org.msrg.raccoon.CodedPiece;
-
-import org.msrg.raccoon.matrix.bulk.BulkMatrix;
-import org.msrg.raccoon.matrix.bulk.SliceMatrix;
-import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
-import org.msrg.raccoon.utils.BytesUtil;
 
 public class ReceivedCodedBatch extends CodedBatch {
 

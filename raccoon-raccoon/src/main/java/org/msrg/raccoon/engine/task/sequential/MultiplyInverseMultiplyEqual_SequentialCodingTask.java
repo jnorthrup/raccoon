@@ -13,9 +13,6 @@ import org.msrg.raccoon.engine.task.result.BulkMatrix_CodingResult;
 import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
 import org.msrg.raccoon.engine.task.result.CodingResult;
 import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskFailed;
-import org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskType;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
 

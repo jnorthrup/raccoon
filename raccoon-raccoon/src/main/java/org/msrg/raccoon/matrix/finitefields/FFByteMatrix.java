@@ -6,12 +6,10 @@
 
 package org.msrg.raccoon.matrix.finitefields;
 
-import java.util.Random;
-
-import org.msrg.raccoon.matrix.finitefields.FFByteMatrix;
-
 import org.msrg.raccoon.finitefields.Tables;
 import org.msrg.raccoon.matrix.TypedMatrix;
+
+import java.util.Random;
 
 public class FFByteMatrix extends TypedMatrix<Byte> {
 
