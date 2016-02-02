@@ -63,8 +63,8 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
 
     @Override
     public void setUp() {
-        System.out.println("Workload: " + (ROWS * COLS) + " x " + TASK_SIZE + " x " + THREAD_COUNT);
-        switch (_testType) {
+        System.out.println("Workload: " + ROWS * COLS + " x " + CodingEngineTest.TASK_SIZE + " x " + CodingEngineTest.THREAD_COUNT);
+        switch (CodingEngineTest._testType) {
             case TEST_PAGEIN_PAGEOUT_EQUALS_TASKS:
                 throw new UnsupportedOperationException();
 
@@ -76,22 +76,22 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
 //			break;
 
             default:
-                _engine = new CodingEngine_ForTest(THREAD_COUNT);
+                _engine = new CodingEngine_ForTest(CodingEngineTest.THREAD_COUNT);
                 _engine.init();
 
-                _sm = SliceMatrix.createRandomSliceMatrix(COLS);
+                _sm = SliceMatrix.createRandomSliceMatrix(CodingEngineTest.COLS);
 //			_bm = BulkMatrix.createBulkMatixRandomData(ROWS, COLS);
-                _bm = BulkMatrix.createBulkMatixIncrementalData(ROWS, COLS);
+                _bm = BulkMatrix.createBulkMatixIncrementalData(CodingEngineTest.ROWS, CodingEngineTest.COLS);
         }
 
-        _m = ByteMatrix.createRandomByteMatrix(ROWS, ROWS);
+        _m = ByteMatrix.createRandomByteMatrix(CodingEngineTest.ROWS, CodingEngineTest.ROWS);
         _sourceCodedBatch = new SourceCodedBatch(_bm);
 
         _engine.registerCodingListener(this);
         _engine.startComponent();
 
 //		_multipliedBM = _m.multiply(_bm);
-        System.out.println("Setup finished, running test: " + _testType);
+        System.out.println("Setup finished, running test: " + CodingEngineTest._testType);
     }
 
     Collection<CodingTask> generateEqualityCodingTasks(int count) {
@@ -248,29 +248,27 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
 
     protected void processFinishedResult(CodingResult result) {
         switch (result._resultsType) {
-            case BOOLEAN: {
+            case BOOLEAN:
                 if (((Equals_CodingResult) result).getResult())
                     _equals++;
                 else
                     _unequals++;
                 break;
-            }
 
             case BULK_MATRIX: {
                 BulkMatrix_CodingResult smResult = (BulkMatrix_CodingResult) result;
                 BulkMatrix sm = smResult.getResult();
-                if (_testType == CodingEngineTestType.TEST_FULL_MULTYPLY_TASKS && !_multipliedBM.equals(sm))
+                if (CodingEngineTest._testType == CodingEngineTestType.TEST_FULL_MULTYPLY_TASKS && !_multipliedBM.equals(sm))
                     throw new IllegalStateException("BulkMatrix is not equal to the product!");
                 break;
             }
 
-            case CODED_SLICE_MATRIX: {
+            case CODED_SLICE_MATRIX:
                 CodedSlice_CodingResult smResult = (CodedSlice_CodingResult) result;
                 CodedPiece sm = smResult.getResult();
                 if (CodingEngine.DEBUG)
                     System.out.println(sm._codedContent);
                 break;
-            }
 
             default:
                 break;
@@ -278,7 +276,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     }
 
     protected boolean checkTestEnd() {
-        if (_finished + _failed != TASK_SIZE)
+        if (_finished + _failed != CodingEngineTest.TASK_SIZE)
             return false;
 
         _end = System.currentTimeMillis();
@@ -300,47 +298,47 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     public void testEngine() {
         _start = System.currentTimeMillis();
         Collection<CodingTask> mainTasks;
-        switch (_testType) {
+        switch (CodingEngineTest._testType) {
             case TEST_PAGEIN_PAGEOUT_EQUALS_TASKS:
-                mainTasks = generatePageInPageOutEqualsCodingTasks(TASK_SIZE);
+                mainTasks = generatePageInPageOutEqualsCodingTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_CODING_TASKS:
-                mainTasks = generateCodingTasks(TASK_SIZE);
+                mainTasks = generateCodingTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_SEQUENTIAL_CODING_TASKS:
-                mainTasks = generateSequenctialCodingTasks(TASK_SIZE);
+                mainTasks = generateSequenctialCodingTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_FULL_MULTYPLY_TASKS:
-                mainTasks = generateFullMultiplyTasks(TASK_SIZE);
+                mainTasks = generateFullMultiplyTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_EQUALITY_TASKS:
-                mainTasks = generateEqualityCodingTasks(TASK_SIZE);
+                mainTasks = generateEqualityCodingTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_ENCODING_TASKS:
-                mainTasks = generateEncodingTasks(TASK_SIZE);
+                mainTasks = generateEncodingTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_ENCODING_DECODING_EQUALS_TASKS:
-                mainTasks = generateEncodingDecodingEqualTasks(TASK_SIZE);
+                mainTasks = generateEncodingDecodingEqualTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             case TEST_ENCODING_RECEIVED_ENCODING_DECODING_EQUALS_TASKS:
-                mainTasks = generateEncodingReceivedEncodingDecodingEqualTasks(TASK_SIZE);
+                mainTasks = generateEncodingReceivedEncodingDecodingEqualTasks(CodingEngineTest.TASK_SIZE);
                 break;
 
             default:
-                throw new UnsupportedOperationException("Unknown test type: " + _testType);
+                throw new UnsupportedOperationException("Unknown test type: " + CodingEngineTest._testType);
         }
 
         _mainTasks.addAll(mainTasks);
         waitToFinishTasks();
 
-        switch (_testType) {
+        switch (CodingEngineTest._testType) {
             case TEST_ENCODING_RECEIVED_ENCODING_DECODING_EQUALS_TASKS:
                 System.out.println("Final result: " + _mainTasks.iterator().next()._result);
                 break;
@@ -354,16 +352,15 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     protected void waitToFinishTasks() {
         try {
             synchronized (_allCodingResults) {
-                for (int i = 0; i < (MAX_WAIT_TIME_LARGE / MAX_WAIT_TIME_SMALL) && !checkTestEnd(); i++) {
+                for (int i = 0; i < MAX_WAIT_TIME_LARGE / MAX_WAIT_TIME_SMALL && !checkTestEnd(); i++) {
                     System.out.print(getStatistics());
                     System.out.println(", LT" + ((CodingEngine) _engine).getLateThreads());
-                    _allCodingResults.wait(MAX_WAIT_TIME_SMALL);
+                    _allCodingResults.wait(CodingEngineTest.MAX_WAIT_TIME_SMALL);
                 }
 
                 if (!checkTestEnd())
                     throw new IllegalStateException("It is taking a long time..(" + getStatistics() + ")");
                 else {
-                    return;
                 }
             }
         } catch (InterruptedException itx) {
@@ -375,10 +372,10 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         if (_start < 0)
             return "NOT STARTED";
 
-        long end = (_end < 0 ? System.currentTimeMillis() : _end);
+        long end = _end < 0 ? System.currentTimeMillis() : _end;
         return "C" + _finished + "/" +
                 "F" + _failed + "/" +
-                "T" + TASK_SIZE + "/" +
+                "T" + CodingEngineTest.TASK_SIZE + "/" +
                 "SC" + _subfinished + "/" +
                 "SF" + _subfailed + "[" +
                 "EQ" + _equals + "/" +
@@ -396,7 +393,6 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     }
 
     public void codingPreliminaryStageCompleted(CodingResult result) {
-        return;
     }
 }
 

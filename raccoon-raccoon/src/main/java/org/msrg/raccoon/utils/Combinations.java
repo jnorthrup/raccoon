@@ -22,7 +22,7 @@ public class Combinations {
 	private final int _total;
 	
 	protected Combinations(int count, int total) {
-		if(total > MAX_SUPPORTED_TOTAL)
+		if(total > Combinations.MAX_SUPPORTED_TOTAL)
 			throw new IllegalArgumentException("Total is too big: " + total);
 //		else if (count > total)
 //			throw new IllegalArgumentException("Count is larger than total");
@@ -40,7 +40,7 @@ public class Combinations {
 		if(size==0)
 			return null;
 		
-		int random = _RANDOM.nextInt(size);
+		int random = Combinations._RANDOM.nextInt(size);
 		return _allCombinations.get(random);
 	}
 	
@@ -87,7 +87,7 @@ public class Combinations {
 	public String toString(String delim) {
 		int initialSize = _allCombinations.size() * (10 + _count * 3);
 		System.out.println("Making room for: " + initialSize);
-		Writer ioWriter = new StringWriter(initialSize);
+		Appendable ioWriter = new StringWriter(initialSize);
 		
 		try {
 			toString(ioWriter, delim);
@@ -100,14 +100,14 @@ public class Combinations {
 	public void toString(Appendable ioWriter, String delim) throws IOException {
 		int i = 0;
 		for(BitSet bv : _allCombinations) {
-			ioWriter.append((i==0?(i+":"):(delim+i+":")) + bv);
+			ioWriter.append((i==0? i+":" : delim+i+":") + bv);
 			i++;
 		}
 	}
 	
 	public static void main(String[] argv) {
 		long starttime = System.currentTimeMillis();
-		Combinations com = makeAllCombinations(MAX_SUPPORTED_TOTAL - 1, MAX_SUPPORTED_TOTAL);
+		Combinations com = Combinations.makeAllCombinations(Combinations.MAX_SUPPORTED_TOTAL - 1, Combinations.MAX_SUPPORTED_TOTAL);
 		long endtime = System.currentTimeMillis();
 		
 		System.out.println("TOTAL_TIME: " + (endtime - starttime) + " (ms).");

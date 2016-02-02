@@ -18,7 +18,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 	protected static final Tables _tables = new Tables();
 
 	public FFByteMatrix(int cols, int rows) {
-		this(makeZero2d(cols, rows));
+		this(FFByteMatrix.makeZero2d(cols, rows));
 	}
 	
 	protected static Byte[][] makeZero2d(int rows, int cols) {
@@ -70,10 +70,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 				b[i][j] = clone(_b[i][j]);
 			
 			for(int j=0 ; j<getColumnSize() ; j++)
-				if (j == i)
-					b[i][j + _cols] = getOne();
-				else
-					b[i][j + _cols] = getZero();
+				b[i][j + _cols] = j == i ? getOne() : getZero();
 		}
 		
 		return createNewMatrix(b);
@@ -120,17 +117,17 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 
 	@Override
 	public Byte multiply(Byte a, Byte b) {
-		return _tables.FFMulFast(a, b);
+		return FFByteMatrix._tables.FFMulFast(a, b);
 	}
 
 	public static FFByteMatrix createRandomSquareByteMatrix(int rowsCols) {
-		return createRandomByteMatrix(rowsCols, rowsCols);
+		return FFByteMatrix.createRandomByteMatrix(rowsCols, rowsCols);
 	}
 	
 	public static FFByteMatrix createRandomByteMatrix(int rows, int cols) {
 		Byte[][] b = new Byte[rows][];
 		for(int i=0 ; i<b.length ; i++)
-			b[i] = random(b.length);
+			b[i] = FFByteMatrix.random(b.length);
 		
 		return new FFByteMatrix(b);
 	}
@@ -154,7 +151,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 		Byte[] b = new Byte[size];
 		byte[] bytes = new byte[1];
 		for(int i=0 ; i<b.length ; i++) {
-			_RANDOM.nextBytes(bytes);
+			FFByteMatrix._RANDOM.nextBytes(bytes);
 			b[i] = bytes[0];
 		}
 		
@@ -208,7 +205,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 
 	@Override
 	public Byte inverse(Byte a) {
-		return _tables.FFInv(a);
+		return FFByteMatrix._tables.FFInv(a);
 	}
 
 	@Override
@@ -223,8 +220,8 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 
 	@Override
 	public Byte multiplyAndAddInPlace(Byte total, Byte a, Byte b) {
-		total = (byte) (total.byteValue() ^ multiply(a, b));
-		return total;
+		Byte total1 = (byte) (total.byteValue() ^ multiply(a, b));
+		return total1;
 	}
 
 	@Override
@@ -234,7 +231,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 
 	@Override
 	protected String toString(Byte a) {
-	      return "" + DIG[(a & 0xff) >> 4] + DIG[a & 0x0f];
+	      return "" + FFByteMatrix.DIG[(a & 0xff) >> 4] + FFByteMatrix.DIG[a & 0x0f];
 	}
 	
 //	@Override
@@ -261,9 +258,9 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 						multM._b[i][k] = (byte)(multM._b[i][k] ^ (byte)0);
 					} else {
 						int t = 0;
-						t = (_tables.LOG[(_b[i][j] & 0xff)] & 0xff) + (_tables.LOG[(a[j][k] & 0xff)] & 0xff);
-						if (t > 255) t = t - 255;
-						multM._b[i][k] = (byte)(multM._b[i][k] ^ _tables.EXP[(t & 0xff)]);
+						t = (FFByteMatrix._tables.LOG[_b[i][j] & 0xff] & 0xff) + (FFByteMatrix._tables.LOG[a[j][k] & 0xff] & 0xff);
+						if (t > 255) t -= 255;
+						multM._b[i][k] = (byte)(multM._b[i][k] ^ FFByteMatrix._tables.EXP[t & 0xff]);
 					}
 				}
 			}

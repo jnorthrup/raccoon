@@ -31,7 +31,6 @@ public class CodingThreadImpl extends CodingThread {
 		
 		switch(taskType) {
 		case SLICES_EQUAL:
-		{
 			SlicesEqual_CodingTask smeCodingTask = (SlicesEqual_CodingTask) codingTask;
 			SliceMatrix sm1 = smeCodingTask._sm1;
 			SliceMatrix sm2 = smeCodingTask._sm2;
@@ -39,9 +38,8 @@ public class CodingThreadImpl extends CodingThread {
 			((Equals_CodingResult)smeCodingTask._result).setResult(equals);
 			smeCodingTask.finished();
 			break;
-		}
-		
-		case INVERSE:
+
+			case INVERSE:
 		{
 			Inverse_CodingTask inverseCodingTask = (Inverse_CodingTask) codingTask;
 			ByteMatrix m = inverseCodingTask._m;
@@ -52,7 +50,6 @@ public class CodingThreadImpl extends CodingThread {
 		}
 		
 		case MULTIPLY:
-		{
 			Multiply_CodingTask multiplyCodingTask = (Multiply_CodingTask) codingTask;
 			ByteMatrix1D m = multiplyCodingTask._m;
 			BulkMatrix bm = multiplyCodingTask._bm;
@@ -67,16 +64,13 @@ public class CodingThreadImpl extends CodingThread {
 			((SliceMatrix_CodingResult)multiplyCodingTask._result).setResult(result);
 			multiplyCodingTask.finished();
 			break;
-		}
-		
-		case SEQUENCIAL:
-		{
+
+			case SEQUENCIAL:
 			SequentialCodingTask seqCodingTask = (SequentialCodingTask) codingTask;
 			seqCodingTask.runInitialSequencialTasks();
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new UnsupportedOperationException("Unknown task type: " + taskType);
 		}
 	}

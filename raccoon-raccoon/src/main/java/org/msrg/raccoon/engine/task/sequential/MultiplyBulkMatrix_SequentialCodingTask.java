@@ -66,7 +66,6 @@ public class MultiplyBulkMatrix_SequentialCodingTask extends SequentialCodingTas
 	
 	@Override
 	public synchronized void codingStarted(CodingResult result) {
-		return;
 	}
 
 	@Override
@@ -100,12 +99,11 @@ public class MultiplyBulkMatrix_SequentialCodingTask extends SequentialCodingTas
 		}
 		
 		case 0:
-		{
 			if(_multipliedSMResultsSet.isEmpty()) {
 				int reultSlices = _multipliedSMResults.length;
 				int sliceOffset = 0;
 				int rows = _m.getRowSize();
-				
+
 				BulkMatrix bmResult;
 				if(rows==1)
 					bmResult = _bm.createEmptyMatrix(rows, _bm._cols);
@@ -113,22 +111,21 @@ public class MultiplyBulkMatrix_SequentialCodingTask extends SequentialCodingTas
 				else
 					bmResult = _bm.createEmptyMatrix(_m.getRowSize(), _bm._cols);
 //					bmResult = new BulkMatrix(_m.getRowSize(), _bm._cols);
-				
+
 				for(int i=0 ; i<reultSlices ; i++) {
 					SliceMatrix sm = _multipliedSMResults[i].getResult();
 					bmResult.add(i, sm);
 					sliceOffset += sm._cols;
 				}
-				
+
 				((BulkMatrix_CodingResult)_result).setResult(bmResult);
 
 				setCurrentStage(1);
 			}
-			
+
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage);
 		}
 	}

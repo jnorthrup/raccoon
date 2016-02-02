@@ -20,7 +20,7 @@ public abstract class CodedBatch implements ICodedBatch {
 	protected static int _MAX_WRITE_SIZE = 15;
 	
 	protected static final int I_CONTENT_SIZE = 0;
-	protected static final int I_CONTENT = I_CONTENT_SIZE + 4;
+	protected static final int I_CONTENT = CodedBatch.I_CONTENT_SIZE + 4;
 	
 	protected Object _lock = new Object();
 	protected BulkMatrix _bm;
@@ -52,10 +52,7 @@ public abstract class CodedBatch implements ICodedBatch {
 		
 		BulkMatrix objContent = codedBatchObj.getBulkMatrix();
 		if(_bm == null)
-			if (objContent == null)
-				return true;
-			else
-				return false;
+			return objContent == null ? true : false;
 		
 		else if (objContent == null)
 			return false;
@@ -106,7 +103,7 @@ public abstract class CodedBatch implements ICodedBatch {
 	
 	@Override
 	public String toString() {
-		Writer ioWriter = new StringWriter(3 * (_size>_MAX_WRITE_SIZE?_MAX_WRITE_SIZE:_size) + 10);
+		Writer ioWriter = new StringWriter(3 * (_size> CodedBatch._MAX_WRITE_SIZE ? CodedBatch._MAX_WRITE_SIZE :_size) + 10);
 		try {
 			ioWriter.append(getCodedBatchType().toString());
 			toString(ioWriter);
@@ -119,10 +116,10 @@ public abstract class CodedBatch implements ICodedBatch {
 	public void toString(Writer ioWriter) throws IOException {
 		ioWriter.append("{");
 		
-		for(int i=0 ; i<_size && i<_MAX_WRITE_SIZE ; i++)			
+		for(int i = 0; i<_size && i< CodedBatch._MAX_WRITE_SIZE; i++)
 			ioWriter.append((i==0 ? "":",") + BytesUtil.hex(_bm.getByte(i)));
 
-		int remaining = _size - _MAX_WRITE_SIZE;
+		int remaining = _size - CodedBatch._MAX_WRITE_SIZE;
 		if (remaining > 0)
 			ioWriter.append(",...(" + remaining + ")");
 		

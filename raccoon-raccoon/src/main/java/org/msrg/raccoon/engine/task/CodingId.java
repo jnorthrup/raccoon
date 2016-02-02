@@ -6,7 +6,7 @@
 
 package org.msrg.raccoon.engine.task;
 
-public class CodingId {
+public final class CodingId {
 
 	private static int _lastId = 0;
 	
@@ -17,7 +17,7 @@ public class CodingId {
 	}
 	
 	public static synchronized CodingId getNewCodingId() {
-		return new CodingId(_lastId++);
+		return new CodingId(CodingId._lastId++);
 	}
 	
 	@Override

@@ -16,24 +16,24 @@ import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
 
 public interface ICodingEngine {
 
-	public void init();
-	public void startComponent();
+	void init();
+	void startComponent();
 	
-	public void registerCodingListener(ICodingListener listeners);
-	public void deregisterCodingListener(ICodingListener listeners);
+	void registerCodingListener(ICodingListener listeners);
+	void deregisterCodingListener(ICodingListener listeners);
 	
-	public CodedSlice_CodingResult encode(ICodingListener listener, CodedBatch codeBatch);
-	public Equals_CodingResult decode(ICodingListener listener, ReceivedCodedBatch codeBatch);
+	CodedSlice_CodingResult encode(ICodingListener listener, CodedBatch codeBatch);
+	Equals_CodingResult decode(ICodingListener listener, ReceivedCodedBatch codeBatch);
 	
-	public BulkMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix m, BulkMatrix bm);
-	public SliceMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix1D m, BulkMatrix bm);
+	BulkMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix m, BulkMatrix bm);
+	SliceMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix1D m, BulkMatrix bm);
 	
-	public ByteMatrix_CodingResult inverse(ICodingListener listener, ByteMatrix m);
-	public Equals_CodingResult checkEquality(ICodingListener listener, SliceMatrix sm1, SliceMatrix sm2);
-	public Equals_CodingResult checkEquality(ICodingListener listener, BulkMatrix bm1, BulkMatrix bm2);
+	ByteMatrix_CodingResult inverse(ICodingListener listener, ByteMatrix m);
+	Equals_CodingResult checkEquality(ICodingListener listener, SliceMatrix sm1, SliceMatrix sm2);
+	Equals_CodingResult checkEquality(ICodingListener listener, BulkMatrix bm1, BulkMatrix bm2);
 	
-	public int getFreeThreadsCount();
-	public int getBusyThreadsCount();
-	public int getTotalThreadsCount();
+	int getFreeThreadsCount();
+	int getBusyThreadsCount();
+	int getTotalThreadsCount();
 	
 }

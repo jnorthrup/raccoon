@@ -7,15 +7,11 @@
 package org.msrg.raccoon.engine.task.result;
 
 public enum CodingResultsType {
-
 	BOOLEAN,
-	
 	NC_MATRIX,
 	BULK_MATRIX,
 	CODED_SLICE_MATRIX,
 	SLICE_MATRIX,
 	CODED_SLICE,
-	
 	FILE_RESULT,
-	
 }

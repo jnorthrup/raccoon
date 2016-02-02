@@ -220,7 +220,7 @@ public class ReceivedCodedBatch extends CodedBatch {
 
 	public CodedPiece[] getCodedSlices() {
 		synchronized (_lock) {
-			List<Integer> indexSet = getRandomIndex(_cbbs.size(), (_cbbs.size()<_rows?_cbbs.size():_rows));
+			List<Integer> indexSet = getRandomIndex(_cbbs.size(), _cbbs.size()<_rows?_cbbs.size():_rows);
 			CodedPiece[] codedSlices = new CodedPiece[indexSet.size()];
 			int i=0;
 			for(Integer index : indexSet) {
@@ -274,10 +274,10 @@ public class ReceivedCodedBatch extends CodedBatch {
 				}
 				
 				ioWriter.append("{");
-				for(int i=0 ; i<_size && i<_MAX_WRITE_SIZE ; i++)
+				for(int i = 0; i<_size && i< CodedBatch._MAX_WRITE_SIZE; i++)
 					ioWriter.append((i==0 ? "":",") + BytesUtil.hex(_bm.getByte(i)));
 				
-				int remaining = _size - _MAX_WRITE_SIZE;
+				int remaining = _size - CodedBatch._MAX_WRITE_SIZE;
 				if (remaining > 0)
 					ioWriter.append(",...(" + remaining + ")");
 				

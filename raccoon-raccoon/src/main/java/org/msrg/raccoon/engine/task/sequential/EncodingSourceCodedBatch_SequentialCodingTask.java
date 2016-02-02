@@ -41,20 +41,17 @@ public class EncodingSourceCodedBatch_SequentialCodingTask extends
 	protected synchronized void runStagePrivately() {
 		switch (_currentStage) {
 		case -1:
-		{
 			_cc =
 				_codeBatch.getNewCodedCoefficients(_codeBatch.getBulkMatrix()._rows);
 			_cc.verify();
-			
+
 			BulkMatrix bm = _codeBatch.getBulkMatrix();
 			_smCodingResult = _engine.multiply(this, _cc, bm);
 
 			setCurrentStage(0);
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(_smCodingResult.isFailed()) {
 				failed();
 			} else if (_smCodingResult.isFinished()) {
@@ -64,9 +61,8 @@ public class EncodingSourceCodedBatch_SequentialCodingTask extends
 				setCurrentStage(1);
 			}
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage);
 		}
 	}

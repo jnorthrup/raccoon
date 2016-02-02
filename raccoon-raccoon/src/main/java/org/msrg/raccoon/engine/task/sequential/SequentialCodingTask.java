@@ -38,7 +38,7 @@ public abstract class SequentialCodingTask extends CodingTask implements ICoding
 	
 	public synchronized final void runInitialSequencialTasks() {
 		if(_currentStage != -1)
-			throw new IllegalStateException("Expected: " + (-1) + ", found: " + _currentStage);
+			throw new IllegalStateException("Expected: " + -1 + ", found: " + _currentStage);
 		
 		runStagePrivately();
 		if(reachedFinalStage())
@@ -57,7 +57,7 @@ public abstract class SequentialCodingTask extends CodingTask implements ICoding
 	public abstract void codingStarted(CodingResult result);
 
 	protected final boolean reachedFinalStage() {
-		return (_currentStage >= getFinalStage());
+		return _currentStage >= getFinalStage();
 	}
 
 	@Override

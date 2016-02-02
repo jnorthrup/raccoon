@@ -10,9 +10,9 @@ import org.msrg.raccoon.engine.task.result.CodingResult;
 
 public interface ICodingListener {
 
-	public void codingStarted(CodingResult result);
-	public void codingPreliminaryStageCompleted(CodingResult result);
-	public void codingFailed(CodingResult result);
-	public void codingFinished(CodingResult result);
+	void codingStarted(CodingResult result);
+	void codingPreliminaryStageCompleted(CodingResult result);
+	void codingFailed(CodingResult result);
+	void codingFinished(CodingResult result);
 	
 }

@@ -24,7 +24,7 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 
 	@Override
 	public Float getZero() {
-		return GetZero();
+		return DoubleMatrix.GetZero();
 	}
 	
 	public static Float GetZero() {
@@ -33,7 +33,7 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 	
 	@Override
 	public Float getOne() {
-		return GetOne();
+		return DoubleMatrix.GetOne();
 	}
 	
 	public static Float GetOne() {
@@ -45,7 +45,7 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 		for(int i=0 ; i<size ; i++) {
 			Float[] randB = new Float[size];
 			for(int j=0 ; j<size ; j++)
-				randB[j] = (i==j? GetOne(): GetZero());
+				randB[j] = i==j? GetOne(): GetZero();
 			b[i] = randB;
 		}
 		
@@ -53,15 +53,15 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 	}
 	
 	public static DoubleMatrix createRandomDoubleMatrix(int rows, int cols) {
-		return createRandomMatrix(DATATYPES.DOUBLE, rows, cols);
+		return DoubleMatrix.createRandomMatrix(DATATYPES.DOUBLE, rows, cols);
 	}
 	
 	public static DoubleMatrix createRandomSquareIntegerMatrix(int rowsCols) {
-		return createRandomIntegerMatrix(rowsCols, rowsCols);
+		return DoubleMatrix.createRandomIntegerMatrix(rowsCols, rowsCols);
 	}
 	
 	public static DoubleMatrix createRandomIntegerMatrix(int rows, int cols) {
-		return createRandomMatrix(DATATYPES.INTEGER, rows, cols);
+		return DoubleMatrix.createRandomMatrix(DATATYPES.INTEGER, rows, cols);
 	}
 	
 	static final Random _RANDOM = new Random();
@@ -72,11 +72,11 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 			for(int j=0 ; j<randB.length ; j++)
 				switch(dt) {
 				case DOUBLE:
-					randB[j] = _RANDOM.nextFloat();
+					randB[j] = DoubleMatrix._RANDOM.nextFloat();
 					break;
 					
 				case INTEGER:
-					randB[j] = _RANDOM.nextFloat();
+					randB[j] = DoubleMatrix._RANDOM.nextFloat();
 					break;
 					
 				default:
@@ -108,10 +108,7 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 				b[i][j] = clone(_b[i][j]);
 			
 			for(int j=0 ; j<getColumnSize() ; j++)
-				if (i==j)
-					b[i][j + _cols] = getOne();
-				else
-					b[i][j + _cols] = getZero();
+				b[i][j + _cols] = i == j ? getOne() : getZero();
 			
 			}
 		return new DoubleMatrix(b);
@@ -153,11 +150,11 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 
 	public static void main0(String[] argv) {
 		System.out.println("Creating m1");
-		DoubleMatrix m1 = createRandomIntegerMatrix(10, 11);
+		DoubleMatrix m1 = DoubleMatrix.createRandomIntegerMatrix(10, 11);
 //		DoubleMatrix m1 = createIdentityMatrix(10);
 		
 		System.out.println("Creating m2");
-		DoubleMatrix m2 = (DoubleMatrix) createRandomIntegerMatrix(11, 12).multiply(new Float(3));
+		DoubleMatrix m2 = (DoubleMatrix) DoubleMatrix.createRandomIntegerMatrix(11, 12).multiply(new Float(3));
 //		DoubleMatrix m2 = (DoubleMatrix) createIdentityMatrix(10).multiply(new DoubleDataType(3));
 		
 		System.out.println("Creating m3");
@@ -255,8 +252,9 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 
 	@Override
 	public Float multiplyAndAddInPlace(Float total, Float a, Float b) {
-		total = total * (a + b);
-		return total;
+		Float total1 = total;
+		total1 += b;
+		return total1;
 	}
 
 	@Override
@@ -273,4 +271,4 @@ public class DoubleMatrix extends TypedMatrix<Float>{
 enum DATATYPES {
 	INTEGER,
 	DOUBLE
-};
+}

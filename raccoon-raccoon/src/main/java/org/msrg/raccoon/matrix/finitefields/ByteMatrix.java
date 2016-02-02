@@ -18,7 +18,7 @@ public class ByteMatrix extends FFByteMatrix {
 	}
 	
 	public ByteMatrix(byte[][] b) {
-		this(wrap(b));
+		this(ByteMatrix.wrap(b));
 	}
 	
 	public static Byte[] wrap(byte[] b) {
@@ -73,14 +73,11 @@ public class ByteMatrix extends FFByteMatrix {
 	}
 	
 	public byte[][] getByteArray() {
-		return unwrap(_b);
+		return ByteMatrix.unwrap(_b);
 	}
 	
 	protected BulkMatrix createByteMatrix(int rows, int cols) {
-		if(rows==1)
-			return new BulkMatrix1D(cols);
-		else
-			return new BulkMatrix(rows, cols);
+		return rows == 1 ? new BulkMatrix1D(cols) : new BulkMatrix(rows, cols);
 	}
 	
 //	public BulkMatrix multiply2(BulkMatrix bm) {
@@ -116,11 +113,11 @@ public class ByteMatrix extends FFByteMatrix {
 					if(a==0||b==0) {
 						mult = 0;
 					} else {
-					   int t = ((_tables.LOG[(a & 0xff)] & 0xff) + (_tables.LOG[(b & 0xff)] & 0xff));
-					   mult = _tables.EXP[((t>255)?t-255:t) & 0xff];
+					   int t = (_tables.LOG[a & 0xff] & 0xff) + (_tables.LOG[b & 0xff] & 0xff);
+					   mult = FFByteMatrix._tables.EXP[(t>255 ?t-255:t) & 0xff];
 					}
 					
-					bRow[j] ^= (byte)(mult);
+					bRow[j] ^= (byte) mult;
 				}
 			}
 			outM.slice(i).loadNoCopy(bRow);
@@ -129,9 +126,9 @@ public class ByteMatrix extends FFByteMatrix {
 	}
 
 	public byte[][] multiply(byte[][] b) {
-		Byte[][] wrapped = wrap(b);
+		Byte[][] wrapped = ByteMatrix.wrap(b);
 		FFByteMatrix multM = (FFByteMatrix) multiply(wrapped);
-		return unwrap(multM.toArray());
+		return ByteMatrix.unwrap(multM.toArray());
 	}
 	
 	@Override
@@ -142,7 +139,7 @@ public class ByteMatrix extends FFByteMatrix {
 	public static ByteMatrix createRandomByteMatrix(int rows, int cols) {
 		Byte[][] b = new Byte[rows][];
 		for(int i=0 ; i<b.length ; i++)
-			b[i] = random(b.length);
+			b[i] = FFByteMatrix.random(b.length);
 		
 		return new ByteMatrix(b);
 	}

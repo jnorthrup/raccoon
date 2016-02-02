@@ -25,7 +25,7 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 	
 	@Override
 	public void codingTaskStarted(CodingThread codingThread, CodingTask codingTask) {
-		if(DEBUG)
+		if(CodingEngine.DEBUG)
 			System.out.println("TaskStarted:" + codingTask);
 	}
 
@@ -88,19 +88,19 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 
 	@Override
 	public void codingStarted(CodingResult result) {
-		if(DEBUG)
+		if(CodingEngine.DEBUG)
 			System.out.println("TaskStarted:" + result);
 	}
 
 	@Override
 	public void codingFailed(CodingResult result) {
-		if(DEBUG)
+		if(CodingEngine.DEBUG)
 			System.out.println("TaskFailed:" + result);
 	}
 
 	@Override
 	public void codingFinished(CodingResult result) {
-		if(DEBUG)
+		if(CodingEngine.DEBUG)
 			System.out.println("TaskFinished:" + result);
 	}
 	
@@ -162,15 +162,13 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 		}
 		
 		case ENG_ET_TASK_STARTED:
-		{
 			CodingEngineEvent_ExecutionEvent execEvent = (CodingEngineEvent_ExecutionEvent) event;
 			CodingTask cTask = execEvent._cTask;
 			ICodingListener listener = cTask._listener;
 			listener.codingStarted(cTask._result);
 			break;
-		}
-		
-		case ENG_ET_THREAD_NEW:
+
+			case ENG_ET_THREAD_NEW:
 		{
 			CodingEngineEvent_NewThreadEvent tEvent = (CodingEngineEvent_NewThreadEvent) event;
 			CodingThread cThread = tEvent._cThread;
@@ -187,14 +185,12 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 		}
 		
 		case ENG_ET_THREAD_BUSY:
-		{
 			CodingEngineEvent_BusyThreadEvent tEvent = (CodingEngineEvent_BusyThreadEvent) event;
 			CodingThread cThread = tEvent._cThread;
 			threadBecameBusy(cThread);
 			break;
-		}
-		
-		case END_ET_SEQ_TASK_FAILED:
+
+			case END_ET_SEQ_TASK_FAILED:
 		{
 			CodingEngineEvent_SequentialCodingTaskFailed seqEvent = (CodingEngineEvent_SequentialCodingTaskFailed) event;
 			SequentialCodingTask seqCodingTask = seqEvent._seqCodingTask;
@@ -203,14 +199,12 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 		}
 
 		case END_ET_SEQ_TASK_FINISHED:
-		{
 			CodingEngineEvent_SequentialCodingTaskFinished seqEvent = (CodingEngineEvent_SequentialCodingTaskFinished) event;
 			SequentialCodingTask seqCodingTask = seqEvent._seqCodingTask;
 			notifyListener(seqCodingTask);
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new UnsupportedOperationException("Unknown event type: " + event);
 		}
 	}
@@ -240,6 +234,5 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
 
 	@Override
 	public void codingPreliminaryStageCompleted(CodingResult result) {
-		return;
 	}
 }

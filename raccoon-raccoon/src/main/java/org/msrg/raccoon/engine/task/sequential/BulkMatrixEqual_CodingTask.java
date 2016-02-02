@@ -56,17 +56,15 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
 
 	@Override
 	public synchronized void codingStarted(CodingResult result) {
-		return;
 	}
 
 	@Override
 	protected void runStagePrivately(){
 		switch (_currentStage) {
 		case -1:
-		{
 			int slices1 = _bm1.getSliceCount();
 			int slices2 = _bm2.getSliceCount();
-			
+
 			if(_bm1._cols != _bm2._cols || _bm1._rows != _bm2._rows || slices1 != slices2) {
 				((Equals_CodingResult)_result).setResult(false);
 				setCurrentStage(0);
@@ -77,7 +75,7 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
 				for(int i=0 ; i<slices1 ; i++) {
 					SliceMatrix sm1 = _bm1.slice(i);
 					SliceMatrix sm2 = _bm2.slice(i);
-					
+
 					Equals_CodingResult sliceEqualityResult = _engine.checkEquality(this, sm1, sm2);
 					_slicesEqualityResultsSet.add(sliceEqualityResult);
 					_slicesEqualityResults[i] = sliceEqualityResult;
@@ -85,23 +83,20 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
 				setCurrentStage(0);
 			}
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(_slicesEqualityResultsSet.isEmpty()) {
 				boolean result = true;
 				for(int i=0 ; i<_slicesEqualityResults.length && result; i++)
 					if(!_slicesEqualityResults[i].getResult())
 						result = false;
-				
+
 				((Equals_CodingResult)_result).setResult(result);
 				setCurrentStage(1);
 			}
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage);
 		}
 	}

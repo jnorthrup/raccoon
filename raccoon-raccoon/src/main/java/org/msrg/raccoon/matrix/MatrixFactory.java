@@ -6,7 +6,8 @@
 
 package org.msrg.raccoon.matrix;
 
-public class MatrixFactory {
+public enum MatrixFactory {
+	;
 
 	public static TypedMatrix<?> multiply(TypedMatrix m1, TypedMatrix m2) {
 		return m1.multiply(m2._b);

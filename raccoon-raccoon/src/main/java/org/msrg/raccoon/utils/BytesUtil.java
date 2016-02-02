@@ -8,13 +8,14 @@ package org.msrg.raccoon.utils;
 
 import java.net.InetSocketAddress;
 
-public class BytesUtil {
-	
+public enum BytesUtil {
+	;
+
 	protected static String[] dig = {"0","1","2","3","4","5","6","7",
             "8","9","a","b","c","d","e","f"};
 
 	public static String hex(byte b) {
-		return dig[(b & 0xff) >> 4] + dig[b & 0x0f];
+		return BytesUtil.dig[(b & 0xff) >> 4] + BytesUtil.dig[b & 0x0f];
 	}
 	
 	public static int compareAddresses(InetSocketAddress addr1, InetSocketAddress addr2) {

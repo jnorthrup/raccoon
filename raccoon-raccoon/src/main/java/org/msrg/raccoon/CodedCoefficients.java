@@ -28,13 +28,13 @@ public class CodedCoefficients extends ByteMatrix1D {
 	}
 	
 	public CodedCoefficients(int length) {
-		this(makeRand1dArray(length));
+		this(CodedCoefficients.makeRand1dArray(length));
 	}
 	
 	protected static byte[] makeRand1dArray(int length) {
 		byte[] bTemp = new byte[length];
-		synchronized(_rand){
-			_rand.nextBytes(bTemp);
+		synchronized(CodedCoefficients._rand){
+			CodedCoefficients._rand.nextBytes(bTemp);
 		}
 		
 		return bTemp;
@@ -114,10 +114,10 @@ public class CodedCoefficients extends ByteMatrix1D {
 	
 	public void toString(Appendable ioWriter) throws IOException {
 		ioWriter.append("{");
-		for(int i=0 ; i<_b[0].length && i<_MAX_COEFFICIENTS_PRINT ; i++)
+		for(int i = 0; i<_b[0].length && i< CodedCoefficients._MAX_COEFFICIENTS_PRINT; i++)
 			ioWriter.append((i==0?"":",") + BytesUtil.hex(_b[0][i]));
 		
-		int remaining = _b[0].length - _MAX_COEFFICIENTS_PRINT;
+		int remaining = _b[0].length - CodedCoefficients._MAX_COEFFICIENTS_PRINT;
 		if (remaining > 0)
 			ioWriter.append("...(" + remaining + ")");
 		

@@ -58,7 +58,6 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
 	
 	@Override
 	public synchronized void codingStarted(CodingResult result) {
-		return;
 	}
 
 	@Override
@@ -68,14 +67,13 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
 		
 		switch (_currentStage) {
 		case -1:
-		{
 			if(_receivedCodeBatch.isSolved()) {
 				((Equals_CodingResult)_result).setResult(true);
 				setCurrentStage(0);
 				setCurrentStage(1);
 				return;
 			}
-			
+
 			CodedPiece[] solvingCodedSlices = _receivedCodeBatch.canSolve();
 			if(solvingCodedSlices==null) {
 				((Equals_CodingResult)_result).setResult(false);
@@ -85,7 +83,7 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
 			}
 
 			_listener.codingPreliminaryStageCompleted(_result);
-			
+
 			// Now solve the equations
 			BulkMatrix contentMatrix = _receivedCodeBatch.createNewBulkMatrix(solvingCodedSlices);
 			ByteMatrix coefficientsMatrixInverse2 = _receivedCodeBatch.getInverseCoefficientsForSolvingCodedSlices();
@@ -94,12 +92,10 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
 
 			_decodedBMResult = _engine.multiply(this, coefficientsMatrixInverse2, contentMatrix);
 			setCurrentStage(0);
-			
+
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(_decodedBMResult.isFailed()) {
 				failed();
 			} else if (_decodedBMResult.isFinished()) {
@@ -109,9 +105,8 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
 				setCurrentStage(1);
 			}
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage);
 		}
 	}

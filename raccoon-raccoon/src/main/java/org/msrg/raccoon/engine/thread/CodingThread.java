@@ -72,7 +72,6 @@ public abstract class CodingThread extends Thread {
 	}
 	
 	public void retire() {
-		return;
 	}
 	
 	@Override
@@ -86,7 +85,7 @@ public abstract class CodingThread extends Thread {
 				while(_taskList.isEmpty()) {
 					try {
 						_engine.threadIsFree(this);
-						_LOCK.wait(MAX_WAIT_TIME);
+						_LOCK.wait(CodingThread.MAX_WAIT_TIME);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 						_engine.codingThreadFailed(this);

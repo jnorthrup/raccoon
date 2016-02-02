@@ -75,7 +75,7 @@ public class SliceMatrix implements Serializable {
 	protected static Random _RANDOM = new Random();
 	public static SliceMatrix createRandomSliceMatrix(int cols) {
 		byte[] b = new byte[cols];
-		for (byte aB : b) _RANDOM.nextBytes(b);
+		for (byte aB : b) SliceMatrix._RANDOM.nextBytes(b);
 		
 		SliceMatrix sm = new SliceMatrix(b);
 		return sm;
@@ -87,7 +87,7 @@ public class SliceMatrix implements Serializable {
 	}
 	
 	public SliceMatrix clone(SliceMatrix sm) {
-		SliceMatrix smClone = getEmptySliceMatrix(sm);
+		SliceMatrix smClone = SliceMatrix.getEmptySliceMatrix(sm);
 		if(sm.hasContent())
 			smClone.loadWithCopy(sm._b, 0);
 		
@@ -117,8 +117,8 @@ public class SliceMatrix implements Serializable {
 	}
 	
 	public static int _MAX_COLS_PRINT = 2;
-	public int toString(Writer ioWriter) throws IOException {
-		return toString(ioWriter, _MAX_COLS_PRINT);
+	public int toString(Appendable ioWriter) throws IOException {
+		return toString(ioWriter, SliceMatrix._MAX_COLS_PRINT);
 	}
 	
 	public int toString(Appendable ioWriter, int maxCols) throws IOException {
@@ -163,7 +163,7 @@ public class SliceMatrix implements Serializable {
 	}
 	
 	public int getSizeInByteBuffer() {
-		return 4 + 4 + (_cols);
+		return 4 + 4 + _cols;
 	}
 
 	public CodedPiece createEmptyCodedPiece(CodedCoefficients cc, SliceMatrix sm) {

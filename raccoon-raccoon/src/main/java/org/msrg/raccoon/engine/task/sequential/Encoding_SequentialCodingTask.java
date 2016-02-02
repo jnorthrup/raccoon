@@ -70,6 +70,5 @@ public abstract class Encoding_SequentialCodingTask extends SequentialCodingTask
 
 	@Override
 	public final synchronized void codingStarted(CodingResult result) {
-		return;
 	}
 }

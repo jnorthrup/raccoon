@@ -201,7 +201,7 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 	}
 	
 	protected void processCodingEvent(CodingEngineEvent event) throws CodingTaskFailed {
-		if(DEBUG)
+		if(CodingEngine.DEBUG)
 			System.out.println("EVENT_PROCESSING:" + event);
 	}
 	
@@ -248,31 +248,29 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 	protected void scheduleTask() {
 		scheduleTask(null);
 	}
-	
+
 	protected void scheduleTask(CodingTask cTask) {
+		CodingTask cTask1 = cTask;
 		CodingThread thread = null;
-		synchronized(_lock)
-		{
-			if(cTask==null)
-			{
-				if(_outstandingTasks.isEmpty())
+		synchronized (_lock) {
+			if (cTask1 == null) {
+				if (_outstandingTasks.isEmpty())
 					return;
 				else if (_freeThreads.isEmpty())
 					return;
 				else
-					cTask = _outstandingTasks.remove(0);
-			} else if(_freeThreads.isEmpty()) {
-				_outstandingTasks.add(cTask);
+					cTask1 = _outstandingTasks.remove(0);
+			} else if (_freeThreads.isEmpty()) {
+				_outstandingTasks.add(cTask1);
 				return;
 			}
-			
+
 			thread = _freeThreads.iterator().next();
 			_freeThreads.remove(thread);
 			_busyThreads.add(thread);
 		}
-		
-		thread.addNewTask(cTask);
-		return;
+
+		thread.addNewTask(cTask1);
 	}
 	
 	protected void notifyListener(CodingTask cTask) {
@@ -344,7 +342,7 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 			long currentTime = System.currentTimeMillis();
 			for(CodingThread cThread : _threads) {
 				Long lastCheckin = _threadCheckins.get(cThread);
-				if(lastCheckin != null && currentTime - lastCheckin > LATE_THREAD_CHECKIN_TIMEOUT)
+				if(lastCheckin != null && currentTime - lastCheckin > CodingEngine.LATE_THREAD_CHECKIN_TIMEOUT)
 					lateThreadList.add(cThread);
 			}
 		}

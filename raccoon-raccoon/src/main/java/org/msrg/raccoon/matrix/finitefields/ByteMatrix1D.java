@@ -12,11 +12,11 @@ import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 public class ByteMatrix1D extends ByteMatrix {
 
 	public ByteMatrix1D(Byte[] b) {
-		super(make1dArray2d(b));
+		super(ByteMatrix1D.make1dArray2d(b));
 	}
 
 	public ByteMatrix1D(byte[] b) {
-		this(wrap(b));
+		this(ByteMatrix.wrap(b));
 	}
 
 	public ByteMatrix1D(int cols) {
@@ -50,11 +50,11 @@ public class ByteMatrix1D extends ByteMatrix {
 				if(a==0||b==0) {
 					mult = 0;
 				} else {
-				   int t = ((_tables.LOG[(a & 0xff)] & 0xff) + (_tables.LOG[(b & 0xff)] & 0xff));
-				   mult = _tables.EXP[((t>255)?t-255:t) & 0xff];
+				   int t = (_tables.LOG[a & 0xff] & 0xff) + (_tables.LOG[b & 0xff] & 0xff);
+				   mult = FFByteMatrix._tables.EXP[(t>255 ?t-255:t) & 0xff];
 				}
 				
-				bRow[j] ^= (byte)(mult);
+				bRow[j] ^= (byte) mult;
 			}
 		}
 		outputSlice.loadNoCopy(bRow);

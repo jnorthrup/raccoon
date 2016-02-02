@@ -39,13 +39,12 @@ public class EncodingReceivedCodedBatch_SequentialCodingTask extends
 	protected synchronized void runStagePrivately() {
 		switch (_currentStage) {
 		case -1:
-		{
 			CodedPiece[] codedSlices = ((ReceivedCodedBatch)_codeBatch).getCodedSlicesForCoding();
 			if(codedSlices.length == 0) {
 				failed();
 				return;
 			}
-			
+
 			SliceMatrix[] rowMatrices = new SliceMatrix[codedSlices.length];
 			byte[][] bCC = new byte[codedSlices.length][];
 			for(int i=0 ; i<rowMatrices.length ; i++) {
@@ -54,24 +53,24 @@ public class EncodingReceivedCodedBatch_SequentialCodingTask extends
 			}
 			BulkMatrix codedSlicesAsBulkMatrix =
 				((ReceivedCodedBatch)_codeBatch).createNewBulkMatrix(rowMatrices);
-			
+
 			CodedCoefficients cc =
 				_codeBatch.getNewCodedCoefficients(codedSlices.length);
 			cc.verify();
-			
+
 			byte[][]bb = cc.multiply(bCC);
 			byte[] b = bb[0];
 			_cc = _codeBatch.getNewCodedCoefficients(b);
 			_cc.verify();
-			
+
 			if(cc.getByteArray() == null)
 				throw new NullPointerException();
 			if(cc.getByteArray()[0] == null)
 				throw new NullPointerException();
-			
+
 			_smCodingResult =
 				_engine.multiply(this, cc, codedSlicesAsBulkMatrix);
-			
+
 			setCurrentStage(0);
 
 //			if(codedSlices==null) {
@@ -82,21 +81,19 @@ public class EncodingReceivedCodedBatch_SequentialCodingTask extends
 //				SliceMatrix[] rowMatrices = new SliceMatrix[codedSlices.length];
 //				for(int i=0 ; i<rowMatrices.length ; i++)
 //					rowMatrices[i] = codedSlices[i]._codedContent;
-//	
+//
 //				BulkMatrix combinedMultiRowMatrix = new BulkMatrix(rowMatrices);
 //				for(int i=0 ; i<codedSlices.length ; i++)
 //					_cc = cc.multiply(codedSlices[i]._cc);
-//				
+//
 //				_cc = cc;
 //				_smCodingResult = _engine.multiply(this, _cc, combinedMultiRowMatrix);
-//				
+//
 //				setCurrentStage(0);
 //			}
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(_smCodingResult.isFailed()) {
 				failed();
 			} else if (_smCodingResult.isFinished()) {
@@ -106,9 +103,8 @@ public class EncodingReceivedCodedBatch_SequentialCodingTask extends
 				setCurrentStage(1);
 			}
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage);
 		}
 	}

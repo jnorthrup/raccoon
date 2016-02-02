@@ -56,23 +56,19 @@ public class MultiplyInverseMultiplyEqual_SequentialCodingTask extends Sequentia
 
 	@Override
 	public synchronized void codingStarted(CodingResult result) {
-		return;
 	}
 
 	@Override
 	protected void runStagePrivately() {
 		switch (_currentStage) {
 		case -1:
-		{
 			setCurrentStage(0);
 			_multipliedSMResult =
 				(BulkMatrix_CodingResult) _engine.multiply(this, _m, _bm);
 			_mInverseResult = (ByteMatrix_CodingResult) _engine.inverse(this, _m);
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(_mInverseResult.isFinished() && _multipliedSMResult.isFinished()) {
 				setCurrentStage(1);
 				_multipliedInverseMultipliedSMResult =
@@ -80,24 +76,20 @@ public class MultiplyInverseMultiplyEqual_SequentialCodingTask extends Sequentia
 			}
 			else if(_mInverseResult.isFailed() || _multipliedSMResult.isFailed())
 				failed();
-			
+
 			break;
-		}
-		
-		case 1:
-		{
+
+			case 1:
 			if(_multipliedInverseMultipliedSMResult.isFailed())
 				throw new SequentialCodingTaskFailed(this);
-			
+
 			else if (_multipliedInverseMultipliedSMResult.isFinished()) {
 				setCurrentStage(2);
 				_finalEqualityResult = (Equals_CodingResult) _engine.checkEquality(this, _multipliedInverseMultipliedSMResult.getResult(), _bm);
 			}
 			break;
-		}
-		
-		case 2:
-		{
+
+			case 2:
 			if(_finalEqualityResult.isFailed())
 				failed();
 			else if (_finalEqualityResult.isFinished()) {
@@ -105,9 +97,8 @@ public class MultiplyInverseMultiplyEqual_SequentialCodingTask extends Sequentia
 				((Equals_CodingResult)_result).setResult(_finalEqualityResult.getResult());
 			}
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage);
 		}
 	}

@@ -72,7 +72,6 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
 
 	@Override
 	public synchronized void codingStarted(CodingResult result) {
-		return;
 	}
 	
 	@Override
@@ -87,11 +86,10 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
 		
 		switch (_currentStage) {
 		case -1:
-		{
 			int requiredSlices = _codedBatch.getAvailableCodedPieceCount();
 			_encodingResults = new CodedSlice_CodingResult[requiredSlices];
 			_encodintResultsSet = new HashSet<CodedSlice_CodingResult>();
-			
+
 			for(int i=0 ; i<requiredSlices ; i++) {
 				CodedSlice_CodingResult encodingResult = _engine.encode(this, _codedBatch);
 				_encodingResults[i] = encodingResult;
@@ -99,10 +97,8 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
 			}
 			setCurrentStage(0);
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(_encodintResultsSet.isEmpty()) {
 				for(CodedSlice_CodingResult codedResult : _encodingResults) {
 					if(!codedResult.isFinished()) {
@@ -112,16 +108,14 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
 						_receiverCodedBatch.addCodedSlice(cSlice);
 					}
 				}
-				
+
 				_decodingResults = _engine.decode(this, _receiverCodedBatch);
 				setCurrentStage(1);
 			}
-			
+
 			break;
-		}
-		
-		case 1:
-		{
+
+			case 1:
 			if(_decodingResults.isFailed())
 				failed();
 
@@ -146,12 +140,10 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
 					}
 				}
 			}
-			
+
 			break;
-		}
-		
-		case 2:
-		{
+
+			case 2:
 			if(_decodedEqualityResult.isFailed()) {
 				failed();
 			}else if(_decodedEqualityResult.isFinished()) {
@@ -159,11 +151,10 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
 				((Equals_CodingResult)_result).setResult(result);
 				setCurrentStage(3);
 			}
-				
+
 			break;
-		}
-		
-		default:
+
+			default:
 			throw new IllegalStateException("" + _currentStage + ":" + _status);
 		}
 	}

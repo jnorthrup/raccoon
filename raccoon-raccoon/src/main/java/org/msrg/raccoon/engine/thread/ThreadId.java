@@ -6,7 +6,7 @@
 
 package org.msrg.raccoon.engine.thread;
 
-public class ThreadId {
+public final class ThreadId {
 
 	private static int _lastId = 0;
 	
@@ -17,7 +17,7 @@ public class ThreadId {
 	}
 	
 	public static synchronized ThreadId getNewThreadId() {
-		return new ThreadId(_lastId++);
+		return new ThreadId(ThreadId._lastId++);
 	}
 	
 	@Override

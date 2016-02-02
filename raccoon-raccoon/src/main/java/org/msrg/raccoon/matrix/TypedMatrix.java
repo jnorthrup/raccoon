@@ -78,11 +78,8 @@ public abstract class TypedMatrix<T> {
 				cols = _b[i].length;
 			else if (cols != _b[i].length)
 				throw new IllegalAccessError("Row '" + i + "' is not of length " + _rows);
-		
-		if(_rows == 0)
-			_cols = 0;
-		else
-			_cols = cols;
+
+		_cols = _rows == 0 ? 0 : cols;
 		
 		verify();
 	}
@@ -150,9 +147,9 @@ public abstract class TypedMatrix<T> {
 				em.devideRow(i, em._b[i][j]);
 				for (int u = i+1 ; u < _rows ; u++)
 					em.subtractRowFromRow(clone(em._b[u][j]), i, u);
-				i = i + 1;
+				i += 1;
 			}
-			j = j + 1;
+			j += 1;
 		}
 		
 		for(i=em._rows - 1 ; i>0 ; i--) {
@@ -222,7 +219,7 @@ public abstract class TypedMatrix<T> {
 	
 	@Override
 	public String toString() {
-		return toString(_MAX_ROWS_PRINT, _MAX_COLS_PRINT);
+		return toString(TypedMatrix._MAX_ROWS_PRINT, TypedMatrix._MAX_COLS_PRINT);
 	}
 	
 	protected String toString(int maxRows, int maxCols) {
@@ -235,7 +232,7 @@ public abstract class TypedMatrix<T> {
 		return ioWriter.toString();
 	}
 	
-	protected void toString(Writer ioWriter, String fs, CharSequence rs, int maxRows, int maxCols) throws IOException {
+	protected void toString(Appendable ioWriter, CharSequence fs, CharSequence rs, int maxRows, int maxCols) throws IOException {
 		for(int i=0 ; i<getRowSize() && i<maxRows ;i++) {
 			if(i!=0)
 				ioWriter.append(rs);
@@ -347,10 +344,7 @@ public abstract class TypedMatrix<T> {
 	}
 
 	public boolean checkMultiplyability(int rows1, int cols1, int rows2, int cols2) {
-		if(cols1 == rows2)
-			return true;
-		else
-			return false;
+		return cols1 == rows2 ? true : false;
 	}
 	
 	@Override
@@ -406,13 +400,13 @@ public abstract class TypedMatrix<T> {
 	public static String toStringMult(TypedMatrix<?> a, TypedMatrix<?> b, TypedMatrix<?> c) {
 		TypedMatrix<?>[] ms = {a, b, c};
 		String[] separators = {" x ", " = "};
-		return toString(ms, separators);
+		return TypedMatrix.toString(ms, separators);
 	}
 	
 	public static String toStringAdd(TypedMatrix<?> a, TypedMatrix<?> b, TypedMatrix<?> c) {
 		TypedMatrix<?>[] ms = {a, b, c};
 		String[] separators = {" + ", " = "};
-		return toString(ms, separators);
+		return TypedMatrix.toString(ms, separators);
 	}
 
 	public static String toString(TypedMatrix<?>[] ms, String[] separator) {
@@ -425,7 +419,7 @@ public abstract class TypedMatrix<T> {
 		if (ms.length != separator.length + 1)
 			throw new IllegalArgumentException("Not enough separators: " + rows + " vs. " + separator.length);
 		
-		Writer ioWriter = new StringWriter(ms.length * rows * rows * 3);
+		Appendable ioWriter = new StringWriter(ms.length * rows * rows * 3);
 		try{
 			int[] lengths = new int[separator.length];
 			for(int i=0 ; i<rows ; i++) {
@@ -448,7 +442,7 @@ public abstract class TypedMatrix<T> {
 							for(int k=0 ; k<separator[j-1].length() ; k++)
 								ioWriter.append(' ');
 					
-					len += ms[j].toStringRow(ioWriter, i, ",", _MAX_COLS_PRINT);
+					len += ms[j].toStringRow(ioWriter, i, ",", TypedMatrix._MAX_COLS_PRINT);
 				}
 			}
 		}catch (IOException e) {

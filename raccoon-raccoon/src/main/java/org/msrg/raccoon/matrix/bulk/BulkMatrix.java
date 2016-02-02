@@ -30,10 +30,7 @@ public class BulkMatrix implements Serializable {
 	public BulkMatrix(SliceMatrix[] slices) {
 		_slices = slices;
 		_rows = _slices.length;
-		if(_slices.length == 0)
-			_cols = 0;
-		else
-			_cols = _slices[0]._cols;
+		_cols = _slices.length == 0 ? 0 : _slices[0]._cols;
 		for(SliceMatrix sm : _slices)
 			if(_cols != sm._cols)
 				throw new IllegalArgumentException("Cols mismatch: " + _cols + " vs. " + sm._cols);
@@ -44,10 +41,7 @@ public class BulkMatrix implements Serializable {
 	public BulkMatrix(byte[][] b) {
 		_rows = b.length;
 		_slices = new SliceMatrix[_rows];
-		if(_rows == 0)
-			_cols = 0;
-		else
-			_cols = b[0].length;
+		_cols = _rows == 0 ? 0 : b[0].length;
 		
 		for(int i=0 ; i < b.length ; i++) {
 			SliceMatrix sm = new SliceMatrix(b[i]);
@@ -67,7 +61,7 @@ public class BulkMatrix implements Serializable {
 
 		for(int j=0 ; j<bm.getSliceCount() ; j++) {
 			SliceMatrix slice = bm.slice(j);
-			_RANDOM.nextBytes(b);
+			BulkMatrix._RANDOM.nextBytes(b);
 			slice.loadWithCopy(b, 0);
 		}
 		
@@ -151,7 +145,7 @@ public class BulkMatrix implements Serializable {
 	public static int _MAX_SLICES_PRINT = 3;
 	@Override
 	public String toString() {
-		return toString(_MAX_ROWS_PRINT, _MAX_SLICES_PRINT);
+		return toString(BulkMatrix._MAX_ROWS_PRINT, BulkMatrix._MAX_SLICES_PRINT);
 	}
 	
 //	public String toStringFull() {

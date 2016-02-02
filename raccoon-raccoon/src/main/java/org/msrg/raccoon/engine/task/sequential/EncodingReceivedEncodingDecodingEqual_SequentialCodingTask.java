@@ -80,7 +80,6 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
 
 	@Override
 	public void codingStarted(CodingResult result) {
-		return;
 	}
 
 	@Override
@@ -100,7 +99,6 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
 		
 		switch (_currentStage) {
 		case -1:
-		{
 			for(int i=0 ; i<_srcCodedBatch.getAvailableCodedPieceCount() * 2 ; i++) {
 				CodedSlice_CodingResult encodingResult = _engine.encode(this, _srcCodedBatch);
 				_activeCodingResults1.add(encodingResult);
@@ -108,39 +106,32 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
 
 			setCurrentStage(0);
 			break;
-		}
-		
-		case 0:
-		{
+
+			case 0:
 			if(!_activeCodingResults1.isEmpty())
 				return;
 			if(!_activeCodingResults2.isEmpty())
 				return;
-			
+
 			_decodeCodingResult = _engine.decode(this, _destCodedBatch2);
 			setCurrentStage(1);
 			break;
-		}
-		
-		case 1:
-		{
+
+			case 1:
 			if(!_activeCodingResults1.isEmpty() || !_activeCodingResults2.isEmpty())
 				return;
-			
+
 			_equalsCodingResult =
 				_engine.checkEquality(this, _srcCodedBatch.getBulkMatrix(), _destCodedBatch2.getBulkMatrix());
 			setCurrentStage(2);
 			break;
-		}
-		
-		case 2:
-		{
+
+			case 2:
 			boolean finalResult = _equalsCodingResult.getResult();
 			((Equals_CodingResult)_result).setResult(finalResult);
 
 			setCurrentStage(3);
 			break;
-		}
 		}
 		
 		if(reachedFinalStage())
@@ -148,7 +139,6 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
 	}
 	
 	public void codingPreliminaryStageCompleted(CodingResult result) {
-		return;
 	}
 
 }
