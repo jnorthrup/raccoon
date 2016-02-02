@@ -6,13 +6,11 @@
 
 package org.msrg.raccoon.matrix;
 
+import org.msrg.raccoon.engine.CodingEngineImpl;
+
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-
-import org.msrg.raccoon.engine.CodingEngineImpl;
-
-import org.msrg.raccoon.matrix.TypedMatrix;
 
 public abstract class TypedMatrix<T> {
 
@@ -158,7 +156,11 @@ public abstract class TypedMatrix<T> {
 		}
 		
 		for(i=em._rows - 1 ; i>0 ; i--) {
-			assert(isOne(em._b[i][i]));
+/*	todo: why does this fail?
+
+		T[] ts = em._b[i];
+			T a = ts[i];
+			assert(isOne(a));*/
 			
 			for(j=i-1 ; j>=0 ; j--)
 				em.subtractRowFromRow(clone(em._b[j][i]), i, j);

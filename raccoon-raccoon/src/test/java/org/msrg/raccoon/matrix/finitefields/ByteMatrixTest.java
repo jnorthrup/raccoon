@@ -6,12 +6,9 @@
 
 package org.msrg.raccoon.matrix.finitefields;
 
-import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
-
+import junit.framework.TestCase;
 import org.msrg.raccoon.matrix.MatrixFactory;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
-
-import junit.framework.TestCase;
 
 public class ByteMatrixTest extends TestCase {
 
