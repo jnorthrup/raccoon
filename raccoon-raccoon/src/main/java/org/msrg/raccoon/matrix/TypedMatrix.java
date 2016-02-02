@@ -235,7 +235,7 @@ public abstract class TypedMatrix<T> {
 		return ioWriter.toString();
 	}
 	
-	protected void toString(Writer ioWriter, String fs, String rs, int maxRows, int maxCols) throws IOException {
+	protected void toString(Writer ioWriter, String fs, CharSequence rs, int maxRows, int maxCols) throws IOException {
 		for(int i=0 ; i<getRowSize() && i<maxRows ;i++) {
 			if(i!=0)
 				ioWriter.append(rs);
@@ -247,7 +247,7 @@ public abstract class TypedMatrix<T> {
 			ioWriter.append(rs + "...(" + remaining + " more)");
 	}
 	
-	protected int toStringRow(Writer ioWriter, int i, String fs, int maxCols) throws IOException {
+	protected int toStringRow(Appendable ioWriter, int i, CharSequence fs, int maxCols) throws IOException {
 		if(i >= _b.length)
 			return 0;
 		

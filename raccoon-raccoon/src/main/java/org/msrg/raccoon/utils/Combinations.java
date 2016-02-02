@@ -97,7 +97,7 @@ public class Combinations {
 		return ioWriter.toString();
 	}
 	
-	public void toString(Writer ioWriter, String delim) throws IOException {
+	public void toString(Appendable ioWriter, String delim) throws IOException {
 		int i = 0;
 		for(BitSet bv : _allCombinations) {
 			ioWriter.append((i==0?(i+":"):(delim+i+":")) + bv);

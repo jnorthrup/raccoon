@@ -48,7 +48,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     protected int _failed = 0, _subfailed = 0;
     protected int _equals = 0, _unequals = 0;
 
-    protected Set<CodingTask> _mainTasks = new HashSet<CodingTask>();
+    protected Collection<CodingTask> _mainTasks = new HashSet<CodingTask>();
     protected ICodingEngine _engine;
     protected final static String _filename = "D:/temp/filerepo/file.code";
     protected final static CodingEngineTestType _testType =

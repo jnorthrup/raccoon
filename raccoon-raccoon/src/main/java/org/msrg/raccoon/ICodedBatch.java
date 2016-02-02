@@ -6,34 +6,30 @@
 
 package org.msrg.raccoon;
 
-import org.msrg.raccoon.CodedBatchType;
-import org.msrg.raccoon.CodedPiece;
-import org.msrg.raccoon.ICodedBatch;
-
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 
 public interface ICodedBatch {
 
-	public String toString();
-	public boolean equals(Object obj);
-	public boolean equalsExact(ICodedBatch cBatch);
+	String toString();
+	boolean equals(Object obj);
+	boolean equalsExact(ICodedBatch cBatch);
 
-	public BulkMatrix getBulkMatrix();
-	public int getRows();
-	public int getCols();
-	public int getSize();
+	BulkMatrix getBulkMatrix();
+	int getRows();
+	int getCols();
+	int getSize();
 	
-	public int getSizeInByteBuffer();
+	int getSizeInByteBuffer();
 	
-	public void addCodedSlice(CodedPiece cSlice);
-	public CodedBatchType getCodedBatchType();
-	public int getAvailableCodedPieceCount();
-	public int getRequiredCodedPieceCount();
-	public boolean isSolved();
-	public CodedPiece code();
-	public boolean decode();
+	void addCodedSlice(CodedPiece cSlice);
+	CodedBatchType getCodedBatchType();
+	int getAvailableCodedPieceCount();
+	int getRequiredCodedPieceCount();
+	boolean isSolved();
+	CodedPiece code();
+	boolean decode();
 	
-	public boolean canPotentiallyBeSolved();
-	public boolean isInversed();
+	boolean canPotentiallyBeSolved();
+	boolean isInversed();
 	
 }

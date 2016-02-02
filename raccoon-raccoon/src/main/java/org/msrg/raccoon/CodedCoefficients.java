@@ -115,7 +115,7 @@ public class CodedCoefficients extends ByteMatrix1D {
 		}
 	}
 	
-	public void toString(Writer ioWriter) throws IOException {
+	public void toString(Appendable ioWriter) throws IOException {
 		ioWriter.append("{");
 		for(int i=0 ; i<_b[0].length && i<_MAX_COEFFICIENTS_PRINT ; i++)
 			ioWriter.append((i==0?"":",") + BytesUtil.hex(_b[0][i]));

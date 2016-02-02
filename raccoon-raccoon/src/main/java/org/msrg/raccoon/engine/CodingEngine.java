@@ -6,12 +6,7 @@
 
 package org.msrg.raccoon.engine;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskFailed;
@@ -47,7 +42,7 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 	 * List of default coding listeners. These listeners are notified for all
 	 * coding task status updates.
 	 */
-	private List<ICodingListener> _listeners =
+	private Collection<ICodingListener> _listeners =
 		new LinkedList<ICodingListener>();
 
 	/**
@@ -221,7 +216,7 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 	}
 	
 	protected final List<CodingTask> _outstandingTasks = new LinkedList<CodingTask>();
-	protected final Set<CodingThread> _threads = new HashSet<CodingThread>();
+	protected final Collection<CodingThread> _threads = new HashSet<CodingThread>();
 	protected final Set<CodingThread> _freeThreads = new HashSet<CodingThread>();
 	protected final Set<CodingThread> _busyThreads = new HashSet<CodingThread>();
 		

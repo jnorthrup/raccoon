@@ -6,20 +6,14 @@
 
 package org.msrg.raccoon;
 
+import org.msrg.raccoon.matrix.bulk.BulkMatrix;
+import org.msrg.raccoon.matrix.bulk.SliceMatrix;
+import org.msrg.raccoon.utils.BytesUtil;
+
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Random;
-
-import org.msrg.raccoon.CodedBatch;
-import org.msrg.raccoon.CodedBatchType;
-import org.msrg.raccoon.CodedCoefficients;
-import org.msrg.raccoon.CodedPiece;
-import org.msrg.raccoon.ICodedBatch;
-
-import org.msrg.raccoon.matrix.bulk.BulkMatrix;
-import org.msrg.raccoon.matrix.bulk.SliceMatrix;
-import org.msrg.raccoon.utils.BytesUtil;
 
 public abstract class CodedBatch implements ICodedBatch {
 	
@@ -47,7 +41,7 @@ public abstract class CodedBatch implements ICodedBatch {
 		if(!CodedBatch.class.isAssignableFrom(obj.getClass()))
 			return false;
 
-		CodedBatch codedBatchObj = (CodedBatch) obj;
+		ICodedBatch codedBatchObj = (CodedBatch) obj;
 		return equalsExact(codedBatchObj);
 	}
 	

@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,9 +30,9 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
 	final SourceCodedBatch _srcCodedBatch;
 	final ReceivedCodedBatch _destCodedBatch1;
 	final ReceivedCodedBatch _destCodedBatch2;
-	final Set<CodedSlice_CodingResult> _activeCodingResults1 =
+	final Collection<CodedSlice_CodingResult> _activeCodingResults1 =
 		new HashSet<CodedSlice_CodingResult>();
-	final Set<CodedSlice_CodingResult> _activeCodingResults2 =
+	final Collection<CodedSlice_CodingResult> _activeCodingResults2 =
 		new HashSet<CodedSlice_CodingResult>();
 
 	Equals_CodingResult _decodeCodingResult;

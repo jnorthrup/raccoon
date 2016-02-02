@@ -124,7 +124,7 @@ public class SliceMatrix implements Serializable {
 		return toString(ioWriter, _MAX_COLS_PRINT);
 	}
 	
-	public int toString(Writer ioWriter, int maxCols) throws IOException {
+	public int toString(Appendable ioWriter, int maxCols) throws IOException {
 		int strLen = 0;
 		if(_b == null) {
 			String str = "NULL_ALL";
