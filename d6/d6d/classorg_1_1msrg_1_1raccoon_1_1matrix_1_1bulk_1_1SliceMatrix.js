@@ -1,0 +1,26 @@
+var classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix =
+[
+    [ "SliceMatrix", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_aeb3fa63b05dee9bbf6e2f5779ab0c134.html#aeb3fa63b05dee9bbf6e2f5779ab0c134", null ],
+    [ "SliceMatrix", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_ab1d6ce259687bd2ef5f8d5f759b0ce56.html#ab1d6ce259687bd2ef5f8d5f759b0ce56", null ],
+    [ "SliceMatrix", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_ab2af4f484cd02ebd7951525bcad15ac3.html#ab2af4f484cd02ebd7951525bcad15ac3", null ],
+    [ "clone", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_ac515472fd2ad99e8c723d6d8824734be.html#ac515472fd2ad99e8c723d6d8824734be", null ],
+    [ "createEmptyCodedPiece", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a79fcf9310cb51ef4ff605abec91d29a8.html#a79fcf9310cb51ef4ff605abec91d29a8", null ],
+    [ "createNewSliceMatrix", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a2453385192ac7c08aeb043bcb51953fd.html#a2453385192ac7c08aeb043bcb51953fd", null ],
+    [ "createRandomSliceMatrix", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a7318d69d3be32600d6e441c82f505a7f.html#a7318d69d3be32600d6e441c82f505a7f", null ],
+    [ "equals", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_ab8a2304660d8a4a21f13ddd94b15949e.html#ab8a2304660d8a4a21f13ddd94b15949e", null ],
+    [ "getByte", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a1fe8792bcabbfd1a541b53fee375f8a0.html#a1fe8792bcabbfd1a541b53fee375f8a0", null ],
+    [ "getContent", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_aa5cb603774b639272e8e81ecca109d83.html#aa5cb603774b639272e8e81ecca109d83", null ],
+    [ "getEmptySliceMatrix", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a81b3cdb2a71a0caa38efaeaf1ad3b367.html#a81b3cdb2a71a0caa38efaeaf1ad3b367", null ],
+    [ "getSizeInByteBuffer", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_ab950e1357e64639d9a128bf4bce3e2d2.html#ab950e1357e64639d9a128bf4bce3e2d2", null ],
+    [ "hasContent", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a713a9939dc698f3e15630411dabb9db1.html#a713a9939dc698f3e15630411dabb9db1", null ],
+    [ "loadNoCopy", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a4c85807433398a037c9d6885569fba0e.html#a4c85807433398a037c9d6885569fba0e", null ],
+    [ "loadWithCopy", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a741897e83bcadc2c1ad09c119a01582b.html#a741897e83bcadc2c1ad09c119a01582b", null ],
+    [ "toString", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a83a052cc220fc58597410ef4b495a721.html#a83a052cc220fc58597410ef4b495a721", null ],
+    [ "toString", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_aa50b29762b9ee4754508f536ee75740b.html#aa50b29762b9ee4754508f536ee75740b", null ],
+    [ "toString", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a5d5482eb74b1a96ac2b513be42219e6d.html#a5d5482eb74b1a96ac2b513be42219e6d", null ],
+    [ "_b", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a909b015c20e5c6bdba0864f1a67f009f.html#a909b015c20e5c6bdba0864f1a67f009f", null ],
+    [ "_cols", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a2c00aae967dfb96586136e4dc1cb9c4d.html#a2c00aae967dfb96586136e4dc1cb9c4d", null ],
+    [ "_MAX_COLS_PRINT", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_aa79c29c8367d0adf39012eadeb7c757c.html#aa79c29c8367d0adf39012eadeb7c757c", null ],
+    [ "_RANDOM", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_aa7006d92a3eb4543d2bdb7e9ae1797f7.html#aa7006d92a3eb4543d2bdb7e9ae1797f7", null ],
+    [ "serialVersionUID", "d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_ae259b457c77d689564fcd86d1ef16c13.html#ae259b457c77d689564fcd86d1ef16c13", null ]
+];

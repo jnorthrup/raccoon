@@ -1,0 +1,3 @@
+<map id="org.msrg.raccoon.engine.task.Inverse_CodingTask" name="org.msrg.raccoon.engine.task.Inverse_CodingTask">
+<area shape="rect" id="node2" href="$d9/d22/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTask.html" title="{org.msrg.raccoon.engine.task.\lCodingTask\n|+ _taskType\l+ _id\l+ _result\l+ _listener\l# _status\l|+ getCodingResults()\l+ getStatus()\l+ isStarted()\l+ isFinished()\l+ isFailed()\l+ failed()\l+ started()\l+ finished()\l+ isSequencial()\l+ equals()\l+ hashCode()\l# CodingTask()\l# getEmptyCodingResults()\l# changeStatus()\l}" alt="" coords="5,5,204,347"/>
+</map>

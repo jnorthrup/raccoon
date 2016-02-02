@@ -1,0 +1,8 @@
+<map id="org.msrg.raccoon.ReceivedCodedBatchTest.setUp" name="org.msrg.raccoon.ReceivedCodedBatchTest.setUp">
+<area shape="rect" id="node2" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a8a2fe48f174a616aa6ab6535ffd6a3d3.html#a8a2fe48f174a616aa6ab6535ffd6a3d3" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.createBulkMatixIncrementalData" alt="" coords="236,104,515,145"/>
+<area shape="rect" id="node7" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a257d6e8cb7dcebe468d29c4393b20f3d.html#a257d6e8cb7dcebe468d29c4393b20f3d" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getSize" alt="" coords="278,169,473,211"/>
+<area shape="rect" id="node3" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_ae52685687565b5725a204d70237d300a.html#ae52685687565b5725a204d70237d300a" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.BulkMatrix" alt="" coords="563,5,757,47"/>
+<area shape="rect" id="node4" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a98b3c00a4eb4e1864c20182b3ae0e8ec.html#a98b3c00a4eb4e1864c20182b3ae0e8ec" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getSliceCount" alt="" coords="563,71,757,112"/>
+<area shape="rect" id="node5" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a7f382b71b1e7fb03fa68f22724f75f88.html#a7f382b71b1e7fb03fa68f22724f75f88" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.slice" alt="" coords="563,136,757,177"/>
+<area shape="rect" id="node6" href="$d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a4c85807433398a037c9d6885569fba0e.html#a4c85807433398a037c9d6885569fba0e" title="org.msrg.raccoon.matrix.bulk.\lSliceMatrix.loadNoCopy" alt="" coords="563,201,757,243"/>
+</map>

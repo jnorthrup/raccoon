@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix.html" title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; T \&gt;" alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix.html" title="org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix" alt="" coords="220,5,451,47"/>
+<area shape="rect" id="node3" href="$dd/d36/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1ByteMatrix.html" title="org.msrg.raccoon.matrix.finitefields.\lByteMatrix" alt="" coords="499,5,729,47"/>
+<area shape="rect" id="node4" href="$d6/d37/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1ByteMatrix1D.html" title="org.msrg.raccoon.matrix.finitefields.\lByteMatrix1D" alt="" coords="777,5,1008,47"/>
+<area shape="rect" id="node5" href="$dd/d36/classorg_1_1msrg_1_1raccoon_1_1CodedCoefficients.html" title="org.msrg.raccoon.CodedCoefficients" alt="" coords="1056,13,1291,39"/>
+</map>

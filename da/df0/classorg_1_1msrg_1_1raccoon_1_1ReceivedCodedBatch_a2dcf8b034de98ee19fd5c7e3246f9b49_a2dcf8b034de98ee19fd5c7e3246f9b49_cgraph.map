@@ -1,0 +1,7 @@
+<map id="org.msrg.raccoon.ReceivedCodedBatch.code" name="org.msrg.raccoon.ReceivedCodedBatch.code">
+<area shape="rect" id="node2" href="$da/df0/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatch_ac38e1c991515ebdb1cd5b97b72a2aa00.html#ac38e1c991515ebdb1cd5b97b72a2aa00" title="org.msrg.raccoon.Received\lCodedBatch.getCodedSlicesForCoding" alt="" coords="236,5,487,47"/>
+<area shape="rect" id="node5" href="$dd/dfd/classorg_1_1msrg_1_1raccoon_1_1CodedPiece_ab195b1ceff1d30c80edbde298571e271.html#ab195b1ceff1d30c80edbde298571e271" title="org.msrg.raccoon.CodedPiece.make\lCodedSlice" alt="" coords="244,71,479,112"/>
+<area shape="rect" id="node3" href="$da/df0/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatch_ac3719ba770d5744c09af8768443201ea.html#ac3719ba770d5744c09af8768443201ea" title="org.msrg.raccoon.Received\lCodedBatch.getCodedSlices" alt="" coords="568,5,759,47"/>
+<area shape="rect" id="node4" href="$da/df0/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatch_ae70ccb56d60221b625265c875e93bcc2.html#ae70ccb56d60221b625265c875e93bcc2" title="org.msrg.raccoon.Received\lCodedBatch.getRandomIndex" alt="" coords="840,5,1037,47"/>
+<area shape="rect" id="node6" href="$dd/d36/classorg_1_1msrg_1_1raccoon_1_1CodedCoefficients_ab4ca804aa0a40bde8c35b3e9613eae9f.html#ab4ca804aa0a40bde8c35b3e9613eae9f" title="org.msrg.raccoon.CodedCoefficients.get\lLength" alt="" coords="535,71,792,112"/>
+</map>

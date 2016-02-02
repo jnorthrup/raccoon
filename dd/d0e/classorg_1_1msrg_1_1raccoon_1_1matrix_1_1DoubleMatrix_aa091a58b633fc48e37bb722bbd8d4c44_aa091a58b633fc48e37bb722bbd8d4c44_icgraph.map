@@ -1,0 +1,5 @@
+<map id="org.msrg.raccoon.matrix.DoubleMatrix.GetOne" name="org.msrg.raccoon.matrix.DoubleMatrix.GetOne">
+<area shape="rect" id="node2" href="$dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_a0f7d5cc349b7537573f6f47f2bdc3ceb.html#a0f7d5cc349b7537573f6f47f2bdc3ceb" title="org.msrg.raccoon.matrix.\lDoubleMatrix.createIdentityMatrix" alt="" coords="220,5,439,47"/>
+<area shape="rect" id="node3" href="$dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_a8cb762b7e50cf7cdab63e7fd0cd8288a.html#a8cb762b7e50cf7cdab63e7fd0cd8288a" title="org.msrg.raccoon.matrix.\lDoubleMatrix.getOne" alt="" coords="246,71,413,112"/>
+<area shape="rect" id="node4" href="$dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_aa89ac02cd79c8075c9b0921d24b38545.html#aa89ac02cd79c8075c9b0921d24b38545" title="org.msrg.raccoon.matrix.\lDoubleMatrix.cloneExtended" alt="" coords="487,71,676,112"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="org.msrg.raccoon.matrix.DoubleMatrix.main" name="org.msrg.raccoon.matrix.DoubleMatrix.main">
+<area shape="rect" id="node2" href="$dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_ac28be195fb5cad8a265c9a6b9b899de2.html#ac28be195fb5cad8a265c9a6b9b899de2" title="org.msrg.raccoon.matrix.\lDoubleMatrix.createMatrix" alt="" coords="221,5,395,47"/>
+<area shape="rect" id="node3" href="$dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_ab990e9a82b0bc64daa035b7a47bf68a6.html#ab990e9a82b0bc64daa035b7a47bf68a6" title="org.msrg.raccoon.matrix.\lDoubleMatrix.DoubleMatrix" alt="" coords="444,35,624,76"/>
+<area shape="rect" id="node4" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a62f3b28a72c0c130fa783e1129694d4e.html#a62f3b28a72c0c130fa783e1129694d4e" title="org.msrg.raccoon.matrix.\lTypedMatrix.inverseMatrix" alt="" coords="220,123,396,164"/>
+<area shape="rect" id="node5" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a3bbb9fb8ae836b4d61acd52e001b72c2.html#a3bbb9fb8ae836b4d61acd52e001b72c2" title="org.msrg.raccoon.matrix.\lTypedMatrix.isIdentity" alt="" coords="225,188,391,229"/>
+<area shape="rect" id="node6" href="$d5/dcc/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1MatrixFactory_ade989a224e218967ed11c1ca683d6cad.html#ade989a224e218967ed11c1ca683d6cad" title="org.msrg.raccoon.matrix.\lMatrixFactory.multiply" alt="" coords="225,253,391,295"/>
+<area shape="rect" id="node7" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_acd4cb24423a09596877fe45fab025fb2.html#acd4cb24423a09596877fe45fab025fb2" title="org.msrg.raccoon.matrix.\lTypedMatrix.multiply" alt="" coords="451,253,617,295"/>
+</map>

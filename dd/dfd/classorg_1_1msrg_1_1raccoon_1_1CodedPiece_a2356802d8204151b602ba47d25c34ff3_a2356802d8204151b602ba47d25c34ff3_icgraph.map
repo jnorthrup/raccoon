@@ -1,0 +1,7 @@
+<map id="org.msrg.raccoon.CodedPiece.makeCodedPiece" name="org.msrg.raccoon.CodedPiece.makeCodedPiece">
+<area shape="rect" id="node2" href="$d2/da2/classorg_1_1msrg_1_1raccoon_1_1SourceCodedBatch_aa614a213e1484d4643bf8f6b4eb8616a.html#aa614a213e1484d4643bf8f6b4eb8616a" title="org.msrg.raccoon.SourceCoded\lBatch.code" alt="" coords="314,37,521,79"/>
+<area shape="rect" id="node5" href="$d7/da5/classorg_1_1msrg_1_1raccoon_1_1CodedPieceTest_a264feb2dd21ccabd0fa19fe54a7c52db.html#a264feb2dd21ccabd0fa19fe54a7c52db" title="org.msrg.raccoon.CodedPiece\lTest.setUp" alt="" coords="318,103,517,144"/>
+<area shape="rect" id="node6" href="$db/d26/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatchTest_af7c8b12bc8b1dc5d9c5e353b838d830d.html#af7c8b12bc8b1dc5d9c5e353b838d830d" title="org.msrg.raccoon.Received\lCodedBatchTest.ttestEncodingDecoding\lReceivedCodedBatch" alt="" coords="288,167,547,223"/>
+<area shape="rect" id="node3" href="$db/d77/classorg_1_1msrg_1_1raccoon_1_1CodedBatchTest_a04baac235b53bea4fab4b550de9271a5.html#a04baac235b53bea4fab4b550de9271a5" title="org.msrg.raccoon.CodedBatch\lTest.testReceivedCodedBatch" alt="" coords="611,5,813,47"/>
+<area shape="rect" id="node4" href="$d7/d47/classorg_1_1msrg_1_1raccoon_1_1SlicedCodedBatchTest_aa7d0bdfa77013b46a1f2e416dbb71b8c.html#aa7d0bdfa77013b46a1f2e416dbb71b8c" title="org.msrg.raccoon.SlicedCoded\lBatchTest.testReceivedCodedBatch" alt="" coords="595,71,829,112"/>
+</map>

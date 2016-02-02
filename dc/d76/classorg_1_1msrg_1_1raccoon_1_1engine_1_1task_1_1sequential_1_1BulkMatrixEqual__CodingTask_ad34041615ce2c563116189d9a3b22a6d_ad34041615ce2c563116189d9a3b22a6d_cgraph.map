@@ -1,0 +1,6 @@
+<map id="org.msrg.raccoon.engine.task.sequential.BulkMatrixEqual_CodingTask.runStagePrivately" name="org.msrg.raccoon.engine.task.sequential.BulkMatrixEqual_CodingTask.runStagePrivately">
+<area shape="rect" id="node2" href="$dd/dff/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingEngine_addf00ef4ea73a36f94342e34fdebf456.html#addf00ef4ea73a36f94342e34fdebf456" title="org.msrg.raccoon.engine.\lICodingEngine.checkEquality" alt="" coords="389,5,582,47"/>
+<area shape="rect" id="node3" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a98b3c00a4eb4e1864c20182b3ae0e8ec.html#a98b3c00a4eb4e1864c20182b3ae0e8ec" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getSliceCount" alt="" coords="388,71,583,112"/>
+<area shape="rect" id="node4" href="$d6/d78/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTask_a9fee0e39302d3e057700653cea01cfe4.html#a9fee0e39302d3e057700653cea01cfe4" title="org.msrg.raccoon.engine.task.sequential.\lSequentialCodingTask.setCurrentStage" alt="" coords="355,136,616,177"/>
+<area shape="rect" id="node5" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a7f382b71b1e7fb03fa68f22724f75f88.html#a7f382b71b1e7fb03fa68f22724f75f88" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.slice" alt="" coords="388,201,583,243"/>
+</map>

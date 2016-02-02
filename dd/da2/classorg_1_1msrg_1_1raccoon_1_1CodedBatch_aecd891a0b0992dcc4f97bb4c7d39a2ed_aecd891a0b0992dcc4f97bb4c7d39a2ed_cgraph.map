@@ -1,0 +1,10 @@
+<map id="org.msrg.raccoon.CodedBatch.equals" name="org.msrg.raccoon.CodedBatch.equals">
+<area shape="rect" id="node2" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_a0d83f9996320268e978e73f0ea41a9d0.html#a0d83f9996320268e978e73f0ea41a9d0" title="org.msrg.raccoon.CodedBatch.\lCodedBatch" alt="" coords="314,23,517,64"/>
+<area shape="rect" id="node4" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_a0f775cb64db97a1e67680d072ae4c202.html#a0f775cb64db97a1e67680d072ae4c202" title="org.msrg.raccoon.CodedBatch.equals\lExact" alt="" coords="295,120,536,161"/>
+<area shape="rect" id="node3" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a257d6e8cb7dcebe468d29c4393b20f3d.html#a257d6e8cb7dcebe468d29c4393b20f3d" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getSize" alt="" coords="612,5,807,47"/>
+<area shape="rect" id="node5" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_af6c5f0c294627b409dff7fa2b9e7e5c3.html#af6c5f0c294627b409dff7fa2b9e7e5c3" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.equals" alt="" coords="612,71,807,112"/>
+<area shape="rect" id="node8" href="$d1/d78/interfaceorg_1_1msrg_1_1raccoon_1_1ICodedBatch_ac619debd08f8bf73a370c90147ebf9f5.html#ac619debd08f8bf73a370c90147ebf9f5" title="org.msrg.raccoon.ICodedBatch.get\lBulkMatrix" alt="" coords="597,136,822,177"/>
+<area shape="rect" id="node9" href="$d1/d78/interfaceorg_1_1msrg_1_1raccoon_1_1ICodedBatch_abc6a498c6f7f8b9245cbb54703eb6807.html#abc6a498c6f7f8b9245cbb54703eb6807" title="org.msrg.raccoon.ICodedBatch.getSize" alt="" coords="584,202,835,229"/>
+<area shape="rect" id="node6" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_ae52685687565b5725a204d70237d300a.html#ae52685687565b5725a204d70237d300a" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.BulkMatrix" alt="" coords="883,39,1077,80"/>
+<area shape="rect" id="node7" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a98b3c00a4eb4e1864c20182b3ae0e8ec.html#a98b3c00a4eb4e1864c20182b3ae0e8ec" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getSliceCount" alt="" coords="883,104,1077,145"/>
+</map>

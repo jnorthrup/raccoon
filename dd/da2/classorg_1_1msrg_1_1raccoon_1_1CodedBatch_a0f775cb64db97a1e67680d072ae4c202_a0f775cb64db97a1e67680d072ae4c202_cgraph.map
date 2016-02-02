@@ -1,0 +1,7 @@
+<map id="org.msrg.raccoon.CodedBatch.equalsExact" name="org.msrg.raccoon.CodedBatch.equalsExact">
+<area shape="rect" id="node2" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_af6c5f0c294627b409dff7fa2b9e7e5c3.html#af6c5f0c294627b409dff7fa2b9e7e5c3" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.equals" alt="" coords="323,37,517,79"/>
+<area shape="rect" id="node5" href="$d1/d78/interfaceorg_1_1msrg_1_1raccoon_1_1ICodedBatch_ac619debd08f8bf73a370c90147ebf9f5.html#ac619debd08f8bf73a370c90147ebf9f5" title="org.msrg.raccoon.ICodedBatch.get\lBulkMatrix" alt="" coords="307,103,533,144"/>
+<area shape="rect" id="node6" href="$d1/d78/interfaceorg_1_1msrg_1_1raccoon_1_1ICodedBatch_abc6a498c6f7f8b9245cbb54703eb6807.html#abc6a498c6f7f8b9245cbb54703eb6807" title="org.msrg.raccoon.ICodedBatch.getSize" alt="" coords="295,169,545,195"/>
+<area shape="rect" id="node3" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_ae52685687565b5725a204d70237d300a.html#ae52685687565b5725a204d70237d300a" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.BulkMatrix" alt="" coords="593,5,788,47"/>
+<area shape="rect" id="node4" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a98b3c00a4eb4e1864c20182b3ae0e8ec.html#a98b3c00a4eb4e1864c20182b3ae0e8ec" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getSliceCount" alt="" coords="593,71,788,112"/>
+</map>

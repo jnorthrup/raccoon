@@ -1,0 +1,6 @@
+<map id="org.msrg.raccoon.engine.task.CodingTask.isSequencial" name="org.msrg.raccoon.engine.task.CodingTask.isSequencial">
+<area shape="rect" id="node2" href="$dc/dcf/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineTest_ac70704f002892458df95664fd0ea09b7.html#ac70704f002892458df95664fd0ea09b7" title="org.msrg.raccoon.engine.\lCodingEngineTest.reportTaskFinishTimes" alt="" coords="252,5,519,47"/>
+<area shape="rect" id="node4" href="$d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread_a31a8bf19549ed7009791f430c356a421.html#a31a8bf19549ed7009791f430c356a421" title="org.msrg.raccoon.engine.thread.\lCodingThread.runMe" alt="" coords="281,71,490,112"/>
+<area shape="rect" id="node3" href="$dc/dcf/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineTest_a312467d37f3faa057e1deaaeb5f527a4.html#a312467d37f3faa057e1deaaeb5f527a4" title="org.msrg.raccoon.engine.\lCodingEngineTest.codingFinished" alt="" coords="567,5,787,47"/>
+<area shape="rect" id="node5" href="$d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread_ae09277e895c3233c7ff465cc8cb00e7c.html#ae09277e895c3233c7ff465cc8cb00e7c" title="org.msrg.raccoon.engine.thread.\lCodingThread.run" alt="" coords="572,71,781,112"/>
+</map>

@@ -1,0 +1,4 @@
+var classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent__SequentialCodingTaskFinished =
+[
+    [ "CodingEngineEvent_SequentialCodingTaskFinished", "d0/d5d/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent__SequentialCodingTaskFinished_a9eaa8e13221b67c9a87c2af9acda9fbb.html#a9eaa8e13221b67c9a87c2af9acda9fbb", null ]
+];

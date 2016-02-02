@@ -1,0 +1,5 @@
+<map id="org.msrg.raccoon.engine.task.sequential.EncodingDecodingEqual_SequentialCodingTask.EncodingDecodingEqual_SequentialCodingTask" name="org.msrg.raccoon.engine.task.sequential.EncodingDecodingEqual_SequentialCodingTask.EncodingDecodingEqual_SequentialCodingTask">
+<area shape="rect" id="node2" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_aa5a1b5260f8abc65a0cd2d07ee11caa0.html#aa5a1b5260f8abc65a0cd2d07ee11caa0" title="org.msrg.raccoon.CodedBatch.get\lBulkMatrix" alt="" coords="380,5,601,47"/>
+<area shape="rect" id="node3" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_a790dedc7e8851563c2ab75be32a9425f.html#a790dedc7e8851563c2ab75be32a9425f" title="org.msrg.raccoon.CodedBatch.getSize" alt="" coords="367,71,614,98"/>
+<area shape="rect" id="node4" href="$d6/d78/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTask_a9fee0e39302d3e057700653cea01cfe4.html#a9fee0e39302d3e057700653cea01cfe4" title="org.msrg.raccoon.engine.task.sequential.\lSequentialCodingTask.setCurrentStage" alt="" coords="360,123,621,164"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="org.msrg.raccoon.engine.CodingEngineEvent_SequentialCodingTaskFinished" name="org.msrg.raccoon.engine.CodingEngineEvent_SequentialCodingTaskFinished">
+<area shape="rect" id="node2" href="$d8/d0c/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent__SequentialCodingTaskEvents.html" title="{org.msrg.raccoon.engine.\lCodingEngineEvent_Sequential\lCodingTaskEvents\n|+ _seqCodingTask\l|# CodingEngineEvent_Sequential\lCodingTaskEvents()\l}" alt="" coords="5,160,221,281"/>
+<area shape="rect" id="node3" href="$d3/db5/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent.html" title="{org.msrg.raccoon.engine.\lCodingEngineEvent\n|+ _eventType\l|+ toString()\l# CodingEngineEvent()\l}" alt="" coords="29,5,198,112"/>
+</map>

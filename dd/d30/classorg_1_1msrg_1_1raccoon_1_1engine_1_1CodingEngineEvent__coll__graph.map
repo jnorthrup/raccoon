@@ -1,0 +1,3 @@
+<map id="org.msrg.raccoon.engine.CodingEngineEvent" name="org.msrg.raccoon.engine.CodingEngineEvent">
+<area shape="rect" id="node2" href="$da/d8b/namespaceorg_1_1msrg_1_1raccoon_1_1engine.html#d1/dea/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEventType" title="{org.msrg.raccoon.engine.\lCodingEngineEventType\n|+ ENG_ET_FILE_TASK\l+ ENG_ET_THREAD_FREE\l+ ENG_ET_THREAD_NEW\l+ ENG_ET_THREAD_BUSY\l+ ENG_ET_NEW_TASK\l+ END_ET_SEQ_TASK_FINISHED\l+ END_ET_SEQ_TASK_FAILED\l+ ENG_ET_TASK_FAILED\l+ ENG_ET_TASK_FINISHED\l+ ENG_ET_TASK_STARTED\l|}" alt="" coords="5,5,240,229"/>
+</map>

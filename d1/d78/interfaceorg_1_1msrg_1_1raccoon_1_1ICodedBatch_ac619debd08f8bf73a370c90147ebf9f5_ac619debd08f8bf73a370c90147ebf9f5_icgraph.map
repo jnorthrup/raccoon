@@ -1,0 +1,6 @@
+<map id="org.msrg.raccoon.ICodedBatch.getBulkMatrix" name="org.msrg.raccoon.ICodedBatch.getBulkMatrix">
+<area shape="rect" id="node2" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_a0f775cb64db97a1e67680d072ae4c202.html#a0f775cb64db97a1e67680d072ae4c202" title="org.msrg.raccoon.CodedBatch.equals\lExact" alt="" coords="279,39,520,80"/>
+<area shape="rect" id="node3" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_aecd891a0b0992dcc4f97bb4c7d39a2ed.html#aecd891a0b0992dcc4f97bb4c7d39a2ed" title="org.msrg.raccoon.CodedBatch.equals" alt="" coords="568,46,809,73"/>
+<area shape="rect" id="node4" href="$db/d77/classorg_1_1msrg_1_1raccoon_1_1CodedBatchTest_a04baac235b53bea4fab4b550de9271a5.html#a04baac235b53bea4fab4b550de9271a5" title="org.msrg.raccoon.CodedBatch\lTest.testReceivedCodedBatch" alt="" coords="874,5,1075,47"/>
+<area shape="rect" id="node5" href="$d7/d47/classorg_1_1msrg_1_1raccoon_1_1SlicedCodedBatchTest_aa7d0bdfa77013b46a1f2e416dbb71b8c.html#aa7d0bdfa77013b46a1f2e416dbb71b8c" title="org.msrg.raccoon.SlicedCoded\lBatchTest.testReceivedCodedBatch" alt="" coords="857,71,1092,112"/>
+</map>

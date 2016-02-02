@@ -1,0 +1,7 @@
+<map id="org.msrg.raccoon.engine.CodingEngine.notifyListener" name="org.msrg.raccoon.engine.CodingEngine.notifyListener">
+<area shape="rect" id="node2" href="$db/d98/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine_a2398d0be0c50a5b97c4f18b1d26da62f.html#a2398d0be0c50a5b97c4f18b1d26da62f" title="org.msrg.raccoon.engine.\lCodingEngine.codingTaskFailed" alt="" coords="261,5,470,47"/>
+<area shape="rect" id="node5" href="$db/d98/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine_a3d4a6d3540939a6669282049714e7a92.html#a3d4a6d3540939a6669282049714e7a92" title="org.msrg.raccoon.engine.\lCodingEngine.codingTaskFinished" alt="" coords="254,71,477,112"/>
+<area shape="rect" id="node6" href="$d2/d9a/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineImpl_a0398a605548bebf4995dd161d4785b45.html#a0398a605548bebf4995dd161d4785b45" title="org.msrg.raccoon.engine.\lCodingEngineImpl.processCodingEvent" alt="" coords="239,136,492,177"/>
+<area shape="rect" id="node3" href="$d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread_a31a8bf19549ed7009791f430c356a421.html#a31a8bf19549ed7009791f430c356a421" title="org.msrg.raccoon.engine.thread.\lCodingThread.runMe" alt="" coords="540,39,749,80"/>
+<area shape="rect" id="node4" href="$d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread_ae09277e895c3233c7ff465cc8cb00e7c.html#ae09277e895c3233c7ff465cc8cb00e7c" title="org.msrg.raccoon.engine.thread.\lCodingThread.run" alt="" coords="797,39,1007,80"/>
+</map>
