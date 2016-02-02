@@ -6,11 +6,9 @@
 
 package org.msrg.raccoon;
 
-import org.msrg.raccoon.CodedPiece;
-
-import org.msrg.raccoon.matrix.bulk.BulkMatrix;
-
 import junit.framework.TestCase;
+import org.msrg.raccoon.CodedPiece;
+import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 
 public class CodedPieceTest extends TestCase {
 

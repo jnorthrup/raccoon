@@ -6,14 +6,12 @@
 
 package org.msrg.raccoon;
 
-import java.util.List;
-
+import junit.framework.TestCase;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.ReceivedCodedBatch;
-
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 
-import junit.framework.TestCase;
+import java.util.List;
 
 public class ReceivedCodedBatchTest extends TestCase {
 
