@@ -32,18 +32,18 @@ import java.util.*;
  * @author Reza Sherafat (reza.sherafat@gmail.com)
  * @since 0.1
  */
-public abstract class CodingEngine extends Thread implements ICodingEngine {
+public abstract class CodingEngine implements ICodingEngine {
 
 	public static boolean DEBUG = false;
 	
 	protected final Object _lock = new Object();
-	
+	private final MyThread thread;
+
 	/**
 	 * List of default coding listeners. These listeners are notified for all
 	 * coding task status updates.
 	 */
-	private Collection<ICodingListener> _listeners =
-		new LinkedList<ICodingListener>();
+	private Collection<ICodingListener> _listeners = new LinkedList<ICodingListener>();
 
 	/**
 	 * Tasks priority queues
@@ -88,7 +88,7 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 		
 	protected int _threadCount;
 	protected CodingEngine(int threadCount) {
-		super("CodingEngineT");
+		thread = new MyThread("CodingEngineT");
 		_threadCount = threadCount;
 		
 		System.out.println("CodingEngine Thread count: " + _threadCount);
@@ -128,78 +128,10 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 			for(CodingThread cThread : _threads)
 				cThread.start();
 			
-			super.start();
+			thread.start();
 		}
 	}
-	
-	@Override
-	public void start() {
-		throw new UnsupportedOperationException("To ignite the engine, use startComponent() instead.");
-	}
-	
-	@Override
-	public final void run() {
-		CodingEngineEvent event = null;
-		boolean eventFrom_highPriorityCodingTasksEventQueue = false;
-		boolean eventFrom_normalPriorityCodingEventQueue = false;
-		boolean eventFrom_lowPriorityCodingEventQueue = false;
-		
-		while(true) {
-			synchronized (_lock) {
-				if(event!=null) {
-					if(eventFrom_normalPriorityCodingEventQueue) {
-						eventFrom_normalPriorityCodingEventQueue = false;
-						if(_normalPriorityEventQueue.remove(0) != event)
-							throw new IllegalStateException();
-					}
-					
-					if(eventFrom_highPriorityCodingTasksEventQueue) {
-						eventFrom_highPriorityCodingTasksEventQueue = false;
-						if(_highPriorityEventQueue.remove(0) != event)
-							throw new IllegalStateException();
-					}
-					
-					if(eventFrom_lowPriorityCodingEventQueue) {
-						eventFrom_lowPriorityCodingEventQueue = false;
-						if(_lowPriorityEventQueue.remove(0) != event)
-							throw new IllegalStateException();
-					}
-				}
-				
-				while(_normalPriorityEventQueue.isEmpty()
-						&& _highPriorityEventQueue.isEmpty()
-						&& _lowPriorityEventQueue.isEmpty()) {
-					try {
-						_lock.wait();
-					} catch (InterruptedException itx) {
-						itx.printStackTrace();
-					}
-				}
-				
-				if(!_highPriorityEventQueue.isEmpty()) {
-					event = _highPriorityEventQueue.get(0);
-					eventFrom_highPriorityCodingTasksEventQueue = true;
-				} else if(!_normalPriorityEventQueue.isEmpty()) {
-					event = _normalPriorityEventQueue.get(0);
-					eventFrom_normalPriorityCodingEventQueue = true;
-				} else if (!_lowPriorityEventQueue.isEmpty()) {
-					event = _lowPriorityEventQueue.get(0);
-					eventFrom_lowPriorityCodingEventQueue = true;
-				} else
-					throw new IllegalStateException();
-			}
-			
-			//
-			try{
-				processCodingEvent(event);
-			} catch (Exception x) {
-				x.printStackTrace();
-			}
-			
-			Thread.yield();
-		}
-	}
-	
+
 	protected void processCodingEvent(CodingEngineEvent event) throws CodingTaskFailed {
 		if(CodingEngine.DEBUG)
 			System.out.println("EVENT_PROCESSING:" + event);
@@ -209,7 +141,7 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 	public void init() {
 		synchronized (_lock) {
 			for(int i=0 ; i<_threadCount ; i++) {
-				CodingThread cThread = new CodingThreadImpl(this);
+				CodingThread cThread = new CodingThreadImpl(CodingEngine.this);
 				_threads.add(cThread);
 			}
 		}
@@ -312,11 +244,6 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 			return _threads.size();
 		}
 	}
-	
-	@Override
-	public String toString() {
-		return "CodingEngine:[" + _freeThreads.size() + "/" + _busyThreads.size() + "]";
-	}
 
 	public void sequentialCodingTaskFailed(SequentialCodingTask seqCodingTask) {
 		CodingEngineEvent_SequentialCodingTaskFailed seqCodingEvent = new CodingEngineEvent_SequentialCodingTaskFailed(seqCodingTask);
@@ -366,5 +293,88 @@ public abstract class CodingEngine extends Thread implements ICodingEngine {
 		synchronized (_lock) {
 			return _highPriorityEventQueue.size();
 		}
+	}
+
+	public Thread getThread() {
+		return thread;
+	}
+
+	private class MyThread extends Thread {
+		public MyThread(String var1) {
+			super(var1);
+		}
+
+		/*@Override
+        public void start() {
+            throw new UnsupportedOperationException("To ignite the engine, use startComponent() instead.");
+        }
+*/
+		@Override
+        public final void run() {
+            CodingEngineEvent event = null;
+            boolean eventFrom_highPriorityCodingTasksEventQueue = false;
+            boolean eventFrom_normalPriorityCodingEventQueue = false;
+            boolean eventFrom_lowPriorityCodingEventQueue = false;
+
+            while(true) {
+                synchronized (_lock) {
+                    if(event!=null) {
+                        if(eventFrom_normalPriorityCodingEventQueue) {
+                            eventFrom_normalPriorityCodingEventQueue = false;
+                            if(_normalPriorityEventQueue.remove(0) != event)
+                                throw new IllegalStateException();
+                        }
+
+                        if(eventFrom_highPriorityCodingTasksEventQueue) {
+                            eventFrom_highPriorityCodingTasksEventQueue = false;
+                            if(_highPriorityEventQueue.remove(0) != event)
+                                throw new IllegalStateException();
+                        }
+
+                        if(eventFrom_lowPriorityCodingEventQueue) {
+                            eventFrom_lowPriorityCodingEventQueue = false;
+                            if(_lowPriorityEventQueue.remove(0) != event)
+                                throw new IllegalStateException();
+                        }
+                    }
+
+                    while(_normalPriorityEventQueue.isEmpty()
+                            && _highPriorityEventQueue.isEmpty()
+                            && _lowPriorityEventQueue.isEmpty()) {
+                        try {
+                            _lock.wait();
+                        } catch (InterruptedException itx) {
+                            itx.printStackTrace();
+                        }
+                    }
+
+                    if(!_highPriorityEventQueue.isEmpty()) {
+                        event = _highPriorityEventQueue.get(0);
+                        eventFrom_highPriorityCodingTasksEventQueue = true;
+                    } else if(!_normalPriorityEventQueue.isEmpty()) {
+                        event = _normalPriorityEventQueue.get(0);
+                        eventFrom_normalPriorityCodingEventQueue = true;
+                    } else if (!_lowPriorityEventQueue.isEmpty()) {
+                        event = _lowPriorityEventQueue.get(0);
+                        eventFrom_lowPriorityCodingEventQueue = true;
+                    } else
+                        throw new IllegalStateException();
+                }
+
+                //
+                try{
+                    processCodingEvent(event);
+                } catch (Exception x) {
+                    x.printStackTrace();
+                }
+
+                Thread.yield();
+            }
+        }
+
+		@Override
+        public String toString() {
+            return "CodingEngine:[" + _freeThreads.size() + "/" + _busyThreads.size() + "]";
+        }
 	}
 }

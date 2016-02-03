@@ -23,12 +23,7 @@ public class Multiply_CodingTask extends CodingTask {
 		
 		_m = m;
 		_bm = bm;
-		if(_m==null)
-			throw new NullPointerException();
-		if(!_m.verifyNotNull())
-			throw new NullPointerException();
-		if(_bm==null)
-			throw new NullPointerException();
+		assert !(_m == null || !_m.verifyNotNull() || _bm == null):"npe";
 	}
 	
 //	@Override
