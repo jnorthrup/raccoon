@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.matrix.bulk;
 
+import org.jetbrains.annotations.NotNull;
+
 public class BulkMatrix1D extends BulkMatrix {
 
     /**
@@ -17,6 +19,7 @@ public class BulkMatrix1D extends BulkMatrix {
         super(1, cols);
     }
 
+    @NotNull
     public static BulkMatrix1D createBulkMatrix1D(byte[] b, int bOffset, int size) {
         BulkMatrix1D bm1d = new BulkMatrix1D(size);
         SliceMatrix sm = bm1d.slice(0);
@@ -25,6 +28,7 @@ public class BulkMatrix1D extends BulkMatrix {
         return bm1d;
     }
 
+    @NotNull
     public static BulkMatrix1D createBulkMatixIncrementalData(int size) {
         BulkMatrix1D bm1d = new BulkMatrix1D(size);
         byte[][] b = bm1d.getContent();

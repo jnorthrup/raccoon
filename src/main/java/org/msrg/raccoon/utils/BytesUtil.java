@@ -6,11 +6,15 @@
 
 package org.msrg.raccoon.utils;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.net.InetSocketAddress;
 
 public enum BytesUtil {
     ;
 
+    @NotNull
     protected static String[] dig = {"0", "1", "2", "3", "4", "5", "6", "7",
             "8", "9", "a", "b", "c", "d", "e", "f"};
 
@@ -18,7 +22,7 @@ public enum BytesUtil {
         return BytesUtil.dig[(b & 0xff) >> 4] + BytesUtil.dig[b & 0x0f];
     }
 
-    public static int compareAddresses(InetSocketAddress addr1, InetSocketAddress addr2) {
+    public static int compareAddresses(@NotNull InetSocketAddress addr1, @NotNull InetSocketAddress addr2) {
         byte[] addr1Array = addr1.getAddress().getAddress();
         byte[] addr2Array = addr2.getAddress().getAddress();
         for (int i = 0; i < addr1Array.length && i < addr2Array.length; i++)
@@ -35,7 +39,8 @@ public enum BytesUtil {
             return 0;
     }
 
-    public static byte[] combineInsertB2sizeAsByte(byte[] b1, byte[] b2) {
+    @NotNull
+    public static byte[] combineInsertB2sizeAsByte(@Nullable byte[] b1, @Nullable byte[] b2) {
         if (b1 == null)
             throw new NullPointerException();
         if (b2 == null)
@@ -50,7 +55,7 @@ public enum BytesUtil {
         return ret;
     }
 
-    public static boolean compareByteArray(byte[] arr1, byte[] arr2) {
+    public static boolean compareByteArray(@NotNull byte[] arr1, @NotNull byte[] arr2) {
         if (arr1.length != arr2.length)
             return false;
         for (int i = 0; i < arr1.length; i++)

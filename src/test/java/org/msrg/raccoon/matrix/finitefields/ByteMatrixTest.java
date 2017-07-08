@@ -7,6 +7,7 @@
 package org.msrg.raccoon.matrix.finitefields;
 
 import junit.framework.TestCase;
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.matrix.MatrixFactory;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 
@@ -15,7 +16,7 @@ public class ByteMatrixTest extends TestCase {
     double BULK_SIZE = (1000 * 1000) * 1;
     int BYTE_MATRIX_SIZE = 100;
 
-    @Override
+
     public void setUp() {
         ByteMatrix._MAX_ROWS_PRINT = 5;
         ByteMatrix._MAX_COLS_PRINT = 5;
@@ -55,7 +56,7 @@ public class ByteMatrixTest extends TestCase {
         runTestM2timesInvIsM(ncM, true);
     }
 
-    protected void runTestM2timesInvIsM(ByteMatrix ncM, boolean hasInverse) {
+    protected void runTestM2timesInvIsM(@NotNull ByteMatrix ncM, boolean hasInverse) {
         System.out.print("Multiplying... ");
         long start = System.currentTimeMillis();
         ByteMatrix ncMP2 = new ByteMatrix(

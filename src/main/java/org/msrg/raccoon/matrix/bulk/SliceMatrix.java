@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.matrix.bulk;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.CodedCoefficients;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.utils.BytesUtil;
@@ -24,6 +26,7 @@ public class SliceMatrix implements Serializable {
      */
     private static final long serialVersionUID = -2394495616570970489L;
     public static int _MAX_COLS_PRINT = 2;
+    @NotNull
     protected static Random _RANDOM = new Random();
     public final int _cols;
     protected byte[] _b;
@@ -32,7 +35,7 @@ public class SliceMatrix implements Serializable {
         _cols = cols;
     }
 
-    public SliceMatrix(Byte[] B) {
+    public SliceMatrix(@NotNull Byte[] B) {
         this(B.length);
         byte[] b = new byte[B.length];
         for (int i = 0; i < b.length; i++)
@@ -40,12 +43,13 @@ public class SliceMatrix implements Serializable {
         loadNoCopy(b);
     }
 
-    public SliceMatrix(byte[] b) {
+    public SliceMatrix(@NotNull byte[] b) {
         this(b.length);
 
         loadNoCopy(b);
     }
 
+    @NotNull
     public static SliceMatrix createRandomSliceMatrix(int cols) {
         byte[] b = new byte[cols];
         for (byte aB : b) SliceMatrix._RANDOM.nextBytes(b);
@@ -54,12 +58,12 @@ public class SliceMatrix implements Serializable {
         return sm;
     }
 
-    public static SliceMatrix getEmptySliceMatrix(SliceMatrix sm) {
+    public static SliceMatrix getEmptySliceMatrix(@NotNull SliceMatrix sm) {
         byte[] b = new byte[sm._cols];
         return new SliceMatrix(b);
     }
 
-    public void loadNoCopy(byte[] b) {
+    public void loadNoCopy(@NotNull byte[] b) {
         if (_b != null)
             throw new IllegalStateException();
 
@@ -87,7 +91,8 @@ public class SliceMatrix implements Serializable {
         return _b != null;
     }
 
-    public SliceMatrix clone(SliceMatrix sm) {
+    @NotNull
+    public SliceMatrix clone(@NotNull SliceMatrix sm) {
         SliceMatrix smClone = SliceMatrix.getEmptySliceMatrix(sm);
         if (sm.hasContent())
             smClone.loadWithCopy(sm._b, 0);
@@ -95,8 +100,8 @@ public class SliceMatrix implements Serializable {
         return smClone;
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null)
             return false;
         if (!getClass().isAssignableFrom(obj.getClass()))
@@ -117,11 +122,11 @@ public class SliceMatrix implements Serializable {
         return _b[i];
     }
 
-    public int toString(Appendable ioWriter) throws IOException {
+    public int toString(@NotNull Appendable ioWriter) throws IOException {
         return toString(ioWriter, SliceMatrix._MAX_COLS_PRINT);
     }
 
-    public int toString(Appendable ioWriter, int maxCols) throws IOException {
+    public int toString(@NotNull Appendable ioWriter, int maxCols) throws IOException {
         int strLen = 0;
         if (_b == null) {
             String str = "NULL_ALL";
@@ -144,7 +149,7 @@ public class SliceMatrix implements Serializable {
         return strLen;
     }
 
-    @Override
+
     public String toString() {
         if (_b == null)
             return "{NULL}";
@@ -158,6 +163,7 @@ public class SliceMatrix implements Serializable {
         return ioWriter.toString();
     }
 
+    @NotNull
     public SliceMatrix createNewSliceMatrix(int cols) {
         return new SliceMatrix(cols);
     }
@@ -166,6 +172,7 @@ public class SliceMatrix implements Serializable {
         return 4 + 4 + _cols;
     }
 
+    @NotNull
     public CodedPiece createEmptyCodedPiece(CodedCoefficients cc, SliceMatrix sm) {
         return new CodedPiece(cc, sm);
     }

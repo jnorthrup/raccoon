@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.result;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.CodingTask;
 
@@ -34,7 +35,8 @@ public class Equals_CodingResult extends CodingResult {
         _equals = equals;
     }
 
-    @Override
+    @NotNull
+
     public String toString() {
         return "EQ_RESULT[" + _equals + "]";
     }

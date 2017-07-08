@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.CodedBatchType;
 import org.msrg.raccoon.CodedCoefficients;
@@ -32,12 +33,13 @@ public class EncodingSourceCodedBatch_SequentialCodingTask extends
         super(engine, listener, id, codeBatch);
     }
 
-    @Override
+    @NotNull
+
     public CodedBatchType getSupportedCodedBatchType() {
         return CodedBatchType.SRC_CODED_BATCH;
     }
 
-    @Override
+
     protected synchronized void runStagePrivately() {
         switch (_currentStage) {
             case -1:
@@ -67,7 +69,7 @@ public class EncodingSourceCodedBatch_SequentialCodingTask extends
         }
     }
 
-    @Override
+
     protected int getFinalStage() {
         return FINAL_STAGE;
     }

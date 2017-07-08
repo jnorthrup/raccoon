@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.matrix;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.engine.CodingEngineImpl;
 
 import java.io.IOException;
@@ -17,14 +19,16 @@ public abstract class TypedMatrix<T> {
     public static int _MAX_ROWS_PRINT = 2;
     public static int _MAX_COLS_PRINT = 2;
 
+    @NotNull
     public final T[][] _b;
     protected final int _rows;
     protected final int _cols;
     protected final Object _lock = new Object();
     protected int _inverseRowZero = -1;
+    @Nullable
     protected TypedMatrix<T> _inverse;
 
-    public TypedMatrix(T[][] b) {
+    public TypedMatrix(@NotNull T[][] b) {
         _b = b;
         _rows = b.length;
 
@@ -54,7 +58,7 @@ public abstract class TypedMatrix<T> {
         return TypedMatrix.toString(ms, separators);
     }
 
-    public static String toString(TypedMatrix<?>[] ms, String[] separator) {
+    public static String toString(@NotNull TypedMatrix<?>[] ms, @NotNull String[] separator) {
         int rows = -1;
         for (TypedMatrix<?> m : ms) {
             if (m.getRowSize() > rows)
@@ -97,11 +101,12 @@ public abstract class TypedMatrix<T> {
         return ioWriter.toString();
     }
 
-    @Override
+
     public abstract TypedMatrix<T> clone();
 
     public abstract TypedMatrix<T> cloneExtended();
 
+    @Nullable
     public abstract TypedMatrix<T> decloneExtended();
 
     protected abstract String toString(T a);
@@ -155,6 +160,7 @@ public abstract class TypedMatrix<T> {
         }
     }
 
+    @NotNull
     public T[][] toArray() {
         return _b;
     }
@@ -171,6 +177,7 @@ public abstract class TypedMatrix<T> {
         return -1;
     }
 
+    @Nullable
     public TypedMatrix<T> inverseMatrix() {
         synchronized (_lock) {
             if (_inverse != null)
@@ -189,6 +196,7 @@ public abstract class TypedMatrix<T> {
         }
     }
 
+    @Nullable
     protected TypedMatrix<T> inverseMatrixPrivately() {
         TypedMatrix<T> em = eliminatedMatrix();
         TypedMatrix<T> inverse = em.decloneExtended();
@@ -273,6 +281,7 @@ public abstract class TypedMatrix<T> {
         _b[i] = temp;
     }
 
+    @NotNull
     protected TypedMatrix<T> multiply(T b) {
         for (int i = 0; i < getRowSize(); i++) {
             for (int j = 0; j < getColumnSize(); j++) {
@@ -284,11 +293,12 @@ public abstract class TypedMatrix<T> {
         return this;
     }
 
+    @NotNull
     public String toStringShort() {
         return _rows + "x" + _cols;
     }
 
-    @Override
+
     public String toString() {
         return toString(TypedMatrix._MAX_ROWS_PRINT, TypedMatrix._MAX_COLS_PRINT);
     }
@@ -303,7 +313,7 @@ public abstract class TypedMatrix<T> {
         return ioWriter.toString();
     }
 
-    protected void toString(Appendable ioWriter, CharSequence fs, CharSequence rs, int maxRows, int maxCols) throws IOException {
+    protected void toString(@NotNull Appendable ioWriter, @NotNull CharSequence fs, CharSequence rs, int maxRows, int maxCols) throws IOException {
         for (int i = 0; i < getRowSize() && i < maxRows; i++) {
             if (i != 0)
                 ioWriter.append(rs);
@@ -315,7 +325,7 @@ public abstract class TypedMatrix<T> {
             ioWriter.append(rs + "...(" + remaining + " more)");
     }
 
-    protected int toStringRow(Appendable ioWriter, int i, CharSequence fs, int maxCols) throws IOException {
+    protected int toStringRow(@NotNull Appendable ioWriter, int i, @NotNull CharSequence fs, int maxCols) throws IOException {
         if (i >= _b.length)
             return 0;
 
@@ -337,11 +347,11 @@ public abstract class TypedMatrix<T> {
         return len;
     }
 
-    protected TypedMatrix<T> multiply(TypedMatrix<T> a) {
+    protected TypedMatrix<T> multiply(@NotNull TypedMatrix<T> a) {
         return multiply(a._b);
     }
 
-    protected final TypedMatrix<T> multiply(T[][] a) {
+    protected final TypedMatrix<T> multiply(@NotNull T[][] a) {
         int aRows = a.length;
         if (aRows != _cols)
             throw new IllegalArgumentException("Row/column count mismatch: " + _rows + " vs. " + a.length);
@@ -382,7 +392,7 @@ public abstract class TypedMatrix<T> {
         return _rows;
     }
 
-    protected TypedMatrix<T> add(T[][] a) {
+    protected TypedMatrix<T> add(@NotNull T[][] a) {
         int aRows = a.length;
         if (aRows != _rows)
             throw new IllegalArgumentException("Row/rows count mismatch: " + _rows + " vs. " + aRows);
@@ -400,7 +410,8 @@ public abstract class TypedMatrix<T> {
         return addM;
     }
 
-    public TypedMatrix<T> addInPlace(TypedMatrix<T> m) {
+    @NotNull
+    public TypedMatrix<T> addInPlace(@NotNull TypedMatrix<T> m) {
         if (getRowSize() != m.getRowSize())
             throw new IllegalArgumentException("Row counts do not match.");
 
@@ -418,8 +429,8 @@ public abstract class TypedMatrix<T> {
         return cols1 == rows2;
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null)
             return false;
         if (!obj.getClass().isInstance(this))
@@ -472,6 +483,7 @@ public abstract class TypedMatrix<T> {
         return _inverseRowZero;
     }
 
+    @Nullable
     public TypedMatrix<T> getInverseMatrix() {
         return _inverse;
     }

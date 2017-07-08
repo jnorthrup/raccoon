@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.ReceivedCodedBatch;
 import org.msrg.raccoon.SourceCodedBatch;
 import org.msrg.raccoon.engine.ICodingEngine;
@@ -25,7 +26,9 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
     protected final int FINAL_STAGE = 3;
 
     final SourceCodedBatch _srcCodedBatch;
+    @NotNull
     final ReceivedCodedBatch _destCodedBatch1;
+    @NotNull
     final ReceivedCodedBatch _destCodedBatch2;
     final Collection<CodedSlice_CodingResult> _activeCodingResults1 =
             new HashSet<CodedSlice_CodingResult>();
@@ -45,13 +48,13 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
         _destCodedBatch2 = new ReceivedCodedBatch(_srcCodedBatch.getSize(), _srcCodedBatch.getRows());
     }
 
-    @Override
+
     public synchronized void codingFailed(CodingResult result) {
         ((ICodingListener) _engine).codingFailed(result);
         failed();
     }
 
-    @Override
+
     public synchronized void codingFinished(CodingResult result) {
         if (result == _decodeCodingResult) {
             runStagePrivately();
@@ -78,21 +81,22 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
         runStagePrivately();
     }
 
-    @Override
+
     public void codingStarted(CodingResult result) {
     }
 
-    @Override
+
     protected int getFinalStage() {
         return FINAL_STAGE;
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new Equals_CodingResult(this, _id);
     }
 
-    @Override
+
     protected void runStagePrivately() {
         if (isFailed())
             return;

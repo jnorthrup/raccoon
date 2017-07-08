@@ -6,6 +6,9 @@
 
 package org.msrg.raccoon.utils;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.BitSet;
@@ -47,6 +50,7 @@ public class Combinations {
         System.out.println(com.toString().length());
     }
 
+    @Nullable
     public BitSet getRandomCombinations() {
         int size = _allCombinations.size();
         if (size == 0)
@@ -56,11 +60,12 @@ public class Combinations {
         return _allCombinations.get(random);
     }
 
+    @NotNull
     public BitSet[] getAllCombinations() {
         return _allCombinations.toArray(new BitSet[0]);
     }
 
-    protected void generateBVRecursively(Vector<BitSet> allCombinations, BitSet bv, int bitIndex, int bitsSet, int bitsRequired, int total) {
+    protected void generateBVRecursively(@NotNull Vector<BitSet> allCombinations, @NotNull BitSet bv, int bitIndex, int bitsSet, int bitsRequired, int total) {
         if (bitIndex > total)
             return;
 
@@ -87,7 +92,7 @@ public class Combinations {
         return _total;
     }
 
-    @Override
+
     public String toString() {
         return toString("\n");
     }
@@ -105,7 +110,7 @@ public class Combinations {
         return ioWriter.toString();
     }
 
-    public void toString(Appendable ioWriter, String delim) throws IOException {
+    public void toString(@NotNull Appendable ioWriter, String delim) throws IOException {
         int i = 0;
         for (BitSet bv : _allCombinations) {
             ioWriter.append((i == 0 ? i + ":" : delim + i + ":") + bv);

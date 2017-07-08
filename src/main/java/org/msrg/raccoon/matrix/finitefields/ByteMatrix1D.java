@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.matrix.finitefields;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.finitefields.Tables;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
@@ -16,7 +17,7 @@ public class ByteMatrix1D extends ByteMatrix {
         super(ByteMatrix1D.make1dArray2d(b));
     }
 
-    public ByteMatrix1D(byte[] b) {
+    public ByteMatrix1D(@NotNull byte[] b) {
         this(ByteMatrix.wrap(b));
     }
 
@@ -24,6 +25,7 @@ public class ByteMatrix1D extends ByteMatrix {
         super(cols, 1);
     }
 
+    @NotNull
     protected static Byte[][] make1dArray2d(Byte[] bArray) {
         Byte[][] B = new Byte[1][];
         B[0] = bArray;
@@ -31,7 +33,8 @@ public class ByteMatrix1D extends ByteMatrix {
         return B;
     }
 
-    public SliceMatrix multiply1D(BulkMatrix bm) {
+    @NotNull
+    public SliceMatrix multiply1D(@NotNull BulkMatrix bm) {
         if (_cols != bm._rows)
             throw new IllegalArgumentException("Mismatch: " + _cols + " vs. " + bm._rows);
 

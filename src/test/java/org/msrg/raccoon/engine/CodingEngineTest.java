@@ -7,6 +7,8 @@
 package org.msrg.raccoon.engine;
 
 import junit.framework.TestCase;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.SourceCodedBatch;
@@ -64,6 +66,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     protected int _finished = 0, _subfinished = 0;
     protected int _failed = 0, _subfailed = 0;
     protected int _equals = 0, _unequals = 0;
+    @NotNull
     protected Collection<CodingTask> _mainTasks = new HashSet<CodingTask>();
     protected ICodingEngine _engine;
     //		CodingEngineTestType.TEST_ENCODING_TASKS;
@@ -71,7 +74,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     long _start = -1;
     long _end = -1;
 
-    @Override
+
     public void setUp() {
         System.out.println("Workload: " + ROWS * COLS + " x " + CodingEngineTest.TASK_SIZE + " x " + CodingEngineTest.THREAD_COUNT);
         switch (CodingEngineTest._testType) {
@@ -104,6 +107,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         System.out.println("Setup finished, running test: " + CodingEngineTest._testType);
     }
 
+    @NotNull
     Collection<CodingTask> generateEqualityCodingTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -116,6 +120,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
+    @NotNull
     Collection<CodingTask> generateCodingTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -128,6 +133,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
+    @NotNull
     Collection<CodingTask> generateSequenctialCodingTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -140,6 +146,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
+    @NotNull
     Collection<CodingTask> generateFullMultiplyTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -152,6 +159,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
+    @NotNull
     Collection<CodingTask> generateEncodingTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -164,6 +172,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
+    @NotNull
     Collection<CodingTask> generatePageInPageOutEqualsCodingTasks(int count) {
         throw new UnsupportedOperationException();
 //		for(int i=0 ; i<count ; i++) {
@@ -174,6 +183,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
 //		}
     }
 
+    @NotNull
     Collection<CodingTask> generateEncodingReceivedEncodingDecodingEqualTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -189,6 +199,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
+    @NotNull
     Collection<CodingTask> generateEncodingDecodingEqualTasks(int count) {
         Collection<CodingTask> mainTasks = new LinkedList<CodingTask>();
         for (int i = 0; i < count; i++) {
@@ -203,8 +214,8 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         return mainTasks;
     }
 
-    @Override
-    public void codingFailed(CodingResult result) {
+
+    public void codingFailed(@NotNull CodingResult result) {
         print(result, "FAILED");
         synchronized (_allCodingResults) {
             if (!result.isFailed())
@@ -216,8 +227,8 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         }
     }
 
-    @Override
-    public void codingFinished(CodingResult result) {
+
+    public void codingFinished(@NotNull CodingResult result) {
         print(result, "FINISHED");
         synchronized (_allCodingResults) {
 
@@ -237,7 +248,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         checkTestEnd();
     }
 
-    protected void reportTaskFinishTimes(CodingTask cTask) {
+    protected void reportTaskFinishTimes(@Nullable CodingTask cTask) {
         if (cTask == null)
             return;
 
@@ -256,7 +267,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         }
     }
 
-    protected void processFinishedResult(CodingResult result) {
+    protected void processFinishedResult(@NotNull CodingResult result) {
         switch (result._resultsType) {
             case BOOLEAN:
                 if (((Equals_CodingResult) result).getResult())
@@ -375,6 +386,7 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
         }
     }
 
+    @NotNull
     public String getStatistics() {
         if (_start < 0)
             return "NOT STARTED";
@@ -443,6 +455,7 @@ class CodingEngine_ForTest extends CodingEngineImpl {
         super(threadCount);
     }
 
+    @NotNull
     Equals_CodingResult multiplyInverseMultiplyEqual(ICodingListener listener, ByteMatrix m, BulkMatrix bm) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask = new MultiplyInverseMultiplyEqual_SequentialCodingTask(this, listener, id, m, bm);
@@ -452,6 +465,7 @@ class CodingEngine_ForTest extends CodingEngineImpl {
         return (Equals_CodingResult) cTask._result;
     }
 
+    @NotNull
     Equals_CodingResult encodingReceivedEncodingDecodingEqual(ICodingListener listener, SourceCodedBatch cb) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask =
@@ -462,6 +476,7 @@ class CodingEngine_ForTest extends CodingEngineImpl {
         return (Equals_CodingResult) cTask._result;
     }
 
+    @NotNull
     Equals_CodingResult encodingDecodingEqual(ICodingListener listener, CodedBatch cb) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask = new EncodingDecodingEqual_SequentialCodingTask(cb, this, listener, id);

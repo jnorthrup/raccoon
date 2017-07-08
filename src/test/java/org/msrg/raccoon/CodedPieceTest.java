@@ -18,7 +18,7 @@ public class CodedPieceTest extends TestCase {
     BulkMatrix _bm;
     CodedPiece[] _cp;
 
-    @Override
+
     public void setUp() {
         _bm = BulkMatrix.createBulkMatixIncrementalData(_rows, _cols);
         _cp = new CodedPiece[_rows];

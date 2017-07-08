@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.engine.thread;
 
+import org.jetbrains.annotations.Nullable;
+
 public final class ThreadId {
 
     private static int _lastId = 0;
@@ -20,8 +22,8 @@ public final class ThreadId {
         return new ThreadId(ThreadId._lastId++);
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null)
             return false;
         if (!obj.getClass().isAssignableFrom(this.getClass()))
@@ -31,12 +33,12 @@ public final class ThreadId {
         return _id == idObj._id;
     }
 
-    @Override
+
     public int hashCode() {
         return _id;
     }
 
-    @Override
+
     public String toString() {
         return "TID[" + _id + "]";
     }

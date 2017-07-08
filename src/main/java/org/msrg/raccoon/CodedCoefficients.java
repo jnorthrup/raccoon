@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
 import org.msrg.raccoon.utils.BytesUtil;
 
@@ -18,7 +20,7 @@ public class CodedCoefficients extends ByteMatrix1D {
     final static Random _rand = new Random();
     protected static int _MAX_COEFFICIENTS_PRINT = 2;
 
-    public CodedCoefficients(byte[] coefficients) {
+    public CodedCoefficients(@NotNull byte[] coefficients) {
         super(coefficients);
     }
 
@@ -30,6 +32,7 @@ public class CodedCoefficients extends ByteMatrix1D {
         this(CodedCoefficients.makeRand1dArray(length));
     }
 
+    @NotNull
     protected static byte[] makeRand1dArray(int length) {
         byte[] bTemp = new byte[length];
         synchronized (CodedCoefficients._rand) {
@@ -111,7 +114,7 @@ public class CodedCoefficients extends ByteMatrix1D {
         }
     }
 
-    public void toString(Appendable ioWriter) throws IOException {
+    public void toString(@NotNull Appendable ioWriter) throws IOException {
         ioWriter.append("{");
         for (int i = 0; i < _b[0].length && i < CodedCoefficients._MAX_COEFFICIENTS_PRINT; i++)
             ioWriter.append((i == 0 ? "" : ",") + BytesUtil.hex(_b[0][i]));
@@ -123,8 +126,8 @@ public class CodedCoefficients extends ByteMatrix1D {
         ioWriter.append("}");
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null || !obj.getClass().isInstance(this))
             return false;
 

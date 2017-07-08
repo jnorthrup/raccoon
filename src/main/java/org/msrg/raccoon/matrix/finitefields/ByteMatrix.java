@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.matrix.finitefields;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.finitefields.Tables;
 import org.msrg.raccoon.matrix.TypedMatrix;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
@@ -18,7 +19,7 @@ public class ByteMatrix extends FFByteMatrix {
         super(cols, rows);
     }
 
-    public ByteMatrix(byte[][] b) {
+    public ByteMatrix(@NotNull byte[][] b) {
         this(ByteMatrix.wrap(b));
     }
 
@@ -26,7 +27,8 @@ public class ByteMatrix extends FFByteMatrix {
         super(b);
     }
 
-    public static Byte[] wrap(byte[] b) {
+    @NotNull
+    public static Byte[] wrap(@NotNull byte[] b) {
         Byte[] B = new Byte[b.length];
         for (int j = 0; j < b.length; j++) {
             B[j] = b[j];
@@ -38,7 +40,8 @@ public class ByteMatrix extends FFByteMatrix {
         return B;
     }
 
-    public static Byte[][] wrap(byte[][] b) {
+    @NotNull
+    public static Byte[][] wrap(@NotNull byte[][] b) {
         Byte[][] B = new Byte[b.length][];
         int rowL = -1;
         for (int i = 0; i < b.length; i++) {
@@ -56,7 +59,8 @@ public class ByteMatrix extends FFByteMatrix {
         return B;
     }
 
-    public static byte[][] unwrap(Byte[][] B) {
+    @NotNull
+    public static byte[][] unwrap(@NotNull Byte[][] B) {
         byte[][] b = new byte[B.length][];
         for (int i = 0; i < B.length; i++) {
             int rowLen = B[i].length;
@@ -77,7 +81,7 @@ public class ByteMatrix extends FFByteMatrix {
         return new ByteMatrix(b);
     }
 
-    public static ByteMatrix createMatrix(int rows, String str) {
+    public static ByteMatrix createMatrix(int rows, @NotNull String str) {
         String[] bStr = str.split(",");
         int count = bStr.length;
         int cols = count / rows;
@@ -108,15 +112,18 @@ public class ByteMatrix extends FFByteMatrix {
 //		return outM;
 //	}
 
+    @NotNull
     public byte[][] getByteArray() {
         return ByteMatrix.unwrap(_b);
     }
 
+    @NotNull
     protected BulkMatrix createByteMatrix(int rows, int cols) {
         return rows == 1 ? new BulkMatrix1D(cols) : new BulkMatrix(rows, cols);
     }
 
-    public BulkMatrix multiply(BulkMatrix bm) {
+    @NotNull
+    public BulkMatrix multiply(@NotNull BulkMatrix bm) {
         if (_cols != bm._rows)
             throw new IllegalArgumentException("Mismatch: " + _cols + " vs. " + bm._rows);
 
@@ -148,18 +155,21 @@ public class ByteMatrix extends FFByteMatrix {
         return outM;
     }
 
-    public byte[][] multiply(byte[][] b) {
+    @NotNull
+    public byte[][] multiply(@NotNull byte[][] b) {
         Byte[][] wrapped = ByteMatrix.wrap(b);
         FFByteMatrix multM = (FFByteMatrix) multiply(wrapped);
         return ByteMatrix.unwrap(multM.toArray());
     }
 
-    @Override
+    @NotNull
+
     public TypedMatrix<Byte> getZeroMatrix(int rows, int cols) {
         return new ByteMatrix(rows, cols);
     }
 
-    @Override
+    @NotNull
+
     protected ByteMatrix createNewMatrix(Byte[][] b) {
         return new ByteMatrix(b);
     }

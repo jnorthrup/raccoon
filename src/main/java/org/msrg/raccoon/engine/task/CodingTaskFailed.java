@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.engine.task;
 
+import org.jetbrains.annotations.NotNull;
+
 public class CodingTaskFailed extends UnknownError {
 
     /**
@@ -19,7 +21,8 @@ public class CodingTaskFailed extends UnknownError {
         _cTask = cTask;
     }
 
-    @Override
+    @NotNull
+
     public String toString() {
         return "CodingTaskFailure:" + _cTask;
     }

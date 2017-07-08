@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.result.CodingResult;
 import org.msrg.raccoon.engine.task.result.Equals_CodingResult;
@@ -25,7 +26,8 @@ public class SlicesEqual_CodingTask extends CodingTask {
         _sm2 = sm2;
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new Equals_CodingResult(this, _id);
     }

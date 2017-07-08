@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.utils.BytesUtil;
@@ -23,6 +25,7 @@ public abstract class CodedBatch implements ICodedBatch {
     protected final int _size;
     protected final Random _rand = new Random();
     protected final CodedBatchType _codedBatchType;
+    @NotNull
     protected Object _lock = new Object();
     protected BulkMatrix _bm;
 
@@ -37,13 +40,13 @@ public abstract class CodedBatch implements ICodedBatch {
         _codedBatchType = codedBatchType;
     }
 
-    @Override
+
     public int getRequiredCodedPieceCount() {
         return _bm._rows;
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null)
             return false;
 
@@ -54,8 +57,8 @@ public abstract class CodedBatch implements ICodedBatch {
         return equalsExact(codedBatchObj);
     }
 
-    @Override
-    public boolean equalsExact(ICodedBatch codedBatchObj) {
+
+    public boolean equalsExact(@NotNull ICodedBatch codedBatchObj) {
         if (_size != codedBatchObj.getSize())
             return false;
 
@@ -69,37 +72,38 @@ public abstract class CodedBatch implements ICodedBatch {
         return _bm.equals(objContent);
     }
 
-    @Override
+
     public abstract int getAvailableCodedPieceCount();
 
-    @Override
+
     public int getSize() {
         return _size;
     }
 
-    @Override
+
     public abstract boolean isSolved();
 
+    @NotNull
     public CodedCoefficients getNewCodedCoefficients(int length) {
         return new CodedCoefficients(length);
     }
 
-    @Override
+
     public BulkMatrix getBulkMatrix() {
         synchronized (_lock) {
             return _bm;
         }
     }
 
-    @Override
+
     public int getSizeInByteBuffer() {
         return 4 + (_bm == null ? 0 : _size);
     }
 
-    @Override
+
     public abstract CodedPiece code();
 
-    @Override
+
     public String toString() {
         Writer ioWriter = new StringWriter(3 * (_size > CodedBatch._MAX_WRITE_SIZE ? CodedBatch._MAX_WRITE_SIZE : _size) + 10);
         try {
@@ -111,7 +115,7 @@ public abstract class CodedBatch implements ICodedBatch {
         return ioWriter.toString();
     }
 
-    public void toString(Writer ioWriter) throws IOException {
+    public void toString(@NotNull Writer ioWriter) throws IOException {
         ioWriter.append("{");
 
         for (int i = 0; i < _size && i < CodedBatch._MAX_WRITE_SIZE; i++)
@@ -124,12 +128,13 @@ public abstract class CodedBatch implements ICodedBatch {
         ioWriter.append("}");
     }
 
-    @Override
+
     public final CodedBatchType getCodedBatchType() {
         return _codedBatchType;
     }
 
-    public BulkMatrix createNewBulkMatrix(CodedPiece[] codedPieces) {
+    @NotNull
+    public BulkMatrix createNewBulkMatrix(@NotNull CodedPiece[] codedPieces) {
         int slicesCount = codedPieces.length;
         SliceMatrix[] psSlicesContent = new SliceMatrix[slicesCount];
         for (int i = 0; i < slicesCount; i++)
@@ -138,13 +143,15 @@ public abstract class CodedBatch implements ICodedBatch {
         return new BulkMatrix(psSlicesContent);
     }
 
+    @NotNull
     public BulkMatrix createNewBulkMatrix(SliceMatrix[] slicesContent) {
         return new BulkMatrix(slicesContent);
     }
 
-    @Override
+
     public abstract void addCodedSlice(CodedPiece cSlice);
 
+    @NotNull
     public CodedCoefficients getNewCodedCoefficients(byte[] b) {
         return new CodedCoefficients(b);
     }

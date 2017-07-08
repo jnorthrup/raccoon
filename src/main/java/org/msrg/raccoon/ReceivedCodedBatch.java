@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
@@ -22,9 +24,13 @@ public class ReceivedCodedBatch extends CodedBatch {
 
     public static final int MIN_AVAILBLE_SLICES_FOR_CODING = 2;
     private final int _rows;
+    @NotNull
     protected Random _rand = new Random();
+    @Nullable
     CodedPiece[] _solvingCodedSlices = null;
+    @NotNull
     private Vector<CodedPiece> _cbbs = new Vector<CodedPiece>();
+    @Nullable
     private ByteMatrix _inverse = null;
 
     public ReceivedCodedBatch(int batchSize, int rows) {
@@ -52,7 +58,7 @@ public class ReceivedCodedBatch extends CodedBatch {
 //		return coefs;
 //	}
 
-    @Override
+
     public final void addCodedSlice(CodedPiece cSlice) {
         synchronized (_lock) {
             if (isSolved())
@@ -62,7 +68,7 @@ public class ReceivedCodedBatch extends CodedBatch {
         }
     }
 
-    @Override
+
     public boolean canPotentiallyBeSolved() {
         synchronized (_lock) {
             return _cbbs.size() >= _rows;
@@ -96,6 +102,7 @@ public class ReceivedCodedBatch extends CodedBatch {
         return solvingCodedSlices;
     }
 
+    @Nullable
     protected CodedPiece[] canSolveHighPriority() {
         int requiredSlices = getRequiredCodedPieceCount();
 
@@ -133,21 +140,22 @@ public class ReceivedCodedBatch extends CodedBatch {
 //		}
     }
 
-    @Override
+
     public boolean isInversed() {
         return _inverse != null;
     }
 
+    @Nullable
     public ByteMatrix getInverseCoefficientsForSolvingCodedSlices() {
         return _inverse;
     }
 
-    @Override
+
     public int getRequiredCodedPieceCount() {
         return _rows;
     }
 
-    @Override
+
     public boolean decode() {
         synchronized (_lock) {
             if (_solvingCodedSlices != null)
@@ -177,7 +185,7 @@ public class ReceivedCodedBatch extends CodedBatch {
         return decodeUsing(coefficientsMatrixInverse, contentMatrix);
     }
 
-    public boolean decodeUsing(ByteMatrix coefficientsMatrixInverse, BulkMatrix contentMatrix) {
+    public boolean decodeUsing(@NotNull ByteMatrix coefficientsMatrixInverse, @NotNull BulkMatrix contentMatrix) {
         synchronized (_lock) {
             if (_bm != null)
                 return true;
@@ -188,14 +196,14 @@ public class ReceivedCodedBatch extends CodedBatch {
         return true;
     }
 
-    @Override
+
     public boolean isSolved() {
         synchronized (_lock) {
             return _bm != null;
         }
     }
 
-    @Override
+
     public int getAvailableCodedPieceCount() {
         synchronized (_lock) {
             return getAvailableCodedSliceCountPrivately();
@@ -206,18 +214,21 @@ public class ReceivedCodedBatch extends CodedBatch {
         return _cbbs.size();
     }
 
-    @Override
+    @Nullable
+
     @Deprecated
     public CodedPiece code() {
         CodedPiece[] codedSlices = getCodedSlicesForCoding();
         return CodedPiece.makeCodedSlice(codedSlices);
     }
 
+    @NotNull
     public CodedPiece[] getCodedSlicesForCoding() {
         CodedPiece[] codedSlices = getCodedSlices();
         return codedSlices;
     }
 
+    @NotNull
     public CodedPiece[] getCodedSlices() {
         synchronized (_lock) {
             List<Integer> indexSet = getRandomIndex(_cbbs.size(), _cbbs.size() < _rows ? _cbbs.size() : _rows);
@@ -231,6 +242,7 @@ public class ReceivedCodedBatch extends CodedBatch {
         }
     }
 
+    @NotNull
     protected List<Integer> getRandomIndex(int maxIndex, int maxReturnSize) {
         if (maxReturnSize > maxIndex)
             throw new IllegalArgumentException("Invalid arguments: " + maxReturnSize + " vs. " + maxIndex);
@@ -252,6 +264,7 @@ public class ReceivedCodedBatch extends CodedBatch {
         return ret;
     }
 
+    @Nullable
     public BulkMatrix getCodedSlicesAsBulkMatrix2() {
         CodedPiece[] codedSlices = getCodedSlicesForCoding();
         if (codedSlices == null)
@@ -264,7 +277,7 @@ public class ReceivedCodedBatch extends CodedBatch {
         return createNewBulkMatrix(rowMatrices);
     }
 
-    public void toString(Writer ioWriter) throws IOException {
+    public void toString(@NotNull Writer ioWriter) throws IOException {
         synchronized (_lock) {
             if (_solvingCodedSlices != null) {
                 if (_bm == null) {
@@ -290,7 +303,7 @@ public class ReceivedCodedBatch extends CodedBatch {
             ioWriter.append((i++ == 0 ? "" : ",") + cs);
     }
 
-    public void setContent(BulkMatrix content) {
+    public void setContent(@NotNull BulkMatrix content) {
         synchronized (_lock) {
             if (_bm != null)
                 return;
@@ -302,12 +315,12 @@ public class ReceivedCodedBatch extends CodedBatch {
         }
     }
 
-    @Override
+
     public int getCols() {
         return getSize() / getRows();
     }
 
-    @Override
+
     public int getRows() {
         return _rows;
     }

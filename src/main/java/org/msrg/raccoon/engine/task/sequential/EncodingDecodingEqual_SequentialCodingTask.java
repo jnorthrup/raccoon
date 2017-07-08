@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.ReceivedCodedBatch;
@@ -24,6 +25,7 @@ import java.util.Set;
 public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCodingTask {
 
     public final CodedBatch _codedBatch;
+    @NotNull
     public final ReceivedCodedBatch _receiverCodedBatch;
     protected final int FINAL_STAGE = 3;
     protected CodedSlice_CodingResult[] _encodingResults;
@@ -42,13 +44,13 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
         setCurrentStage(-1);
     }
 
-    @Override
+
     public synchronized void codingFailed(CodingResult result) {
         ((ICodingListener) _engine).codingFailed(result);
         failed();
     }
 
-    @Override
+
     public synchronized void codingFinished(CodingResult result) {
         if (isFailed())
             return;
@@ -68,16 +70,16 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
             finished();
     }
 
-    @Override
+
     public synchronized void codingStarted(CodingResult result) {
     }
 
-    @Override
+
     protected int getFinalStage() {
         return FINAL_STAGE;
     }
 
-    @Override
+
     protected void runStagePrivately() {
         if (isFailed())
             return;
@@ -157,7 +159,8 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
         }
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new Equals_CodingResult(this, _id);
     }

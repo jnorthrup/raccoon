@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskFailed;
 import org.msrg.raccoon.engine.task.CodingTaskStatus;
@@ -50,6 +51,7 @@ public abstract class CodingEngine implements ICodingEngine {
     protected final Collection<CodingThread> _threads = new HashSet<CodingThread>();
     protected final Set<CodingThread> _freeThreads = new HashSet<CodingThread>();
     protected final Set<CodingThread> _busyThreads = new HashSet<CodingThread>();
+    @NotNull
     private final MyThread thread;
     protected int _threadCount;
 
@@ -57,11 +59,13 @@ public abstract class CodingEngine implements ICodingEngine {
 //		CodingEngineEvent_FreeThreadEvent freeThreadEvent = new CodingEngineEvent_FreeThreadEvent(fThread);
 //		addCodingTaskEngineEvent(freeThreadEvent);
 //	}
+    @NotNull
     protected Map<CodingThread, Long> _threadCheckins = new HashMap<CodingThread, Long>();
     /**
      * List of default coding listeners. These listeners are notified for all
      * coding task status updates.
      */
+    @NotNull
     private Collection<ICodingListener> _listeners = new LinkedList<ICodingListener>();
 
     protected CodingEngine(int threadCount) {
@@ -71,7 +75,7 @@ public abstract class CodingEngine implements ICodingEngine {
         System.out.println("CodingEngine Thread count: " + _threadCount);
     }
 
-    protected final void addCodingTaskEngineEvent(CodingEngineEvent event) {
+    protected final void addCodingTaskEngineEvent(@NotNull CodingEngineEvent event) {
         synchronized (_lock) {
             switch (event._eventType) {
                 case ENG_ET_FILE_TASK:
@@ -124,7 +128,7 @@ public abstract class CodingEngine implements ICodingEngine {
         addCodingTaskEngineEvent(freeThreadEvent);
     }
 
-    @Override
+
     public void startComponent() {
         synchronized (_lock) {
             for (CodingThread cThread : _threads)
@@ -139,7 +143,7 @@ public abstract class CodingEngine implements ICodingEngine {
             System.out.println("EVENT_PROCESSING:" + event);
     }
 
-    @Override
+
     public void init() {
         synchronized (_lock) {
             for (int i = 0; i < _threadCount; i++) {
@@ -160,14 +164,14 @@ public abstract class CodingEngine implements ICodingEngine {
         addCodingTaskEngineEvent(event);
     }
 
-    public void codingTaskFinished(CodingThread codingThread, CodingTask codingTask) {
+    public void codingTaskFinished(CodingThread codingThread, @NotNull CodingTask codingTask) {
         if (!codingTask.isFinished())
             throw new IllegalArgumentException("" + codingTask);
 
         notifyListener(codingTask);
     }
 
-    public void codingTaskFailed(CodingThread codingThread, CodingTask codingTask) {
+    public void codingTaskFailed(CodingThread codingThread, @NotNull CodingTask codingTask) {
         if (codingTask.isFinished())
             throw new IllegalArgumentException(codingTask.toString());
 
@@ -202,7 +206,7 @@ public abstract class CodingEngine implements ICodingEngine {
         thread.addNewTask(cTask1);
     }
 
-    protected void notifyListener(CodingTask cTask) {
+    protected void notifyListener(@NotNull CodingTask cTask) {
         ICodingListener listener = cTask._listener;
         CodingResult result = cTask._result;
         if (cTask.isFinished()) {
@@ -221,21 +225,21 @@ public abstract class CodingEngine implements ICodingEngine {
             throw new IllegalArgumentException("" + cTask);
     }
 
-    @Override
+
     public int getFreeThreadsCount() {
         synchronized (_lock) {
             return _freeThreads.size();
         }
     }
 
-    @Override
+
     public int getBusyThreadsCount() {
         synchronized (_lock) {
             return _busyThreads.size();
         }
     }
 
-    @Override
+
     public int getTotalThreadsCount() {
         synchronized (_lock) {
             return _threads.size();
@@ -258,6 +262,7 @@ public abstract class CodingEngine implements ICodingEngine {
         }
     }
 
+    @NotNull
     protected List<CodingThread> getLateThreads() {
         List<CodingThread> lateThreadList = new LinkedList<CodingThread>();
         synchronized (_lock) {
@@ -290,21 +295,22 @@ public abstract class CodingEngine implements ICodingEngine {
         }
     }
 
+    @NotNull
     public Thread getThread() {
         return thread;
     }
 
     private class MyThread extends Thread {
-        public MyThread(String var1) {
+        public MyThread(@NotNull String var1) {
             super(var1);
         }
 
-        /*@Override
+        /*
         public void start() {
             throw new UnsupportedOperationException("To ignite the engine, use startComponent() instead.");
         }
 */
-        @Override
+
         public final void run() {
             CodingEngineEvent event = null;
             boolean eventFrom_highPriorityCodingTasksEventQueue = false;
@@ -367,7 +373,8 @@ public abstract class CodingEngine implements ICodingEngine {
             }
         }
 
-        @Override
+        @NotNull
+
         public String toString() {
             return "CodingEngine:[" + _freeThreads.size() + "/" + _busyThreads.size() + "]";
         }

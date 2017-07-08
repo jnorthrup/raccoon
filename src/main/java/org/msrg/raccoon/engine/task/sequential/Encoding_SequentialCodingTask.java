@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.CodedBatchType;
 import org.msrg.raccoon.engine.ICodingEngine;
@@ -28,7 +29,7 @@ public abstract class Encoding_SequentialCodingTask extends SequentialCodingTask
     }
 
     public static Encoding_SequentialCodingTask getEncoding_SequentialCodingTask(
-            ICodingEngine engine, ICodingListener listener, CodingId id, CodedBatch codeBatch) {
+            ICodingEngine engine, ICodingListener listener, CodingId id, @NotNull CodedBatch codeBatch) {
         CodedBatchType codedBatchType = codeBatch.getCodedBatchType();
         switch (codedBatchType) {
             case RCV_CODED_BATCH:
@@ -42,23 +43,24 @@ public abstract class Encoding_SequentialCodingTask extends SequentialCodingTask
         }
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new CodedSlice_CodingResult(this, _id);
     }
 
-    @Override
+
     protected abstract void runStagePrivately();
 
     public abstract CodedBatchType getSupportedCodedBatchType();
 
-    @Override
+
     public final synchronized void codingFailed(CodingResult result) {
         ((ICodingListener) _engine).codingFailed(result);
         failed();
     }
 
-    @Override
+
     public final synchronized void codingFinished(CodingResult result) {
         ((ICodingListener) _engine).codingFinished(result);
 
@@ -68,7 +70,7 @@ public abstract class Encoding_SequentialCodingTask extends SequentialCodingTask
             finished();
     }
 
-    @Override
+
     public final synchronized void codingStarted(CodingResult result) {
     }
 }

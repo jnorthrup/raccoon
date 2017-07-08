@@ -13,7 +13,7 @@ public class FFByteMatrixTest extends TestCase {
 
     int matrixSize = 100;
 
-    @Override
+
     public void setUp() {
         FFByteMatrix._MAX_ROWS_PRINT = 25;
         FFByteMatrix._MAX_COLS_PRINT = 25;

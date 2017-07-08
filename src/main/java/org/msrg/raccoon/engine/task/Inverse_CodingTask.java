@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
 import org.msrg.raccoon.engine.task.result.CodingResult;
@@ -22,7 +23,8 @@ public class Inverse_CodingTask extends CodingTask {
         _m = m;
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new ByteMatrix_CodingResult(this, _id);
     }

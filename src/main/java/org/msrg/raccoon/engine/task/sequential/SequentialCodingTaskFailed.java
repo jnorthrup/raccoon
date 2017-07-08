@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskFailed;
 
@@ -27,7 +28,8 @@ public class SequentialCodingTaskFailed extends CodingTaskFailed {
         _seqCodingTask = seqCodingTask;
     }
 
-    @Override
+    @NotNull
+
     public String toString() {
         return "SeqCodingTaskFailure:" + _seqCodingTask + "@" + _cTask;
     }

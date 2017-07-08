@@ -18,7 +18,7 @@ public abstract class CodingEngineEvent {
         _eventType = eventType;
     }
 
-    @Override
+
     public String toString() {
         return _eventType.toString();
     }

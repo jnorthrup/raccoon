@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.ICodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
@@ -38,7 +39,7 @@ public class MultiplyInverseMultiplyEqual_SequentialCodingTask extends Sequentia
         _bm = bm;
     }
 
-    @Override
+
     public synchronized void codingFinished(CodingResult result) {
         ((ICodingListener) _engine).codingFinished(result);
 
@@ -48,17 +49,17 @@ public class MultiplyInverseMultiplyEqual_SequentialCodingTask extends Sequentia
             finished();
     }
 
-    @Override
+
     public synchronized void codingFailed(CodingResult result) {
         ((ICodingListener) _engine).codingFailed(result);
         failed();
     }
 
-    @Override
+
     public synchronized void codingStarted(CodingResult result) {
     }
 
-    @Override
+
     protected void runStagePrivately() {
         switch (_currentStage) {
             case -1:
@@ -102,12 +103,13 @@ public class MultiplyInverseMultiplyEqual_SequentialCodingTask extends Sequentia
         }
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new Equals_CodingResult(this, _id);
     }
 
-    @Override
+
     protected int getFinalStage() {
         return FINAL_STAGE;
     }

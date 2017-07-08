@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.result.CodingResult;
 import org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult;
@@ -26,7 +27,7 @@ public class Multiply_CodingTask extends CodingTask {
         assert !(_m == null || !_m.verifyNotNull() || _bm == null) : "npe";
     }
 
-//	@Override
+//
 //	public synchronized void finished() {
 //		throw new UnsupportedOperationException("Do not use this directly. Use setInverse(.) instead.");
 //	}
@@ -37,7 +38,8 @@ public class Multiply_CodingTask extends CodingTask {
 //		super.finished();
 //	}
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new SliceMatrix_CodingResult(this, _id);
     }

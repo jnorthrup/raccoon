@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.ICodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
@@ -36,14 +37,14 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
         _bm2 = bm2;
     }
 
-    @Override
+
     public synchronized void codingFailed(CodingResult result) {
         ((ICodingListener) _engine).codingFailed(result);
         failed();
     }
 
-    @Override
-    public synchronized void codingFinished(CodingResult result) {
+
+    public synchronized void codingFinished(@NotNull CodingResult result) {
         ((ICodingListener) _engine).codingFinished(result);
         if (!_slicesEqualityResultsSet.remove(result))
             throw new IllegalStateException(result.toString());
@@ -54,11 +55,11 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
             finished();
     }
 
-    @Override
+
     public synchronized void codingStarted(CodingResult result) {
     }
 
-    @Override
+
     protected void runStagePrivately() {
         switch (_currentStage) {
             case -1:
@@ -101,12 +102,13 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
         }
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new Equals_CodingResult(this, _id);
     }
 
-    @Override
+
     protected int getFinalStage() {
         return FINAL_STAGE;
     }

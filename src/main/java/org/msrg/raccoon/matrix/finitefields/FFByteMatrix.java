@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.matrix.finitefields;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.finitefields.Tables;
 import org.msrg.raccoon.matrix.TypedMatrix;
 
@@ -27,6 +29,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         super(b);
     }
 
+    @NotNull
     protected static Byte[][] makeZero2d(int rows, int cols) {
         Byte[][] bTemp = new Byte[rows][];
         for (int i = 0; i < rows; i++) {
@@ -50,7 +53,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return new FFByteMatrix(b);
     }
 
-    public static FFByteMatrix createMatrix(int rows, String str) {
+    public static FFByteMatrix createMatrix(int rows, @NotNull String str) {
         String[] bStr = str.split(",");
         int count = bStr.length;
         int cols = count / rows;
@@ -64,6 +67,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return new FFByteMatrix(b);
     }
 
+    @NotNull
     public static Byte[] random(int size) {
         Byte[] b = new Byte[size];
         byte[] bytes = new byte[1];
@@ -75,12 +79,14 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return b;
     }
 
-    @Override
+    @NotNull
+
     public Byte add(Byte a, Byte b) {
         return new Byte((byte) (a ^ b));
     }
 
-    @Override
+    @Nullable
+
     public FFByteMatrix decloneExtended() {
         int halfCols = _cols / 2;
         Byte[][] b = getEmptyArray(_rows, halfCols);
@@ -101,7 +107,8 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return createNewMatrix(b);
     }
 
-    @Override
+    @NotNull
+
     public FFByteMatrix cloneExtended() {
         Byte[][] b = getEmptyArray(_rows, _cols * 2);
         for (int i = 0; i < getRowSize(); i++) {
@@ -115,11 +122,13 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return createNewMatrix(b);
     }
 
+    @NotNull
     protected FFByteMatrix createNewMatrix(Byte[][] b) {
         return new FFByteMatrix(b);
     }
 
-    @Override
+    @NotNull
+
     public FFByteMatrix clone() {
         Byte[][] b = new Byte[_rows][_cols];
         for (int i = 0; i < getRowSize(); i++)
@@ -129,43 +138,49 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return new FFByteMatrix(b);
     }
 
-    @Override
+    @NotNull
+
     public Byte getOne() {
         return 1;
     }
 
-    @Override
+    @NotNull
+
     public Byte getZero() {
         return 0;
     }
 
-    @Override
+    @NotNull
+
     public TypedMatrix<Byte> getZeroMatrix(int rows, int cols) {
         return new FFByteMatrix(rows, cols);
     }
 
-    @Override
+    @NotNull
+
     public TypedMatrix<Byte> getNullMatrix(int rows, int cols) {
         throw new UnsupportedOperationException();
     }
 
-    @Override
+    @NotNull
+
     public Byte[][] getEmptyArray(int rows, int cols) {
         return new Byte[rows][cols];
     }
 
-    @Override
+
     public Byte multiply(Byte a, Byte b) {
         return FFByteMatrix._tables.FFMulFast(a, b);
     }
 
-    @Override
+    @NotNull
+
     public Byte clone(Byte a) {
         return new Byte(a);
     }
 
-    @Override
-    public int compareToAbs(Byte A, Byte B) {
+
+    public int compareToAbs(@NotNull Byte A, @NotNull Byte B) {
         byte a = A.byteValue();
         byte b = B.byteValue();
 
@@ -181,7 +196,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         return 0;
     }
 
-//	@Override
+//
 //	public int compareToAbs(Byte A, Byte B) {
 //		byte a = A.byteValue();
 //		byte b = B.byteValue();
@@ -197,44 +212,48 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
 //		return 0;
 //	}
 
-    @Override
+
     public Byte divide(Byte a, Byte b) {
         return multiply(a, inverse(b));
     }
 
-    @Override
+
     public Byte inverse(Byte a) {
         return FFByteMatrix._tables.FFInv(a);
     }
 
-    @Override
+
     public boolean isOne(Byte a) {
         return a == 1;
     }
 
-    @Override
+
     public boolean isZero(Byte a) {
         return a == 0;
     }
 
-    @Override
-    public Byte multiplyAndAddInPlace(Byte total, Byte a, Byte b) {
+    @NotNull
+
+    public Byte multiplyAndAddInPlace(@NotNull Byte total, Byte a, Byte b) {
         Byte total1 = (byte) (total.byteValue() ^ multiply(a, b));
         return total1;
     }
 
-    @Override
+    @NotNull
+
     public Byte subtract(Byte a, Byte b) {
         return (byte) (a ^ b);
     }
 
-    @Override
+    @NotNull
+
     protected String toString(Byte a) {
         return "" + FFByteMatrix.DIG[(a & 0xff) >> 4] + FFByteMatrix.DIG[a & 0x0f];
     }
 
-    //	@Override
-    protected final TypedMatrix<Byte> multiply2(Byte[][] a) {
+    //
+    @NotNull
+    protected final TypedMatrix<Byte> multiply2(@NotNull Byte[][] a) {
         int aRows = a.length;
         if (aRows != _cols)
             throw new IllegalArgumentException("Row/column count mismatch: " + _rows + " vs. " + a.length);

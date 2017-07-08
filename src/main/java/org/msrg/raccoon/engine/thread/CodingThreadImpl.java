@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.thread;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.task.*;
 import org.msrg.raccoon.engine.task.result.ByteMatrix_CodingResult;
@@ -23,8 +24,8 @@ public class CodingThreadImpl extends CodingThread {
         super(engine);
     }
 
-    @Override
-    protected void runTask(CodingTask codingTask) {
+
+    protected void runTask(@NotNull CodingTask codingTask) {
         super.runTask(codingTask);
 
         CodingTaskType taskType = codingTask._taskType;

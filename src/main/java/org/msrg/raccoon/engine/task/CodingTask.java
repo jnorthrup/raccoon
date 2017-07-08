@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task;
 
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.result.CodingResult;
 
@@ -51,7 +52,7 @@ public abstract class CodingTask {
         return _status == CodingTaskStatus.FAILED;
     }
 
-    protected void changeStatus(CodingTaskStatus prevAllowedStatus, CodingTaskStatus newStatus) {
+    protected void changeStatus(@Nullable CodingTaskStatus prevAllowedStatus, CodingTaskStatus newStatus) {
         synchronized (_id) {
             if (prevAllowedStatus != null && prevAllowedStatus != _status)
                 throw new IllegalStateException("Expected: " + prevAllowedStatus + ", found: " + _status + ", newstate: " + newStatus);
@@ -78,12 +79,12 @@ public abstract class CodingTask {
         return _taskType._isSequencial;
     }
 
-    @Override
+
     public final boolean equals(Object obj) {
         return super.equals(obj);
     }
 
-    @Override
+
     public final int hashCode() {
         return super.hashCode();
     }

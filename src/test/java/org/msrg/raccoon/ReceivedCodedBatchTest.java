@@ -20,7 +20,7 @@ public class ReceivedCodedBatchTest extends TestCase {
     BulkMatrix _bm;
     ReceivedCodedBatch _rcb;
 
-    @Override
+
     public void setUp() {
         _bm = BulkMatrix.createBulkMatixIncrementalData(_rows, _cols);
         _rcb = new ReceivedCodedBatch(_bm.getSize(), _bm._rows);

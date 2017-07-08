@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.thread;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.task.CodingTask;
 
@@ -18,9 +19,11 @@ public abstract class CodingThread extends Thread {
 
     public final ThreadType _threadType;
     public final CodingEngine _engine;
+    @NotNull
     public final ThreadId _id;
     protected final List<CodingTask> _taskList = new LinkedList<CodingTask>();
 
+    @NotNull
     protected Object _LOCK = _taskList;
     protected boolean _continue = true;
 
@@ -46,7 +49,7 @@ public abstract class CodingThread extends Thread {
         }
     }
 
-    protected final void runMe(CodingTask codingTask) {
+    protected final void runMe(@NotNull CodingTask codingTask) {
         try {
             codingTask.started();
             _engine.codingTaskStarted(this, codingTask);
@@ -74,7 +77,7 @@ public abstract class CodingThread extends Thread {
     public void retire() {
     }
 
-    @Override
+
     public final void run() {
         init();
 
@@ -107,7 +110,8 @@ public abstract class CodingThread extends Thread {
         retire();
     }
 
-    @Override
+    @NotNull
+
     public String toString() {
         return _id.toString();
     }

@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon.matrix;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Random;
 
 enum DATATYPES {
@@ -17,7 +19,7 @@ public class DoubleMatrix extends TypedMatrix<Float> {
 
     static final Random _RANDOM = new Random();
 
-    public DoubleMatrix(Float[][] b) {
+    public DoubleMatrix(@NotNull Float[][] b) {
         super(b);
     }
 
@@ -57,7 +59,7 @@ public class DoubleMatrix extends TypedMatrix<Float> {
         return DoubleMatrix.createRandomMatrix(DATATYPES.INTEGER, rows, cols);
     }
 
-    static DoubleMatrix createRandomMatrix(DATATYPES dt, int rows, int cols) {
+    static DoubleMatrix createRandomMatrix(@NotNull DATATYPES dt, int rows, int cols) {
         Float[][] b = new Float[rows][];
         for (int i = 0; i < b.length; i++) {
             Float[] randB = new Float[cols];
@@ -80,7 +82,7 @@ public class DoubleMatrix extends TypedMatrix<Float> {
         return new DoubleMatrix(b);
     }
 
-    public static synchronized DoubleMatrix createMatrix(int rows, String str) {
+    public static synchronized DoubleMatrix createMatrix(int rows, @NotNull String str) {
         String[] bStr = str.split(",");
         int count = bStr.length;
         int cols = count / rows;
@@ -151,21 +153,25 @@ public class DoubleMatrix extends TypedMatrix<Float> {
         System.out.println(mTimesMInv.isIdentity());
     }
 
+    @NotNull
     public DoubleMatrix getZeroMatrix(int rows, int cols) {
         return new DoubleMatrix(rows, cols);
     }
 
-    @Override
+    @NotNull
+
     public Float getZero() {
         return DoubleMatrix.GetZero();
     }
 
-    @Override
+    @NotNull
+
     public Float getOne() {
         return DoubleMatrix.GetOne();
     }
 
-    @Override
+    @NotNull
+
     public TypedMatrix<Float> decloneExtended() {
         int halfCols = _cols / 2;
         Float[][] b = new Float[_rows][halfCols];
@@ -176,7 +182,8 @@ public class DoubleMatrix extends TypedMatrix<Float> {
         return new DoubleMatrix(b);
     }
 
-    @Override
+    @NotNull
+
     public TypedMatrix<Float> cloneExtended() {
         Float[][] b = new Float[_rows][_cols * 2];
         for (int i = 0; i < getRowSize(); i++) {
@@ -191,7 +198,8 @@ public class DoubleMatrix extends TypedMatrix<Float> {
         return new DoubleMatrix(b);
     }
 
-    @Override
+    @NotNull
+
     public DoubleMatrix clone() {
         Float[][] b = new Float[_rows][_cols];
         for (int i = 0; i < getRowSize(); i++)
@@ -201,32 +209,37 @@ public class DoubleMatrix extends TypedMatrix<Float> {
         return new DoubleMatrix(b);
     }
 
-    @Override
-    public Float add(Float a, Float b) {
+    @NotNull
+
+    public Float add(@NotNull Float a, @NotNull Float b) {
         return a.floatValue() + b.byteValue();
     }
 
-    @Override
-    public Float multiply(Float a, Float b) {
+    @NotNull
+
+    public Float multiply(@NotNull Float a, @NotNull Float b) {
         return a.floatValue() * b.floatValue();
     }
 
-    @Override
+    @NotNull
+
     protected Float[][] getEmptyArray(int rows, int cols) {
         return new Float[rows][cols];
     }
 
-    @Override
+    @NotNull
+
     protected TypedMatrix<Float> getNullMatrix(int rows, int cols) {
         throw new UnsupportedOperationException();
     }
 
-    @Override
+    @NotNull
+
     public Float clone(Float a) {
         return new Float(a);
     }
 
-    @Override
+
     public int compareToAbs(Float a, Float b) {
         if (a > b)
             return 1;
@@ -236,39 +249,42 @@ public class DoubleMatrix extends TypedMatrix<Float> {
             return 0;
     }
 
-    @Override
+    @NotNull
+
     public Float divide(Float a, Float b) {
         return a / b;
     }
 
-    @Override
+    @NotNull
+
     public Float inverse(Float a) {
         return 1 / a;
     }
 
-    @Override
+
     public boolean isOne(Float a) {
         return a == 1;
     }
 
-    @Override
+
     public boolean isZero(Float a) {
         return a == 0;
     }
 
-    @Override
+
     public Float multiplyAndAddInPlace(Float total, Float a, Float b) {
         Float total1 = total;
         total1 += b;
         return total1;
     }
 
-    @Override
+    @NotNull
+
     public Float subtract(Float a, Float b) {
         return a - b;
     }
 
-    @Override
+
     protected String toString(Float a) {
         return String.format("%1.5f", a);
     }

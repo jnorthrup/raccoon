@@ -6,6 +6,9 @@
 
 package org.msrg.raccoon.matrix.bulk;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.io.StringWriter;
@@ -38,7 +41,7 @@ public class BulkMatrix implements Serializable {
         _size = _cols * _rows;
     }
 
-    public BulkMatrix(byte[][] b) {
+    public BulkMatrix(@NotNull byte[][] b) {
         _rows = b.length;
         _slices = new SliceMatrix[_rows];
         _cols = _rows == 0 ? 0 : b[0].length;
@@ -61,6 +64,7 @@ public class BulkMatrix implements Serializable {
             _slices[i] = createOneEmtpySlice(_cols);
     }
 
+    @NotNull
     public static BulkMatrix createBulkMatixRandomData(int rows, int cols) {
         BulkMatrix bm = new BulkMatrix(rows, cols);
         byte[] b = new byte[cols];
@@ -74,6 +78,7 @@ public class BulkMatrix implements Serializable {
         return bm;
     }
 
+    @NotNull
     public static BulkMatrix createBulkMatixIncrementalData(int rows, int cols) {
         BulkMatrix bm = new BulkMatrix(rows, cols);
         int val = 0;
@@ -88,10 +93,12 @@ public class BulkMatrix implements Serializable {
         return bm;
     }
 
+    @NotNull
     public BulkMatrix createEmptyMatrix(int rows, int cols) {
         return new BulkMatrix(rows, cols);
     }
 
+    @NotNull
     public SliceMatrix createOneEmtpySlice(int cols) {
         return new SliceMatrix(cols);
     }
@@ -104,8 +111,8 @@ public class BulkMatrix implements Serializable {
         return _slices[i];
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null)
             return false;
         if (!getClass().isAssignableFrom(obj.getClass()))
@@ -141,7 +148,7 @@ public class BulkMatrix implements Serializable {
         _slices[i] = sm;
     }
 
-    @Override
+
     public String toString() {
         return toString(BulkMatrix._MAX_ROWS_PRINT, BulkMatrix._MAX_SLICES_PRINT);
     }
@@ -201,6 +208,7 @@ public class BulkMatrix implements Serializable {
 //		return (offset - inputOffset);
 //	}
 
+    @NotNull
     public byte[][] getContent() {
         byte[][] content = new byte[_rows][];
         for (int i = 0; i < _slices.length; i++)

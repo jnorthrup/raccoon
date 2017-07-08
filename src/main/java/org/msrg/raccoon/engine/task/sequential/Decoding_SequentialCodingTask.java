@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine.task.sequential;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.ReceivedCodedBatch;
 import org.msrg.raccoon.engine.ICodingEngine;
@@ -32,18 +33,19 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
         _receivedCodeBatch = receivedCodeBatch;
     }
 
-    @Override
+    @NotNull
+
     protected CodingResult getEmptyCodingResults() {
         return new Equals_CodingResult(this, _id);
     }
 
-    @Override
+
     public synchronized void codingFailed(CodingResult result) {
         ((ICodingListener) _engine).codingFailed(result);
         failed();
     }
 
-    @Override
+
     public synchronized void codingFinished(CodingResult result) {
         if (isFinished())
             return;
@@ -55,11 +57,11 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
             finished();
     }
 
-    @Override
+
     public synchronized void codingStarted(CodingResult result) {
     }
 
-    @Override
+
     protected void runStagePrivately() {
         if (isFinished())
             return;
@@ -110,7 +112,7 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
         }
     }
 
-    @Override
+
     protected int getFinalStage() {
         return FINAL_STAGE;
     }

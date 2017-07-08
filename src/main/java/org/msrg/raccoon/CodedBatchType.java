@@ -17,7 +17,7 @@ public enum CodedBatchType {
         _str = str;
     }
 
-    @Override
+
     public String toString() {
         return _str;
     }

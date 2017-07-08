@@ -6,6 +6,7 @@
 
 package org.msrg.raccoon.engine;
 
+import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.ReceivedCodedBatch;
 import org.msrg.raccoon.engine.task.*;
@@ -23,13 +24,13 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         super(threadCount);
     }
 
-    @Override
+
     public void codingTaskStarted(CodingThread codingThread, CodingTask codingTask) {
         if (CodingEngine.DEBUG)
             System.out.println("TaskStarted:" + codingTask);
     }
 
-    @Override
+
     public void codingThreadFailed(CodingThread codingThread) {
         synchronized (_lock) {
             _busyThreads.remove(codingThread);
@@ -38,7 +39,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         }
     }
 
-    @Override
+    @NotNull
+
     public Equals_CodingResult checkEquality(ICodingListener listener, BulkMatrix bm1, BulkMatrix bm2) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask = new BulkMatrixEqual_CodingTask(this, listener, id, bm1, bm2);
@@ -47,7 +49,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (Equals_CodingResult) cTask._result;
     }
 
-    @Override
+    @NotNull
+
     public Equals_CodingResult checkEquality(ICodingListener listener, SliceMatrix sm1, SliceMatrix sm2) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask = new SlicesEqual_CodingTask(listener, id, sm1, sm2);
@@ -56,7 +59,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (Equals_CodingResult) cTask._result;
     }
 
-    @Override
+    @NotNull
+
     public ByteMatrix_CodingResult inverse(ICodingListener listener, ByteMatrix m) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask = new Inverse_CodingTask(listener, id, m);
@@ -66,7 +70,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (ByteMatrix_CodingResult) cTask._result;
     }
 
-    @Override
+    @NotNull
+
     public BulkMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix m, BulkMatrix bm) {
         CodingId id = CodingId.getNewCodingId();
         MultiplyBulkMatrix_SequentialCodingTask cTask = new MultiplyBulkMatrix_SequentialCodingTask(this, listener, id, m, bm);
@@ -76,7 +81,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (BulkMatrix_CodingResult) cTask._result;
     }
 
-    @Override
+    @NotNull
+
     public SliceMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix1D m, BulkMatrix bm) {
         CodingId id = CodingId.getNewCodingId();
         CodingTask cTask = new Multiply_CodingTask(listener, id, m, bm);
@@ -86,19 +92,19 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (SliceMatrix_CodingResult) cTask._result;
     }
 
-    @Override
+
     public void codingStarted(CodingResult result) {
         if (CodingEngine.DEBUG)
             System.out.println("TaskStarted:" + result);
     }
 
-    @Override
+
     public void codingFailed(CodingResult result) {
         if (CodingEngine.DEBUG)
             System.out.println("TaskFailed:" + result);
     }
 
-    @Override
+
     public void codingFinished(CodingResult result) {
         if (CodingEngine.DEBUG)
             System.out.println("TaskFinished:" + result);
@@ -126,8 +132,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         }
     }
 
-    @Override
-    protected void processCodingEvent(CodingEngineEvent event) {
+
+    protected void processCodingEvent(@NotNull CodingEngineEvent event) {
         super.processCodingEvent(event);
 
         switch (event._eventType) {
@@ -203,7 +209,8 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         }
     }
 
-    @Override
+    @NotNull
+
     public Equals_CodingResult decode(ICodingListener listener, ReceivedCodedBatch codeBatch) {
         CodingId id = CodingId.getNewCodingId();
 
@@ -214,8 +221,9 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (Equals_CodingResult) cTask._result;
     }
 
-    @Override
-    public CodedSlice_CodingResult encode(ICodingListener listener, CodedBatch codeBatch) {
+    @NotNull
+
+    public CodedSlice_CodingResult encode(ICodingListener listener, @NotNull CodedBatch codeBatch) {
         CodingId id = CodingId.getNewCodingId();
 
         CodingTask cTask =
@@ -226,7 +234,7 @@ public class CodingEngineImpl extends CodingEngine implements ICodingListener {
         return (CodedSlice_CodingResult) cTask._result;
     }
 
-    @Override
+
     public void codingPreliminaryStageCompleted(CodingResult result) {
     }
 }

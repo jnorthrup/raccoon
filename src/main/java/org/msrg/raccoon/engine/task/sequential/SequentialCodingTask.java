@@ -46,27 +46,27 @@ public abstract class SequentialCodingTask extends CodingTask implements ICoding
 
     protected abstract void runStagePrivately();
 
-    @Override
+
     public abstract void codingFailed(CodingResult result);
 
-    @Override
+
     public abstract void codingFinished(CodingResult result);
 
-    @Override
+
     public abstract void codingStarted(CodingResult result);
 
     protected final boolean reachedFinalStage() {
         return _currentStage >= getFinalStage();
     }
 
-    @Override
+
     public synchronized final void finished() {
         super.finished();
 
         ((CodingEngine) _engine).sequentialCodingTaskFinished(this);
     }
 
-    @Override
+
     public final void failed() {
         super.failed();
 
@@ -87,7 +87,7 @@ public abstract class SequentialCodingTask extends CodingTask implements ICoding
         _stageTimes[_currentStage + 1] = System.nanoTime();
     }
 
-    @Override
+
     public void codingPreliminaryStageCompleted(CodingResult result) {
         throw new UnsupportedOperationException(toString() + " vs. " + result);
     }

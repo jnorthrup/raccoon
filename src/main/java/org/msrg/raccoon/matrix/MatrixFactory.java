@@ -6,14 +6,16 @@
 
 package org.msrg.raccoon.matrix;
 
+import org.jetbrains.annotations.NotNull;
+
 public enum MatrixFactory {
     ;
 
-    public static TypedMatrix<?> multiply(TypedMatrix m1, TypedMatrix m2) {
+    public static TypedMatrix<?> multiply(@NotNull TypedMatrix m1, @NotNull TypedMatrix m2) {
         return m1.multiply(m2._b);
     }
 
-    public static TypedMatrix<?> add(TypedMatrix m1, TypedMatrix m2) {
+    public static TypedMatrix<?> add(@NotNull TypedMatrix m1, @NotNull TypedMatrix m2) {
         TypedMatrix<?> addM = m1.add(m2._b);
         return addM;
     }

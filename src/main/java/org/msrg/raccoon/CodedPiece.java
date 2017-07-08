@@ -6,6 +6,8 @@
 
 package org.msrg.raccoon;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
@@ -15,7 +17,7 @@ public class CodedPiece {
     public final SliceMatrix _codedContent;
     public final CodedCoefficients _cc;
 
-    public CodedPiece(CodedCoefficients cc, BulkMatrix bm) {
+    public CodedPiece(@NotNull CodedCoefficients cc, @NotNull BulkMatrix bm) {
         ByteMatrix c = new ByteMatrix(cc.toArray());
 
         _codedContent = c.multiply(bm).slice(0);
@@ -27,12 +29,13 @@ public class CodedPiece {
         _cc = cc;
     }
 
-    public static CodedPiece makeCodedPiece(BulkMatrix bm) {
+    public static CodedPiece makeCodedPiece(@NotNull BulkMatrix bm) {
         CodedCoefficients cc = new CodedCoefficients(bm._rows);
         return new CodedPiece(cc, bm);
     }
 
-    public static CodedPiece makeCodedSlice(CodedPiece[] codedSlices) {
+    @Nullable
+    public static CodedPiece makeCodedSlice(@Nullable CodedPiece[] codedSlices) {
         if (codedSlices == null)
             return null;
 
@@ -51,8 +54,8 @@ public class CodedPiece {
 //		return new CodedPiece(cc, combinedMultiRowMatrix);
     }
 
-    @Override
-    public boolean equals(Object obj) {
+
+    public boolean equals(@Nullable Object obj) {
         if (obj == null || !obj.getClass().isInstance(this))
             return false;
 
@@ -63,7 +66,8 @@ public class CodedPiece {
         return _codedContent.equals(csObj._codedContent);
     }
 
-    @Override
+    @NotNull
+
     public String toString() {
         return "CS[" + _cc + ":" + _codedContent + "]";
     }
