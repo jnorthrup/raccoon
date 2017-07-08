@@ -411,40 +411,6 @@ public class CodingEngineTest extends TestCase implements ICodingListener {
     }
 }
 
-//class FileCodingEngine_ForTest extends FileCodingEngineImpl {
-//	
-//	FileCodingEngine_ForTest(int threadCount, String filename) {
-//		super(filename, threadCount);
-//	}
-//	
-//	Equals_CodingResult multiplyInverseMultiplyEqual(ICodingListener listener, ByteMatrix m, SliceMatrix sm) {
-//		CodingId id = CodingId.getNewCodingId();
-//		CodingTask cTask = new MultiplyInverseMultiplyEqual_SequentialCodingTask(this, listener, id, m, sm);
-//		
-//		CodingEngineEvent_NewCodingTask newCodingEvent = new CodingEngineEvent_NewCodingTask(cTask);
-//		addCodingTaskEngineEvent(newCodingEvent);
-//		return (Equals_CodingResult) cTask._result;
-//	}
-//
-//	Equals_CodingResult pageInPageOutEquals(ICodingListener listener, BulkMatrix bm) {
-//		CodingId id = CodingId.getNewCodingId();
-//		CodingTask cTask = new PageInPageOutEqual_SequentialCodingTask(bm, this, listener, id);
-//		
-//		CodingEngineEvent_NewCodingTask newCodingEvent = new CodingEngineEvent_NewCodingTask(cTask);
-//		addCodingTaskEngineEvent(newCodingEvent);
-//		return (Equals_CodingResult) cTask._result;
-//	}
-//	
-//	Equals_CodingResult encodingDecodingEqual(ICodingListener listener, CodedBatch cb) {
-//		CodingId id = CodingId.getNewCodingId();
-//		CodingTask cTask = new EncodingDecodingEqual_SequentialCodingTask(cb, this, listener, id);
-//		
-//		CodingEngineEvent_NewCodingTask newCodingEvent = new CodingEngineEvent_NewCodingTask(cTask);
-//		addCodingTaskEngineEvent(newCodingEvent);
-//		return (Equals_CodingResult) cTask._result;
-//	}
-//}
-
 class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
 
     CodingEngine_ForTest(int threadCount) {
@@ -563,12 +529,12 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
             System.out.println("TaskFinished:" + result);
     }
 
-    protected void threadAdded(CodingRunnable cThread) {
+    public void threadAdded(CodingRunnable cThread) {
         _threads.add(cThread);
         scheduleTask();
     }
 
-    protected void threadBecameFree(CodingRunnable cThread) {
+    public void threadBecameFree(CodingRunnable cThread) {
         if (_threads.contains(cThread)) {
             _busyThreads.remove(cThread);
             _freeThreads.add(cThread);
@@ -576,7 +542,7 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
         }
     }
 
-    protected void threadBecameBusy(CodingRunnable cThread) {
+    public void threadBecameBusy(CodingRunnable cThread) {
         if (_threads.contains(cThread)) {
             if (!_busyThreads.contains(cThread))
                 throw new IllegalStateException("Not in the busy thread list: " + cThread);
@@ -587,78 +553,7 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
 
     protected void processCodingEvent(@NotNull CodingEngineEvent event) {
         super.processCodingEvent(event);
-
-        switch (event._eventType) {
-            case ENG_ET_NEW_TASK: {
-                CodingEngineEvent_NewCodingTask codingEvent = (CodingEngineEvent_NewCodingTask) event;
-                CodingTask cTask = codingEvent._cTask;
-                scheduleTask(cTask);
-                break;
-            }
-
-            case ENG_ET_TASK_FAILED: {
-                CodingEngineEvent_ExecutionEvent execEvent = (CodingEngineEvent_ExecutionEvent) event;
-                CodingTask cTask = execEvent._cTask;
-                CodingTaskStatus status = cTask.getStatus();
-                assert status == CodingTaskStatus.FAILED;
-                ICodingListener listener = cTask._listener;
-                listener.codingFailed(cTask._result);
-                break;
-            }
-
-            case ENG_ET_TASK_FINISHED: {
-                CodingEngineEvent_ExecutionEvent execEvent = (CodingEngineEvent_ExecutionEvent) event;
-                CodingTask cTask = execEvent._cTask;
-                CodingTaskStatus status = cTask.getStatus();
-                assert status == CodingTaskStatus.FINISHED;
-                ICodingListener listener = cTask._listener;
-                listener.codingFinished(cTask._result);
-                break;
-            }
-
-            case ENG_ET_TASK_STARTED:
-                CodingEngineEvent_ExecutionEvent execEvent = (CodingEngineEvent_ExecutionEvent) event;
-                CodingTask cTask = execEvent._cTask;
-                ICodingListener listener = cTask._listener;
-                listener.codingStarted(cTask._result);
-                break;
-
-            case ENG_ET_THREAD_NEW: {
-                CodingEngineEvent_NewThreadEvent tEvent = (CodingEngineEvent_NewThreadEvent) event;
-                CodingRunnable cThread = tEvent._cThread;
-                threadAdded(cThread);
-                break;
-            }
-
-            case ENG_ET_THREAD_FREE: {
-                CodingEngineEvent_FreeThreadEvent tEvent = (CodingEngineEvent_FreeThreadEvent) event;
-                CodingRunnable cThread = tEvent._cThread;
-                threadBecameFree(cThread);
-                break;
-            }
-
-            case ENG_ET_THREAD_BUSY:
-                CodingEngineEvent_BusyThreadEvent tEvent = (CodingEngineEvent_BusyThreadEvent) event;
-                CodingRunnable cThread = tEvent._cThread;
-                threadBecameBusy(cThread);
-                break;
-
-            case END_ET_SEQ_TASK_FAILED: {
-                CodingEngineEvent_SequentialCodingTaskFailed seqEvent = (CodingEngineEvent_SequentialCodingTaskFailed) event;
-                SequentialCodingTask seqCodingTask = seqEvent._seqCodingTask;
-                notifyListener(seqCodingTask);
-                break;
-            }
-
-            case END_ET_SEQ_TASK_FINISHED:
-                CodingEngineEvent_SequentialCodingTaskFinished seqEvent = (CodingEngineEvent_SequentialCodingTaskFinished) event;
-                SequentialCodingTask seqCodingTask = seqEvent._seqCodingTask;
-                notifyListener(seqCodingTask);
-                break;
-
-            default:
-                throw new UnsupportedOperationException("Unknown event type: " + event);
-        }
+        event._eventType.processCodingEvent(this, event);
     }
 
     @NotNull

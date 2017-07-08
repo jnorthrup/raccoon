@@ -83,34 +83,28 @@ public abstract class CodingEngine {
         System.out.println("CodingEngine Thread count: " + _threadCount);
     }
 
-    protected final void addCodingTaskEngineEvent(@NotNull CodingEngineEvent event) {
-        synchronized (_lock) {
-            switch (event._eventType) {
-                case ENG_ET_FILE_TASK:
-                    _lowPriorityEventQueue.add(event);
-                    break;
-
-                case ENG_ET_NEW_TASK:
-                    _normalPriorityEventQueue.add(event);
-                    break;
-
-                case END_ET_SEQ_TASK_FINISHED:
-                case END_ET_SEQ_TASK_FAILED:
-                case ENG_ET_TASK_FAILED:
-                case ENG_ET_TASK_FINISHED:
-                case ENG_ET_TASK_STARTED:
-                case ENG_ET_THREAD_BUSY:
-                case ENG_ET_THREAD_FREE:
-                case ENG_ET_THREAD_NEW:
-                    _highPriorityEventQueue.add(event);
-                    break;
-
-                default:
-                    throw new UnsupportedOperationException("" + event);
+    static public void scheduleTask(CodingEngine codingEngine, CodingTask cTask) {
+        CodingTask cTask1 = cTask;
+        CodingRunnable thread = null;
+        synchronized (((CodingEngine) codingEngine)._lock) {
+            if (cTask1 == null) {
+                if (codingEngine._outstandingTasks.isEmpty())
+                    return;
+                else if (codingEngine._freeThreads.isEmpty())
+                    return;
+                else
+                    cTask1 = codingEngine._outstandingTasks.remove(0);
+            } else if (codingEngine._freeThreads.isEmpty()) {
+                codingEngine._outstandingTasks.add(cTask1);
+                return;
             }
 
-            _lock.notifyAll();
+            thread = codingEngine._freeThreads.iterator().next();
+            codingEngine._freeThreads.remove(thread);
+            codingEngine._busyThreads.add(thread);
         }
+
+        thread.addNewTask(cTask1);
     }
 
     public void registerCodingListener(ICodingListener listener) {
@@ -180,32 +174,17 @@ public abstract class CodingEngine {
         notifyListener(codingTask);
     }
 
-    protected void scheduleTask() {
-        scheduleTask(null);
+    protected final void addCodingTaskEngineEvent(@NotNull CodingEngineEvent event) {
+        synchronized (_lock) {
+            event._eventType.call(this, event);
+
+
+            _lock.notifyAll();
+        }
     }
 
-    protected void scheduleTask(CodingTask cTask) {
-        CodingTask cTask1 = cTask;
-        CodingRunnable thread = null;
-        synchronized (_lock) {
-            if (cTask1 == null) {
-                if (_outstandingTasks.isEmpty())
-                    return;
-                else if (_freeThreads.isEmpty())
-                    return;
-                else
-                    cTask1 = _outstandingTasks.remove(0);
-            } else if (_freeThreads.isEmpty()) {
-                _outstandingTasks.add(cTask1);
-                return;
-            }
-
-            thread = _freeThreads.iterator().next();
-            _freeThreads.remove(thread);
-            _busyThreads.add(thread);
-        }
-
-        thread.addNewTask(cTask1);
+    protected void scheduleTask() {
+        scheduleTask(this, null);
     }
 
     protected void notifyListener(@NotNull CodingTask cTask) {
@@ -228,25 +207,7 @@ public abstract class CodingEngine {
     }
 
 
-    public int getFreeThreadsCount() {
-        synchronized (_lock) {
-            return _freeThreads.size();
-        }
-    }
 
-
-    public int getBusyThreadsCount() {
-        synchronized (_lock) {
-            return _busyThreads.size();
-        }
-    }
-
-
-    public int getTotalThreadsCount() {
-        synchronized (_lock) {
-            return _threads.size();
-        }
-    }
 
     public void sequentialCodingTaskFailed(SequentialCodingTask seqCodingTask) {
         CodingEngineEvent_SequentialCodingTaskFailed seqCodingEvent = new CodingEngineEvent_SequentialCodingTaskFailed(seqCodingTask);
@@ -316,17 +277,16 @@ public abstract class CodingEngine {
 
     public abstract Equals_CodingResult checkEquality(ICodingListener listener, BulkMatrix bm1, BulkMatrix bm2);
 
+    public abstract void threadAdded(CodingRunnable cThread);
+
+    public abstract void threadBecameFree(CodingRunnable cThread);
+
+    public abstract void threadBecameBusy(CodingRunnable cThread);
+
     private class MyThread extends Thread {
         public MyThread(@NotNull String var1) {
             super(var1);
         }
-
-        /*
-        public void start() {
-            throw new UnsupportedOperationException("To ignite the engine, use startComponent() instead.");
-        }
-*/
-
         public final void run() {
             CodingEngineEvent event = null;
             boolean eventFrom_highPriorityCodingTasksEventQueue = false;
