@@ -7,7 +7,6 @@
 package org.msrg.raccoon.engine.task.sequential;
 
 import org.msrg.raccoon.engine.CodingEngine;
-import org.msrg.raccoon.engine.ICodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.CodingTask;
@@ -22,11 +21,11 @@ public abstract class SequentialCodingTask extends CodingTask implements ICoding
 
     public final SequentialCodingTaskType _seqTaskType;
     protected final Set<CodingTask> _activeSubTasks = new HashSet<CodingTask>();
-    protected final ICodingEngine _engine;
+    protected final CodingEngine _engine;
     protected int _currentStage = -1;
     private long[] _stageTimes;
 
-    protected SequentialCodingTask(ICodingEngine engine, ICodingListener listener, CodingId id,
+    protected SequentialCodingTask(CodingEngine engine, ICodingListener listener, CodingId id,
                                    SequentialCodingTaskType seqTaskType) {
         super(listener, id, CodingTaskType.SEQUENCIAL);
 

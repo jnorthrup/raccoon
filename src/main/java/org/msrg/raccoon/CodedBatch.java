@@ -17,7 +17,7 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Random;
 
-public abstract class CodedBatch implements ICodedBatch {
+public abstract class CodedBatch {
 
     protected static final int I_CONTENT_SIZE = 0;
     protected static final int I_CONTENT = CodedBatch.I_CONTENT_SIZE + 4;
@@ -53,12 +53,12 @@ public abstract class CodedBatch implements ICodedBatch {
         if (!CodedBatch.class.isAssignableFrom(obj.getClass()))
             return false;
 
-        ICodedBatch codedBatchObj = (CodedBatch) obj;
+        CodedBatch codedBatchObj = (CodedBatch) obj;
         return equalsExact(codedBatchObj);
     }
 
 
-    public boolean equalsExact(@NotNull ICodedBatch codedBatchObj) {
+    public boolean equalsExact(@NotNull CodedBatch codedBatchObj) {
         if (_size != codedBatchObj.getSize())
             return false;
 
@@ -155,4 +155,14 @@ public abstract class CodedBatch implements ICodedBatch {
     public CodedCoefficients getNewCodedCoefficients(byte[] b) {
         return new CodedCoefficients(b);
     }
+
+    public abstract int getRows();
+
+    public abstract int getCols();
+
+    public abstract boolean decode();
+
+    public abstract boolean canPotentiallyBeSolved();
+
+    public abstract boolean isInversed();
 }

@@ -13,7 +13,7 @@ import org.msrg.raccoon.engine.task.CodingTask;
 import java.util.LinkedList;
 import java.util.List;
 
-public abstract class CodingThread extends Thread {
+public abstract class CodingThread implements Runnable {
 
     public static final int MAX_WAIT_TIME = 1000;
 
@@ -45,7 +45,7 @@ public abstract class CodingThread extends Thread {
     public void addNewTask(CodingTask codingTask) {
         synchronized (_LOCK) {
             _taskList.add(codingTask);
-            _LOCK.notify();
+            _LOCK.notifyAll();
         }
     }
 

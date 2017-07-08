@@ -9,7 +9,7 @@ package org.msrg.raccoon.engine.task.sequential;
 import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.ReceivedCodedBatch;
 import org.msrg.raccoon.SourceCodedBatch;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
@@ -40,7 +40,7 @@ public class EncodingReceivedEncodingDecodingEqual_SequentialCodingTask extends
 
     public EncodingReceivedEncodingDecodingEqual_SequentialCodingTask(
             SourceCodedBatch srcCodedBatch,
-            ICodingEngine engine, ICodingListener listener, CodingId id) {
+            CodingEngine engine, ICodingListener listener, CodingId id) {
         super(engine, listener, id, SequentialCodingTaskType.ENCODE_RECEIVED_ENCODE_DECODE_EQUAL);
 
         _srcCodedBatch = srcCodedBatch;

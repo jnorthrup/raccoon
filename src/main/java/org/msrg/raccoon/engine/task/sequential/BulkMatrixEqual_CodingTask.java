@@ -7,7 +7,7 @@
 package org.msrg.raccoon.engine.task.sequential;
 
 import org.jetbrains.annotations.NotNull;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodingResult;
@@ -28,7 +28,7 @@ public class BulkMatrixEqual_CodingTask extends SequentialCodingTask {
     protected Equals_CodingResult[] _slicesEqualityResults;
     protected Set<Equals_CodingResult> _slicesEqualityResultsSet;
 
-    public BulkMatrixEqual_CodingTask(ICodingEngine engine,
+    public BulkMatrixEqual_CodingTask(CodingEngine engine,
                                       ICodingListener listener, CodingId id,
                                       BulkMatrix bm1, BulkMatrix bm2) {
         super(engine, listener, id, SequentialCodingTaskType.BULK_MATRIX_EQUAL);

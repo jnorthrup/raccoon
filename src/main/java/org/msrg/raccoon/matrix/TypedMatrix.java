@@ -8,11 +8,12 @@ package org.msrg.raccoon.matrix;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.msrg.raccoon.engine.CodingEngineImpl;
 
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+
+import static org.msrg.raccoon.engine.CodingEngine.DEBUG;
 
 public abstract class TypedMatrix<T> {
 
@@ -142,7 +143,7 @@ public abstract class TypedMatrix<T> {
     public abstract T divide(T a, T b);
 
     public void verify() {
-        if (!CodingEngineImpl.DEBUG)
+        if (! DEBUG)
             return;
 
         if (_b == null)
@@ -154,7 +155,7 @@ public abstract class TypedMatrix<T> {
             if (_b[i].length != _cols)
                 throw new IllegalArgumentException("" + i + " vs. " + _b[i].length + " vs. " + _cols);
 
-            for (int j = 0; j < _cols && CodingEngineImpl.DEBUG; j++)
+            for (int j = 0; j < _cols &&  DEBUG; j++)
                 if (_b[i][j] == null)
                     throw new NullPointerException("" + i + " vs. " + j + "[" + _rows + "x" + _cols + "]");
         }

@@ -11,7 +11,7 @@ import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.CodedBatchType;
 import org.msrg.raccoon.CodedCoefficients;
 import org.msrg.raccoon.CodedPiece;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
@@ -28,7 +28,7 @@ public class EncodingSourceCodedBatch_SequentialCodingTask extends
     protected SliceMatrix_CodingResult _smCodingResult;
     protected CodedCoefficients _cc;
 
-    public EncodingSourceCodedBatch_SequentialCodingTask(ICodingEngine engine,
+    public EncodingSourceCodedBatch_SequentialCodingTask(CodingEngine engine,
                                                          ICodingListener listener, CodingId id, CodedBatch codeBatch) {
         super(engine, listener, id, codeBatch);
     }

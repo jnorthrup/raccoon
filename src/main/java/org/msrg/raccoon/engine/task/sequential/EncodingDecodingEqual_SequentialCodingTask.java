@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.ReceivedCodedBatch;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
@@ -34,7 +34,7 @@ public class EncodingDecodingEqual_SequentialCodingTask extends SequentialCoding
     protected Equals_CodingResult _decodedEqualityResult;
 
     public EncodingDecodingEqual_SequentialCodingTask(CodedBatch codedBatch,
-                                                      ICodingEngine engine,
+                                                      CodingEngine engine,
                                                       ICodingListener listener, CodingId id) {
         super(engine, listener, id, SequentialCodingTaskType.ENCODE_DECODE_EQUAL);
 

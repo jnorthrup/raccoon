@@ -8,7 +8,7 @@ package org.msrg.raccoon.engine.task.sequential;
 
 import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.*;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult;
@@ -26,7 +26,7 @@ public class EncodingReceivedCodedBatch_SequentialCodingTask extends
     protected CodedCoefficients _cc;
 
     public EncodingReceivedCodedBatch_SequentialCodingTask(
-            ICodingEngine engine, ICodingListener listener, CodingId id,
+            CodingEngine engine, ICodingListener listener, CodingId id,
             CodedBatch codeBatch) {
         super(engine, listener, id, codeBatch);
     }

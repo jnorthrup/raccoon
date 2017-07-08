@@ -7,15 +7,20 @@
 package org.msrg.raccoon.engine;
 
 import org.jetbrains.annotations.NotNull;
-import org.msrg.raccoon.engine.task.CodingTask;
-import org.msrg.raccoon.engine.task.CodingTaskFailed;
-import org.msrg.raccoon.engine.task.CodingTaskStatus;
-import org.msrg.raccoon.engine.task.result.CodingResult;
+import org.msrg.raccoon.CodedBatch;
+import org.msrg.raccoon.ReceivedCodedBatch;
+import org.msrg.raccoon.engine.task.*;
+import org.msrg.raccoon.engine.task.result.*;
 import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
 import org.msrg.raccoon.engine.thread.CodingThread;
-import org.msrg.raccoon.engine.thread.CodingThreadImpl;
+import org.msrg.raccoon.matrix.bulk.BulkMatrix;
+import org.msrg.raccoon.matrix.bulk.SliceMatrix;
+import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
+import org.msrg.raccoon.matrix.finitefields.ByteMatrix1D;
 
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * This abstract class implements ICodingEngine and deals with management of
@@ -33,9 +38,10 @@ import java.util.*;
  * @author Reza Sherafat (reza.sherafat@gmail.com)
  * @since 0.1
  */
-public abstract class CodingEngine implements ICodingEngine {
+public abstract class CodingEngine {
 
     public static final long LATE_THREAD_CHECKIN_TIMEOUT = 5000;
+    public static final ExecutorService CACHED_THREAD_POOL = (Executors.newCachedThreadPool());
     public static boolean DEBUG = false;
     protected final Object _lock = new Object();
     /**
@@ -101,7 +107,7 @@ public abstract class CodingEngine implements ICodingEngine {
                     throw new UnsupportedOperationException("" + event);
             }
 
-            _lock.notify();
+            _lock.notifyAll();
         }
     }
 
@@ -132,14 +138,14 @@ public abstract class CodingEngine implements ICodingEngine {
     public void startComponent() {
         synchronized (_lock) {
             for (CodingThread cThread : _threads)
-                cThread.start();
+                CACHED_THREAD_POOL.submit(cThread);
 
             thread.start();
         }
     }
 
     protected void processCodingEvent(CodingEngineEvent event) throws CodingTaskFailed {
-        if (CodingEngine.DEBUG)
+        if (DEBUG)
             System.out.println("EVENT_PROCESSING:" + event);
     }
 
@@ -147,7 +153,58 @@ public abstract class CodingEngine implements ICodingEngine {
     public void init() {
         synchronized (_lock) {
             for (int i = 0; i < _threadCount; i++) {
-                CodingThread cThread = new CodingThreadImpl(CodingEngine.this);
+                CodingEngine engine = CodingEngine.this;
+                CodingThread cThread = new CodingThread(engine) {
+                    protected void runTask(@NotNull CodingTask codingTask) {
+                        super.runTask(codingTask);
+
+                        CodingTaskType taskType = codingTask._taskType;
+
+                        switch (taskType) {
+                            case SLICES_EQUAL:
+                                SlicesEqual_CodingTask smeCodingTask = (SlicesEqual_CodingTask) codingTask;
+                                SliceMatrix sm1 = smeCodingTask._sm1;
+                                SliceMatrix sm2 = smeCodingTask._sm2;
+                                boolean equals = sm1.equals(sm2);
+                                ((Equals_CodingResult) smeCodingTask._result).setResult(equals);
+                                smeCodingTask.finished();
+                                break;
+
+                            case INVERSE: {
+                                Inverse_CodingTask inverseCodingTask = (Inverse_CodingTask) codingTask;
+                                ByteMatrix m = inverseCodingTask._m;
+                                ByteMatrix mInverse = (ByteMatrix) m.inverseMatrix();
+                                ((ByteMatrix_CodingResult) inverseCodingTask._result).setResult(mInverse);
+                                inverseCodingTask.finished();
+                                break;
+                            }
+
+                            case MULTIPLY:
+                                Multiply_CodingTask multiplyCodingTask = (Multiply_CodingTask) codingTask;
+                                ByteMatrix1D m = multiplyCodingTask._m;
+                                BulkMatrix bm = multiplyCodingTask._bm;
+                                SliceMatrix result = null;
+                                try {
+                                    result = m.multiply1D(bm);
+                                } catch (Exception x) {
+                                    x.printStackTrace();
+                                    multiplyCodingTask.failed();
+                                    break;
+                                }
+                                ((SliceMatrix_CodingResult) multiplyCodingTask._result).setResult(result);
+                                multiplyCodingTask.finished();
+                                break;
+
+                            case SEQUENCIAL:
+                                SequentialCodingTask seqCodingTask = (SequentialCodingTask) codingTask;
+                                seqCodingTask.runInitialSequencialTasks();
+                                break;
+
+                            default:
+                                throw new UnsupportedOperationException("Unknown task type: " + taskType);
+                        }
+                    }
+                };
                 _threads.add(cThread);
             }
         }
@@ -269,7 +326,7 @@ public abstract class CodingEngine implements ICodingEngine {
             long currentTime = System.currentTimeMillis();
             for (CodingThread cThread : _threads) {
                 Long lastCheckin = _threadCheckins.get(cThread);
-                if (lastCheckin != null && currentTime - lastCheckin > CodingEngine.LATE_THREAD_CHECKIN_TIMEOUT)
+                if (lastCheckin != null && currentTime - lastCheckin > LATE_THREAD_CHECKIN_TIMEOUT)
                     lateThreadList.add(cThread);
             }
         }
@@ -299,6 +356,20 @@ public abstract class CodingEngine implements ICodingEngine {
     public Thread getThread() {
         return thread;
     }
+
+    public abstract CodedSlice_CodingResult encode(ICodingListener listener, CodedBatch codeBatch);
+
+    public abstract Equals_CodingResult decode(ICodingListener listener, ReceivedCodedBatch codeBatch);
+
+    public abstract BulkMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix m, BulkMatrix bm);
+
+    public abstract SliceMatrix_CodingResult multiply(ICodingListener listener, ByteMatrix1D m, BulkMatrix bm);
+
+    public abstract ByteMatrix_CodingResult inverse(ICodingListener listener, ByteMatrix m);
+
+    public abstract Equals_CodingResult checkEquality(ICodingListener listener, SliceMatrix sm1, SliceMatrix sm2);
+
+    public abstract Equals_CodingResult checkEquality(ICodingListener listener, BulkMatrix bm1, BulkMatrix bm2);
 
     private class MyThread extends Thread {
         public MyThread(@NotNull String var1) {

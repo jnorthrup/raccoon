@@ -7,7 +7,7 @@
 package org.msrg.raccoon.engine.task.sequential;
 
 import org.jetbrains.annotations.NotNull;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.BulkMatrix_CodingResult;
@@ -35,7 +35,7 @@ public class MultiplyBulkMatrix_SequentialCodingTask extends SequentialCodingTas
     protected SliceMatrix_CodingResult[] _multipliedSMResults;
 
     public MultiplyBulkMatrix_SequentialCodingTask(
-            ICodingEngine engine, ICodingListener listener, CodingId id,
+            CodingEngine engine, ICodingListener listener, CodingId id,
             ByteMatrix m, BulkMatrix bm) {
         super(engine, listener, id, SequentialCodingTaskType.MULTIPLY_BULK_MATRIX);
 

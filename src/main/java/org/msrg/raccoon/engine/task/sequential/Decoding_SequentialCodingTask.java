@@ -9,7 +9,7 @@ package org.msrg.raccoon.engine.task.sequential;
 import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.ReceivedCodedBatch;
-import org.msrg.raccoon.engine.ICodingEngine;
+import org.msrg.raccoon.engine.CodingEngine;
 import org.msrg.raccoon.engine.ICodingListener;
 import org.msrg.raccoon.engine.task.CodingId;
 import org.msrg.raccoon.engine.task.result.BulkMatrix_CodingResult;
@@ -27,7 +27,7 @@ public class Decoding_SequentialCodingTask extends SequentialCodingTask {
     protected Equals_CodingResult _equalityResult;
 
     public Decoding_SequentialCodingTask(
-            ICodingEngine engine, ICodingListener listener, CodingId id, ReceivedCodedBatch receivedCodeBatch) {
+            CodingEngine engine, ICodingListener listener, CodingId id, ReceivedCodedBatch receivedCodeBatch) {
         super(engine, listener, id, SequentialCodingTaskType.DECODE);
 
         _receivedCodeBatch = receivedCodeBatch;
