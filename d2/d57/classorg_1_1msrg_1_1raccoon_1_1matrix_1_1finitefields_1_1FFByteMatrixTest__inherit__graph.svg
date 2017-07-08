@@ -8,8 +8,8 @@
  viewBox="0.00 0.00 181.00 193.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 189)">
 <title>org.msrg.raccoon.matrix.finitefields.FFByteMatrixTest</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-90.5 173,-90.5 173,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
 <text text-anchor="middle" x="86.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">FFByteMatrixTest</text>
@@ -20,8 +20,8 @@
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ testM2timesInvIsM()</text>
 <text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ testMtimesMInvIsIdentity()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <polygon fill="none" stroke="#bfbfbf" points="57,-127.5 57,-184.5 116,-184.5 116,-127.5 57,-127.5"/>
 <text text-anchor="middle" x="86.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">TestCase</text>
 <polyline fill="none" stroke="#bfbfbf" points="57,-165.5 116,-165.5 "/>
@@ -29,8 +29,8 @@
 <polyline fill="none" stroke="#bfbfbf" points="57,-146.5 116,-146.5 "/>
 <text text-anchor="middle" x="86.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<!-- Node1&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node1&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M86.5,-117.214C86.5,-108.609 86.5,-99.3943 86.5,-90.5541"/>
 <polygon fill="none" stroke="midnightblue" points="83.0001,-117.34 86.5,-127.34 90.0001,-117.34 83.0001,-117.34"/>
 </g>

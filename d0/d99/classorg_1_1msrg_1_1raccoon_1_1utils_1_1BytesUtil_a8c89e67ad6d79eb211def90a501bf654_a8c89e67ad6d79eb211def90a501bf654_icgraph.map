@@ -1,6 +1,0 @@
-<map id="org.msrg.raccoon.utils.BytesUtil.hex" name="org.msrg.raccoon.utils.BytesUtil.hex">
-<area shape="rect" id="node2" href="$dd/d36/classorg_1_1msrg_1_1raccoon_1_1CodedCoefficients_a617cdd425321de4287df27b5e8694472.html#a617cdd425321de4287df27b5e8694472" title="org.msrg.raccoon.CodedCoefficients.to\lString" alt="" coords="243,5,493,47"/>
-<area shape="rect" id="node3" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_a278ce8de1db74d107ffd3e449fc3717e.html#a278ce8de1db74d107ffd3e449fc3717e" title="org.msrg.raccoon.CodedBatch.to\lString" alt="" coords="261,71,475,112"/>
-<area shape="rect" id="node4" href="$d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_aa50b29762b9ee4754508f536ee75740b.html#aa50b29762b9ee4754508f536ee75740b" title="org.msrg.raccoon.matrix.bulk.\lSliceMatrix.toString" alt="" coords="271,136,465,177"/>
-<area shape="rect" id="node5" href="$da/df0/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatch_aa20f61989dc946caf00948bd99bb8fda.html#aa20f61989dc946caf00948bd99bb8fda" title="org.msrg.raccoon.Received\lCodedBatch.toString" alt="" coords="277,201,459,243"/>
-</map>

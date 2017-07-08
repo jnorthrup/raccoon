@@ -54,14 +54,14 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>org.msrg.raccoon.matrix.finitefields.FFByteMatrix.decloneExtended</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-73.5 0,-103.5 173,-103.5 173,-73.5 0,-73.5"/>
 <text text-anchor="start" x="8" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
 <text text-anchor="middle" x="86.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">FFByteMatrix.decloneExtended</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix_a816ad2e99b9c0076470c72f6e3056d57.html#a816ad2e99b9c0076470c72f6e3056d57" target="_top" xlink:title="org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix.clone">
 <polygon fill="none" stroke="black" points="209,-98.5 209,-128.5 382,-128.5 382,-98.5 209,-98.5"/>
 <text text-anchor="start" x="217" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -69,13 +69,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M173.189,-98.8489C181.663,-99.8723 190.301,-100.916 198.867,-101.95"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="198.528,-105.434 208.875,-103.159 199.367,-98.485 198.528,-105.434"/>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
+<!-- Node6 -->
+<g id="node7" class="node"><title>Node6</title>
 <g id="a_node7"><a xlink:href="../../de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix_aed115c93940976f424b2003258994ff0.html#aed115c93940976f424b2003258994ff0" target="_top" xlink:title="org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix.createNewMatrix">
 <polygon fill="none" stroke="black" points="209,-147.5 209,-177.5 382,-177.5 382,-147.5 209,-147.5"/>
 <text text-anchor="start" x="217" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -83,13 +83,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6" class="edge"><title>Node1&#45;&gt;Node7</title>
+<!-- Node0&#45;&gt;Node6 -->
+<g id="edge6" class="edge"><title>Node0&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M122.244,-103.578C146.356,-113.778 179.346,-127.213 209,-137.5 215.831,-139.87 223.018,-142.207 230.204,-144.446"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="229.382,-147.855 239.968,-147.431 231.428,-141.16 229.382,-147.855"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node"><title>Node8</title>
+<!-- Node7 -->
+<g id="node8" class="node"><title>Node7</title>
 <g id="a_node8"><a xlink:href="../../de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix_a2939182ceca33d15bfe6144bb844c997.html#a2939182ceca33d15bfe6144bb844c997" target="_top" xlink:title="org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix.getEmptyArray">
 <polygon fill="none" stroke="black" points="209,-49.5 209,-79.5 382,-79.5 382,-49.5 209,-49.5"/>
 <text text-anchor="start" x="217" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -97,13 +97,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge8" class="edge"><title>Node1&#45;&gt;Node8</title>
+<!-- Node0&#45;&gt;Node7 -->
+<g id="edge8" class="edge"><title>Node0&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M173.189,-78.565C181.663,-77.5826 190.301,-76.581 198.867,-75.5879"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="199.345,-79.056 208.875,-74.4275 198.539,-72.1026 199.345,-79.056"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
+<!-- Node8 -->
+<g id="node9" class="node"><title>Node8</title>
 <g id="a_node9"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_aa778537921dfb4b7f7134a216e4f05ca.html#aa778537921dfb4b7f7134a216e4f05ca" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix.isZero">
 <polygon fill="none" stroke="black" points="233,-0.5 233,-30.5 358,-30.5 358,-0.5 233,-0.5"/>
 <text text-anchor="start" x="241" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
@@ -111,13 +111,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge9" class="edge"><title>Node1&#45;&gt;Node9</title>
+<!-- Node0&#45;&gt;Node8 -->
+<g id="edge9" class="edge"><title>Node0&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M121.947,-73.4309C146.066,-63.1715 179.183,-49.663 209,-39.5 215.033,-37.4435 221.348,-35.4254 227.696,-33.4867"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="229.081,-36.7259 237.662,-30.5117 227.079,-30.0183 229.081,-36.7259"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node2 -->
+<g id="node3" class="node"><title>Node2</title>
 <g id="a_node3"><a xlink:href="../../de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix_a74fec4736961bf7a7fc542e6db4ba471.html#a74fec4736961bf7a7fc542e6db4ba471" target="_top" xlink:title="org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix.FFByteMatrix">
 <polygon fill="none" stroke="black" points="418,-147.5 418,-177.5 591,-177.5 591,-147.5 418,-147.5"/>
 <text text-anchor="start" x="426" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -125,13 +125,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
+<!-- Node1&#45;&gt;Node2 -->
+<g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
 <path fill="none" stroke="midnightblue" d="M360.014,-128.535C382.168,-133.779 407.211,-139.707 430.102,-145.126"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="429.569,-148.596 440.107,-147.494 431.182,-141.784 429.569,-148.596"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
+<!-- Node4 -->
+<g id="node5" class="node"><title>Node4</title>
 <g id="a_node5"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_af7ccc065eb74dab0bd851c7d59f2eb2a.html#af7ccc065eb74dab0bd851c7d59f2eb2a" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix.getColumnSize">
 <polygon fill="none" stroke="black" points="434.5,-98.5 434.5,-128.5 574.5,-128.5 574.5,-98.5 434.5,-98.5"/>
 <text text-anchor="start" x="442.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
@@ -139,13 +139,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node5 -->
-<g id="edge4" class="edge"><title>Node2&#45;&gt;Node5</title>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge4" class="edge"><title>Node1&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M382.189,-113.5C396.016,-113.5 410.28,-113.5 423.953,-113.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="424.277,-117 434.277,-113.5 424.277,-110 424.277,-117"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
+<!-- Node5 -->
+<g id="node6" class="node"><title>Node5</title>
 <g id="a_node6"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_aba5684317273db23da9933dd1acdc94c.html#aba5684317273db23da9933dd1acdc94c" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix.getRowSize">
 <polygon fill="none" stroke="black" points="441,-49.5 441,-79.5 568,-79.5 568,-49.5 441,-49.5"/>
 <text text-anchor="start" x="449" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
@@ -153,13 +153,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node6 -->
-<g id="edge5" class="edge"><title>Node2&#45;&gt;Node6</title>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge5" class="edge"><title>Node1&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M360.014,-98.4654C382.475,-93.1484 407.906,-87.1285 431.053,-81.6492"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="431.893,-85.0472 440.818,-79.3377 430.281,-78.2354 431.893,-85.0472"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node3 -->
+<g id="node4" class="node"><title>Node3</title>
 <g id="a_node4"><a xlink:href="../../de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix_acc3fe051b40979d0a2da7a61cc4489d1.html#acc3fe051b40979d0a2da7a61cc4489d1" target="_top" xlink:title="org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix.makeZero2d">
 <polygon fill="none" stroke="black" points="627,-147.5 627,-177.5 800,-177.5 800,-147.5 627,-147.5"/>
 <text text-anchor="start" x="635" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -167,13 +167,13 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
+<!-- Node2&#45;&gt;Node3 -->
+<g id="edge3" class="edge"><title>Node2&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M591.189,-162.5C599.663,-162.5 608.301,-162.5 616.867,-162.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="616.875,-166 626.875,-162.5 616.875,-159 616.875,-166"/>
 </g>
-<!-- Node7&#45;&gt;Node3 -->
-<g id="edge7" class="edge"><title>Node7&#45;&gt;Node3</title>
+<!-- Node6&#45;&gt;Node2 -->
+<g id="edge7" class="edge"><title>Node6&#45;&gt;Node2</title>
 <path fill="none" stroke="midnightblue" d="M382.189,-162.5C390.663,-162.5 399.301,-162.5 407.867,-162.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="407.875,-166 417.875,-162.5 407.875,-159 407.875,-166"/>
 </g>

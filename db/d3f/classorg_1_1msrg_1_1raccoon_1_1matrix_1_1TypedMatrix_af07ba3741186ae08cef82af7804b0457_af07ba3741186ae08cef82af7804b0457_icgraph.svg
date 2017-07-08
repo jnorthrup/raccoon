@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d5/dcc/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1MatrixFactory_ae68ccb57e1a751895f23ddb9a66baf4d.html#ae68ccb57e1a751895f23ddb9a66baf4d" target="_top" xlink:title="org.msrg.raccoon.matrix.\lMatrixFactory.add">
+<g id="a_node2"><a xlink:href="../../dd/d25/enumorg_1_1msrg_1_1raccoon_1_1matrix_1_1MatrixFactory_ae68ccb57e1a751895f23ddb9a66baf4d.html#ae68ccb57e1a751895f23ddb9a66baf4d" target="_top" xlink:title="org.msrg.raccoon.matrix.\lMatrixFactory.add">
 <polygon fill="none" stroke="black" points="180.5,-147.5 180.5,-177.5 305.5,-177.5 305.5,-147.5 180.5,-147.5"/>
 <text text-anchor="start" x="188.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
 <text text-anchor="middle" x="243" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">MatrixFactory.add</text>
@@ -30,38 +30,38 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a6a7066014a9e631d0f699dfd04dff88d.html#a6a7066014a9e631d0f699dfd04dff88d" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::add">
-<polygon fill="none" stroke="black" points="177.5,-98.5 177.5,-128.5 308.5,-128.5 308.5,-98.5 177.5,-98.5"/>
-<text text-anchor="start" x="185.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
-<text text-anchor="middle" x="243" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::add</text>
+<g id="a_node4"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a67b8cd08054df6b8c87bc4ff2718588e.html#a67b8cd08054df6b8c87bc4ff2718588e" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::addInPlace">
+<polygon fill="none" stroke="black" points="161,-98.5 161,-128.5 325,-128.5 325,-98.5 161,-98.5"/>
+<text text-anchor="start" x="169" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
+<text text-anchor="middle" x="243" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::addInPlace</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M135.186,-98.54C149.099,-100.489 163.606,-102.52 177.28,-104.436"/>
+<path fill="none" stroke="midnightblue" d="M135.29,-98.5546C143.683,-99.7301 152.291,-100.936 160.8,-102.127"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="135.568,-95.0595 125.18,-97.1386 134.597,-101.992 135.568,-95.0595"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a67b8cd08054df6b8c87bc4ff2718588e.html#a67b8cd08054df6b8c87bc4ff2718588e" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::addInPlace">
-<polygon fill="none" stroke="black" points="161,-49.5 161,-79.5 325,-79.5 325,-49.5 161,-49.5"/>
-<text text-anchor="start" x="169" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
-<text text-anchor="middle" x="243" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::addInPlace</text>
+<g id="a_node5"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a8759d749f02dd3c340889595d3fc9f07.html#a8759d749f02dd3c340889595d3fc9f07" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::addRow">
+<polygon fill="none" stroke="black" points="167.5,-49.5 167.5,-79.5 318.5,-79.5 318.5,-49.5 167.5,-49.5"/>
+<text text-anchor="start" x="175.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
+<text text-anchor="middle" x="243" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::addRow</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M135.29,-78.8476C143.683,-77.7191 152.291,-76.5617 160.8,-75.4176"/>
+<path fill="none" stroke="midnightblue" d="M135.21,-78.8583C145.803,-77.4341 156.739,-75.9637 167.389,-74.5317"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="134.624,-75.4055 125.18,-80.207 135.557,-82.3431 134.624,-75.4055"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a8759d749f02dd3c340889595d3fc9f07.html#a8759d749f02dd3c340889595d3fc9f07" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::addRow">
-<polygon fill="none" stroke="black" points="167.5,-0.5 167.5,-30.5 318.5,-30.5 318.5,-0.5 167.5,-0.5"/>
-<text text-anchor="start" x="175.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
-<text text-anchor="middle" x="243" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::addRow</text>
+<g id="a_node6"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a8f46d821e9af757868868a61bdc766d3.html#a8f46d821e9af757868868a61bdc766d3" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::toString">
+<polygon fill="none" stroke="black" points="168.5,-0.5 168.5,-30.5 317.5,-30.5 317.5,-0.5 168.5,-0.5"/>
+<text text-anchor="start" x="176.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
+<text text-anchor="middle" x="243" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::toString</text>
 </a>
 </g>
 </g>

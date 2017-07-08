@@ -54,8 +54,8 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>org.msrg.raccoon.CodedCoefficients</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node5 -->
+<g id="node1" class="node"><title>Node5</title>
 <polygon fill="#bfbfbf" stroke="black" points="255.5,-0.5 255.5,-156.5 431.5,-156.5 431.5,-0.5 255.5,-0.5"/>
 <text text-anchor="middle" x="343.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.CodedCoefficients</text>
 <polyline fill="none" stroke="black" points="255.5,-137.5 431.5,-137.5 "/>
@@ -72,8 +72,8 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="263.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
 <text text-anchor="start" x="263.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># makeRand1dArray()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node6 -->
+<g id="node2" class="node"><title>Node6</title>
 <g id="a_node2"><a xlink:href="../../d6/d37/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1ByteMatrix1D.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.finitefields.\lByteMatrix1D\n||+ ByteMatrix1D()\l+ ByteMatrix1D()\l+ ByteMatrix1D()\l+ multiply1D()\l# make1dArray2d()\l}">
 <polygon fill="none" stroke="black" points="154,-194.5 154,-306.5 327,-306.5 327,-194.5 154,-194.5"/>
 <text text-anchor="start" x="162" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -89,13 +89,13 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge1" class="edge"><title>Node6&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M279.145,-185.718C284.89,-176.235 290.864,-166.375 296.754,-156.654"/>
 <polygon fill="none" stroke="midnightblue" points="276.13,-183.94 273.941,-194.306 282.117,-187.567 276.13,-183.94"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node7 -->
+<g id="node3" class="node"><title>Node7</title>
 <g id="a_node3"><a xlink:href="../../dd/d36/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1ByteMatrix.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.finitefields.\lByteMatrix\n||+ ByteMatrix()\l+ ByteMatrix()\l+ ByteMatrix()\l+ isInversable()\l+ getByteArray()\l+ multiply()\l+ multiply()\l+ getZeroMatrix()\l+ verifyNotNull()\l+ wrap()\l+ wrap()\l+ unwrap()\l+ createRandomByteMatrix()\l+ createMatrix()\l# createByteMatrix()\l# createNewMatrix()\l}">
 <polygon fill="none" stroke="black" points="137,-344.5 137,-577.5 310,-577.5 310,-344.5 137,-344.5"/>
 <text text-anchor="start" x="145" y="-565.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -122,13 +122,13 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge2" class="edge"><title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M233.744,-334.358C234.529,-324.73 235.293,-315.357 236.009,-306.586"/>
 <polygon fill="none" stroke="midnightblue" points="230.244,-334.218 232.92,-344.469 237.221,-334.787 230.244,-334.218"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node8 -->
+<g id="node4" class="node"><title>Node8</title>
 <g id="a_node4"><a xlink:href="../../de/d17/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrix.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.finitefields.\lFFByteMatrix\n|# m\l# DIG\l|+ FFByteMatrix()\l+ FFByteMatrix()\l+ add()\l+ decloneExtended()\l+ cloneExtended()\l+ clone()\l+ getOne()\l+ getZero()\l+ getZeroMatrix()\l+ getNullMatrix()\land 10 more...\l+ createRandomSquareByteMatrix()\l+ createRandomByteMatrix()\l+ createMatrix()\l+ random()\l# createNewMatrix()\l# toString()\l# multiply2()\l# makeZero2d()\l}">
 <polygon fill="none" stroke="black" points="133,-615.5 133,-892.5 306,-892.5 306,-615.5 133,-615.5"/>
 <text text-anchor="start" x="141" y="-880.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
@@ -159,14 +159,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge3" class="edge"><title>Node8&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M221.536,-604.917C221.66,-595.835 221.785,-586.766 221.908,-577.852"/>
 <polygon fill="none" stroke="midnightblue" points="218.032,-605.122 221.395,-615.17 225.032,-605.219 218.032,-605.122"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix.html" target="_top" xlink:title="{org::msrg::raccoon\l::matrix::TypedMatrix\l\&lt; Byte \&gt;\n|+ _b\l+ _MAX_ROWS_PRINT\l+ _MAX_COLS_PRINT\l# _rows\l# _cols\l# _inverseRowZero\l# _inverse\l# _lock\l|+ clone()\l+ cloneExtended()\l+ decloneExtended()\l+ compareToAbs()\l+ isZero()\l+ isOne()\l+ getOne()\l+ getZero()\l+ inverse()\l+ clone()\land 25 more...\l+ toStringMult()\l+ toStringAdd()\l+ toString()\l# toString()\l# getNullMatrix()\l# getZeroMatrix()\l# getEmptyArray()\l# inverseMatrixPrivately()\l# devideRow()\l# subtractRow()\l# subtractRowFromRow()\l# addRow()\l# multiplyRow()\land 8 more...\l}">
+<!-- Node9 -->
+<g id="node5" class="node"><title>Node9</title>
+<g id="a_node5"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix.html" target="_top" xlink:title="{org::msrg::raccoon\l::matrix::TypedMatrix\l\&lt; Byte \&gt;\n|+ _b\l+ _MAX_ROWS_PRINT\l+ _MAX_COLS_PRINT\l# _rows\l# _cols\l# _lock\l# _inverseRowZero\l# _inverse\l|+ TypedMatrix()\l+ clone()\l+ cloneExtended()\l+ decloneExtended()\l+ compareToAbs()\l+ isZero()\l+ isOne()\l+ getOne()\l+ getZero()\l+ inverse()\land 25 more...\l+ toStringMult()\l+ toStringAdd()\l+ toString()\l# toString()\l# getNullMatrix()\l# getZeroMatrix()\l# getEmptyArray()\l# inverseMatrixPrivately()\l# devideRow()\l# subtractRow()\l# subtractRowFromRow()\l# addRow()\l# multiplyRow()\land 8 more...\l}">
 <polygon fill="none" stroke="black" points="0,-940.5 0,-1360.5 129,-1360.5 129,-940.5 0,-940.5"/>
 <text text-anchor="start" x="8" y="-1348.5" font-family="Helvetica,sans-Serif" font-size="10.00">org::msrg::raccoon</text>
 <text text-anchor="start" x="8" y="-1337.5" font-family="Helvetica,sans-Serif" font-size="10.00">::matrix::TypedMatrix</text>
@@ -177,20 +177,20 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="8" y="-1285.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ _MAX_COLS_PRINT</text>
 <text text-anchor="start" x="8" y="-1274.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _rows</text>
 <text text-anchor="start" x="8" y="-1263.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _cols</text>
-<text text-anchor="start" x="8" y="-1252.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _inverseRowZero</text>
-<text text-anchor="start" x="8" y="-1241.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _inverse</text>
-<text text-anchor="start" x="8" y="-1230.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _lock</text>
+<text text-anchor="start" x="8" y="-1252.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _lock</text>
+<text text-anchor="start" x="8" y="-1241.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _inverseRowZero</text>
+<text text-anchor="start" x="8" y="-1230.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _inverse</text>
 <polyline fill="none" stroke="black" points="0,-1223.5 129,-1223.5 "/>
-<text text-anchor="start" x="8" y="-1211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ clone()</text>
-<text text-anchor="start" x="8" y="-1200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ cloneExtended()</text>
-<text text-anchor="start" x="8" y="-1189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ decloneExtended()</text>
-<text text-anchor="start" x="8" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ compareToAbs()</text>
-<text text-anchor="start" x="8" y="-1167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isZero()</text>
-<text text-anchor="start" x="8" y="-1156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isOne()</text>
-<text text-anchor="start" x="8" y="-1145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getOne()</text>
-<text text-anchor="start" x="8" y="-1134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getZero()</text>
-<text text-anchor="start" x="8" y="-1123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ inverse()</text>
-<text text-anchor="start" x="8" y="-1112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ clone()</text>
+<text text-anchor="start" x="8" y="-1211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ TypedMatrix()</text>
+<text text-anchor="start" x="8" y="-1200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ clone()</text>
+<text text-anchor="start" x="8" y="-1189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ cloneExtended()</text>
+<text text-anchor="start" x="8" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ decloneExtended()</text>
+<text text-anchor="start" x="8" y="-1167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ compareToAbs()</text>
+<text text-anchor="start" x="8" y="-1156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isZero()</text>
+<text text-anchor="start" x="8" y="-1145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isOne()</text>
+<text text-anchor="start" x="8" y="-1134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getOne()</text>
+<text text-anchor="start" x="8" y="-1123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getZero()</text>
+<text text-anchor="start" x="8" y="-1112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ inverse()</text>
 <text text-anchor="start" x="8" y="-1101.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 25 more...</text>
 <text text-anchor="start" x="8" y="-1090.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toStringMult()</text>
 <text text-anchor="start" x="8" y="-1079.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toStringAdd()</text>
@@ -209,35 +209,34 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge4" class="edge"><title>Node5&#45;&gt;Node4</title>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge4" class="edge"><title>Node9&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M132.724,-952.229C134.315,-948.11 135.908,-944.03 137.5,-940 143.599,-924.561 150.241,-908.52 157.016,-892.623"/>
 <polygon fill="none" stroke="midnightblue" points="129.327,-951.312 129.016,-961.902 135.863,-953.817 129.327,-951.312"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d6/d93/classorg_1_1msrg_1_1raccoon_1_1finitefields_1_1Tables.html" target="_top" xlink:title="{org.msrg.raccoon.finitefields.\lTables\n|+ LOG\l+ EXP\l|+ Tables()\l+ FFMulFast()\l+ FFInv()\l}">
-<polygon fill="none" stroke="black" points="147,-1100 147,-1201 290,-1201 290,-1100 147,-1100"/>
-<text text-anchor="start" x="155" y="-1189" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.finitefields.</text>
-<text text-anchor="middle" x="218.5" y="-1178" font-family="Helvetica,sans-Serif" font-size="10.00">Tables</text>
-<polyline fill="none" stroke="black" points="147,-1171 290,-1171 "/>
-<text text-anchor="start" x="155" y="-1159" font-family="Helvetica,sans-Serif" font-size="10.00">+ LOG</text>
-<text text-anchor="start" x="155" y="-1148" font-family="Helvetica,sans-Serif" font-size="10.00">+ EXP</text>
-<polyline fill="none" stroke="black" points="147,-1141 290,-1141 "/>
-<text text-anchor="start" x="155" y="-1129" font-family="Helvetica,sans-Serif" font-size="10.00">+ Tables()</text>
-<text text-anchor="start" x="155" y="-1118" font-family="Helvetica,sans-Serif" font-size="10.00">+ FFMulFast()</text>
-<text text-anchor="start" x="155" y="-1107" font-family="Helvetica,sans-Serif" font-size="10.00">+ FFInv()</text>
+<!-- Node10 -->
+<g id="node6" class="node"><title>Node10</title>
+<g id="a_node6"><a xlink:href="../../d6/d93/classorg_1_1msrg_1_1raccoon_1_1finitefields_1_1Tables.html" target="_top" xlink:title="{org.msrg.raccoon.finitefields.\lTables\n|+ LOG\l+ EXP\l|+ FFMulFast()\l+ FFInv()\l}">
+<polygon fill="none" stroke="black" points="147,-1105.5 147,-1195.5 290,-1195.5 290,-1105.5 147,-1105.5"/>
+<text text-anchor="start" x="155" y="-1183.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.finitefields.</text>
+<text text-anchor="middle" x="218.5" y="-1172.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tables</text>
+<polyline fill="none" stroke="black" points="147,-1165.5 290,-1165.5 "/>
+<text text-anchor="start" x="155" y="-1153.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LOG</text>
+<text text-anchor="start" x="155" y="-1142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ EXP</text>
+<polyline fill="none" stroke="black" points="147,-1135.5 290,-1135.5 "/>
+<text text-anchor="start" x="155" y="-1123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FFMulFast()</text>
+<text text-anchor="start" x="155" y="-1112.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FFInv()</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node4 -->
-<g id="edge5" class="edge"><title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M218.626,-1099.94C218.749,-1051.13 218.945,-974.1 219.119,-905.203"/>
-<polygon fill="none" stroke="#404040" points="219.12,-904.888 215.135,-898.878 219.15,-892.888 223.135,-898.898 219.12,-904.888"/>
+<!-- Node10&#45;&gt;Node8 -->
+<g id="edge5" class="edge"><title>Node10&#45;&gt;Node8</title>
+<path fill="none" stroke="#404040" d="M218.612,-1105.39C218.734,-1057.02 218.938,-976.744 219.119,-905.225"/>
+<polygon fill="none" stroke="#404040" points="219.12,-904.908 215.135,-898.898 219.15,-892.908 223.135,-898.918 219.12,-904.908"/>
 <text text-anchor="middle" x="239.5" y="-914" font-family="Helvetica,sans-Serif" font-size="10.00"> #_tables</text>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
+<!-- Node11 -->
+<g id="node7" class="node"><title>Node11</title>
 <polygon fill="none" stroke="#bfbfbf" points="319,-1122 319,-1179 372,-1179 372,-1122 319,-1122"/>
 <text text-anchor="middle" x="345.5" y="-1167" font-family="Helvetica,sans-Serif" font-size="10.00">Random</text>
 <polyline fill="none" stroke="#bfbfbf" points="319,-1160 372,-1160 "/>
@@ -245,14 +244,14 @@ var sectionId = 'dynsection-1';
 <polyline fill="none" stroke="#bfbfbf" points="319,-1141 372,-1141 "/>
 <text text-anchor="middle" x="345.5" y="-1129" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node7&#45;&gt;Node1 -->
-<g id="edge7" class="edge"><title>Node7&#45;&gt;Node1</title>
+<!-- Node11&#45;&gt;Node5 -->
+<g id="edge7" class="edge"><title>Node11&#45;&gt;Node5</title>
 <path fill="none" stroke="#404040" d="M346.805,-1121.77C349.719,-1057.37 356.5,-892.718 356.5,-755 356.5,-755 356.5,-755 356.5,-249.5 356.5,-223.308 354.947,-194.912 352.914,-168.965"/>
 <polygon fill="none" stroke="#404040" points="352.901,-168.799 348.422,-163.148 351.917,-156.84 356.395,-162.492 352.901,-168.799"/>
 <text text-anchor="middle" x="373.5" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ~_rand</text>
 </g>
-<!-- Node7&#45;&gt;Node4 -->
-<g id="edge6" class="edge"><title>Node7&#45;&gt;Node4</title>
+<!-- Node11&#45;&gt;Node8 -->
+<g id="edge6" class="edge"><title>Node11&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M343.716,-1121.9C340.087,-1080.35 329.361,-1000.21 298.5,-940 293.618,-930.475 288.037,-931.16 282.5,-922 278.906,-916.054 275.458,-909.868 272.158,-903.531"/>
 <polygon fill="none" stroke="#404040" points="272.125,-903.464 265.86,-899.894 266.746,-892.737 273.011,-896.307 272.125,-903.464"/>
 <text text-anchor="middle" x="312.5" y="-914" font-family="Helvetica,sans-Serif" font-size="10.00"> ~_RANDOM</text>

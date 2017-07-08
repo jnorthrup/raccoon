@@ -8,44 +8,44 @@
  viewBox="0.00 0.00 722.00 170.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 166)">
 <title>org.msrg.raccoon.engine.task.result.SliceMatrix_CodingResult.getResult</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node2 -->
+<g id="node1" class="node"><title>Node2</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-66 0,-96 176,-96 176,-66 0,-66"/>
 <text text-anchor="start" x="8" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="88" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">SliceMatrix_CodingResult.getResult</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d0/d6b/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1EncodingSourceCodedBatch__SequentialCodingTask_adfa33e105ef32cced4a8b532961cde23.html#adfa33e105ef32cced4a8b532961cde23" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lEncodingSourceCodedBatch_SequentialCoding\lTask.runStagePrivately">
-<polygon fill="none" stroke="black" points="217,-120.5 217,-161.5 441,-161.5 441,-120.5 217,-120.5"/>
-<text text-anchor="start" x="225" y="-149.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
-<text text-anchor="start" x="225" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">EncodingSourceCodedBatch_SequentialCoding</text>
+<!-- Node3 -->
+<g id="node2" class="node"><title>Node3</title>
+<g id="a_node2"><a xlink:href="../../d4/daf/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1EncodingReceivedCodedBatch__SequentialCodingTask_a42110602418c15d727175229b4b8f9cb.html#a42110602418c15d727175229b4b8f9cb" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lEncodingReceivedCodedBatch_SequentialCoding\lTask.runStagePrivately">
+<polygon fill="none" stroke="black" points="212,-120.5 212,-161.5 446,-161.5 446,-120.5 212,-120.5"/>
+<text text-anchor="start" x="220" y="-149.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
+<text text-anchor="start" x="220" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">EncodingReceivedCodedBatch_SequentialCoding</text>
 <text text-anchor="middle" x="329" y="-127.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task.runStagePrivately</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node2&#45;&gt;Node3 -->
+<g id="edge1" class="edge"><title>Node2&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M158.884,-98.5441C186.265,-105.418 217.871,-113.352 246.296,-120.489"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="159.553,-95.1034 149.001,-96.0631 157.848,-101.893 159.553,-95.1034"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d4/daf/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1EncodingReceivedCodedBatch__SequentialCodingTask_a42110602418c15d727175229b4b8f9cb.html#a42110602418c15d727175229b4b8f9cb" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lEncodingReceivedCodedBatch_SequentialCoding\lTask.runStagePrivately">
-<polygon fill="none" stroke="black" points="212,-60.5 212,-101.5 446,-101.5 446,-60.5 212,-60.5"/>
-<text text-anchor="start" x="220" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
-<text text-anchor="start" x="220" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">EncodingReceivedCodedBatch_SequentialCoding</text>
+<!-- Node4 -->
+<g id="node3" class="node"><title>Node4</title>
+<g id="a_node3"><a xlink:href="../../d0/d6b/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1EncodingSourceCodedBatch__SequentialCodingTask_adfa33e105ef32cced4a8b532961cde23.html#adfa33e105ef32cced4a8b532961cde23" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lEncodingSourceCodedBatch_SequentialCoding\lTask.runStagePrivately">
+<polygon fill="none" stroke="black" points="217,-60.5 217,-101.5 441,-101.5 441,-60.5 217,-60.5"/>
+<text text-anchor="start" x="225" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
+<text text-anchor="start" x="225" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">EncodingSourceCodedBatch_SequentialCoding</text>
 <text text-anchor="middle" x="329" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task.runStagePrivately</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M186.457,-81C194.856,-81 203.406,-81 211.931,-81"/>
+<!-- Node2&#45;&gt;Node4 -->
+<g id="edge2" class="edge"><title>Node2&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M186.61,-81C196.59,-81 206.78,-81 216.89,-81"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="186.299,-77.5001 176.299,-81 186.299,-84.5001 186.299,-77.5001"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node5 -->
+<g id="node4" class="node"><title>Node5</title>
 <g id="a_node4"><a xlink:href="../../df/d07/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1MultiplyBulkMatrix__SequentialCodingTask_a7e9cd0301479f76cdaa37d35547c760a.html#a7e9cd0301479f76cdaa37d35547c760a" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lMultiplyBulkMatrix_SequentialCodingTask.run\lStagePrivately">
 <polygon fill="none" stroke="black" points="220.5,-0.5 220.5,-41.5 437.5,-41.5 437.5,-0.5 220.5,-0.5"/>
 <text text-anchor="start" x="228.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
@@ -54,13 +54,13 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
+<!-- Node2&#45;&gt;Node5 -->
+<g id="edge3" class="edge"><title>Node2&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M158.884,-63.4559C186.265,-56.5821 217.871,-48.6475 246.296,-41.5114"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="157.848,-60.1073 149.001,-65.9369 159.553,-66.8966 157.848,-60.1073"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
+<!-- Node6 -->
+<g id="node5" class="node"><title>Node6</title>
 <g id="a_node5"><a xlink:href="../../df/d07/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1MultiplyBulkMatrix__SequentialCodingTask_a811e36a15733ee58c71e7b8f12f0cec8.html#a811e36a15733ee58c71e7b8f12f0cec8" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lMultiplyBulkMatrix_SequentialCodingTask.coding\lFinished">
 <polygon fill="none" stroke="black" points="482,-0.5 482,-41.5 714,-41.5 714,-0.5 482,-0.5"/>
 <text text-anchor="start" x="490" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
@@ -69,8 +69,8 @@
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge4" class="edge"><title>Node5&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M448.066,-21C459.267,-21 470.615,-21 481.788,-21"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="447.83,-17.5001 437.83,-21 447.829,-24.5001 447.83,-17.5001"/>
 </g>

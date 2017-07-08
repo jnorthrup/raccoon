@@ -8,14 +8,14 @@
  viewBox="0.00 0.00 456.00 39.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 35)">
 <title>org.msrg.raccoon.engine.task.sequential.SequentialCodingTask.SequentialCodingTask</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-30.5 216,-30.5 216,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
 <text text-anchor="middle" x="108" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SequentialCodingTask.SequentialCodingTask</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../d6/d78/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTask_aac71a63fa055d799d050d072c04e5eec.html#aac71a63fa055d799d050d072c04e5eec" target="_top" xlink:title="org.msrg.raccoon.engine.task.sequential.\lSequentialCodingTask.getFinalStage">
 <polygon fill="none" stroke="black" points="252,-0.5 252,-30.5 448,-30.5 448,-0.5 252,-0.5"/>
 <text text-anchor="start" x="260" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
@@ -23,8 +23,8 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M216.015,-15.5C224.457,-15.5 232.986,-15.5 241.432,-15.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="241.682,-19.0001 251.682,-15.5 241.682,-12.0001 241.682,-19.0001"/>
 </g>

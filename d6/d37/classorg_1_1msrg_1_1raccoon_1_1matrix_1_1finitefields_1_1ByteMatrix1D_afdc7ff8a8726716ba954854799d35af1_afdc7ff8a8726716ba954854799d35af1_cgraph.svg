@@ -8,14 +8,14 @@
  viewBox="0.00 0.00 378.00 186.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 182)">
 <title>org.msrg.raccoon.matrix.finitefields.ByteMatrix1D.multiply1D</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-73.5 0,-103.5 173,-103.5 173,-73.5 0,-73.5"/>
 <text text-anchor="start" x="8" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
 <text text-anchor="middle" x="86.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByteMatrix1D.multiply1D</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a4af2f7af83b88f86fe2b33adfdd1db48.html#a4af2f7af83b88f86fe2b33adfdd1db48" target="_top" xlink:title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.createOneEmtpySlice">
 <polygon fill="none" stroke="black" points="209,-147.5 209,-177.5 370,-177.5 370,-147.5 209,-147.5"/>
 <text text-anchor="start" x="217" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.bulk.</text>
@@ -23,13 +23,13 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M121.459,-103.514C145.636,-113.946 179.021,-127.835 209,-138.5 214.569,-140.481 220.394,-142.444 226.249,-144.342"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="225.502,-147.777 236.092,-147.469 227.621,-141.105 225.502,-147.777"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node2 -->
+<g id="node3" class="node"><title>Node2</title>
 <g id="a_node3"><a xlink:href="../../df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a804160abadbedfe02caa0c441731a519.html#a804160abadbedfe02caa0c441731a519" target="_top" xlink:title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getContent">
 <polygon fill="none" stroke="black" points="216.5,-98.5 216.5,-128.5 362.5,-128.5 362.5,-98.5 216.5,-98.5"/>
 <text text-anchor="start" x="224.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.bulk.</text>
@@ -37,13 +37,13 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
+<!-- Node0&#45;&gt;Node2 -->
+<g id="edge2" class="edge"><title>Node0&#45;&gt;Node2</title>
 <path fill="none" stroke="midnightblue" d="M173.034,-99.1385C184.077,-100.512 195.368,-101.916 206.356,-103.283"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="205.99,-106.764 216.345,-104.526 206.854,-99.8179 205.99,-106.764"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node3 -->
+<g id="node4" class="node"><title>Node3</title>
 <g id="a_node4"><a xlink:href="../../d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a4c85807433398a037c9d6885569fba0e.html#a4c85807433398a037c9d6885569fba0e" target="_top" xlink:title="org.msrg.raccoon.matrix.bulk.\lSliceMatrix.loadNoCopy">
 <polygon fill="none" stroke="black" points="216.5,-49.5 216.5,-79.5 362.5,-79.5 362.5,-49.5 216.5,-49.5"/>
 <text text-anchor="start" x="224.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.bulk.</text>
@@ -51,13 +51,13 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
+<!-- Node0&#45;&gt;Node3 -->
+<g id="edge3" class="edge"><title>Node0&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M173.034,-78.287C184.077,-76.9684 195.368,-75.6202 206.356,-74.3083"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="206.831,-77.7765 216.345,-73.1155 206.001,-70.8259 206.831,-77.7765"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
+<!-- Node4 -->
+<g id="node5" class="node"><title>Node4</title>
 <g id="a_node5"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_af8b135c80a283acac5996df88e99c99a.html#af8b135c80a283acac5996df88e99c99a" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix.verify">
 <polygon fill="none" stroke="black" points="227,-0.5 227,-30.5 352,-30.5 352,-0.5 227,-0.5"/>
 <text text-anchor="start" x="235" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
@@ -65,8 +65,8 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
+<!-- Node0&#45;&gt;Node4 -->
+<g id="edge4" class="edge"><title>Node0&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M123.662,-73.4279C147.691,-63.608 180.032,-50.7619 209,-40.5 215.414,-38.2278 222.155,-35.9467 228.885,-33.7366"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="230.265,-36.969 238.7,-30.5588 228.108,-30.3094 230.265,-36.969"/>
 </g>

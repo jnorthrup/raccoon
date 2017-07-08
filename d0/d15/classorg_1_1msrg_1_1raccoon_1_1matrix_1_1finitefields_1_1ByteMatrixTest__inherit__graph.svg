@@ -8,8 +8,8 @@
  viewBox="0.00 0.00 197.00 248.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 244)">
 <title>org.msrg.raccoon.matrix.finitefields.ByteMatrixTest</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-145.5 189,-145.5 189,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
 <text text-anchor="middle" x="94.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByteMatrixTest</text>
@@ -25,8 +25,8 @@
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ testMtimesBMtimesInvMIsBM()</text>
 <text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runTestM2timesInvIsM()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <polygon fill="none" stroke="#bfbfbf" points="65,-182.5 65,-239.5 124,-239.5 124,-182.5 65,-182.5"/>
 <text text-anchor="middle" x="94.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">TestCase</text>
 <polyline fill="none" stroke="#bfbfbf" points="65,-220.5 124,-220.5 "/>
@@ -34,8 +34,8 @@
 <polyline fill="none" stroke="#bfbfbf" points="65,-201.5 124,-201.5 "/>
 <text text-anchor="middle" x="94.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<!-- Node1&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node1&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M94.5,-172.356C94.5,-163.999 94.5,-154.872 94.5,-145.656"/>
 <polygon fill="none" stroke="midnightblue" points="91.0001,-172.478 94.5,-182.478 98.0001,-172.478 91.0001,-172.478"/>
 </g>

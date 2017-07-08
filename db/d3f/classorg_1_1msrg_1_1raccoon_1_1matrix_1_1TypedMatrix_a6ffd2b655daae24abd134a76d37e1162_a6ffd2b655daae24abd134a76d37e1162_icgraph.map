@@ -1,4 +1,5 @@
 <map id="org.msrg.raccoon.matrix.TypedMatrix.subtract" name="org.msrg.raccoon.matrix.TypedMatrix.subtract">
 <area shape="rect" id="node2" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a77f1b783e3b30e54555ef536016ff65d.html#a77f1b783e3b30e54555ef536016ff65d" title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::subtractRow" alt="" coords="220,5,447,47"/>
-<area shape="rect" id="node3" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_ad8c546f75976e5da73d8f2b449c533ca.html#ad8c546f75976e5da73d8f2b449c533ca" title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::subtract\lRowFromRow" alt="" coords="233,70,433,126"/>
+<area shape="rect" id="node3" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_ad8c546f75976e5da73d8f2b449c533ca.html#ad8c546f75976e5da73d8f2b449c533ca" title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::subtract\lRowFromRow" alt="" coords="233,71,433,127"/>
+<area shape="rect" id="node4" href="$db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a8f46d821e9af757868868a61bdc766d3.html#a8f46d821e9af757868868a61bdc766d3" title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::toString" alt="" coords="234,152,433,193"/>
 </map>

@@ -1,7 +1,6 @@
 var hierarchy =
 [
-    [ "raccoon.raccoon.App", "de/dcb/classraccoon_1_1raccoon_1_1App.html", null ],
-    [ "org.msrg.raccoon.utils.BytesUtil", "d0/d99/classorg_1_1msrg_1_1raccoon_1_1utils_1_1BytesUtil.html", null ],
+    [ "org.msrg.raccoon.utils.BytesUtil", "d8/dd8/enumorg_1_1msrg_1_1raccoon_1_1utils_1_1BytesUtil.html", null ],
     [ "org.msrg.raccoon.CodedBatchType", "da/d9f/enumorg_1_1msrg_1_1raccoon_1_1CodedBatchType.html", null ],
     [ "org.msrg.raccoon.CodedPiece", "dd/dfd/classorg_1_1msrg_1_1raccoon_1_1CodedPiece.html", null ],
     [ "org.msrg.raccoon.engine.CodingEngineEvent", "d3/db5/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent.html", [
@@ -47,6 +46,10 @@ var hierarchy =
     ] ],
     [ "org.msrg.raccoon.engine.task.CodingTaskStatus", "df/de9/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1task.html#dd/d1c/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTaskStatus", null ],
     [ "org.msrg.raccoon.engine.task.CodingTaskType", "d5/da9/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTaskType.html", null ],
+    [ "Collection< org.msrg.raccoon.engine.ICodingListener >", null, null ],
+    [ "Collection< org.msrg.raccoon.engine.task.CodingTask >", null, null ],
+    [ "Collection< org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult >", null, null ],
+    [ "Collection< org.msrg.raccoon.engine.thread.CodingThread >", null, null ],
     [ "org.msrg.raccoon.utils.Combinations", "d8/df6/classorg_1_1msrg_1_1raccoon_1_1utils_1_1Combinations.html", null ],
     [ "org.msrg.raccoon.matrix.DATATYPES", "d1/def/namespaceorg_1_1msrg_1_1raccoon_1_1matrix.html#db/de5/enumorg_1_1msrg_1_1raccoon_1_1matrix_1_1DATATYPES", null ],
     [ "org.msrg.raccoon.ICodedBatch", "d1/d78/interfaceorg_1_1msrg_1_1raccoon_1_1ICodedBatch.html", [
@@ -68,11 +71,8 @@ var hierarchy =
       [ "org.msrg.raccoon.engine.task.sequential.SequentialCodingTask", "d6/d78/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTask.html", null ]
     ] ],
     [ "List< org.msrg.raccoon.engine.CodingEngineEvent >", null, null ],
-    [ "List< org.msrg.raccoon.engine.ICodingListener >", null, null ],
     [ "List< org.msrg.raccoon.engine.task.CodingTask >", null, null ],
-    [ "Map< org.msrg.raccoon.engine.task.result.CodingResult, String >", null, null ],
-    [ "Map< org.msrg.raccoon.engine.thread.CodingThread, Long >", null, null ],
-    [ "org.msrg.raccoon.matrix.MatrixFactory", "d5/dcc/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1MatrixFactory.html", null ],
+    [ "org.msrg.raccoon.matrix.MatrixFactory", "dd/d25/enumorg_1_1msrg_1_1raccoon_1_1matrix_1_1MatrixFactory.html", null ],
     [ "org.msrg.raccoon.engine.task.sequential.SequentialCodingTaskType", "d4/ddf/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential.html#dc/df8/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTaskType", null ],
     [ "Set< org.msrg.raccoon.engine.task.CodingTask >", null, null ],
     [ "Set< org.msrg.raccoon.engine.task.result.CodedSlice_CodingResult >", null, null ],
@@ -81,7 +81,7 @@ var hierarchy =
     [ "Set< org.msrg.raccoon.engine.thread.CodingThread >", null, null ],
     [ "org.msrg.raccoon.finitefields.Tables", "d6/d93/classorg_1_1msrg_1_1raccoon_1_1finitefields_1_1Tables.html", null ],
     [ "Thread", null, [
-      [ "org.msrg.raccoon.engine.CodingEngine", "db/d98/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine.html", null ],
+      [ "org.msrg.raccoon.engine.CodingEngine.MyThread", "d0/d4e/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine_1_1MyThread.html", null ],
       [ "org.msrg.raccoon.engine.thread.CodingThread", "d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread.html", [
         [ "org.msrg.raccoon.engine.thread.CodingThreadImpl", "d6/d19/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThreadImpl.html", null ]
       ] ]
@@ -110,13 +110,11 @@ var hierarchy =
     [ "Vector< org.msrg.raccoon.CodedPiece >", null, null ],
     [ "BitSet", null, null ],
     [ "Collection", null, null ],
-    [ "HashMap", null, null ],
     [ "HashSet", null, null ],
     [ "InetSocketAddress", null, null ],
     [ "IOException", null, null ],
     [ "LinkedList", null, null ],
     [ "List", null, null ],
-    [ "Map", null, null ],
     [ "Random", null, null ],
     [ "Serializable", null, [
       [ "org.msrg.raccoon.matrix.bulk.BulkMatrix", "df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix.html", [
@@ -126,7 +124,6 @@ var hierarchy =
     ] ],
     [ "Set", null, null ],
     [ "StringWriter", null, null ],
-    [ "Test", null, null ],
     [ "TestCase", null, [
       [ "org.msrg.raccoon.CodedBatchTest", "db/d77/classorg_1_1msrg_1_1raccoon_1_1CodedBatchTest.html", null ],
       [ "org.msrg.raccoon.CodedPieceTest", "d7/da5/classorg_1_1msrg_1_1raccoon_1_1CodedPieceTest.html", null ],
@@ -134,10 +131,8 @@ var hierarchy =
       [ "org.msrg.raccoon.matrix.finitefields.ByteMatrixTest", "d5/d96/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1ByteMatrixTest.html", null ],
       [ "org.msrg.raccoon.matrix.finitefields.FFByteMatrixTest", "d3/dbf/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1FFByteMatrixTest.html", null ],
       [ "org.msrg.raccoon.ReceivedCodedBatchTest", "db/d26/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatchTest.html", null ],
-      [ "org.msrg.raccoon.SlicedCodedBatchTest", "d7/d47/classorg_1_1msrg_1_1raccoon_1_1SlicedCodedBatchTest.html", null ],
-      [ "raccoon.raccoon.AppTest", "de/d59/classraccoon_1_1raccoon_1_1AppTest.html", null ]
+      [ "org.msrg.raccoon.SlicedCodedBatchTest", "d7/d47/classorg_1_1msrg_1_1raccoon_1_1SlicedCodedBatchTest.html", null ]
     ] ],
-    [ "TestSuite", null, null ],
     [ "Vector", null, null ],
     [ "Writer", null, null ]
 ];

@@ -8,29 +8,29 @@
  viewBox="0.00 0.00 536.00 88.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 84)">
 <title>Graphical Class Hierarchy</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <g id="a_node1"><a xlink:href="d1/d78/interfaceorg_1_1msrg_1_1raccoon_1_1ICodedBatch.html" target="_top" xlink:title="org.msrg.raccoon.ICodedBatch">
 <polygon fill="none" stroke="black" points="0,-30 0,-49 152,-49 152,-30 0,-30"/>
 <text text-anchor="middle" x="76" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.ICodedBatch</text>
 </a>
 </g>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch.html" target="_top" xlink:title="org.msrg.raccoon.CodedBatch">
 <polygon fill="none" stroke="black" points="188,-30 188,-49 337,-49 337,-30 188,-30"/>
 <text text-anchor="middle" x="262.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.CodedBatch</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M162.05,-39.5C170.623,-39.5 179.278,-39.5 187.719,-39.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="162.043,-36.0001 152.043,-39.5 162.043,-43.0001 162.043,-36.0001"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node2 -->
+<g id="node3" class="node"><title>Node2</title>
 <g id="a_node3"><a xlink:href="da/df0/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatch.html" target="_top" xlink:title="org.msrg.raccoon.Received\lCodedBatch">
 <polygon fill="none" stroke="black" points="382,-49.5 382,-79.5 519,-79.5 519,-49.5 382,-49.5"/>
 <text text-anchor="start" x="390" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.Received</text>
@@ -38,13 +38,13 @@
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
+<!-- Node1&#45;&gt;Node2 -->
+<g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
 <path fill="none" stroke="midnightblue" d="M344.324,-50.3635C356.865,-52.049 369.706,-53.775 381.914,-55.4159"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="344.726,-46.8861 334.349,-49.0227 343.794,-53.8237 344.726,-46.8861"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node3 -->
+<g id="node4" class="node"><title>Node3</title>
 <g id="a_node4"><a xlink:href="d2/da2/classorg_1_1msrg_1_1raccoon_1_1SourceCodedBatch.html" target="_top" xlink:title="org.msrg.raccoon.SourceCoded\lBatch">
 <polygon fill="none" stroke="black" points="373,-0.5 373,-30.5 528,-30.5 528,-0.5 373,-0.5"/>
 <text text-anchor="start" x="381" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.SourceCoded</text>
@@ -52,8 +52,8 @@
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node2&#45;&gt;Node4</title>
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge3" class="edge"><title>Node1&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M347.036,-28.7211C355.634,-27.6118 364.34,-26.4884 372.857,-25.3894"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="346.482,-25.2635 337.012,-30.0146 347.378,-32.206 346.482,-25.2635"/>
 </g>

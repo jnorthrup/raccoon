@@ -8,27 +8,27 @@
  viewBox="0.00 0.00 618.00 88.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 84)">
 <title>org.msrg.raccoon.CodedBatch.equalsExact</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node7 -->
+<g id="node1" class="node"><title>Node7</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-24.5 0,-54.5 181,-54.5 181,-24.5 0,-24.5"/>
 <text text-anchor="start" x="8" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.CodedBatch.equals</text>
 <text text-anchor="middle" x="90.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">Exact</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node8 -->
+<g id="node2" class="node"><title>Node8</title>
 <g id="a_node2"><a xlink:href="../../dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_aecd891a0b0992dcc4f97bb4c7d39a2ed.html#aecd891a0b0992dcc4f97bb4c7d39a2ed" target="_top" xlink:title="org.msrg.raccoon.CodedBatch.equals">
 <polygon fill="none" stroke="black" points="217,-30 217,-49 398,-49 398,-30 217,-30"/>
 <text text-anchor="middle" x="307.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.CodedBatch.equals</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge1" class="edge"><title>Node7&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M191.374,-39.5C199.815,-39.5 208.319,-39.5 216.677,-39.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="191.123,-36.0001 181.123,-39.5 191.122,-43.0001 191.123,-36.0001"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node9 -->
+<g id="node3" class="node"><title>Node9</title>
 <g id="a_node3"><a xlink:href="../../db/d77/classorg_1_1msrg_1_1raccoon_1_1CodedBatchTest_a04baac235b53bea4fab4b550de9271a5.html#a04baac235b53bea4fab4b550de9271a5" target="_top" xlink:title="org.msrg.raccoon.CodedBatch\lTest.testReceivedCodedBatch">
 <polygon fill="none" stroke="black" points="446.5,-49.5 446.5,-79.5 597.5,-79.5 597.5,-49.5 446.5,-49.5"/>
 <text text-anchor="start" x="454.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.CodedBatch</text>
@@ -36,13 +36,13 @@
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge2" class="edge"><title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M399.589,-50.2163C415.147,-52.0467 431.147,-53.9291 446.219,-55.7023"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="399.784,-46.7152 389.443,-49.0227 398.966,-53.6673 399.784,-46.7152"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node10 -->
+<g id="node4" class="node"><title>Node10</title>
 <g id="a_node4"><a xlink:href="../../d7/d47/classorg_1_1msrg_1_1raccoon_1_1SlicedCodedBatchTest_aa7d0bdfa77013b46a1f2e416dbb71b8c.html#aa7d0bdfa77013b46a1f2e416dbb71b8c" target="_top" xlink:title="org.msrg.raccoon.SlicedCoded\lBatchTest.testReceivedCodedBatch">
 <polygon fill="none" stroke="black" points="434,-0.5 434,-30.5 610,-30.5 610,-0.5 434,-0.5"/>
 <text text-anchor="start" x="442" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.SlicedCoded</text>
@@ -50,8 +50,8 @@
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node2&#45;&gt;Node4</title>
+<!-- Node8&#45;&gt;Node10 -->
+<g id="edge3" class="edge"><title>Node8&#45;&gt;Node10</title>
 <path fill="none" stroke="midnightblue" d="M402.95,-28.8327C413.172,-27.6782 423.542,-26.507 433.675,-25.3626"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="402.335,-25.3798 392.791,-29.9801 403.12,-32.3356 402.335,-25.3798"/>
 </g>

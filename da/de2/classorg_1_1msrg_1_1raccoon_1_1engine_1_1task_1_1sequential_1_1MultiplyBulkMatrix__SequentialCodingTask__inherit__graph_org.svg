@@ -8,8 +8,8 @@
  viewBox="0.00 0.00 357.50 782.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 778)">
 <title>org.msrg.raccoon.engine.task.sequential.MultiplyBulkMatrix_SequentialCodingTask</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="66.5,-0.5 66.5,-200.5 266.5,-200.5 266.5,-0.5 66.5,-0.5"/>
 <text text-anchor="start" x="74.5" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
 <text text-anchor="middle" x="166.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">MultiplyBulkMatrix_SequentialCodingTask</text>
@@ -30,8 +30,8 @@
 <text text-anchor="start" x="74.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># getEmptyCodingResults()</text>
 <text text-anchor="start" x="74.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># getFinalStage()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../d6/d78/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTask.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.sequential.\lSequentialCodingTask\n|+ _seqTaskType\l# _activeSubTasks\l# _engine\l# _currentStage\l&#45; _stageTimes\l|+ runInitialSequencialTasks()\l+ codingFailed()\l+ codingFinished()\l+ codingStarted()\l+ finished()\l+ failed()\l+ getStageTimes()\l+ codingPreliminaryStageCompleted()\l# SequentialCodingTask()\l# runStagePrivately()\l# reachedFinalStage()\l# getFinalStage()\l# setCurrentStage()\l}">
 <polygon fill="none" stroke="black" points="68.5,-237.5 68.5,-481.5 264.5,-481.5 264.5,-237.5 68.5,-237.5"/>
 <text text-anchor="start" x="76.5" y="-469.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
@@ -59,13 +59,13 @@
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<!-- Node1&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node1&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M166.5,-227.118C166.5,-218.231 166.5,-209.363 166.5,-200.683"/>
 <polygon fill="none" stroke="midnightblue" points="163,-227.15 166.5,-237.15 170,-227.15 163,-227.15"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node2 -->
+<g id="node3" class="node"><title>Node2</title>
 <g id="a_node3"><a xlink:href="../../d9/d22/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTask.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.\lCodingTask\n|+ _taskType\l+ _id\l+ _result\l+ _listener\l# _status\l|+ getCodingResults()\l+ getStatus()\l+ isStarted()\l+ isFinished()\l+ isFailed()\l+ failed()\l+ started()\l+ finished()\l+ isSequencial()\l+ equals()\l+ hashCode()\l# CodingTask()\l# getEmptyCodingResults()\l# changeStatus()\l}">
 <polygon fill="none" stroke="black" points="0,-518.5 0,-773.5 149,-773.5 149,-518.5 0,-518.5"/>
 <text text-anchor="start" x="8" y="-761.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.</text>
@@ -94,13 +94,13 @@
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
+<!-- Node2&#45;&gt;Node1 -->
+<g id="edge2" class="edge"><title>Node2&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M118.662,-508.435C121.56,-499.472 124.468,-490.478 127.34,-481.597"/>
 <polygon fill="none" stroke="midnightblue" points="115.269,-507.551 115.522,-518.143 121.929,-509.705 115.269,-507.551"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node3 -->
+<g id="node4" class="node"><title>Node3</title>
 <g id="a_node4"><a xlink:href="../../d6/d58/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingListener.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lICodingListener\n||+ codingStarted()\l+ codingPreliminaryStageCompleted()\l+ codingFailed()\l+ codingFinished()\l}">
 <polygon fill="none" stroke="black" points="167.5,-595.5 167.5,-696.5 349.5,-696.5 349.5,-595.5 167.5,-595.5"/>
 <text text-anchor="start" x="175.5" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -115,8 +115,8 @@
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node2 -->
-<g id="edge3" class="edge"><title>Node4&#45;&gt;Node2</title>
+<!-- Node3&#45;&gt;Node1 -->
+<g id="edge3" class="edge"><title>Node3&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M239.393,-585.913C229.618,-555.686 217.347,-517.738 205.675,-481.644"/>
 <polygon fill="none" stroke="midnightblue" points="236.068,-587.006 242.475,-595.444 242.728,-584.852 236.068,-587.006"/>
 </g>

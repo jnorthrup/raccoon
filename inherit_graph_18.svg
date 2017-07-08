@@ -8,12 +8,12 @@
  viewBox="0.00 0.00 135.00 39.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 35)">
 <title>Graphical Class Hierarchy</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="da/d8b/namespaceorg_1_1msrg_1_1raccoon_1_1engine.html#d1/dea/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEventType" target="_top" xlink:title="org.msrg.raccoon.engine.\lCodingEngineEventType">
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
+<g id="a_node1"><a xlink:href="da/d8b/namespaceorg_1_1msrg_1_1raccoon_1_1engine.html#d0/d6c/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineTestType" target="_top" xlink:title="org.msrg.raccoon.engine.\lCodingEngineTestType">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-30.5 127,-30.5 127,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
-<text text-anchor="middle" x="63.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineEventType</text>
+<text text-anchor="middle" x="63.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineTestType</text>
 </a>
 </g>
 </g>

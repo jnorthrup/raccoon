@@ -8,15 +8,15 @@
  viewBox="0.00 0.00 380.00 50.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 46)">
 <title>org.msrg.raccoon.engine.CodingEngineTest.processFinishedResult</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node7 -->
+<g id="node1" class="node"><title>Node7</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-41.5 171,-41.5 171,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineTest.processFinished</text>
 <text text-anchor="middle" x="85.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Result</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node8 -->
+<g id="node2" class="node"><title>Node8</title>
 <g id="a_node2"><a xlink:href="../../dc/dcf/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineTest_a312467d37f3faa057e1deaaeb5f527a4.html#a312467d37f3faa057e1deaaeb5f527a4" target="_top" xlink:title="org.msrg.raccoon.engine.\lCodingEngineTest.codingFinished">
 <polygon fill="none" stroke="black" points="207,-6 207,-36 372,-36 372,-6 207,-6"/>
 <text text-anchor="start" x="215" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -24,8 +24,8 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge1" class="edge"><title>Node7&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M181.553,-21C190.005,-21 198.512,-21 206.836,-21"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="181.288,-17.5001 171.288,-21 181.288,-24.5001 181.288,-17.5001"/>
 </g>

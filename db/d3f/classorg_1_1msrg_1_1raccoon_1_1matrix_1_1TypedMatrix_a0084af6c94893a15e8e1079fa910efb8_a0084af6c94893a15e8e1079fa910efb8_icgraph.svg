@@ -16,10 +16,10 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_aa766b35e335e2c744dad3d1a8e63e3ae.html#aa766b35e335e2c744dad3d1a8e63e3ae" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::multiply">
+<g id="a_node2"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a8f46d821e9af757868868a61bdc766d3.html#a8f46d821e9af757868868a61bdc766d3" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::toString">
 <polygon fill="none" stroke="black" points="211,-0.5 211,-30.5 360,-30.5 360,-0.5 211,-0.5"/>
 <text text-anchor="start" x="219" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
-<text text-anchor="middle" x="285.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::multiply</text>
+<text text-anchor="middle" x="285.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::toString</text>
 </a>
 </g>
 </g>

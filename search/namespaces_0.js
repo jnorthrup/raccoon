@@ -2,8 +2,7 @@ var searchData=
 [
   ['bulk',['bulk',['../d6/d75/namespaceorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk.html',1,'org::msrg::raccoon::matrix']]],
   ['engine',['engine',['../da/d8b/namespaceorg_1_1msrg_1_1raccoon_1_1engine.html',1,'org::msrg::raccoon']]],
-  ['finitefields',['finitefields',['../db/ddb/namespaceorg_1_1msrg_1_1raccoon_1_1finitefields.html',1,'org::msrg::raccoon']]],
-  ['finitefields',['finitefields',['../d2/dcf/namespaceorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields.html',1,'org::msrg::raccoon::matrix']]],
+  ['finitefields',['finitefields',['../db/ddb/namespaceorg_1_1msrg_1_1raccoon_1_1finitefields.html',1,'org.msrg.raccoon.finitefields'],['../d2/dcf/namespaceorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields.html',1,'org.msrg.raccoon.matrix.finitefields']]],
   ['matrix',['matrix',['../d1/def/namespaceorg_1_1msrg_1_1raccoon_1_1matrix.html',1,'org::msrg::raccoon']]],
   ['msrg',['msrg',['../d0/d70/namespaceorg_1_1msrg.html',1,'org']]],
   ['org',['org',['../db/d96/namespaceorg.html',1,'']]],

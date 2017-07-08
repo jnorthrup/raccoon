@@ -54,8 +54,8 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>org.msrg.raccoon.engine.task.result.CodingResult</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="388,-138.5 388,-316.5 564,-316.5 564,-138.5 388,-138.5"/>
 <text text-anchor="start" x="396" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="476" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingResult</text>
@@ -65,18 +65,18 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="396" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ _cTask</text>
 <text text-anchor="start" x="396" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _status</text>
 <polyline fill="none" stroke="black" points="388,-234.5 564,-234.5 "/>
-<text text-anchor="start" x="396" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setStatus()</text>
-<text text-anchor="start" x="396" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
-<text text-anchor="start" x="396" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hashCode()</text>
-<text text-anchor="start" x="396" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getStatus()</text>
+<text text-anchor="start" x="396" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
+<text text-anchor="start" x="396" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hashCode()</text>
+<text text-anchor="start" x="396" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getStatus()</text>
+<text text-anchor="start" x="396" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setStatus()</text>
 <text text-anchor="start" x="396" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isStarted()</text>
 <text text-anchor="start" x="396" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isFailed()</text>
 <text text-anchor="start" x="396" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isFinished()</text>
 <text text-anchor="start" x="396" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingResult()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d6/db6/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1BulkMatrix__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lBulkMatrix_CodingResult\n|# _smResult\l|+ BulkMatrix_CodingResult()\l+ setResult()\l+ getResult()\l}">
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
+<g id="a_node2"><a xlink:href="../../d6/db6/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1BulkMatrix__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lBulkMatrix_CodingResult\n|# _smResult\l|+ BulkMatrix_CodingResult()\l+ getResult()\l+ setResult()\l}">
 <polygon fill="none" stroke="black" points="0,-6 0,-96 176,-96 176,-6 0,-6"/>
 <text text-anchor="start" x="8" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="88" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">BulkMatrix_CodingResult</text>
@@ -84,19 +84,19 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="8" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00"># _smResult</text>
 <polyline fill="none" stroke="black" points="0,-47 176,-47 "/>
 <text text-anchor="start" x="8" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ BulkMatrix_CodingResult()</text>
-<text text-anchor="start" x="8" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
-<text text-anchor="start" x="8" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="8" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="8" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M378.382,-186.79C321.518,-163.148 248.692,-131.993 185,-102 180.972,-100.103 176.866,-98.1333 172.731,-96.1196"/>
 <polygon fill="none" stroke="midnightblue" points="377.149,-190.067 387.726,-190.667 379.831,-183.601 377.149,-190.067"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d2/da1/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1ByteMatrix__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lByteMatrix_CodingResult\n|# _m\l|+ ByteMatrix_CodingResult()\l+ setResult()\l+ getResult()\l}">
+<!-- Node2 -->
+<g id="node3" class="node"><title>Node2</title>
+<g id="a_node3"><a xlink:href="../../d2/da1/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1ByteMatrix__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lByteMatrix_CodingResult\n|# _m\l|+ ByteMatrix_CodingResult()\l+ getResult()\l+ setResult()\l}">
 <polygon fill="none" stroke="black" points="194,-6 194,-96 370,-96 370,-6 194,-6"/>
 <text text-anchor="start" x="202" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="282" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">ByteMatrix_CodingResult</text>
@@ -104,19 +104,19 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="202" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00"># _m</text>
 <polyline fill="none" stroke="black" points="194,-47 370,-47 "/>
 <text text-anchor="start" x="202" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ByteMatrix_CodingResult()</text>
-<text text-anchor="start" x="202" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
-<text text-anchor="start" x="202" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="202" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="202" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
+<!-- Node0&#45;&gt;Node2 -->
+<g id="edge2" class="edge"><title>Node0&#45;&gt;Node2</title>
 <path fill="none" stroke="midnightblue" d="M380.004,-140.153C363.017,-124.873 345.988,-109.556 331.003,-96.0773"/>
 <polygon fill="none" stroke="midnightblue" points="378.023,-143.079 387.799,-147.164 382.705,-137.875 378.023,-143.079"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d7/d68/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1CodedSlice__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lCodedSlice_CodingResult\n|# _codedSlice\l|+ CodedSlice_CodingResult()\l+ setResult()\l+ getResult()\l}">
+<!-- Node3 -->
+<g id="node4" class="node"><title>Node3</title>
+<g id="a_node4"><a xlink:href="../../d7/d68/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1CodedSlice__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lCodedSlice_CodingResult\n|# _codedSlice\l|+ CodedSlice_CodingResult()\l+ getResult()\l+ setResult()\l}">
 <polygon fill="none" stroke="black" points="388,-6 388,-96 564,-96 564,-6 388,-6"/>
 <text text-anchor="start" x="396" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="476" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">CodedSlice_CodingResult</text>
@@ -124,19 +124,19 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="396" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00"># _codedSlice</text>
 <polyline fill="none" stroke="black" points="388,-47 564,-47 "/>
 <text text-anchor="start" x="396" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ CodedSlice_CodingResult()</text>
-<text text-anchor="start" x="396" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
-<text text-anchor="start" x="396" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="396" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="396" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
+<!-- Node0&#45;&gt;Node3 -->
+<g id="edge3" class="edge"><title>Node0&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M476,-128.147C476,-116.944 476,-105.989 476,-96.0381"/>
 <polygon fill="none" stroke="midnightblue" points="472.5,-128.483 476,-138.483 479.5,-128.483 472.5,-128.483"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../db/d63/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1Equals__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lEquals_CodingResult\n|# _equals\l|+ Equals_CodingResult()\l+ setResult()\l+ getResult()\l+ toString()\l}">
+<!-- Node4 -->
+<g id="node5" class="node"><title>Node4</title>
+<g id="a_node5"><a xlink:href="../../db/d63/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1Equals__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lEquals_CodingResult\n|# _equals\l|+ Equals_CodingResult()\l+ getResult()\l+ setResult()\l+ toString()\l}">
 <polygon fill="none" stroke="black" points="582,-0.5 582,-101.5 758,-101.5 758,-0.5 582,-0.5"/>
 <text text-anchor="start" x="590" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="670" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">Equals_CodingResult</text>
@@ -144,20 +144,20 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="590" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _equals</text>
 <polyline fill="none" stroke="black" points="582,-52.5 758,-52.5 "/>
 <text text-anchor="start" x="590" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Equals_CodingResult()</text>
-<text text-anchor="start" x="590" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
-<text text-anchor="start" x="590" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="590" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="590" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
 <text text-anchor="start" x="590" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
+<!-- Node0&#45;&gt;Node4 -->
+<g id="edge4" class="edge"><title>Node0&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M571.885,-140.253C586.599,-127.018 601.347,-113.753 614.774,-101.675"/>
 <polygon fill="none" stroke="midnightblue" points="569.295,-137.875 564.201,-147.164 573.977,-143.079 569.295,-137.875"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d0/d50/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1SliceMatrix__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lSliceMatrix_CodingResult\n|# _smResult\l|+ SliceMatrix_CodingResult()\l+ setResult()\l+ getResult()\l}">
+<!-- Node5 -->
+<g id="node6" class="node"><title>Node5</title>
+<g id="a_node6"><a xlink:href="../../d0/d50/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1SliceMatrix__CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lSliceMatrix_CodingResult\n|# _smResult\l|+ SliceMatrix_CodingResult()\l+ getResult()\l+ setResult()\l}">
 <polygon fill="none" stroke="black" points="776,-6 776,-96 952,-96 952,-6 776,-6"/>
 <text text-anchor="start" x="784" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="864" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">SliceMatrix_CodingResult</text>
@@ -165,13 +165,13 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="784" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00"># _smResult</text>
 <polyline fill="none" stroke="black" points="776,-47 952,-47 "/>
 <text text-anchor="start" x="784" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ SliceMatrix_CodingResult()</text>
-<text text-anchor="start" x="784" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
-<text text-anchor="start" x="784" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="784" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="784" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5" class="edge"><title>Node1&#45;&gt;Node6</title>
+<!-- Node0&#45;&gt;Node5 -->
+<g id="edge5" class="edge"><title>Node0&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M573.618,-186.79C630.482,-163.148 703.308,-131.993 767,-102 771.028,-100.103 775.134,-98.1333 779.269,-96.1196"/>
 <polygon fill="none" stroke="midnightblue" points="572.169,-183.601 564.274,-190.667 574.851,-190.067 572.169,-183.601"/>
 </g>

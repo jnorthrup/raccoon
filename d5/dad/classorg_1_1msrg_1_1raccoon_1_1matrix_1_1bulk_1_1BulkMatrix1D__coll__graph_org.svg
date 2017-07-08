@@ -8,8 +8,8 @@
  viewBox="0.00 0.00 286.50 844.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 840)">
 <title>org.msrg.raccoon.matrix.bulk.BulkMatrix1D</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node3 -->
+<g id="node1" class="node"><title>Node3</title>
 <polygon fill="#bfbfbf" stroke="black" points="16.5,-0.5 16.5,-90.5 190.5,-90.5 190.5,-0.5 16.5,-0.5"/>
 <text text-anchor="start" x="24.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.bulk.</text>
 <text text-anchor="middle" x="103.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">BulkMatrix1D</text>
@@ -20,9 +20,9 @@
 <text text-anchor="start" x="24.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createBulkMatrix1D()</text>
 <text text-anchor="start" x="24.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createBulkMatixIncrementalData()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.bulk.\lBulkMatrix\n|+ _size\l+ _cols\l+ _rows\l+ _SLICE_LENGTH\l+ _MAX_ROWS_PRINT\l+ _MAX_SLICES_PRINT\l&#45; serialVersionUID\l|+ BulkMatrix()\l+ BulkMatrix()\l+ createEmptyMatrix()\l+ BulkMatrix()\l+ createOneEmtpySlice()\l+ getSliceCount()\l+ slice()\l+ equals()\l+ getByte()\l+ getSize()\l+ add()\l+ toString()\l+ getSizeInByteBuffer()\l+ getContent()\l+ getSlices()\l+ createBulkMatixRandomData()\l+ createBulkMatixIncrementalData()\l# toString()\l}">
+<!-- Node4 -->
+<g id="node2" class="node"><title>Node4</title>
+<g id="a_node2"><a xlink:href="../../df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.bulk.\lBulkMatrix\n|+ _size\l+ _cols\l+ _rows\l+ _SLICE_LENGTH\l+ _MAX_ROWS_PRINT\l+ _MAX_SLICES_PRINT\l&#45; serialVersionUID\l|+ BulkMatrix()\l+ BulkMatrix()\l+ BulkMatrix()\l+ createEmptyMatrix()\l+ createOneEmtpySlice()\l+ getSliceCount()\l+ slice()\l+ equals()\l+ getByte()\l+ getSize()\l+ add()\l+ toString()\l+ getSizeInByteBuffer()\l+ getContent()\l+ getSlices()\l+ createBulkMatixRandomData()\l+ createBulkMatixIncrementalData()\l# toString()\l}">
 <polygon fill="none" stroke="black" points="16.5,-128.5 16.5,-449.5 190.5,-449.5 190.5,-128.5 16.5,-128.5"/>
 <text text-anchor="start" x="24.5" y="-437.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.bulk.</text>
 <text text-anchor="middle" x="103.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">BulkMatrix</text>
@@ -37,8 +37,8 @@
 <polyline fill="none" stroke="black" points="16.5,-334.5 190.5,-334.5 "/>
 <text text-anchor="start" x="24.5" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ BulkMatrix()</text>
 <text text-anchor="start" x="24.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ BulkMatrix()</text>
-<text text-anchor="start" x="24.5" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createEmptyMatrix()</text>
-<text text-anchor="start" x="24.5" y="-289.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ BulkMatrix()</text>
+<text text-anchor="start" x="24.5" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ BulkMatrix()</text>
+<text text-anchor="start" x="24.5" y="-289.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createEmptyMatrix()</text>
 <text text-anchor="start" x="24.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createOneEmtpySlice()</text>
 <text text-anchor="start" x="24.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSliceCount()</text>
 <text text-anchor="start" x="24.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ slice()</text>
@@ -56,13 +56,13 @@
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<!-- Node4&#45;&gt;Node3 -->
+<g id="edge1" class="edge"><title>Node4&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M103.5,-117.972C103.5,-108.264 103.5,-99.0688 103.5,-90.707"/>
 <polygon fill="none" stroke="midnightblue" points="100,-118.261 103.5,-128.261 107,-118.261 100,-118.261"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node5 -->
+<g id="node3" class="node"><title>Node5</title>
 <polygon fill="none" stroke="#bfbfbf" points="0,-778.5 0,-835.5 67,-835.5 67,-778.5 0,-778.5"/>
 <text text-anchor="middle" x="33.5" y="-823.5" font-family="Helvetica,sans-Serif" font-size="10.00">Serializable</text>
 <polyline fill="none" stroke="#bfbfbf" points="0,-816.5 67,-816.5 "/>
@@ -70,14 +70,14 @@
 <polyline fill="none" stroke="#bfbfbf" points="0,-797.5 67,-797.5 "/>
 <text text-anchor="middle" x="33.5" y="-785.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge2" class="edge"><title>Node5&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M26.6381,-768.504C17.1298,-709.952 3.08073,-593.51 21.5,-497 24.4892,-481.338 28.6441,-465.348 33.5115,-449.544"/>
 <polygon fill="none" stroke="midnightblue" points="23.1927,-769.122 28.2936,-778.408 30.0969,-767.968 23.1927,-769.122"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.bulk.\lSliceMatrix\n|+ _cols\l+ _MAX_COLS_PRINT\l# _b\l&#45; serialVersionUID\l|+ SliceMatrix()\l+ loadNoCopy()\l+ loadWithCopy()\l+ SliceMatrix()\l+ SliceMatrix()\l+ getContent()\l+ hasContent()\l+ clone()\l+ equals()\l+ getByte()\land 6 more...\l+ createRandomSliceMatrix()\l+ getEmptySliceMatrix()\l}">
+<!-- Node6 -->
+<g id="node4" class="node"><title>Node6</title>
+<g id="a_node4"><a xlink:href="../../d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix.html" target="_top" xlink:title="{org.msrg.raccoon.matrix.bulk.\lSliceMatrix\n|+ _cols\l+ _MAX_COLS_PRINT\l# _b\l&#45; serialVersionUID\l|+ SliceMatrix()\l+ SliceMatrix()\l+ SliceMatrix()\l+ loadNoCopy()\l+ loadWithCopy()\l+ getContent()\l+ hasContent()\l+ clone()\l+ equals()\l+ getByte()\land 6 more...\l+ createRandomSliceMatrix()\l+ getEmptySliceMatrix()\l}">
 <polygon fill="none" stroke="black" points="30.5,-497.5 30.5,-730.5 176.5,-730.5 176.5,-497.5 30.5,-497.5"/>
 <text text-anchor="start" x="38.5" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.bulk.</text>
 <text text-anchor="middle" x="103.5" y="-707.5" font-family="Helvetica,sans-Serif" font-size="10.00">SliceMatrix</text>
@@ -88,10 +88,10 @@
 <text text-anchor="start" x="38.5" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; serialVersionUID</text>
 <polyline fill="none" stroke="black" points="30.5,-648.5 176.5,-648.5 "/>
 <text text-anchor="start" x="38.5" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SliceMatrix()</text>
-<text text-anchor="start" x="38.5" y="-625.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadNoCopy()</text>
-<text text-anchor="start" x="38.5" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadWithCopy()</text>
-<text text-anchor="start" x="38.5" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SliceMatrix()</text>
-<text text-anchor="start" x="38.5" y="-592.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SliceMatrix()</text>
+<text text-anchor="start" x="38.5" y="-625.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SliceMatrix()</text>
+<text text-anchor="start" x="38.5" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SliceMatrix()</text>
+<text text-anchor="start" x="38.5" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadNoCopy()</text>
+<text text-anchor="start" x="38.5" y="-592.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadWithCopy()</text>
 <text text-anchor="start" x="38.5" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getContent()</text>
 <text text-anchor="start" x="38.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hasContent()</text>
 <text text-anchor="start" x="38.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ clone()</text>
@@ -103,19 +103,19 @@
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge4" class="edge"><title>Node3&#45;&gt;Node4</title>
+<!-- Node5&#45;&gt;Node6 -->
+<g id="edge4" class="edge"><title>Node5&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M47.1397,-768.783C51.2798,-757.486 56.0656,-744.428 61.0634,-730.791"/>
 <polygon fill="none" stroke="midnightblue" points="43.8335,-767.633 43.6786,-778.227 50.406,-770.042 43.8335,-767.633"/>
 </g>
-<!-- Node4&#45;&gt;Node2 -->
-<g id="edge3" class="edge"><title>Node4&#45;&gt;Node2</title>
+<!-- Node6&#45;&gt;Node4 -->
+<g id="edge3" class="edge"><title>Node6&#45;&gt;Node4</title>
 <path fill="none" stroke="#404040" d="M103.5,-497.302C103.5,-485.694 103.5,-473.742 103.5,-461.714"/>
 <polygon fill="none" stroke="#404040" points="103.5,-461.671 99.5,-455.671 103.5,-449.671 107.5,-455.671 103.5,-461.671"/>
 <text text-anchor="middle" x="123.5" y="-471" font-family="Helvetica,sans-Serif" font-size="10.00"> #_slices</text>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
+<!-- Node7 -->
+<g id="node5" class="node"><title>Node7</title>
 <polygon fill="none" stroke="#bfbfbf" points="116,-778.5 116,-835.5 169,-835.5 169,-778.5 116,-778.5"/>
 <text text-anchor="middle" x="142.5" y="-823.5" font-family="Helvetica,sans-Serif" font-size="10.00">Random</text>
 <polyline fill="none" stroke="#bfbfbf" points="116,-816.5 169,-816.5 "/>
@@ -123,14 +123,14 @@
 <polyline fill="none" stroke="#bfbfbf" points="116,-797.5 169,-797.5 "/>
 <text text-anchor="middle" x="142.5" y="-785.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node5&#45;&gt;Node2 -->
-<g id="edge6" class="edge"><title>Node5&#45;&gt;Node2</title>
+<!-- Node7&#45;&gt;Node4 -->
+<g id="edge6" class="edge"><title>Node7&#45;&gt;Node4</title>
 <path fill="none" stroke="#404040" d="M169.125,-790.078C179.37,-782.401 189.937,-772.193 195.5,-760 244.049,-653.578 209.703,-611.442 185.5,-497 183,-485.178 179.888,-473.157 176.35,-461.161"/>
 <polygon fill="none" stroke="#404040" points="176.347,-461.15 170.766,-456.584 172.834,-449.676 178.415,-454.242 176.347,-461.15"/>
 <text text-anchor="middle" x="249" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #_RANDOM</text>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge5" class="edge"><title>Node5&#45;&gt;Node4</title>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge5" class="edge"><title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="#404040" d="M136.829,-778.227C134.754,-768.064 132.248,-755.793 129.554,-742.597"/>
 <polygon fill="none" stroke="#404040" points="129.544,-742.549 124.425,-737.47 127.143,-730.791 132.263,-735.87 129.544,-742.549"/>
 <text text-anchor="middle" x="162" y="-752" font-family="Helvetica,sans-Serif" font-size="10.00"> #_RANDOM</text>

@@ -188,7 +188,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a8bc7146f66d2a3ea817f1c3aebd00a5b.html#a8bc7146f66d2a3ea817f1c3aebd00a5b" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::toStringRow">
+<g id="a_node15"><a xlink:href="../../db/d3f/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1TypedMatrix_a3f3a70a5d66d85b5357e09270cb6a1b1.html#a3f3a70a5d66d85b5357e09270cb6a1b1" target="_top" xlink:title="org.msrg.raccoon.matrix.\lTypedMatrix\&lt; Byte \&gt;::toStringRow">
 <polygon fill="none" stroke="black" points="201,-0.5 201,-30.5 370,-30.5 370,-0.5 201,-0.5"/>
 <text text-anchor="start" x="209" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
 <text text-anchor="middle" x="285.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TypedMatrix&lt; Byte &gt;::toStringRow</text>
@@ -252,16 +252,16 @@ var sectionId = 'dynsection-0';
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
 <g id="a_node12"><a xlink:href="../../d5/d96/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1finitefields_1_1ByteMatrixTest_ab8f3114007e92860f4f740a9cbae6e18.html#ab8f3114007e92860f4f740a9cbae6e18" target="_top" xlink:title="org.msrg.raccoon.matrix.finitefields.\lByteMatrixTest.testManyInverse">
-<polygon fill="none" stroke="black" points="431,-142.5 431,-172.5 604,-172.5 604,-142.5 431,-142.5"/>
-<text text-anchor="start" x="439" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
-<text text-anchor="middle" x="517.5" y="-149.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByteMatrixTest.testManyInverse</text>
+<polygon fill="none" stroke="black" points="431,-141.5 431,-171.5 604,-171.5 604,-141.5 431,-141.5"/>
+<text text-anchor="start" x="439" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.finitefields.</text>
+<text text-anchor="middle" x="517.5" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByteMatrixTest.testManyInverse</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge12" class="edge"><title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M383.939,-160.382C399.513,-160.043 415.526,-159.695 430.801,-159.363"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="383.703,-156.886 373.781,-160.603 383.855,-163.884 383.703,-156.886"/>
+<path fill="none" stroke="midnightblue" d="M383.939,-159.958C399.513,-159.552 415.526,-159.134 430.801,-158.736"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="383.686,-156.463 373.781,-160.223 383.869,-163.461 383.686,-156.463"/>
 </g>
 </g>
 </svg>

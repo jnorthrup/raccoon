@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
   0: "[_abcdefghilmnoprstuvw",
-  1: "abcdefimrst",
-  2: "or",
-  3: "abcdefimrst",
+  1: "bcdefimrst",
+  2: "o",
+  3: "bcdefimrst",
   4: "[abcdefghilmnprstuvw",
   5: "_bcdefilmnprst"
 };

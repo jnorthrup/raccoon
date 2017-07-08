@@ -8,15 +8,15 @@
  viewBox="0.00 0.00 362.00 50.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 46)">
 <title>org.msrg.raccoon.engine.CodingEngineTest.generateEqualityCodingTasks</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-41.5 173,-41.5 173,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineTest.generateEquality</text>
 <text text-anchor="middle" x="86.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingTasks</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../dd/dff/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingEngine_addf00ef4ea73a36f94342e34fdebf456.html#addf00ef4ea73a36f94342e34fdebf456" target="_top" xlink:title="org.msrg.raccoon.engine.\lICodingEngine.checkEquality">
 <polygon fill="none" stroke="black" points="209,-6 209,-36 354,-36 354,-6 209,-6"/>
 <text text-anchor="start" x="217" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -24,8 +24,8 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M173.277,-21C181.722,-21 190.279,-21 198.683,-21"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="198.842,-24.5001 208.842,-21 198.842,-17.5001 198.842,-24.5001"/>
 </g>

@@ -8,14 +8,14 @@
  viewBox="0.00 0.00 427.00 50.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 46)">
 <title>org.msrg.raccoon.ReceivedCodedBatch.getAvailableCodedPieceCount</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node0 -->
+<g id="node1" class="node"><title>Node0</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-6 0,-36 206,-36 206,-6 0,-6"/>
 <text text-anchor="start" x="8" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.Received</text>
 <text text-anchor="middle" x="103" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">CodedBatch.getAvailableCodedPieceCount</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node1 -->
+<g id="node2" class="node"><title>Node1</title>
 <g id="a_node2"><a xlink:href="../../da/df0/classorg_1_1msrg_1_1raccoon_1_1ReceivedCodedBatch_ae1bdbbea8fa0b701869e0285a5295c93.html#ae1bdbbea8fa0b701869e0285a5295c93" target="_top" xlink:title="org.msrg.raccoon.Received\lCodedBatch.getAvailableCodedSlice\lCountPrivately">
 <polygon fill="none" stroke="black" points="242,-0.5 242,-41.5 419,-41.5 419,-0.5 242,-0.5"/>
 <text text-anchor="start" x="250" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.Received</text>
@@ -24,8 +24,8 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node0&#45;&gt;Node1 -->
+<g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M206.193,-21C214.644,-21 223.174,-21 231.592,-21"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="231.791,-24.5001 241.791,-21 231.791,-17.5001 231.791,-24.5001"/>
 </g>

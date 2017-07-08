@@ -1,5 +1,5 @@
 <map id="org.msrg.raccoon.ReceivedCodedBatch.toString" name="org.msrg.raccoon.ReceivedCodedBatch.toString">
 <area shape="rect" id="node2" href="$df/da4/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1BulkMatrix_a3c2bc23eec089f27b7f14db3898e42ab.html#a3c2bc23eec089f27b7f14db3898e42ab" title="org.msrg.raccoon.matrix.bulk.\lBulkMatrix.getByte" alt="" coords="236,5,431,47"/>
-<area shape="rect" id="node4" href="$d0/d99/classorg_1_1msrg_1_1raccoon_1_1utils_1_1BytesUtil_a8c89e67ad6d79eb211def90a501bf654.html#a8c89e67ad6d79eb211def90a501bf654" title="org.msrg.raccoon.utils.Bytes\lUtil.hex" alt="" coords="239,71,428,112"/>
+<area shape="rect" id="node4" href="$d8/dd8/enumorg_1_1msrg_1_1raccoon_1_1utils_1_1BytesUtil_a8c89e67ad6d79eb211def90a501bf654.html#a8c89e67ad6d79eb211def90a501bf654" title="org.msrg.raccoon.utils.Bytes\lUtil.hex" alt="" coords="239,71,428,112"/>
 <area shape="rect" id="node3" href="$d6/d6d/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1bulk_1_1SliceMatrix_a1fe8792bcabbfd1a541b53fee375f8a0.html#a1fe8792bcabbfd1a541b53fee375f8a0" title="org.msrg.raccoon.matrix.bulk.\lSliceMatrix.getByte" alt="" coords="479,5,673,47"/>
 </map>

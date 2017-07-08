@@ -8,14 +8,14 @@
  viewBox="0.00 0.00 321.00 88.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 84)">
 <title>org.msrg.raccoon.matrix.DoubleMatrix.clone</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node4 -->
+<g id="node1" class="node"><title>Node4</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-24.5 0,-54.5 125,-54.5 125,-24.5 0,-24.5"/>
 <text text-anchor="start" x="8" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
 <text text-anchor="middle" x="62.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoubleMatrix.clone</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node5 -->
+<g id="node2" class="node"><title>Node5</title>
 <g id="a_node2"><a xlink:href="../../dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_aa89ac02cd79c8075c9b0921d24b38545.html#aa89ac02cd79c8075c9b0921d24b38545" target="_top" xlink:title="org.msrg.raccoon.matrix.\lDoubleMatrix.cloneExtended">
 <polygon fill="none" stroke="black" points="166,-49.5 166,-79.5 308,-79.5 308,-49.5 166,-49.5"/>
 <text text-anchor="start" x="174" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
@@ -23,13 +23,13 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node2 -->
-<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge1" class="edge"><title>Node4&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M135.284,-49.9034C145.39,-51.3682 155.77,-52.8724 165.845,-54.3327"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="135.688,-46.4255 125.289,-48.455 134.684,-53.3531 135.688,-46.4255"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node6 -->
+<g id="node3" class="node"><title>Node6</title>
 <g id="a_node3"><a xlink:href="../../dd/d0e/classorg_1_1msrg_1_1raccoon_1_1matrix_1_1DoubleMatrix_a20be52673ab26eb969832b104ff7b504.html#a20be52673ab26eb969832b104ff7b504" target="_top" xlink:title="org.msrg.raccoon.matrix.\lDoubleMatrix.decloneExtended">
 <polygon fill="none" stroke="black" points="161,-0.5 161,-30.5 313,-30.5 313,-0.5 161,-0.5"/>
 <text text-anchor="start" x="169" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.matrix.</text>
@@ -37,8 +37,8 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge"><title>Node1&#45;&gt;Node3</title>
+<!-- Node4&#45;&gt;Node6 -->
+<g id="edge2" class="edge"><title>Node4&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M135.402,-29.4962C143.787,-28.3297 152.357,-27.1373 160.785,-25.9647"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="134.711,-26.0585 125.289,-30.9032 135.676,-32.9917 134.711,-26.0585"/>
 </g>

@@ -54,8 +54,8 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>org.msrg.raccoon.engine.CodingEngineEvent_SequentialCodingTaskFailed</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
+<!-- Node3 -->
+<g id="node1" class="node"><title>Node3</title>
 <polygon fill="#bfbfbf" stroke="black" points="360,-0.5 360,-90.5 522,-90.5 522,-0.5 360,-0.5"/>
 <text text-anchor="start" x="368" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
 <text text-anchor="start" x="368" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineEvent_Sequential</text>
@@ -66,8 +66,8 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="368" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingEngineEvent_Sequential</text>
 <text text-anchor="start" x="368" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingTaskFailed()</text>
 </g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
+<!-- Node4 -->
+<g id="node2" class="node"><title>Node4</title>
 <g id="a_node2"><a xlink:href="../../d8/d0c/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent__SequentialCodingTaskEvents.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lCodingEngineEvent_Sequential\lCodingTaskEvents\n||# CodingEngineEvent_Sequential\lCodingTaskEvents()\l}">
 <polygon fill="none" stroke="black" points="360,-128.5 360,-218.5 522,-218.5 522,-128.5 360,-128.5"/>
 <text text-anchor="start" x="368" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -81,13 +81,13 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
+<!-- Node4&#45;&gt;Node3 -->
+<g id="edge1" class="edge"><title>Node4&#45;&gt;Node3</title>
 <path fill="none" stroke="midnightblue" d="M441,-118.226C441,-109.056 441,-99.6331 441,-90.7568"/>
 <polygon fill="none" stroke="midnightblue" points="437.5,-118.431 441,-128.431 444.5,-118.431 437.5,-118.431"/>
 </g>
-<!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
+<!-- Node5 -->
+<g id="node3" class="node"><title>Node5</title>
 <g id="a_node3"><a xlink:href="../../d3/db5/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEvent.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lCodingEngineEvent\n||+ toString()\l# CodingEngineEvent()\l}">
 <polygon fill="none" stroke="black" points="211.5,-332.5 211.5,-411.5 338.5,-411.5 338.5,-332.5 211.5,-332.5"/>
 <text text-anchor="start" x="219.5" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -100,13 +100,13 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge2" class="edge"><title>Node5&#45;&gt;Node4</title>
 <path fill="none" stroke="midnightblue" d="M314.469,-324.279C341.485,-292.299 377.082,-250.162 403.636,-218.729"/>
 <polygon fill="none" stroke="midnightblue" points="311.576,-322.28 307.796,-332.178 316.923,-326.798 311.576,-322.28"/>
 </g>
-<!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
+<!-- Node6 -->
+<g id="node4" class="node"><title>Node6</title>
 <g id="a_node4"><a xlink:href="../../da/d8b/namespaceorg_1_1msrg_1_1raccoon_1_1engine.html#d1/dea/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngineEventType" target="_top" xlink:title="{org.msrg.raccoon.engine.\lCodingEngineEventType\n|+ ENG_ET_FILE_TASK\l+ ENG_ET_THREAD_FREE\l+ ENG_ET_THREAD_NEW\l+ ENG_ET_THREAD_BUSY\l+ ENG_ET_NEW_TASK\l+ END_ET_SEQ_TASK_FINISHED\l+ END_ET_SEQ_TASK_FAILED\l+ ENG_ET_TASK_FAILED\l+ ENG_ET_TASK_FINISHED\l+ ENG_ET_TASK_STARTED\l|}">
 <polygon fill="none" stroke="black" points="0,-547.5 0,-714.5 176,-714.5 176,-547.5 0,-547.5"/>
 <text text-anchor="start" x="8" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -127,14 +127,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge3" class="edge"><title>Node6&#45;&gt;Node5</title>
 <path fill="none" stroke="#404040" d="M148.197,-547.269C178.322,-505.867 213.753,-457.174 239.493,-421.799"/>
 <polygon fill="none" stroke="#404040" points="239.757,-421.435 240.053,-414.23 246.818,-411.732 246.522,-418.937 239.757,-421.435"/>
 <text text-anchor="middle" x="212.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> +_eventType</text>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
+<!-- Node7 -->
+<g id="node5" class="node"><title>Node7</title>
 <g id="a_node5"><a xlink:href="../../d6/d78/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTask.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.sequential.\lSequentialCodingTask\n|# _currentStage\l&#45; _stageTimes\l|+ runInitialSequencialTasks()\l+ codingFailed()\l+ codingFinished()\l+ codingStarted()\l+ finished()\l+ failed()\l+ getStageTimes()\l+ codingPreliminaryStageCompleted()\l# SequentialCodingTask()\l# runStagePrivately()\l# reachedFinalStage()\l# getFinalStage()\l# setCurrentStage()\l}">
 <polygon fill="none" stroke="black" points="451,-266.5 451,-477.5 647,-477.5 647,-266.5 451,-266.5"/>
 <text text-anchor="start" x="459" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
@@ -159,14 +159,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node2 -->
-<g id="edge4" class="edge"><title>Node5&#45;&gt;Node2</title>
+<!-- Node7&#45;&gt;Node4 -->
+<g id="edge4" class="edge"><title>Node7&#45;&gt;Node4</title>
 <path fill="none" stroke="#404040" d="M491.522,-266.421C484.497,-253.641 477.552,-241.004 471.164,-229.381"/>
 <polygon fill="none" stroke="#404040" points="471.005,-229.092 464.609,-225.76 465.225,-218.575 471.62,-221.907 471.005,-229.092"/>
 <text text-anchor="middle" x="521.5" y="-240" font-family="Helvetica,sans-Serif" font-size="10.00"> +_seqCodingTask</text>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
+<!-- Node8 -->
+<g id="node6" class="node"><title>Node8</title>
 <g id="a_node6"><a xlink:href="../../d9/d22/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTask.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.\lCodingTask\n||+ getCodingResults()\l+ getStatus()\l+ isStarted()\l+ isFinished()\l+ isFailed()\l+ failed()\l+ started()\l+ finished()\l+ isSequencial()\l+ equals()\l+ hashCode()\l# CodingTask()\l# getEmptyCodingResults()\l# changeStatus()\l}">
 <polygon fill="none" stroke="black" points="812.5,-525.5 812.5,-736.5 961.5,-736.5 961.5,-525.5 812.5,-525.5"/>
 <text text-anchor="start" x="820.5" y="-724.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.</text>
@@ -191,24 +191,24 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge5" class="edge"><title>Node6&#45;&gt;Node5</title>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge5" class="edge"><title>Node8&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M805.484,-518.054C797.935,-510.207 790.075,-502.746 782,-496 741.805,-462.423 690.955,-434.276 647.022,-413.418"/>
 <polygon fill="none" stroke="midnightblue" points="802.935,-520.453 812.325,-525.359 808.044,-515.668 802.935,-520.453"/>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="../../df/d3e/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lCodingResult\n||+ setStatus()\l+ equals()\l+ hashCode()\l+ getStatus()\l+ isStarted()\l+ isFailed()\l+ isFinished()\l# CodingResult()\l}">
+<!-- Node11 -->
+<g id="node9" class="node"><title>Node11</title>
+<g id="a_node9"><a xlink:href="../../df/d3e/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1CodingResult.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lCodingResult\n||+ equals()\l+ hashCode()\l+ getStatus()\l+ setStatus()\l+ isStarted()\l+ isFailed()\l+ isFinished()\l# CodingResult()\l}">
 <polygon fill="none" stroke="black" points="979,-299.5 979,-444.5 1155,-444.5 1155,-299.5 979,-299.5"/>
 <text text-anchor="start" x="987" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
 <text text-anchor="middle" x="1067" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingResult</text>
 <polyline fill="none" stroke="black" points="979,-414.5 1155,-414.5 "/>
 <text text-anchor="middle" x="1067" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="979,-395.5 1155,-395.5 "/>
-<text text-anchor="start" x="987" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setStatus()</text>
-<text text-anchor="start" x="987" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
-<text text-anchor="start" x="987" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hashCode()</text>
-<text text-anchor="start" x="987" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getStatus()</text>
+<text text-anchor="start" x="987" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
+<text text-anchor="start" x="987" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hashCode()</text>
+<text text-anchor="start" x="987" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getStatus()</text>
+<text text-anchor="start" x="987" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setStatus()</text>
 <text text-anchor="start" x="987" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isStarted()</text>
 <text text-anchor="start" x="987" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isFailed()</text>
 <text text-anchor="start" x="987" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isFinished()</text>
@@ -216,14 +216,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node9 -->
-<g id="edge9" class="edge"><title>Node6&#45;&gt;Node9</title>
+<!-- Node8&#45;&gt;Node11 -->
+<g id="edge9" class="edge"><title>Node8&#45;&gt;Node11</title>
 <path fill="none" stroke="#404040" d="M960.213,-525.468C976.746,-501.863 994.063,-477.138 1009.82,-454.636"/>
 <polygon fill="none" stroke="#404040" points="1009.83,-454.631 1009.99,-447.422 1016.71,-444.802 1016.54,-452.012 1009.83,-454.631"/>
 <text text-anchor="middle" x="998" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> +_cTask</text>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
+<!-- Node9 -->
+<g id="node7" class="node"><title>Node9</title>
 <g id="a_node7"><a xlink:href="../../d6/d58/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingListener.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lICodingListener\n||+ codingStarted()\l+ codingPreliminaryStageCompleted()\l+ codingFailed()\l+ codingFinished()\l}">
 <polygon fill="none" stroke="black" points="659,-806.5 659,-907.5 841,-907.5 841,-806.5 659,-806.5"/>
 <text text-anchor="start" x="667" y="-895.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -238,19 +238,19 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node5 -->
-<g id="edge15" class="edge"><title>Node7&#45;&gt;Node5</title>
+<!-- Node9&#45;&gt;Node7 -->
+<g id="edge15" class="edge"><title>Node9&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M764.924,-796.469C778.979,-727.277 792.088,-611.539 749,-525 727.277,-481.372 686.409,-446.87 647.25,-421.839"/>
 <polygon fill="none" stroke="midnightblue" points="761.483,-795.824 762.85,-806.33 768.333,-797.265 761.483,-795.824"/>
 </g>
-<!-- Node7&#45;&gt;Node6 -->
-<g id="edge6" class="edge"><title>Node7&#45;&gt;Node6</title>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge6" class="edge"><title>Node9&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M780.405,-806.287C791.244,-788.565 803.949,-767.791 816.736,-746.884"/>
 <polygon fill="none" stroke="#404040" points="816.751,-746.859 816.47,-739.653 823.012,-736.622 823.294,-743.828 816.751,-746.859"/>
 <text text-anchor="middle" x="834" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +_listener</text>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node"><title>Node8</title>
+<!-- Node10 -->
+<g id="node8" class="node"><title>Node10</title>
 <g id="a_node8"><a xlink:href="../../d5/d15/classorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingId.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.\lCodingId\n|&#45; _id\l&#45; _lastId\l|+ equals()\l+ hashCode()\l+ toString()\l+ getNewCodingId()\l&#45; CodingId()\l}">
 <polygon fill="none" stroke="black" points="1193.5,-795.5 1193.5,-918.5 1342.5,-918.5 1342.5,-795.5 1193.5,-795.5"/>
 <text text-anchor="start" x="1201.5" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.</text>
@@ -267,26 +267,26 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node6 -->
-<g id="edge7" class="edge"><title>Node8&#45;&gt;Node6</title>
+<!-- Node10&#45;&gt;Node8 -->
+<g id="edge7" class="edge"><title>Node10&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M1193.16,-799.329C1190.44,-797.809 1187.72,-796.361 1185,-795 1130.18,-767.565 1112.34,-770.398 1053,-755 1019.89,-746.408 1004.93,-755.013 972.324,-737.566"/>
 <polygon fill="none" stroke="#404040" points="971.946,-737.344 964.747,-737.755 961.599,-731.267 968.799,-730.856 971.946,-737.344"/>
 <text text-anchor="middle" x="1152" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +_id</text>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge11" class="edge"><title>Node8&#45;&gt;Node9</title>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge11" class="edge"><title>Node10&#45;&gt;Node11</title>
 <path fill="none" stroke="#404040" d="M1272.36,-795.415C1274.74,-726.234 1270.61,-611.469 1227,-525 1211.94,-495.142 1188.55,-467.975 1164.26,-445.134"/>
 <polygon fill="none" stroke="#404040" points="1164.14,-445.021 1157.01,-443.92 1155.29,-436.918 1162.41,-438.019 1164.14,-445.021"/>
 <text text-anchor="middle" x="1283" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +_id</text>
 </g>
-<!-- Node9&#45;&gt;Node6 -->
-<g id="edge8" class="edge"><title>Node9&#45;&gt;Node6</title>
+<!-- Node11&#45;&gt;Node8 -->
+<g id="edge8" class="edge"><title>Node11&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M978.633,-427.879C954.698,-446.727 931.011,-469.781 915,-496 911.555,-501.641 908.528,-507.638 905.869,-513.848"/>
 <polygon fill="none" stroke="#404040" points="905.799,-514.03 907.365,-521.069 901.469,-525.222 899.903,-518.183 905.799,-514.03"/>
 <text text-anchor="middle" x="934.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> +_result</text>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
+<!-- Node12 -->
+<g id="node10" class="node"><title>Node12</title>
 <g id="a_node10"><a xlink:href="../../d1/dce/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result.html#de/d82/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1result_1_1CodingResultsType" target="_top" xlink:title="{org.msrg.raccoon.engine.task.result.\lCodingResultsType\n|+ BOOLEAN\l+ NC_MATRIX\l+ BULK_MATRIX\l+ CODED_SLICE_MATRIX\l+ SLICE_MATRIX\l+ CODED_SLICE\l+ FILE_RESULT\l|}">
 <polygon fill="none" stroke="black" points="979,-564 979,-698 1155,-698 1155,-564 979,-564"/>
 <text text-anchor="start" x="987" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.result.</text>
@@ -304,14 +304,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node9 -->
-<g id="edge10" class="edge"><title>Node10&#45;&gt;Node9</title>
+<!-- Node12&#45;&gt;Node11 -->
+<g id="edge10" class="edge"><title>Node12&#45;&gt;Node11</title>
 <path fill="none" stroke="#404040" d="M1067,-563.816C1067,-531.221 1067,-491.569 1067,-456.872"/>
 <polygon fill="none" stroke="#404040" points="1067,-456.826 1063,-450.826 1067,-444.826 1071,-450.826 1067,-456.826"/>
 <text text-anchor="middle" x="1100" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> +_resultsType</text>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node"><title>Node11</title>
+<!-- Node13 -->
+<g id="node11" class="node"><title>Node13</title>
 <g id="a_node11"><a xlink:href="../../df/de9/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1task.html#dd/d1c/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTaskStatus" target="_top" xlink:title="{org.msrg.raccoon.engine.task.\lCodingTaskStatus\n|+ CREATED\l+ STARTED\l+ FINISHED\l+ FAILED\l|}">
 <polygon fill="none" stroke="black" points="1026.5,-806.5 1026.5,-907.5 1175.5,-907.5 1175.5,-806.5 1026.5,-806.5"/>
 <text text-anchor="start" x="1034.5" y="-895.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.</text>
@@ -326,20 +326,20 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node6 -->
-<g id="edge13" class="edge"><title>Node11&#45;&gt;Node6</title>
+<!-- Node13&#45;&gt;Node8 -->
+<g id="edge13" class="edge"><title>Node13&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M1042.33,-806.41C1019,-785.761 992.437,-761.03 970,-737 969.913,-736.907 969.827,-736.814 969.74,-736.721"/>
 <polygon fill="none" stroke="#404040" points="969.745,-736.727 962.747,-734.985 961.663,-727.856 968.661,-729.597 969.745,-736.727"/>
 <text text-anchor="middle" x="1028.5" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #_status</text>
 </g>
-<!-- Node11&#45;&gt;Node9 -->
-<g id="edge12" class="edge"><title>Node11&#45;&gt;Node9</title>
+<!-- Node13&#45;&gt;Node11 -->
+<g id="edge12" class="edge"><title>Node13&#45;&gt;Node11</title>
 <path fill="none" stroke="#404040" d="M1134.22,-806.37C1146.09,-785.815 1158,-761.162 1164,-737 1186.71,-645.556 1190.4,-615.448 1164,-525 1156.88,-500.615 1144.53,-476.416 1130.98,-454.736"/>
 <polygon fill="none" stroke="#404040" points="1130.97,-454.719 1124.35,-451.844 1124.46,-444.634 1131.08,-447.509 1130.97,-454.719"/>
 <text text-anchor="middle" x="1202.5" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #_status</text>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node"><title>Node12</title>
+<!-- Node14 -->
+<g id="node12" class="node"><title>Node14</title>
 <g id="a_node12"><a xlink:href="../../d5/da9/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1CodingTaskType.html" target="_top" xlink:title="{org.msrg.raccoon.engine.task.\lCodingTaskType\n|+ FILE_TASK\l+ SLICES_EQUAL\l+ MULTIPLY\l+ INVERSE\l+ SEQUENCIAL\l+ _isSequencial\l|+ CodingTaskType()\l}">
 <polygon fill="none" stroke="black" points="859.5,-795.5 859.5,-918.5 1008.5,-918.5 1008.5,-795.5 859.5,-795.5"/>
 <text text-anchor="start" x="867.5" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.</text>
@@ -356,14 +356,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node6 -->
-<g id="edge14" class="edge"><title>Node12&#45;&gt;Node6</title>
+<!-- Node14&#45;&gt;Node8 -->
+<g id="edge14" class="edge"><title>Node14&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M921.281,-795.382C918.218,-780.786 914.844,-764.703 911.443,-748.494"/>
 <polygon fill="none" stroke="#404040" points="911.43,-748.433 906.283,-743.382 908.966,-736.688 914.113,-741.739 911.43,-748.433"/>
 <text text-anchor="middle" x="944.5" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +_taskType</text>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
+<!-- Node15 -->
+<g id="node13" class="node"><title>Node15</title>
 <g id="a_node13"><a xlink:href="../../dd/dff/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingEngine.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lICodingEngine\n||+ init()\l+ startComponent()\l+ registerCodingListener()\l+ deregisterCodingListener()\l+ encode()\l+ decode()\l+ multiply()\l+ multiply()\l+ inverse()\l+ checkEquality()\l+ checkEquality()\l+ getFreeThreadsCount()\l+ getBusyThreadsCount()\l+ getTotalThreadsCount()\l}">
 <polygon fill="none" stroke="black" points="386,-525.5 386,-736.5 526,-736.5 526,-525.5 386,-525.5"/>
 <text text-anchor="start" x="394" y="-724.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
@@ -388,14 +388,14 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node5 -->
-<g id="edge16" class="edge"><title>Node13&#45;&gt;Node5</title>
+<!-- Node15&#45;&gt;Node7 -->
+<g id="edge16" class="edge"><title>Node15&#45;&gt;Node7</title>
 <path fill="none" stroke="#404040" d="M493.827,-525.468C498.133,-513.568 502.542,-501.383 506.899,-489.342"/>
 <polygon fill="none" stroke="#404040" points="506.973,-489.14 505.253,-482.137 511.056,-477.856 512.776,-484.859 506.973,-489.14"/>
 <text text-anchor="middle" x="524.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> #_engine</text>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
+<!-- Node16 -->
+<g id="node14" class="node"><title>Node16</title>
 <polygon fill="none" stroke="#bfbfbf" points="194.5,-597 194.5,-665 367.5,-665 367.5,-597 194.5,-597"/>
 <text text-anchor="start" x="202.5" y="-653" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; org.msrg.raccoon.engine.task.</text>
 <text text-anchor="middle" x="281" y="-642" font-family="Helvetica,sans-Serif" font-size="10.00">CodingTask &gt;</text>
@@ -404,14 +404,14 @@ var sectionId = 'dynsection-1';
 <polyline fill="none" stroke="#bfbfbf" points="194.5,-616 367.5,-616 "/>
 <text text-anchor="middle" x="281" y="-604" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node14&#45;&gt;Node5 -->
-<g id="edge17" class="edge"><title>Node14&#45;&gt;Node5</title>
+<!-- Node16&#45;&gt;Node7 -->
+<g id="edge17" class="edge"><title>Node16&#45;&gt;Node7</title>
 <path fill="none" stroke="#404040" d="M309.548,-596.999C328.203,-575.886 353.399,-548.205 377,-525 397.479,-504.864 420.06,-484.019 441.935,-464.459"/>
 <polygon fill="none" stroke="#404040" points="441.966,-464.432 443.788,-457.455 450.93,-456.453 449.107,-463.43 441.966,-464.432"/>
 <text text-anchor="middle" x="447.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> #_activeSubTasks</text>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
+<!-- Node17 -->
+<g id="node15" class="node"><title>Node17</title>
 <polygon fill="none" stroke="#bfbfbf" points="265,-828.5 265,-885.5 297,-885.5 297,-828.5 265,-828.5"/>
 <text text-anchor="middle" x="281" y="-873.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set</text>
 <polyline fill="none" stroke="#bfbfbf" points="265,-866.5 297,-866.5 "/>
@@ -419,15 +419,15 @@ var sectionId = 'dynsection-1';
 <polyline fill="none" stroke="#bfbfbf" points="265,-847.5 297,-847.5 "/>
 <text text-anchor="middle" x="281" y="-835.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node15&#45;&gt;Node14 -->
-<g id="edge18" class="edge"><title>Node15&#45;&gt;Node14</title>
+<!-- Node17&#45;&gt;Node16 -->
+<g id="edge18" class="edge"><title>Node17&#45;&gt;Node16</title>
 <path fill="none" stroke="orange" d="M281,-818.025C281,-775.067 281,-705.799 281,-665.008"/>
 <polygon fill="orange" stroke="orange" points="277.5,-818.083 281,-828.083 284.5,-818.083 277.5,-818.083"/>
 <text text-anchor="start" x="281" y="-769" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
 <text text-anchor="middle" x="344.5" y="-758" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::task::CodingTask &gt;</text>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node"><title>Node16</title>
+<!-- Node18 -->
+<g id="node16" class="node"><title>Node18</title>
 <g id="a_node16"><a xlink:href="../../d4/ddf/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential.html#dc/df8/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1task_1_1sequential_1_1SequentialCodingTaskType" target="_top" xlink:title="{org.msrg.raccoon.engine.task.sequential.\lSequentialCodingTaskType\n|+ PAGEIN_PAGEOUT_EQUALS\l+ MULTIPLY_INVERSE_MULTIPLY\l_EQUAL\l+ ENCODE_DECODE_EQUAL\l+ ENCODE_RECEIVED_ENCODE\l_DECODE_EQUAL\l+ MULTIPLY_BULK_MATRIX\l+ BULK_MATRIX_EQUAL\l+ ENCODE\l+ DECODE\l|}">
 <polygon fill="none" stroke="black" points="544,-547.5 544,-714.5 740,-714.5 740,-547.5 544,-547.5"/>
 <text text-anchor="start" x="552" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.task.sequential.</text>
@@ -448,8 +448,8 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node5 -->
-<g id="edge19" class="edge"><title>Node16&#45;&gt;Node5</title>
+<!-- Node18&#45;&gt;Node7 -->
+<g id="edge19" class="edge"><title>Node18&#45;&gt;Node7</title>
 <path fill="none" stroke="#404040" d="M612.062,-547.269C605.36,-528.747 598.129,-508.765 591.038,-489.17"/>
 <polygon fill="none" stroke="#404040" points="590.968,-488.975 585.165,-484.694 586.884,-477.691 592.687,-481.972 590.968,-488.975"/>
 <text text-anchor="middle" x="633" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> +_seqTaskType</text>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$dd/dfd/classorg_1_1msrg_1_1raccoon_1_1CodedPiece.html" title="org.msrg.raccoon.CodedPiece" alt="" coords="5,5,204,32"/>
+<area shape="rect" id="node2" href="$d0/d4e/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine_1_1MyThread.html" title="org.msrg.raccoon.engine.\lCodingEngine.MyThread" alt="" coords="136,5,305,47"/>
+<area shape="rect" id="node3" href="$d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread.html" title="org.msrg.raccoon.engine.thread.\lCodingThread" alt="" coords="116,71,325,112"/>
+<area shape="rect" id="node4" href="$d6/d19/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThreadImpl.html" title="org.msrg.raccoon.engine.thread.\lCodingThreadImpl" alt="" coords="373,71,583,112"/>
 </map>

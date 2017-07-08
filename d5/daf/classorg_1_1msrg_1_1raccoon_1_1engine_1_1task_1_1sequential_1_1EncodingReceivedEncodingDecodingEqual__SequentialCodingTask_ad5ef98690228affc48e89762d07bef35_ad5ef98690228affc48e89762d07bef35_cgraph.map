@@ -1,4 +1,5 @@
 <map id="org.msrg.raccoon.engine.task.sequential.EncodingReceivedEncodingDecodingEqual_SequentialCodingTask.EncodingReceivedEncodingDecodingEqual_SequentialCodingTask" name="org.msrg.raccoon.engine.task.sequential.EncodingReceivedEncodingDecodingEqual_SequentialCodingTask.EncodingReceivedEncodingDecodingEqual_SequentialCodingTask">
 <area shape="rect" id="node2" href="$d2/da2/classorg_1_1msrg_1_1raccoon_1_1SourceCodedBatch_a043dbd2ce40f3fb5e394fe7d97e80a19.html#a043dbd2ce40f3fb5e394fe7d97e80a19" title="org.msrg.raccoon.SourceCoded\lBatch.getRows" alt="" coords="400,5,607,47"/>
 <area shape="rect" id="node3" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_a790dedc7e8851563c2ab75be32a9425f.html#a790dedc7e8851563c2ab75be32a9425f" title="org.msrg.raccoon.CodedBatch.getSize" alt="" coords="380,71,627,98"/>
+<area shape="rect" id="node4" href="$dd/da2/classorg_1_1msrg_1_1raccoon_1_1CodedBatch_add35b13e6611e5eea0f1ce5c97923634.html#add35b13e6611e5eea0f1ce5c97923634" title="org.msrg.raccoon.CodedBatch.is\lSolved" alt="" coords="675,64,888,105"/>
 </map>

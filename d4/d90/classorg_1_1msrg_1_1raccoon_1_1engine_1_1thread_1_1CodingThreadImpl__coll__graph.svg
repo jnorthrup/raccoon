@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1378;
+var viewWidth = 1544;
 var viewHeight = 1070;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,332 +54,352 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>org.msrg.raccoon.engine.thread.CodingThreadImpl</title>
-<!-- Node1 -->
-<g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="891,-0.5 891,-79.5 1048,-79.5 1048,-0.5 891,-0.5"/>
-<text text-anchor="start" x="899" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
-<text text-anchor="middle" x="969.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThreadImpl</text>
-<polyline fill="none" stroke="black" points="891,-49.5 1048,-49.5 "/>
-<text text-anchor="middle" x="969.5" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="891,-30.5 1048,-30.5 "/>
-<text text-anchor="start" x="899" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CodingThreadImpl()</text>
-<text text-anchor="start" x="899" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runTask()</text>
-</g>
-<!-- Node2 -->
-<g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="../../d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread.html" target="_top" xlink:title="{org.msrg.raccoon.engine.thread.\lCodingThread\n|+ MAX_WAIT_TIME\l# _LOCK\l# _continue\l|+ addNewTask()\l+ init()\l+ retire()\l+ run()\l+ toString()\l# CodingThread()\l# CodingThread()\l# runTask()\l# runMe()\l}">
-<polygon fill="none" stroke="black" points="891,-117.5 891,-295.5 1048,-295.5 1048,-117.5 891,-117.5"/>
-<text text-anchor="start" x="899" y="-283.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
-<text text-anchor="middle" x="969.5" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThread</text>
-<polyline fill="none" stroke="black" points="891,-265.5 1048,-265.5 "/>
-<text text-anchor="start" x="899" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MAX_WAIT_TIME</text>
-<text text-anchor="start" x="899" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _LOCK</text>
-<text text-anchor="start" x="899" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _continue</text>
-<polyline fill="none" stroke="black" points="891,-224.5 1048,-224.5 "/>
-<text text-anchor="start" x="899" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ addNewTask()</text>
-<text text-anchor="start" x="899" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
-<text text-anchor="start" x="899" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ retire()</text>
-<text text-anchor="start" x="899" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ run()</text>
-<text text-anchor="start" x="899" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
-<text text-anchor="start" x="899" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingThread()</text>
-<text text-anchor="start" x="899" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingThread()</text>
-<text text-anchor="start" x="899" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runTask()</text>
-<text text-anchor="start" x="899" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runMe()</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M969.5,-107.255C969.5,-97.5365 969.5,-88.1278 969.5,-79.6004"/>
-<polygon fill="none" stroke="midnightblue" points="966,-107.471 969.5,-117.471 973,-107.471 966,-107.471"/>
-</g>
 <!-- Node3 -->
-<g id="node3" class="node"><title>Node3</title>
-<polygon fill="none" stroke="#bfbfbf" points="203,-800.5 203,-857.5 250,-857.5 250,-800.5 203,-800.5"/>
-<text text-anchor="middle" x="226.5" y="-845.5" font-family="Helvetica,sans-Serif" font-size="10.00">Thread</text>
-<polyline fill="none" stroke="#bfbfbf" points="203,-838.5 250,-838.5 "/>
-<text text-anchor="middle" x="226.5" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="203,-819.5 250,-819.5 "/>
-<text text-anchor="middle" x="226.5" y="-807.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</g>
-<!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M230.801,-790.434C234.908,-768.774 242.913,-742.132 258.5,-723 269.052,-710.048 278.862,-715.926 291.5,-705 310.53,-688.548 543.089,-357.703 563.5,-343 663.436,-271.01 804.16,-235.439 890.961,-219.306"/>
-<polygon fill="none" stroke="midnightblue" points="227.349,-789.856 229.129,-800.301 234.251,-791.026 227.349,-789.856"/>
+<g id="node1" class="node"><title>Node3</title>
+<polygon fill="#bfbfbf" stroke="black" points="1057.43,-0.5 1057.43,-79.5 1214.43,-79.5 1214.43,-0.5 1057.43,-0.5"/>
+<text text-anchor="start" x="1065.43" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
+<text text-anchor="middle" x="1135.93" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThreadImpl</text>
+<polyline fill="none" stroke="black" points="1057.43,-49.5 1214.43,-49.5 "/>
+<text text-anchor="middle" x="1135.93" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1057.43,-30.5 1214.43,-30.5 "/>
+<text text-anchor="start" x="1065.43" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CodingThreadImpl()</text>
+<text text-anchor="start" x="1065.43" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runTask()</text>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="../../db/d98/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine.html" target="_top" xlink:title="This abstract class implements ICodingEngine and deals with management of the engine&#39;s worker threads...">
-<polygon fill="none" stroke="black" points="573,-343.5 573,-653.5 728,-653.5 728,-343.5 573,-343.5"/>
-<text text-anchor="start" x="581" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
-<text text-anchor="middle" x="650.5" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngine</text>
-<polyline fill="none" stroke="black" points="573,-623.5 728,-623.5 "/>
-<text text-anchor="start" x="581" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DEBUG</text>
-<text text-anchor="start" x="581" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LATE_THREAD_CHECKIN</text>
-<text text-anchor="start" x="581" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">_TIMEOUT</text>
-<text text-anchor="start" x="581" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _lock</text>
-<text text-anchor="start" x="581" y="-567.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _threadCount</text>
-<polyline fill="none" stroke="black" points="573,-560.5 728,-560.5 "/>
-<text text-anchor="start" x="581" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ registerCodingListener()</text>
-<text text-anchor="start" x="581" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ deregisterCodingListener()</text>
-<text text-anchor="start" x="581" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ threadIsFree()</text>
-<text text-anchor="start" x="581" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startComponent()</text>
-<text text-anchor="start" x="581" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ start()</text>
-<text text-anchor="start" x="581" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ run()</text>
-<text text-anchor="start" x="581" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
-<text text-anchor="start" x="581" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingThreadFailed()</text>
-<text text-anchor="start" x="581" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingTaskStarted()</text>
-<text text-anchor="start" x="581" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingTaskFinished()</text>
-<text text-anchor="start" x="581" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 11 more...</text>
-<text text-anchor="start" x="581" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00"># addCodingTaskEngineEvent()</text>
-<text text-anchor="start" x="581" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingEngine()</text>
-<text text-anchor="start" x="581" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00"># threadIsBusy()</text>
-<text text-anchor="start" x="581" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00"># processCodingEvent()</text>
-<text text-anchor="start" x="581" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00"># scheduleTask()</text>
-<text text-anchor="start" x="581" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00"># scheduleTask()</text>
-<text text-anchor="start" x="581" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00"># notifyListener()</text>
-<text text-anchor="start" x="581" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00"># getLateThreads()</text>
+<g id="node2" class="node"><title>Node4</title>
+<g id="a_node2"><a xlink:href="../../d1/da4/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1CodingThread.html" target="_top" xlink:title="{org.msrg.raccoon.engine.thread.\lCodingThread\n|+ MAX_WAIT_TIME\l# _LOCK\l# _continue\l|+ addNewTask()\l+ init()\l+ retire()\l+ run()\l+ toString()\l# CodingThread()\l# CodingThread()\l# runTask()\l# runMe()\l}">
+<polygon fill="none" stroke="black" points="1057.43,-117.5 1057.43,-295.5 1214.43,-295.5 1214.43,-117.5 1057.43,-117.5"/>
+<text text-anchor="start" x="1065.43" y="-283.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
+<text text-anchor="middle" x="1135.93" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThread</text>
+<polyline fill="none" stroke="black" points="1057.43,-265.5 1214.43,-265.5 "/>
+<text text-anchor="start" x="1065.43" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MAX_WAIT_TIME</text>
+<text text-anchor="start" x="1065.43" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _LOCK</text>
+<text text-anchor="start" x="1065.43" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _continue</text>
+<polyline fill="none" stroke="black" points="1057.43,-224.5 1214.43,-224.5 "/>
+<text text-anchor="start" x="1065.43" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ addNewTask()</text>
+<text text-anchor="start" x="1065.43" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
+<text text-anchor="start" x="1065.43" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ retire()</text>
+<text text-anchor="start" x="1065.43" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ run()</text>
+<text text-anchor="start" x="1065.43" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
+<text text-anchor="start" x="1065.43" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingThread()</text>
+<text text-anchor="start" x="1065.43" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingThread()</text>
+<text text-anchor="start" x="1065.43" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runTask()</text>
+<text text-anchor="start" x="1065.43" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00"># runMe()</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge4" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M229.238,-790.027C232.779,-767.748 240.74,-740.603 258.5,-723 278.576,-703.101 293.705,-716.559 319.5,-705 411.163,-663.926 507.861,-601.355 572.909,-556.049"/>
-<polygon fill="none" stroke="midnightblue" points="225.735,-789.81 227.867,-800.189 232.672,-790.747 225.735,-789.81"/>
-</g>
-<!-- Node4&#45;&gt;Node2 -->
-<g id="edge3" class="edge"><title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M728.128,-426.929C774.561,-384.717 833.695,-330.959 881.81,-287.218"/>
-<polygon fill="none" stroke="#404040" points="882.09,-286.964 883.839,-279.968 890.969,-278.892 889.22,-285.888 882.09,-286.964"/>
-<text text-anchor="middle" x="870" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> +_engine</text>
+<!-- Node4&#45;&gt;Node3 -->
+<g id="edge1" class="edge"><title>Node4&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M1135.93,-107.255C1135.93,-97.5365 1135.93,-88.1278 1135.93,-79.6004"/>
+<polygon fill="none" stroke="midnightblue" points="1132.43,-107.471 1135.93,-117.471 1139.43,-107.471 1132.43,-107.471"/>
 </g>
 <!-- Node5 -->
-<g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="../../dd/dff/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingEngine.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lICodingEngine\n||+ init()\l+ startComponent()\l+ registerCodingListener()\l+ deregisterCodingListener()\l+ encode()\l+ decode()\l+ multiply()\l+ multiply()\l+ inverse()\l+ checkEquality()\l+ checkEquality()\l+ getFreeThreadsCount()\l+ getBusyThreadsCount()\l+ getTotalThreadsCount()\l}">
-<polygon fill="none" stroke="black" points="637.5,-723.5 637.5,-934.5 777.5,-934.5 777.5,-723.5 637.5,-723.5"/>
-<text text-anchor="start" x="645.5" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
-<text text-anchor="middle" x="707.5" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00">ICodingEngine</text>
-<polyline fill="none" stroke="black" points="637.5,-904.5 777.5,-904.5 "/>
-<text text-anchor="middle" x="707.5" y="-892.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="637.5,-885.5 777.5,-885.5 "/>
-<text text-anchor="start" x="645.5" y="-873.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
-<text text-anchor="start" x="645.5" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startComponent()</text>
-<text text-anchor="start" x="645.5" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ registerCodingListener()</text>
-<text text-anchor="start" x="645.5" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ deregisterCodingListener()</text>
-<text text-anchor="start" x="645.5" y="-829.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ encode()</text>
-<text text-anchor="start" x="645.5" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ decode()</text>
-<text text-anchor="start" x="645.5" y="-807.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ multiply()</text>
-<text text-anchor="start" x="645.5" y="-796.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ multiply()</text>
-<text text-anchor="start" x="645.5" y="-785.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ inverse()</text>
-<text text-anchor="start" x="645.5" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ checkEquality()</text>
-<text text-anchor="start" x="645.5" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ checkEquality()</text>
-<text text-anchor="start" x="645.5" y="-752.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFreeThreadsCount()</text>
-<text text-anchor="start" x="645.5" y="-741.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBusyThreadsCount()</text>
-<text text-anchor="start" x="645.5" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getTotalThreadsCount()</text>
-</a>
-</g>
+<g id="node3" class="node"><title>Node5</title>
+<polygon fill="none" stroke="#bfbfbf" points="14.433,-1004.5 14.433,-1061.5 61.433,-1061.5 61.433,-1004.5 14.433,-1004.5"/>
+<text text-anchor="middle" x="37.933" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">Thread</text>
+<polyline fill="none" stroke="#bfbfbf" points="14.433,-1042.5 61.433,-1042.5 "/>
+<text text-anchor="middle" x="37.933" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="14.433,-1023.5 61.433,-1023.5 "/>
+<text text-anchor="middle" x="37.933" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
-<g id="edge5" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M687.578,-713.187C684.237,-693.934 680.723,-673.682 677.244,-653.632"/>
-<polygon fill="none" stroke="midnightblue" points="684.15,-713.903 689.308,-723.157 691.047,-712.706 684.15,-713.903"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node"><title>Node6</title>
-<polygon fill="none" stroke="#bfbfbf" points="268,-795 268,-863 449,-863 449,-795 268,-795"/>
-<text text-anchor="start" x="276" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; org.msrg.raccoon.engine.thread.</text>
-<text text-anchor="middle" x="358.5" y="-840" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThread &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="268,-833 449,-833 "/>
-<text text-anchor="middle" x="358.5" y="-821" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="268,-814 449,-814 "/>
-<text text-anchor="middle" x="358.5" y="-802" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</g>
-<!-- Node6&#45;&gt;Node4 -->
-<g id="edge6" class="edge"><title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M387.835,-794.998C428.79,-748.924 504.792,-663.422 564.545,-596.2"/>
-<polygon fill="none" stroke="#404040" points="564.891,-595.811 565.887,-588.669 572.863,-586.842 571.867,-593.983 564.891,-595.811"/>
-<text text-anchor="middle" x="530" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00"> #_freeThreads</text>
-<text text-anchor="middle" x="530" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00">#_busyThreads</text>
-<text text-anchor="middle" x="530" y="-675" font-family="Helvetica,sans-Serif" font-size="10.00">#_threads</text>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node"><title>Node7</title>
-<polygon fill="none" stroke="#bfbfbf" points="342.5,-1004.5 342.5,-1061.5 374.5,-1061.5 374.5,-1004.5 342.5,-1004.5"/>
-<text text-anchor="middle" x="358.5" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set</text>
-<polyline fill="none" stroke="#bfbfbf" points="342.5,-1042.5 374.5,-1042.5 "/>
-<text text-anchor="middle" x="358.5" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="342.5,-1023.5 374.5,-1023.5 "/>
-<text text-anchor="middle" x="358.5" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</g>
-<!-- Node7&#45;&gt;Node6 -->
-<g id="edge7" class="edge"><title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="orange" d="M358.5,-994.245C358.5,-956.492 358.5,-899.009 358.5,-863.02"/>
-<polygon fill="orange" stroke="orange" points="355,-994.336 358.5,-1004.34 362,-994.336 355,-994.336"/>
-<text text-anchor="start" x="358.5" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
-<text text-anchor="middle" x="430.5" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::thread::CodingThread &gt;</text>
+<g id="edge2" class="edge"><title>Node5&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M24.6633,-994.476C6.04406,-934.853 -20.5639,-816.774 26.933,-734 247.701,-349.262 842.499,-242.109 1057.25,-215.487"/>
+<polygon fill="none" stroke="midnightblue" points="21.4034,-995.772 27.7986,-1004.22 28.0669,-993.627 21.4034,-995.772"/>
 </g>
 <!-- Node8 -->
-<g id="node8" class="node"><title>Node8</title>
-<polygon fill="none" stroke="#bfbfbf" points="966,-795 966,-863 1139,-863 1139,-795 966,-795"/>
-<text text-anchor="start" x="974" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; org.msrg.raccoon.engine.task.</text>
-<text text-anchor="middle" x="1052.5" y="-840" font-family="Helvetica,sans-Serif" font-size="10.00">CodingTask &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="966,-833 1139,-833 "/>
-<text text-anchor="middle" x="1052.5" y="-821" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="966,-814 1139,-814 "/>
-<text text-anchor="middle" x="1052.5" y="-802" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="node6" class="node"><title>Node8</title>
+<g id="a_node6"><a xlink:href="../../d0/d4e/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine_1_1MyThread.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lCodingEngine.MyThread\n||+ MyThread()\l+ run()\l+ toString()\l}">
+<polygon fill="none" stroke="black" points="36.433,-795 36.433,-885 163.433,-885 163.433,-795 36.433,-795"/>
+<text text-anchor="start" x="44.433" y="-873" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
+<text text-anchor="middle" x="99.933" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngine.MyThread</text>
+<polyline fill="none" stroke="black" points="36.433,-855 163.433,-855 "/>
+<text text-anchor="middle" x="99.933" y="-843" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="36.433,-836 163.433,-836 "/>
+<text text-anchor="start" x="44.433" y="-824" font-family="Helvetica,sans-Serif" font-size="10.00">+ MyThread()</text>
+<text text-anchor="start" x="44.433" y="-813" font-family="Helvetica,sans-Serif" font-size="10.00">+ run()</text>
+<text text-anchor="start" x="44.433" y="-802" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
+</a>
 </g>
-<!-- Node8&#45;&gt;Node2 -->
-<g id="edge17" class="edge"><title>Node8&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M1033.9,-794.931C1015.83,-760.831 989.542,-705.517 978.5,-654 953.464,-537.188 955.305,-399.24 960.739,-307.915"/>
-<polygon fill="none" stroke="#404040" points="960.741,-307.879 957.124,-301.641 961.491,-295.903 965.108,-302.141 960.741,-307.879"/>
-<text text-anchor="middle" x="1003" y="-496" font-family="Helvetica,sans-Serif" font-size="10.00"> #_taskList</text>
 </g>
-<!-- Node8&#45;&gt;Node4 -->
-<g id="edge8" class="edge"><title>Node8&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M1030.9,-794.795C1013.64,-771.031 987.297,-740.294 956.5,-723 920.172,-702.6 899.404,-727.751 864.5,-705 849.523,-695.238 853.321,-685.411 841.5,-672 810.038,-636.306 771.701,-600.46 737.654,-570.764"/>
-<polygon fill="none" stroke="#404040" points="737.246,-570.41 730.091,-569.507 728.173,-562.556 735.328,-563.459 737.246,-570.41"/>
-<text text-anchor="middle" x="910" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> #_outstandingTasks</text>
+<!-- Node5&#45;&gt;Node8 -->
+<g id="edge6" class="edge"><title>Node5&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M50.0945,-994.535C60.2908,-963.124 74.8669,-918.22 85.6232,-885.083"/>
+<polygon fill="none" stroke="midnightblue" points="46.7069,-993.635 46.9484,-1004.23 53.3649,-995.796 46.7069,-993.635"/>
+</g>
+<!-- Node6 -->
+<g id="node4" class="node"><title>Node6</title>
+<g id="a_node4"><a xlink:href="../../db/d98/classorg_1_1msrg_1_1raccoon_1_1engine_1_1CodingEngine.html" target="_top" xlink:title="This abstract class implements ICodingEngine and deals with management of the engine&#39;s worker threads...">
+<polygon fill="none" stroke="black" points="705.433,-343.5 705.433,-664.5 860.433,-664.5 860.433,-343.5 705.433,-343.5"/>
+<text text-anchor="start" x="713.433" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
+<text text-anchor="middle" x="782.933" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngine</text>
+<polyline fill="none" stroke="black" points="705.433,-634.5 860.433,-634.5 "/>
+<text text-anchor="start" x="713.433" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LATE_THREAD_CHECKIN</text>
+<text text-anchor="start" x="713.433" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">_TIMEOUT</text>
+<text text-anchor="start" x="713.433" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DEBUG</text>
+<text text-anchor="start" x="713.433" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _lock</text>
+<text text-anchor="start" x="713.433" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _threadCount</text>
+<text text-anchor="start" x="713.433" y="-567.5" font-family="Helvetica,sans-Serif" font-size="10.00"># _threadCheckins</text>
+<polyline fill="none" stroke="black" points="705.433,-560.5 860.433,-560.5 "/>
+<text text-anchor="start" x="713.433" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ registerCodingListener()</text>
+<text text-anchor="start" x="713.433" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ deregisterCodingListener()</text>
+<text text-anchor="start" x="713.433" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ threadIsFree()</text>
+<text text-anchor="start" x="713.433" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startComponent()</text>
+<text text-anchor="start" x="713.433" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
+<text text-anchor="start" x="713.433" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingThreadFailed()</text>
+<text text-anchor="start" x="713.433" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingTaskStarted()</text>
+<text text-anchor="start" x="713.433" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingTaskFinished()</text>
+<text text-anchor="start" x="713.433" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ codingTaskFailed()</text>
+<text text-anchor="start" x="713.433" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFreeThreadsCount()</text>
+<text text-anchor="start" x="713.433" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
+<text text-anchor="start" x="713.433" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CodingEngine()</text>
+<text text-anchor="start" x="713.433" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00"># addCodingTaskEngineEvent()</text>
+<text text-anchor="start" x="713.433" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00"># threadIsBusy()</text>
+<text text-anchor="start" x="713.433" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00"># processCodingEvent()</text>
+<text text-anchor="start" x="713.433" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00"># scheduleTask()</text>
+<text text-anchor="start" x="713.433" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00"># scheduleTask()</text>
+<text text-anchor="start" x="713.433" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00"># notifyListener()</text>
+<text text-anchor="start" x="713.433" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00"># getLateThreads()</text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node4 -->
+<g id="edge3" class="edge"><title>Node6&#45;&gt;Node4</title>
+<path fill="none" stroke="#404040" d="M860.837,-437.785C916.132,-391.498 990.436,-329.297 1047.88,-281.209"/>
+<polygon fill="none" stroke="#404040" points="1048.11,-281.016 1050.14,-274.098 1057.31,-273.314 1055.28,-280.232 1048.11,-281.016"/>
+<text text-anchor="middle" x="1023.43" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> +_engine</text>
+</g>
+<!-- Node7 -->
+<g id="node5" class="node"><title>Node7</title>
+<g id="a_node5"><a xlink:href="../../dd/dff/interfaceorg_1_1msrg_1_1raccoon_1_1engine_1_1ICodingEngine.html" target="_top" xlink:title="{org.msrg.raccoon.engine.\lICodingEngine\n||+ init()\l+ startComponent()\l+ registerCodingListener()\l+ deregisterCodingListener()\l+ encode()\l+ decode()\l+ multiply()\l+ multiply()\l+ inverse()\l+ checkEquality()\l+ checkEquality()\l+ getFreeThreadsCount()\l+ getBusyThreadsCount()\l+ getTotalThreadsCount()\l}">
+<polygon fill="none" stroke="black" points="975.933,-734.5 975.933,-945.5 1115.93,-945.5 1115.93,-734.5 975.933,-734.5"/>
+<text text-anchor="start" x="983.933" y="-933.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.</text>
+<text text-anchor="middle" x="1045.93" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">ICodingEngine</text>
+<polyline fill="none" stroke="black" points="975.933,-915.5 1115.93,-915.5 "/>
+<text text-anchor="middle" x="1045.93" y="-903.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="975.933,-896.5 1115.93,-896.5 "/>
+<text text-anchor="start" x="983.933" y="-884.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
+<text text-anchor="start" x="983.933" y="-873.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startComponent()</text>
+<text text-anchor="start" x="983.933" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ registerCodingListener()</text>
+<text text-anchor="start" x="983.933" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ deregisterCodingListener()</text>
+<text text-anchor="start" x="983.933" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ encode()</text>
+<text text-anchor="start" x="983.933" y="-829.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ decode()</text>
+<text text-anchor="start" x="983.933" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ multiply()</text>
+<text text-anchor="start" x="983.933" y="-807.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ multiply()</text>
+<text text-anchor="start" x="983.933" y="-796.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ inverse()</text>
+<text text-anchor="start" x="983.933" y="-785.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ checkEquality()</text>
+<text text-anchor="start" x="983.933" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ checkEquality()</text>
+<text text-anchor="start" x="983.933" y="-763.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getFreeThreadsCount()</text>
+<text text-anchor="start" x="983.933" y="-752.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBusyThreadsCount()</text>
+<text text-anchor="start" x="983.933" y="-741.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getTotalThreadsCount()</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge4" class="edge"><title>Node7&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M969.606,-738.715C968.374,-737.131 967.149,-735.558 965.933,-734 931.65,-690.067 893.214,-641.82 860.45,-600.988"/>
+<polygon fill="none" stroke="midnightblue" points="966.918,-740.961 975.813,-746.717 972.45,-736.671 966.918,-740.961"/>
+</g>
+<!-- Node8&#45;&gt;Node6 -->
+<g id="edge5" class="edge"><title>Node8&#45;&gt;Node6</title>
+<path fill="none" stroke="#404040" d="M121.929,-794.902C134.207,-774.041 151.221,-750.213 171.933,-734 331.476,-609.111 566.328,-546.952 693.384,-520.83"/>
+<polygon fill="none" stroke="#404040" points="693.575,-520.791 698.663,-515.682 705.337,-518.413 700.248,-523.523 693.575,-520.791"/>
+<text text-anchor="middle" x="261.933" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;thread</text>
 </g>
 <!-- Node9 -->
-<g id="node9" class="node"><title>Node9</title>
-<polygon fill="none" stroke="#bfbfbf" points="855.5,-1004.5 855.5,-1061.5 887.5,-1061.5 887.5,-1004.5 855.5,-1004.5"/>
-<text text-anchor="middle" x="871.5" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">List</text>
-<polyline fill="none" stroke="#bfbfbf" points="855.5,-1042.5 887.5,-1042.5 "/>
-<text text-anchor="middle" x="871.5" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="855.5,-1023.5 887.5,-1023.5 "/>
-<text text-anchor="middle" x="871.5" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="node7" class="node"><title>Node9</title>
+<polygon fill="none" stroke="#bfbfbf" points="776.433,-806 776.433,-874 957.433,-874 957.433,-806 776.433,-806"/>
+<text text-anchor="start" x="784.433" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; org.msrg.raccoon.engine.thread.</text>
+<text text-anchor="middle" x="866.933" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThread &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="776.433,-844 957.433,-844 "/>
+<text text-anchor="middle" x="866.933" y="-832" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="776.433,-825 957.433,-825 "/>
+<text text-anchor="middle" x="866.933" y="-813" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node9&#45;&gt;Node8 -->
-<g id="edge9" class="edge"><title>Node9&#45;&gt;Node8</title>
-<path fill="none" stroke="orange" d="M897.716,-1030.68C929.211,-1027.66 981.539,-1017.83 1011.5,-986 1042.98,-952.56 1050.95,-897.942 1052.62,-863.005"/>
-<polygon fill="orange" stroke="orange" points="897.208,-1027.21 887.516,-1031.49 897.761,-1034.19 897.208,-1027.21"/>
-<text text-anchor="start" x="1033.5" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
-<text text-anchor="middle" x="1097" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::task::CodingTask &gt;</text>
-</g>
-<!-- Node12 -->
-<g id="node12" class="node"><title>Node12</title>
-<polygon fill="none" stroke="#bfbfbf" points="467.5,-795 467.5,-863 619.5,-863 619.5,-795 467.5,-795"/>
-<text text-anchor="start" x="475.5" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; org.msrg.raccoon.engine.</text>
-<text text-anchor="middle" x="543.5" y="-840" font-family="Helvetica,sans-Serif" font-size="10.00">ICodingListener &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="467.5,-833 619.5,-833 "/>
-<text text-anchor="middle" x="543.5" y="-821" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="467.5,-814 619.5,-814 "/>
-<text text-anchor="middle" x="543.5" y="-802" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</g>
-<!-- Node9&#45;&gt;Node12 -->
-<g id="edge13" class="edge"><title>Node9&#45;&gt;Node12</title>
-<path fill="none" stroke="orange" d="M845.268,-1026.36C798.123,-1015.23 697.556,-986.909 628.5,-935 602.441,-915.412 579.621,-886.139 564.205,-863.474"/>
-<polygon fill="orange" stroke="orange" points="844.744,-1029.83 855.273,-1028.65 846.306,-1023 844.744,-1029.83"/>
-<text text-anchor="start" x="715.5" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
-<text text-anchor="middle" x="774.5" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::ICodingListener &gt;</text>
-</g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<polygon fill="none" stroke="#bfbfbf" points="795.5,-795 795.5,-863 947.5,-863 947.5,-795 795.5,-795"/>
-<text text-anchor="start" x="803.5" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; org.msrg.raccoon.engine.</text>
-<text text-anchor="middle" x="871.5" y="-840" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineEvent &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="795.5,-833 947.5,-833 "/>
-<text text-anchor="middle" x="871.5" y="-821" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="795.5,-814 947.5,-814 "/>
-<text text-anchor="middle" x="871.5" y="-802" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</g>
-<!-- Node9&#45;&gt;Node13 -->
-<g id="edge15" class="edge"><title>Node9&#45;&gt;Node13</title>
-<path fill="none" stroke="orange" d="M871.5,-994.245C871.5,-956.492 871.5,-899.009 871.5,-863.02"/>
-<polygon fill="orange" stroke="orange" points="868,-994.336 871.5,-1004.34 875,-994.336 868,-994.336"/>
-<text text-anchor="start" x="871.5" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
-<text text-anchor="middle" x="939.5" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::CodingEngineEvent &gt;</text>
+<!-- Node9&#45;&gt;Node6 -->
+<g id="edge7" class="edge"><title>Node9&#45;&gt;Node6</title>
+<path fill="none" stroke="#404040" d="M858.572,-805.754C850.773,-774.744 838.508,-725.978 826.107,-676.669"/>
+<polygon fill="none" stroke="#404040" points="826.051,-676.446 820.709,-671.603 823.124,-664.808 828.467,-669.652 826.051,-676.446"/>
+<text text-anchor="middle" x="868.433" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #_freeThreads</text>
+<text text-anchor="middle" x="868.433" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00">#_busyThreads</text>
 </g>
 <!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
-<polygon fill="none" stroke="#bfbfbf" points="0,-795 0,-863 185,-863 185,-795 0,-795"/>
-<text text-anchor="start" x="8" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">Map&lt; org.msrg.raccoon.engine.thread.</text>
-<text text-anchor="middle" x="92.5" y="-840" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThread, Long &gt;</text>
-<polyline fill="none" stroke="#bfbfbf" points="0,-833 185,-833 "/>
-<text text-anchor="middle" x="92.5" y="-821" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="0,-814 185,-814 "/>
-<text text-anchor="middle" x="92.5" y="-802" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="node8" class="node"><title>Node10</title>
+<polygon fill="none" stroke="#bfbfbf" points="850.933,-1004.5 850.933,-1061.5 882.933,-1061.5 882.933,-1004.5 850.933,-1004.5"/>
+<text text-anchor="middle" x="866.933" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set</text>
+<polyline fill="none" stroke="#bfbfbf" points="850.933,-1042.5 882.933,-1042.5 "/>
+<text text-anchor="middle" x="866.933" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="850.933,-1023.5 882.933,-1023.5 "/>
+<text text-anchor="middle" x="866.933" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node10&#45;&gt;Node4 -->
-<g id="edge10" class="edge"><title>Node10&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M115.549,-794.769C141,-760.155 184.865,-706.286 233.5,-672 335.688,-599.961 472.519,-550.704 561.091,-523.819"/>
-<polygon fill="none" stroke="#404040" points="561.227,-523.778 565.826,-518.224 572.722,-520.333 568.123,-525.887 561.227,-523.778"/>
-<text text-anchor="middle" x="274.5" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> #_threadCheckins</text>
+<!-- Node10&#45;&gt;Node9 -->
+<g id="edge8" class="edge"><title>Node10&#45;&gt;Node9</title>
+<path fill="none" stroke="orange" d="M866.933,-993.936C866.933,-958.963 866.933,-907.638 866.933,-874.269"/>
+<polygon fill="orange" stroke="orange" points="863.433,-994.227 866.933,-1004.23 870.433,-994.227 863.433,-994.227"/>
+<text text-anchor="start" x="866.933" y="-978" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
+<text text-anchor="middle" x="938.933" y="-967" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::thread::CodingThread &gt;</text>
 </g>
 <!-- Node11 -->
-<g id="node11" class="node"><title>Node11</title>
-<polygon fill="none" stroke="#bfbfbf" points="75,-1004.5 75,-1061.5 110,-1061.5 110,-1004.5 75,-1004.5"/>
-<text text-anchor="middle" x="92.5" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">Map</text>
-<polyline fill="none" stroke="#bfbfbf" points="75,-1042.5 110,-1042.5 "/>
-<text text-anchor="middle" x="92.5" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="75,-1023.5 110,-1023.5 "/>
-<text text-anchor="middle" x="92.5" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="node9" class="node"><title>Node11</title>
+<polygon fill="none" stroke="#bfbfbf" points="1134.43,-806 1134.43,-874 1307.43,-874 1307.43,-806 1134.43,-806"/>
+<text text-anchor="start" x="1142.43" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; org.msrg.raccoon.engine.task.</text>
+<text text-anchor="middle" x="1220.93" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">CodingTask &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="1134.43,-844 1307.43,-844 "/>
+<text text-anchor="middle" x="1220.93" y="-832" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="1134.43,-825 1307.43,-825 "/>
+<text text-anchor="middle" x="1220.93" y="-813" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node11&#45;&gt;Node10 -->
-<g id="edge11" class="edge"><title>Node11&#45;&gt;Node10</title>
-<path fill="none" stroke="orange" d="M92.5,-994.245C92.5,-956.492 92.5,-899.009 92.5,-863.02"/>
-<polygon fill="orange" stroke="orange" points="89.0001,-994.336 92.5,-1004.34 96.0001,-994.336 89.0001,-994.336"/>
-<text text-anchor="start" x="92.5" y="-978" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
-<text text-anchor="start" x="92.5" y="-967" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::thread::CodingThread,</text>
-<text text-anchor="middle" x="161.5" y="-956" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
+<!-- Node11&#45;&gt;Node4 -->
+<g id="edge18" class="edge"><title>Node11&#45;&gt;Node4</title>
+<path fill="none" stroke="#404040" d="M1201.82,-805.999C1183.26,-771.953 1156.26,-716.681 1144.93,-665 1118.46,-544.194 1120.85,-401.132 1126.8,-307.556"/>
+<polygon fill="none" stroke="#404040" points="1126.8,-307.516 1123.21,-301.263 1127.6,-295.542 1131.19,-301.795 1126.8,-307.516"/>
+<text text-anchor="middle" x="1169.43" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #_taskList</text>
 </g>
-<!-- Node12&#45;&gt;Node4 -->
-<g id="edge12" class="edge"><title>Node12&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M554.249,-794.998C564.402,-763.828 580.433,-714.613 596.521,-665.22"/>
-<polygon fill="none" stroke="#404040" points="596.563,-665.093 594.618,-658.149 600.279,-653.683 602.224,-660.627 596.563,-665.093"/>
-<text text-anchor="middle" x="619" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;_listeners</text>
+<!-- Node11&#45;&gt;Node6 -->
+<g id="edge9" class="edge"><title>Node11&#45;&gt;Node6</title>
+<path fill="none" stroke="#404040" d="M1199.35,-805.759C1182.11,-781.976 1155.76,-751.233 1124.93,-734 1087.8,-713.247 1069.29,-734.39 1030.93,-716 970.959,-687.245 913.728,-640.352 869.387,-598.068"/>
+<polygon fill="none" stroke="#404040" points="869.329,-598.012 862.234,-596.724 860.693,-589.679 867.789,-590.967 869.329,-598.012"/>
+<text text-anchor="middle" x="1076.43" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00"> #_outstandingTasks</text>
 </g>
-<!-- Node13&#45;&gt;Node4 -->
-<g id="edge14" class="edge"><title>Node13&#45;&gt;Node4</title>
-<path fill="none" stroke="#404040" d="M852.615,-794.787C837.609,-771.337 814.521,-740.999 786.5,-723 759.472,-705.639 739.875,-727.034 716.5,-705 708.616,-697.569 700.926,-683.009 693.745,-664.921"/>
-<polygon fill="none" stroke="#404040" points="693.697,-664.792 687.836,-660.59 689.461,-653.564 695.321,-657.766 693.697,-664.792"/>
-<text text-anchor="middle" x="779" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00"> #_lowPriorityEventQueue</text>
-<text text-anchor="middle" x="779" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00">#_highPriorityEventQueue</text>
-<text text-anchor="middle" x="779" y="-675" font-family="Helvetica,sans-Serif" font-size="10.00">#_normalPriorityEventQueue</text>
+<!-- Node12 -->
+<g id="node10" class="node"><title>Node12</title>
+<polygon fill="none" stroke="#bfbfbf" points="1114.93,-1004.5 1114.93,-1061.5 1146.93,-1061.5 1146.93,-1004.5 1114.93,-1004.5"/>
+<text text-anchor="middle" x="1130.93" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">List</text>
+<polyline fill="none" stroke="#bfbfbf" points="1114.93,-1042.5 1146.93,-1042.5 "/>
+<text text-anchor="middle" x="1130.93" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="1114.93,-1023.5 1146.93,-1023.5 "/>
+<text text-anchor="middle" x="1130.93" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="../../d4/df5/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1thread.html#d2/de7/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1ThreadType" target="_top" xlink:title="{org.msrg.raccoon.engine.thread.\lThreadType\n|+ CODING_THREAD\l+ FILE_MANANGER_THREAD\l|}">
-<polygon fill="none" stroke="black" points="1036.5,-459 1036.5,-538 1194.5,-538 1194.5,-459 1036.5,-459"/>
-<text text-anchor="start" x="1044.5" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
-<text text-anchor="middle" x="1115.5" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00">ThreadType</text>
-<polyline fill="none" stroke="black" points="1036.5,-508 1194.5,-508 "/>
-<text text-anchor="start" x="1044.5" y="-496" font-family="Helvetica,sans-Serif" font-size="10.00">+ CODING_THREAD</text>
-<text text-anchor="start" x="1044.5" y="-485" font-family="Helvetica,sans-Serif" font-size="10.00">+ FILE_MANANGER_THREAD</text>
-<polyline fill="none" stroke="black" points="1036.5,-478 1194.5,-478 "/>
-<text text-anchor="middle" x="1115.5" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-</a>
-</g>
-</g>
-<!-- Node14&#45;&gt;Node2 -->
-<g id="edge16" class="edge"><title>Node14&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M1096.11,-458.99C1076.63,-420.297 1045.8,-359.055 1019.44,-306.695"/>
-<polygon fill="none" stroke="#404040" points="1019.28,-306.386 1013.01,-302.825 1013.89,-295.668 1020.16,-299.228 1019.28,-306.386"/>
-<text text-anchor="middle" x="1057.5" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> +_threadType</text>
+<!-- Node12&#45;&gt;Node11 -->
+<g id="edge10" class="edge"><title>Node12&#45;&gt;Node11</title>
+<path fill="none" stroke="orange" d="M1155.4,-1017.72C1166.93,-1009.78 1179.89,-998.896 1187.93,-986 1209.32,-951.72 1216.89,-905.163 1219.54,-874.151"/>
+<polygon fill="orange" stroke="orange" points="1153.44,-1014.81 1146.96,-1023.2 1157.26,-1020.68 1153.44,-1014.81"/>
+<text text-anchor="start" x="1199.93" y="-978" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
+<text text-anchor="middle" x="1263.43" y="-967" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::task::CodingTask &gt;</text>
 </g>
 <!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="../../d0/dca/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1ThreadId.html" target="_top" xlink:title="{org.msrg.raccoon.engine.thread.\lThreadId\n|&#45; _id\l&#45; _lastId\l|+ equals()\l+ hashCode()\l+ toString()\l+ getNewThreadId()\l&#45; ThreadId()\l}">
-<polygon fill="none" stroke="black" points="1213,-437 1213,-560 1370,-560 1370,-437 1213,-437"/>
-<text text-anchor="start" x="1221" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
-<text text-anchor="middle" x="1291.5" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00">ThreadId</text>
-<polyline fill="none" stroke="black" points="1213,-530 1370,-530 "/>
-<text text-anchor="start" x="1221" y="-518" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _id</text>
-<text text-anchor="start" x="1221" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _lastId</text>
-<polyline fill="none" stroke="black" points="1213,-500 1370,-500 "/>
-<text text-anchor="start" x="1221" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
-<text text-anchor="start" x="1221" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">+ hashCode()</text>
-<text text-anchor="start" x="1221" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
-<text text-anchor="start" x="1221" y="-455" font-family="Helvetica,sans-Serif" font-size="10.00">+ getNewThreadId()</text>
-<text text-anchor="start" x="1221" y="-444" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ThreadId()</text>
+<g id="node13" class="node"><title>Node15</title>
+<polygon fill="none" stroke="#bfbfbf" points="605.933,-806 605.933,-874 757.933,-874 757.933,-806 605.933,-806"/>
+<text text-anchor="start" x="613.933" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; org.msrg.raccoon.engine.</text>
+<text text-anchor="middle" x="681.933" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">CodingEngineEvent &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="605.933,-844 757.933,-844 "/>
+<text text-anchor="middle" x="681.933" y="-832" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="605.933,-825 757.933,-825 "/>
+<text text-anchor="middle" x="681.933" y="-813" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</g>
+<!-- Node12&#45;&gt;Node15 -->
+<g id="edge14" class="edge"><title>Node12&#45;&gt;Node15</title>
+<path fill="none" stroke="orange" d="M1105.72,-1018.72C1089.11,-1009.8 1066.99,-997.605 1047.93,-986 1032.88,-976.831 1031.61,-969.716 1014.93,-964 962.663,-946.083 815.91,-971.583 766.933,-946 736.79,-930.255 713.524,-898.66 699.015,-874.222"/>
+<polygon fill="orange" stroke="orange" points="1104.33,-1021.95 1114.8,-1023.56 1107.62,-1015.77 1104.33,-1021.95"/>
+<text text-anchor="start" x="1047.93" y="-978" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
+<text text-anchor="middle" x="1115.93" y="-967" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::CodingEngineEvent &gt;</text>
+</g>
+<!-- Node13 -->
+<g id="node11" class="node"><title>Node13</title>
+<polygon fill="none" stroke="#bfbfbf" points="181.433,-806 181.433,-874 360.433,-874 360.433,-806 181.433,-806"/>
+<text text-anchor="start" x="189.433" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">Collection&lt; org.msrg.raccoon.engine.</text>
+<text text-anchor="middle" x="270.933" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">ICodingListener &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="181.433,-844 360.433,-844 "/>
+<text text-anchor="middle" x="270.933" y="-832" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="181.433,-825 360.433,-825 "/>
+<text text-anchor="middle" x="270.933" y="-813" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</g>
+<!-- Node13&#45;&gt;Node6 -->
+<g id="edge11" class="edge"><title>Node13&#45;&gt;Node6</title>
+<path fill="none" stroke="#404040" d="M297.314,-805.65C315.827,-783.608 341.999,-755.014 368.933,-734 472.024,-653.567 606.991,-584.616 694.326,-543.969"/>
+<polygon fill="none" stroke="#404040" points="694.373,-543.948 698.14,-537.798 705.265,-538.91 701.498,-545.06 694.373,-543.948"/>
+<text text-anchor="middle" x="456.433" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;_listeners</text>
+</g>
+<!-- Node14 -->
+<g id="node12" class="node"><title>Node14</title>
+<polygon fill="none" stroke="#bfbfbf" points="338.933,-1004.5 338.933,-1061.5 398.933,-1061.5 398.933,-1004.5 338.933,-1004.5"/>
+<text text-anchor="middle" x="368.933" y="-1049.5" font-family="Helvetica,sans-Serif" font-size="10.00">Collection</text>
+<polyline fill="none" stroke="#bfbfbf" points="338.933,-1042.5 398.933,-1042.5 "/>
+<text text-anchor="middle" x="368.933" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="338.933,-1023.5 398.933,-1023.5 "/>
+<text text-anchor="middle" x="368.933" y="-1011.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</g>
+<!-- Node14&#45;&gt;Node13 -->
+<g id="edge12" class="edge"><title>Node14&#45;&gt;Node13</title>
+<path fill="none" stroke="orange" d="M330.522,-1009.28C322.041,-1002.7 313.837,-994.87 307.933,-986 285.333,-952.045 276.537,-905.201 273.114,-874.049"/>
+<polygon fill="orange" stroke="orange" points="328.521,-1012.15 338.671,-1015.18 332.63,-1006.48 328.521,-1012.15"/>
+<text text-anchor="start" x="307.933" y="-978" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
+<text text-anchor="middle" x="366.933" y="-967" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::ICodingListener &gt;</text>
+</g>
+<!-- Node16 -->
+<g id="node14" class="node"><title>Node16</title>
+<polygon fill="none" stroke="#bfbfbf" points="378.433,-806 378.433,-874 587.433,-874 587.433,-806 378.433,-806"/>
+<text text-anchor="start" x="386.433" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">Collection&lt; org.msrg.raccoon.engine.thread.</text>
+<text text-anchor="middle" x="482.933" y="-851" font-family="Helvetica,sans-Serif" font-size="10.00">CodingThread &gt;</text>
+<polyline fill="none" stroke="#bfbfbf" points="378.433,-844 587.433,-844 "/>
+<text text-anchor="middle" x="482.933" y="-832" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="378.433,-825 587.433,-825 "/>
+<text text-anchor="middle" x="482.933" y="-813" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</g>
+<!-- Node14&#45;&gt;Node16 -->
+<g id="edge16" class="edge"><title>Node14&#45;&gt;Node16</title>
+<path fill="none" stroke="orange" d="M407.22,-1005.73C414.071,-999.813 420.687,-993.147 425.933,-986 450.981,-951.874 466.706,-905.283 475.146,-874.221"/>
+<polygon fill="orange" stroke="orange" points="404.679,-1003.29 399.138,-1012.32 409.101,-1008.71 404.679,-1003.29"/>
+<text text-anchor="start" x="439.933" y="-978" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; org::msrg::raccoon</text>
+<text text-anchor="middle" x="511.933" y="-967" font-family="Helvetica,sans-Serif" font-size="10.00">::engine::thread::CodingThread &gt;</text>
+</g>
+<!-- Node15&#45;&gt;Node6 -->
+<g id="edge13" class="edge"><title>Node15&#45;&gt;Node6</title>
+<path fill="none" stroke="#404040" d="M683.309,-805.858C685.304,-773.878 690.161,-724.363 701.933,-683 702.578,-680.735 703.247,-678.461 703.939,-676.182"/>
+<polygon fill="none" stroke="#404040" points="703.939,-676.181 701.949,-669.25 707.581,-664.747 709.571,-671.678 703.939,-676.181"/>
+<text text-anchor="middle" x="764.433" y="-708" font-family="Helvetica,sans-Serif" font-size="10.00"> #_lowPriorityEventQueue</text>
+<text text-anchor="middle" x="764.433" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00">#_highPriorityEventQueue</text>
+<text text-anchor="middle" x="764.433" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00">#_normalPriorityEventQueue</text>
+</g>
+<!-- Node16&#45;&gt;Node6 -->
+<g id="edge15" class="edge"><title>Node16&#45;&gt;Node6</title>
+<path fill="none" stroke="#404040" d="M512.795,-805.754C555.346,-758.38 635.121,-669.564 696.992,-600.681"/>
+<polygon fill="none" stroke="#404040" points="697.193,-600.457 698.227,-593.32 705.212,-591.529 704.179,-598.666 697.193,-600.457"/>
+<text text-anchor="middle" x="638.933" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00"> #_threads</text>
+</g>
+<!-- Node17 -->
+<g id="node15" class="node"><title>Node17</title>
+<g id="a_node15"><a xlink:href="../../d4/df5/namespaceorg_1_1msrg_1_1raccoon_1_1engine_1_1thread.html#d2/de7/enumorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1ThreadType" target="_top" xlink:title="{org.msrg.raccoon.engine.thread.\lThreadType\n|+ CODING_THREAD\l+ FILE_MANANGER_THREAD\l|}">
+<polygon fill="none" stroke="black" points="1202.93,-464.5 1202.93,-543.5 1360.93,-543.5 1360.93,-464.5 1202.93,-464.5"/>
+<text text-anchor="start" x="1210.93" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
+<text text-anchor="middle" x="1281.93" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">ThreadType</text>
+<polyline fill="none" stroke="black" points="1202.93,-513.5 1360.93,-513.5 "/>
+<text text-anchor="start" x="1210.93" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CODING_THREAD</text>
+<text text-anchor="start" x="1210.93" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FILE_MANANGER_THREAD</text>
+<polyline fill="none" stroke="black" points="1202.93,-483.5 1360.93,-483.5 "/>
+<text text-anchor="middle" x="1281.93" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node2 -->
-<g id="edge18" class="edge"><title>Node15&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M1266.22,-436.789C1251.26,-406.066 1230.03,-369.724 1203.5,-343 1162.38,-301.587 1106.02,-268.442 1058.91,-245.3"/>
-<polygon fill="none" stroke="#404040" points="1058.89,-245.291 1051.75,-246.286 1048.08,-240.076 1055.22,-239.08 1058.89,-245.291"/>
-<text text-anchor="middle" x="1193.5" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> +_id</text>
+<!-- Node17&#45;&gt;Node4 -->
+<g id="edge17" class="edge"><title>Node17&#45;&gt;Node4</title>
+<path fill="none" stroke="#404040" d="M1262.85,-464.369C1243.14,-424.486 1211.59,-360.635 1184.88,-306.573"/>
+<polygon fill="none" stroke="#404040" points="1184.75,-306.309 1178.51,-302.701 1179.44,-295.55 1185.68,-299.158 1184.75,-306.309"/>
+<text text-anchor="middle" x="1223.93" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> +_threadType</text>
+</g>
+<!-- Node18 -->
+<g id="node16" class="node"><title>Node18</title>
+<g id="a_node16"><a xlink:href="../../d0/dca/classorg_1_1msrg_1_1raccoon_1_1engine_1_1thread_1_1ThreadId.html" target="_top" xlink:title="{org.msrg.raccoon.engine.thread.\lThreadId\n|&#45; _id\l&#45; _lastId\l|+ equals()\l+ hashCode()\l+ toString()\l+ getNewThreadId()\l&#45; ThreadId()\l}">
+<polygon fill="none" stroke="black" points="1379.43,-442.5 1379.43,-565.5 1536.43,-565.5 1536.43,-442.5 1379.43,-442.5"/>
+<text text-anchor="start" x="1387.43" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.msrg.raccoon.engine.thread.</text>
+<text text-anchor="middle" x="1457.93" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">ThreadId</text>
+<polyline fill="none" stroke="black" points="1379.43,-535.5 1536.43,-535.5 "/>
+<text text-anchor="start" x="1387.43" y="-523.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _id</text>
+<text text-anchor="start" x="1387.43" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; _lastId</text>
+<polyline fill="none" stroke="black" points="1379.43,-505.5 1536.43,-505.5 "/>
+<text text-anchor="start" x="1387.43" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ equals()</text>
+<text text-anchor="start" x="1387.43" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hashCode()</text>
+<text text-anchor="start" x="1387.43" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
+<text text-anchor="start" x="1387.43" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getNewThreadId()</text>
+<text text-anchor="start" x="1387.43" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ThreadId()</text>
+</a>
+</g>
+</g>
+<!-- Node18&#45;&gt;Node4 -->
+<g id="edge19" class="edge"><title>Node18&#45;&gt;Node4</title>
+<path fill="none" stroke="#404040" d="M1434.15,-442.442C1419.27,-410.139 1397.64,-371.328 1369.93,-343 1329.05,-301.203 1272.56,-268.004 1225.32,-244.929"/>
+<polygon fill="none" stroke="#404040" points="1225.29,-244.911 1218.15,-245.923 1214.47,-239.722 1221.61,-238.71 1225.29,-244.911"/>
+<text text-anchor="middle" x="1359.93" y="-317" font-family="Helvetica,sans-Serif" font-size="10.00"> +_id</text>
 </g>
 </g>
 </svg>

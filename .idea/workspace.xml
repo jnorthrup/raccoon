@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="189092da-65b6-4796-80aa-6dd512d49316" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Doxyfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/CodedBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/CodedBatchType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/CodedCoefficients.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/CodedPiece.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/ICodedBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/ReceivedCodedBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/SourceCodedBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/CodingEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/CodingEngineEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/CodingEngineEventType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/CodingEngineEvent_SequentialCodingTaskEvents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/CodingEngineImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/ICodingEngine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/ICodingListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/CodingId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/CodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/CodingTaskFailed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/CodingTaskStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/CodingTaskType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/Inverse_CodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/Multiply_CodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/SlicesEqual_CodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/BulkMatrix_CodingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/ByteMatrix_CodingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/CodedSlice_CodingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/CodingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/CodingResultsType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/Equals_CodingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/result/SliceMatrix_CodingResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/BulkMatrixEqual_CodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/Decoding_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingDecodingEqual_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingReceivedCodedBatch_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingReceivedEncodingDecodingEqual_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingSourceCodedBatch_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/Encoding_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/MultiplyBulkMatrix_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/MultiplyInverseMultiplyEqual_SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/SequentialCodingTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/SequentialCodingTaskFailed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/task/sequential/SequentialCodingTaskType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/thread/CodingThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/thread/CodingThreadImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/thread/ThreadId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/engine/thread/ThreadType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/finitefields/Tables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/DoubleMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/MatrixFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/TypedMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/bulk/BulkMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/bulk/BulkMatrix1D.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/bulk/SliceMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/finitefields/ByteMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/finitefields/ByteMatrix1D.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/matrix/finitefields/FFByteMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/utils/BytesUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/msrg/raccoon/utils/Combinations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/CodedBatchTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/CodedPieceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/ReceivedCodedBatchTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/SlicedCodedBatchTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/engine/CodingEngineTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/matrix/finitefields/ByteMatrixTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/msrg/raccoon/matrix/finitefields/FFByteMatrixTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/Doxyfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/CodedBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/CodedBatchType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/CodedCoefficients.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/CodedPiece.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/ICodedBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/ReceivedCodedBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/SourceCodedBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/CodingEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/CodingEngineEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/CodingEngineEventType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/CodingEngineEvent_SequentialCodingTaskEvents.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/CodingEngineImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/ICodingEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/ICodingListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/CodingId.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/CodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/CodingTaskFailed.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/CodingTaskStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/CodingTaskType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/Inverse_CodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/Multiply_CodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/SlicesEqual_CodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/BulkMatrix_CodingResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/ByteMatrix_CodingResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/CodedSlice_CodingResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/CodingResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/CodingResultsType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/Equals_CodingResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/result/SliceMatrix_CodingResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/BulkMatrixEqual_CodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/Decoding_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingDecodingEqual_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingReceivedCodedBatch_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingReceivedEncodingDecodingEqual_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/EncodingSourceCodedBatch_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/Encoding_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/MultiplyBulkMatrix_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/MultiplyInverseMultiplyEqual_SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/SequentialCodingTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/SequentialCodingTaskFailed.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/task/sequential/SequentialCodingTaskType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/thread/CodingThread.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/thread/CodingThreadImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/thread/ThreadId.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/engine/thread/ThreadType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/finitefields/Tables.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/DoubleMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/MatrixFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/TypedMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/bulk/BulkMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/bulk/BulkMatrix1D.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/bulk/SliceMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/finitefields/ByteMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/finitefields/ByteMatrix1D.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/matrix/finitefields/FFByteMatrix.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/utils/BytesUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/main/java/org/msrg/raccoon/utils/Combinations.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/CodedBatchTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/CodedPieceTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/ReceivedCodedBatchTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/SlicedCodedBatchTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/engine/CodingEngineTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/matrix/finitefields/ByteMatrixTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raccoon-raccoon/src/test/java/org/msrg/raccoon/matrix/finitefields/FFByteMatrixTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/raccoon-raccoon/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Doxyfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Doxyfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/raccoon-raccoon/pom.xml" />
+        <option value="$PROJECT_DIR$/Doxyfile" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="raccoon" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="raccoon" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="22" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="raccoon-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raccoon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raccoon-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raccoon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raccoon-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raccoon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="189092da-65b6-4796-80aa-6dd512d49316" name="Default" comment="" />
+      <created>1499476092618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499476092618</updated>
+      <workItem from="1499476096044" duration="2641000" />
+      <workItem from="1499479548615" duration="217000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2858000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="260" y="22" width="1920" height="1044" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6729858" sideWeight="0.25027028" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2345946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6729858" sideWeight="0.74972975" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.49783784" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13862559" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19081081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.49783784" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/raccoon-raccoon/pom.xml.versionsBackup" />
+    <entry file="file://$PROJECT_DIR$/raccoon-raccoon/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml.versionsBackup" />
+    <entry file="file://$PROJECT_DIR$/Doxyfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>raccoon</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
