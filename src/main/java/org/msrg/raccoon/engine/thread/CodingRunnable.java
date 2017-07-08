@@ -12,8 +12,9 @@ import org.msrg.raccoon.engine.task.CodingTask;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
-public abstract class CodingThread implements Runnable {
+public abstract class CodingRunnable implements Runnable {
 
     public static final int MAX_WAIT_TIME = 1000;
 
@@ -23,15 +24,14 @@ public abstract class CodingThread implements Runnable {
     public final ThreadId _id;
     protected final List<CodingTask> _taskList = new LinkedList<CodingTask>();
 
-    @NotNull
-    protected Object _LOCK = _taskList;
+    protected final Object _LOCK = _taskList;
     protected boolean _continue = true;
 
-    protected CodingThread(CodingEngine engine) {
+    protected CodingRunnable(CodingEngine engine) {
         this(engine, ThreadType.CODING_THREAD);
     }
 
-    protected CodingThread(CodingEngine engine, ThreadType threadType) {
+    protected CodingRunnable(CodingEngine engine, ThreadType threadType) {
         _engine = engine;
         _id = ThreadId.getNewThreadId();
         _threadType = threadType;
@@ -81,13 +81,13 @@ public abstract class CodingThread implements Runnable {
     public final void run() {
         init();
 
-        CodingTask codingTask = null;
+        CodingTask codingTask;
         while (_continue) {
-            synchronized (_LOCK) {
+            synchronized (Objects.requireNonNull(_LOCK)) {
                 while (_taskList.isEmpty()) {
                     try {
                         _engine.threadIsFree(this);
-                        _LOCK.wait(CodingThread.MAX_WAIT_TIME);
+                        _LOCK.wait(CodingRunnable.MAX_WAIT_TIME);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                         _engine.codingThreadFailed(this);

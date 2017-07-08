@@ -15,6 +15,7 @@ import org.msrg.raccoon.utils.BytesUtil;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.security.SecureRandom;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -25,13 +26,13 @@ public class ReceivedCodedBatch extends CodedBatch {
     public static final int MIN_AVAILBLE_SLICES_FOR_CODING = 2;
     private final int _rows;
     @NotNull
-    protected Random _rand = new Random();
+    protected Random _rand = new SecureRandom();
     @Nullable
-    CodedPiece[] _solvingCodedSlices = null;
+    CodedPiece[] _solvingCodedSlices;
     @NotNull
     private Vector<CodedPiece> _cbbs = new Vector<CodedPiece>();
     @Nullable
-    private ByteMatrix _inverse = null;
+    private ByteMatrix _inverse;
 
     public ReceivedCodedBatch(int batchSize, int rows) {
         super(CodedBatchType.RCV_CODED_BATCH, batchSize);

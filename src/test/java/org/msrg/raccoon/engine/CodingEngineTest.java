@@ -16,7 +16,7 @@ import org.msrg.raccoon.SourceCodedBatch;
 import org.msrg.raccoon.engine.task.*;
 import org.msrg.raccoon.engine.task.result.*;
 import org.msrg.raccoon.engine.task.sequential.*;
-import org.msrg.raccoon.engine.thread.CodingThread;
+import org.msrg.raccoon.engine.thread.CodingRunnable;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
@@ -482,16 +482,16 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
         return (Equals_CodingResult) cTask._result;
     }
 
-    public void codingTaskStarted(CodingThread codingThread, CodingTask codingTask) {
+    public void codingTaskStarted(CodingRunnable codingRunnable, CodingTask codingTask) {
         if (CodingEngine.DEBUG)
             System.out.println("TaskStarted:" + codingTask);
     }
 
-    public void codingThreadFailed(CodingThread codingThread) {
+    public void codingThreadFailed(CodingRunnable codingRunnable) {
         synchronized (_lock) {
-            _busyThreads.remove(codingThread);
-            _freeThreads.remove(codingThread);
-            _threads.remove(codingThread);
+            _busyThreads.remove(codingRunnable);
+            _freeThreads.remove(codingRunnable);
+            _threads.remove(codingRunnable);
         }
     }
 
@@ -563,12 +563,12 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
             System.out.println("TaskFinished:" + result);
     }
 
-    protected void threadAdded(CodingThread cThread) {
+    protected void threadAdded(CodingRunnable cThread) {
         _threads.add(cThread);
         scheduleTask();
     }
 
-    protected void threadBecameFree(CodingThread cThread) {
+    protected void threadBecameFree(CodingRunnable cThread) {
         if (_threads.contains(cThread)) {
             _busyThreads.remove(cThread);
             _freeThreads.add(cThread);
@@ -576,7 +576,7 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
         }
     }
 
-    protected void threadBecameBusy(CodingThread cThread) {
+    protected void threadBecameBusy(CodingRunnable cThread) {
         if (_threads.contains(cThread)) {
             if (!_busyThreads.contains(cThread))
                 throw new IllegalStateException("Not in the busy thread list: " + cThread);
@@ -625,21 +625,21 @@ class CodingEngine_ForTest extends CodingEngine implements ICodingListener {
 
             case ENG_ET_THREAD_NEW: {
                 CodingEngineEvent_NewThreadEvent tEvent = (CodingEngineEvent_NewThreadEvent) event;
-                CodingThread cThread = tEvent._cThread;
+                CodingRunnable cThread = tEvent._cThread;
                 threadAdded(cThread);
                 break;
             }
 
             case ENG_ET_THREAD_FREE: {
                 CodingEngineEvent_FreeThreadEvent tEvent = (CodingEngineEvent_FreeThreadEvent) event;
-                CodingThread cThread = tEvent._cThread;
+                CodingRunnable cThread = tEvent._cThread;
                 threadBecameFree(cThread);
                 break;
             }
 
             case ENG_ET_THREAD_BUSY:
                 CodingEngineEvent_BusyThreadEvent tEvent = (CodingEngineEvent_BusyThreadEvent) event;
-                CodingThread cThread = tEvent._cThread;
+                CodingRunnable cThread = tEvent._cThread;
                 threadBecameBusy(cThread);
                 break;
 

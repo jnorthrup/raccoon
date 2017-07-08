@@ -11,6 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.io.StringWriter;
+import java.security.SecureRandom;
 import java.util.BitSet;
 import java.util.Random;
 import java.util.Vector;
@@ -18,7 +19,7 @@ import java.util.Vector;
 public class Combinations {
 
     static final int MAX_SUPPORTED_TOTAL = 1000;
-    private static final Random _RANDOM = new Random();
+    private static final Random _RANDOM = new SecureRandom();
     private final Vector<BitSet> _allCombinations = new Vector<BitSet>();
     private final int _count;
     private final int _total;

@@ -9,10 +9,12 @@ package org.msrg.raccoon.engine;
 import org.jetbrains.annotations.NotNull;
 import org.msrg.raccoon.CodedBatch;
 import org.msrg.raccoon.ReceivedCodedBatch;
-import org.msrg.raccoon.engine.task.*;
+import org.msrg.raccoon.engine.task.CodingTask;
+import org.msrg.raccoon.engine.task.CodingTaskFailed;
+import org.msrg.raccoon.engine.task.CodingTaskStatus;
 import org.msrg.raccoon.engine.task.result.*;
 import org.msrg.raccoon.engine.task.sequential.SequentialCodingTask;
-import org.msrg.raccoon.engine.thread.CodingThread;
+import org.msrg.raccoon.engine.thread.CodingRunnable;
 import org.msrg.raccoon.matrix.bulk.BulkMatrix;
 import org.msrg.raccoon.matrix.bulk.SliceMatrix;
 import org.msrg.raccoon.matrix.finitefields.ByteMatrix;
@@ -42,7 +44,7 @@ public abstract class CodingEngine {
 
     public static final long LATE_THREAD_CHECKIN_TIMEOUT = 5000;
     public static final ExecutorService CACHED_THREAD_POOL = (Executors.newCachedThreadPool());
-    public static boolean DEBUG = false;
+    public static boolean DEBUG;
     protected final Object _lock = new Object();
     /**
      * Tasks priority queues
@@ -54,9 +56,9 @@ public abstract class CodingEngine {
     protected final List<CodingEngineEvent> _highPriorityEventQueue =
             new LinkedList<CodingEngineEvent>();
     protected final List<CodingTask> _outstandingTasks = new LinkedList<CodingTask>();
-    protected final Collection<CodingThread> _threads = new HashSet<CodingThread>();
-    protected final Set<CodingThread> _freeThreads = new HashSet<CodingThread>();
-    protected final Set<CodingThread> _busyThreads = new HashSet<CodingThread>();
+    protected final Collection<CodingRunnable> _threads = new HashSet<CodingRunnable>();
+    protected final Set<CodingRunnable> _freeThreads = new HashSet<CodingRunnable>();
+    protected final Set<CodingRunnable> _busyThreads = new HashSet<CodingRunnable>();
     @NotNull
     private final MyThread thread;
     protected int _threadCount;
@@ -66,7 +68,7 @@ public abstract class CodingEngine {
 //		addCodingTaskEngineEvent(freeThreadEvent);
 //	}
     @NotNull
-    protected Map<CodingThread, Long> _threadCheckins = new HashMap<CodingThread, Long>();
+    protected Map<CodingRunnable, Long> _threadCheckins = new HashMap<CodingRunnable, Long>();
     /**
      * List of default coding listeners. These listeners are notified for all
      * coding task status updates.
@@ -118,26 +120,15 @@ public abstract class CodingEngine {
         }
     }
 
-    public void deregisterCodingListener(ICodingListener listener) {
-        synchronized (_lock) {
-            _listeners.remove(listener);
-        }
-    }
-
-    public void threadIsFree(CodingThread cThread) {
+    public void threadIsFree(CodingRunnable cThread) {
         CodingEngineEvent_FreeThreadEvent freeThreadEvent = new CodingEngineEvent_FreeThreadEvent(cThread);
-        addCodingTaskEngineEvent(freeThreadEvent);
-    }
-
-    protected void threadIsBusy(CodingThread cThread) {
-        CodingEngineEvent_BusyThreadEvent freeThreadEvent = new CodingEngineEvent_BusyThreadEvent(cThread);
         addCodingTaskEngineEvent(freeThreadEvent);
     }
 
 
     public void startComponent() {
         synchronized (_lock) {
-            for (CodingThread cThread : _threads)
+            for (CodingRunnable cThread : _threads)
                 CACHED_THREAD_POOL.submit(cThread);
 
             thread.start();
@@ -153,82 +144,36 @@ public abstract class CodingEngine {
     public void init() {
         synchronized (_lock) {
             for (int i = 0; i < _threadCount; i++) {
-                CodingEngine engine = CodingEngine.this;
-                CodingThread cThread = new CodingThread(engine) {
+                CodingRunnable cThread = new CodingRunnable(this) {
                     protected void runTask(@NotNull CodingTask codingTask) {
-                        super.runTask(codingTask);
-
-                        CodingTaskType taskType = codingTask._taskType;
-
-                        switch (taskType) {
-                            case SLICES_EQUAL:
-                                SlicesEqual_CodingTask smeCodingTask = (SlicesEqual_CodingTask) codingTask;
-                                SliceMatrix sm1 = smeCodingTask._sm1;
-                                SliceMatrix sm2 = smeCodingTask._sm2;
-                                boolean equals = sm1.equals(sm2);
-                                ((Equals_CodingResult) smeCodingTask._result).setResult(equals);
-                                smeCodingTask.finished();
-                                break;
-
-                            case INVERSE: {
-                                Inverse_CodingTask inverseCodingTask = (Inverse_CodingTask) codingTask;
-                                ByteMatrix m = inverseCodingTask._m;
-                                ByteMatrix mInverse = (ByteMatrix) m.inverseMatrix();
-                                ((ByteMatrix_CodingResult) inverseCodingTask._result).setResult(mInverse);
-                                inverseCodingTask.finished();
-                                break;
-                            }
-
-                            case MULTIPLY:
-                                Multiply_CodingTask multiplyCodingTask = (Multiply_CodingTask) codingTask;
-                                ByteMatrix1D m = multiplyCodingTask._m;
-                                BulkMatrix bm = multiplyCodingTask._bm;
-                                SliceMatrix result = null;
-                                try {
-                                    result = m.multiply1D(bm);
-                                } catch (Exception x) {
-                                    x.printStackTrace();
-                                    multiplyCodingTask.failed();
-                                    break;
-                                }
-                                ((SliceMatrix_CodingResult) multiplyCodingTask._result).setResult(result);
-                                multiplyCodingTask.finished();
-                                break;
-
-                            case SEQUENCIAL:
-                                SequentialCodingTask seqCodingTask = (SequentialCodingTask) codingTask;
-                                seqCodingTask.runInitialSequencialTasks();
-                                break;
-
-                            default:
-                                throw new UnsupportedOperationException("Unknown task type: " + taskType);
-                        }
+                        codingTask._taskType.runTask(codingTask);
                     }
+
                 };
                 _threads.add(cThread);
             }
         }
     }
 
-    public void codingThreadFailed(CodingThread codingThread) {
+    public void codingThreadFailed(CodingRunnable codingRunnable) {
         // No idea what to do!
         throw new IllegalStateException();
     }
 
-    public void codingTaskStarted(CodingThread cThread, CodingTask cTask) {
+    public void codingTaskStarted(CodingRunnable cThread, CodingTask cTask) {
         CodingEngineEvent_ExecutionEvent event =
                 new CodingEngineEvent_ExecutionEvent(cThread, cTask, CodingTaskStatus.STARTED);
         addCodingTaskEngineEvent(event);
     }
 
-    public void codingTaskFinished(CodingThread codingThread, @NotNull CodingTask codingTask) {
+    public void codingTaskFinished(CodingRunnable codingRunnable, @NotNull CodingTask codingTask) {
         if (!codingTask.isFinished())
             throw new IllegalArgumentException("" + codingTask);
 
         notifyListener(codingTask);
     }
 
-    public void codingTaskFailed(CodingThread codingThread, @NotNull CodingTask codingTask) {
+    public void codingTaskFailed(CodingRunnable codingRunnable, @NotNull CodingTask codingTask) {
         if (codingTask.isFinished())
             throw new IllegalArgumentException(codingTask.toString());
 
@@ -241,7 +186,7 @@ public abstract class CodingEngine {
 
     protected void scheduleTask(CodingTask cTask) {
         CodingTask cTask1 = cTask;
-        CodingThread thread = null;
+        CodingRunnable thread = null;
         synchronized (_lock) {
             if (cTask1 == null) {
                 if (_outstandingTasks.isEmpty())
@@ -313,18 +258,18 @@ public abstract class CodingEngine {
         addCodingTaskEngineEvent(seqCodingEvent);
     }
 
-    public void threadCheckin(CodingThread cThread) {
+    public void threadCheckin(CodingRunnable cThread) {
         synchronized (_lock) {
             _threadCheckins.put(cThread, new Long(System.currentTimeMillis()));
         }
     }
 
     @NotNull
-    protected List<CodingThread> getLateThreads() {
-        List<CodingThread> lateThreadList = new LinkedList<CodingThread>();
+    protected List<CodingRunnable> getLateThreads() {
+        List<CodingRunnable> lateThreadList = new LinkedList<CodingRunnable>();
         synchronized (_lock) {
             long currentTime = System.currentTimeMillis();
-            for (CodingThread cThread : _threads) {
+            for (CodingRunnable cThread : _threads) {
                 Long lastCheckin = _threadCheckins.get(cThread);
                 if (lastCheckin != null && currentTime - lastCheckin > LATE_THREAD_CHECKIN_TIMEOUT)
                     lateThreadList.add(cThread);

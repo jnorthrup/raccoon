@@ -12,11 +12,6 @@ import org.msrg.raccoon.engine.task.CodingTaskFailed;
 
 public class SequentialCodingTaskFailed extends CodingTaskFailed {
 
-    /**
-     * Auto Generated
-     */
-    private static final long serialVersionUID = 3514711765125123974L;
-
     public final SequentialCodingTask _seqCodingTask;
 
     public SequentialCodingTaskFailed(SequentialCodingTask seqCodingTask) {

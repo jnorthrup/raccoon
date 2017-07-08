@@ -10,19 +10,16 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.security.SecureRandom;
 import java.util.Random;
 
-public class BulkMatrix implements Serializable {
+public class BulkMatrix {
 
     public static final int _SLICE_LENGTH = 100;
-    protected static final Random _RANDOM = new Random();
-    /**
-     * Auto Generated.
-     */
-    private static final long serialVersionUID = -5797440298410079377L;
+    protected static final Random _RANDOM = new SecureRandom();
+
     public static int _MAX_ROWS_PRINT = 3;
     public static int _MAX_SLICES_PRINT = 3;
     public final int _size;

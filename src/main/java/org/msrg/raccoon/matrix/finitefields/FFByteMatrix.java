@@ -11,6 +11,7 @@ import org.jetbrains.annotations.Nullable;
 import org.msrg.raccoon.finitefields.Tables;
 import org.msrg.raccoon.matrix.TypedMatrix;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class FFByteMatrix extends TypedMatrix<Byte> {
@@ -18,7 +19,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
     protected static final char[] DIG = {'0', '1', '2', '3', '4', '5', '6', '7',
             '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
     protected static final Tables _tables = new Tables();
-    static final Random _RANDOM = new Random();
+    static final Random _RANDOM = new SecureRandom();
     protected final int m[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
     public FFByteMatrix(int cols, int rows) {

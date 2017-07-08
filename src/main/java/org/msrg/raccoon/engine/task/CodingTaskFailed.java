@@ -10,10 +10,6 @@ import org.jetbrains.annotations.NotNull;
 
 public class CodingTaskFailed extends UnknownError {
 
-    /**
-     * Auto Generated
-     */
-    private static final long serialVersionUID = -9216406694103472730L;
 
     public final CodingTask _cTask;
 

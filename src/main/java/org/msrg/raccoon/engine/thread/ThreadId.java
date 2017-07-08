@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 public final class ThreadId {
 
-    private static int _lastId = 0;
+    private static int _lastId;
 
     private final int _id;
 

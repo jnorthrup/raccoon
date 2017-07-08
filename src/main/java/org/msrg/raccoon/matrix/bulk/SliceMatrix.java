@@ -13,21 +13,17 @@ import org.msrg.raccoon.CodedPiece;
 import org.msrg.raccoon.utils.BytesUtil;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.security.SecureRandom;
 import java.util.Random;
 
 
-public class SliceMatrix implements Serializable {
+public class SliceMatrix {
 
-    /**
-     * Auto Generated.
-     */
-    private static final long serialVersionUID = -2394495616570970489L;
     public static int _MAX_COLS_PRINT = 2;
     @NotNull
-    protected static Random _RANDOM = new Random();
+    protected static Random _RANDOM = new SecureRandom();
     public final int _cols;
     protected byte[] _b;
 

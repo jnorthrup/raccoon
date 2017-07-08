@@ -8,6 +8,7 @@ package org.msrg.raccoon.matrix;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 enum DATATYPES {
@@ -17,7 +18,7 @@ enum DATATYPES {
 
 public class DoubleMatrix extends TypedMatrix<Float> {
 
-    static final Random _RANDOM = new Random();
+    static final Random _RANDOM = new SecureRandom();
 
     public DoubleMatrix(@NotNull Float[][] b) {
         super(b);

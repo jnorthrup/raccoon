@@ -15,6 +15,7 @@ import org.msrg.raccoon.utils.BytesUtil;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public abstract class CodedBatch {
@@ -23,7 +24,7 @@ public abstract class CodedBatch {
     protected static final int I_CONTENT = CodedBatch.I_CONTENT_SIZE + 4;
     protected static int _MAX_WRITE_SIZE = 15;
     protected final int _size;
-    protected final Random _rand = new Random();
+    protected final Random _rand = new SecureRandom();
     protected final CodedBatchType _codedBatchType;
     @NotNull
     protected Object _lock = new Object();

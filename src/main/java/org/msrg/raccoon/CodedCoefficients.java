@@ -13,11 +13,12 @@ import org.msrg.raccoon.utils.BytesUtil;
 
 import java.io.IOException;
 import java.io.StringWriter;
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class CodedCoefficients extends ByteMatrix1D {
 
-    final static Random _rand = new Random();
+    final static Random _rand = new SecureRandom();
     protected static int _MAX_COEFFICIENTS_PRINT = 2;
 
     public CodedCoefficients(@NotNull byte[] coefficients) {

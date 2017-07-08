@@ -76,7 +76,7 @@ public abstract class CodingTask {
     }
 
     public boolean isSequencial() {
-        return _taskType._isSequencial;
+        return _taskType.isSequential;
     }
 
 

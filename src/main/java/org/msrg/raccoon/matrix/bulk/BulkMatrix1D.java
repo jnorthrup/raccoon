@@ -10,10 +10,6 @@ import org.jetbrains.annotations.NotNull;
 
 public class BulkMatrix1D extends BulkMatrix {
 
-    /**
-     * Auto Generated.
-     */
-    private static final long serialVersionUID = 840814543035438705L;
 
     public BulkMatrix1D(int cols) {
         super(1, cols);

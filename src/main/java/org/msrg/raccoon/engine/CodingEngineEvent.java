@@ -8,7 +8,7 @@ package org.msrg.raccoon.engine;
 
 import org.msrg.raccoon.engine.task.CodingTask;
 import org.msrg.raccoon.engine.task.CodingTaskStatus;
-import org.msrg.raccoon.engine.thread.CodingThread;
+import org.msrg.raccoon.engine.thread.CodingRunnable;
 
 public abstract class CodingEngineEvent {
 
@@ -35,28 +35,28 @@ class CodingEngineEvent_NewCodingTask extends CodingEngineEvent {
 }
 
 class CodingEngineEvent_FreeThreadEvent extends CodingEngineEvent_ThreadEvent {
-    CodingEngineEvent_FreeThreadEvent(CodingThread cThread) {
+    CodingEngineEvent_FreeThreadEvent(CodingRunnable cThread) {
         super(cThread, CodingEngineEventType.ENG_ET_THREAD_FREE);
     }
 }
 
 class CodingEngineEvent_BusyThreadEvent extends CodingEngineEvent_ThreadEvent {
-    CodingEngineEvent_BusyThreadEvent(CodingThread cThread) {
+    CodingEngineEvent_BusyThreadEvent(CodingRunnable cThread) {
         super(cThread, CodingEngineEventType.ENG_ET_THREAD_BUSY);
     }
 }
 
 class CodingEngineEvent_NewThreadEvent extends CodingEngineEvent_ThreadEvent {
-    CodingEngineEvent_NewThreadEvent(CodingThread cThread) {
+    CodingEngineEvent_NewThreadEvent(CodingRunnable cThread) {
         super(cThread, CodingEngineEventType.ENG_ET_THREAD_FREE);
     }
 }
 
 abstract class CodingEngineEvent_ThreadEvent extends CodingEngineEvent {
 
-    protected final CodingThread _cThread;
+    protected final CodingRunnable _cThread;
 
-    CodingEngineEvent_ThreadEvent(CodingThread cThread, CodingEngineEventType threadEventType) {
+    CodingEngineEvent_ThreadEvent(CodingRunnable cThread, CodingEngineEventType threadEventType) {
         super(threadEventType);
         _cThread = cThread;
     }
@@ -65,11 +65,11 @@ abstract class CodingEngineEvent_ThreadEvent extends CodingEngineEvent {
 
 class CodingEngineEvent_ExecutionEvent extends CodingEngineEvent {
 
-    protected final CodingThread _cThread;
+    protected final CodingRunnable _cThread;
     protected final CodingTask _cTask;
     protected final CodingTaskStatus _status;
 
-    CodingEngineEvent_ExecutionEvent(CodingThread cThread, CodingTask cTask, CodingTaskStatus status) {
+    CodingEngineEvent_ExecutionEvent(CodingRunnable cThread, CodingTask cTask, CodingTaskStatus status) {
         super(CodingEngineEventType.ENG_ET_TASK_STARTED);
         _cTask = cTask;
         _status = status;
