@@ -20,7 +20,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
             '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
     protected static final Tables _tables = new Tables();
     static final Random _RANDOM = new SecureRandom();
-    protected final int m[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
+    protected static final int m[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
     public FFByteMatrix(int cols, int rows) {
         this(FFByteMatrix.makeZero2d(cols, rows));
@@ -177,7 +177,7 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
     @NotNull
 
     public Byte clone(Byte a) {
-        return new Byte(a);
+        return a; //new Byte(a);
     }
 
 
@@ -186,8 +186,9 @@ public class FFByteMatrix extends TypedMatrix<Byte> {
         byte b = B.byteValue();
 
         for (int i = 0; i < 8; i++) {
-            int aBit = (a & m[i]) >> i;
-            int bBit = (b & m[i]) >> i;
+            int mi = m[i];
+            int aBit = (a & mi) >> i;
+            int bBit = (b & mi) >> i;
             if (aBit > bBit)
                 return 1;
             else if (aBit < bBit)

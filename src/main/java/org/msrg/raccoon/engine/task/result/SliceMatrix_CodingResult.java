@@ -27,10 +27,7 @@ public class SliceMatrix_CodingResult extends CodingResult {
     }
 
     public void setResult(SliceMatrix smResult) {
-        if (isFinished())
-            throw new IllegalStateException();
-
-        if (isFailed())
+        if (isFinished() || isFailed())
             throw new IllegalStateException();
 
         _smResult = smResult;

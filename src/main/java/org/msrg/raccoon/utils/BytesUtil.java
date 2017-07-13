@@ -19,6 +19,7 @@ public enum BytesUtil {
             "8", "9", "a", "b", "c", "d", "e", "f"};
 
     public static String hex(byte b) {
+
         return BytesUtil.dig[(b & 0xff) >> 4] + BytesUtil.dig[b & 0x0f];
     }
 

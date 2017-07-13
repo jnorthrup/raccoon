@@ -26,8 +26,8 @@ public final class CodingId {
     public boolean equals(@Nullable Object obj) {
         if (obj == null)
             return false;
-        if (!obj.getClass().isAssignableFrom(this.getClass()))
-            return false;
+//        if (!obj.getClass().isAssignableFrom(this.getClass()))
+//            return false;
 
         CodingId idObj = (CodingId) obj;
         return _id == idObj._id;
