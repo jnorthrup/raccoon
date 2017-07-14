@@ -16,10 +16,7 @@ import org.msrg.raccoon.utils.BytesUtil;
 import java.io.IOException;
 import java.io.Writer;
 import java.security.SecureRandom;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
-import java.util.Vector;
+import java.util.*;
 
 public class ReceivedCodedBatch extends CodedBatch {
 
@@ -243,17 +240,18 @@ public class ReceivedCodedBatch extends CodedBatch {
         }
     }
 
-    @NotNull
+    @Nullable
     protected List<Integer> getRandomIndex(int maxIndex, int maxReturnSize) {
         if (maxReturnSize > maxIndex)
-            throw new IllegalArgumentException("Invalid arguments: " + maxReturnSize + " vs. " + maxIndex);
+            return null;
+            //throw new IllegalArgumentException("Invalid arguments: " + maxReturnSize + " vs. " + maxIndex);
 
-        List<Integer> ret = new LinkedList<Integer>();
+        ArrayList<Integer> ret = new ArrayList<Integer>();
         if (maxReturnSize == 0)
             return ret;
 
         for (int i = 0; i < maxIndex; i++)
-            ret.add(new Integer(i));
+            ret.add(i);
 
         for (int i = maxIndex; i > maxReturnSize; i--) {
             int removedIndex = _rand.nextInt(i);

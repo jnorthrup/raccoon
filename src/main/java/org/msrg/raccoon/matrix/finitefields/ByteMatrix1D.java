@@ -50,15 +50,18 @@ public class ByteMatrix1D extends ByteMatrix {
 
 //				byte mult = _tables.FFMulFast(a, b);
 
-                byte mult;
+
                 if (a == 0 || b == 0) {
-                    mult = 0;
+                    //mult = 0; //no effect
                 } else {
-                    int t = (Tables.LOG[a & 0xff] & 0xff) + (Tables.LOG[b & 0xff] & 0xff);
+                    byte mult;
+                    byte al = Tables.LOG[a & 0xff];
+                    byte bl = Tables.LOG[b & 0xff];
+                    int t = (al & 0xff) + (bl & 0xff);
                     mult = Tables.EXP[(t > 255 ? t - 255 : t) & 0xff];
+                    bRow[j] ^= mult;
                 }
 
-                bRow[j] ^= mult;
             }
         }
         outputSlice.loadNoCopy(bRow);

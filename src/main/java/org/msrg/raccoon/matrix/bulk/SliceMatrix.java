@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.security.SecureRandom;
+import java.util.Arrays;
 import java.util.Random;
 
 
@@ -98,6 +99,8 @@ public class SliceMatrix {
 
 
     public boolean equals(@Nullable Object obj) {
+        if (this == obj)
+            return true;
         if (obj == null)
             return false;
         if (!getClass().isAssignableFrom(obj.getClass()))
@@ -107,11 +110,15 @@ public class SliceMatrix {
         if (_cols != smObj._cols)
             return false;
 
-        for (int j = 0; j < _cols; j++)
-            if (_b[j] != smObj._b[j])
-                return false;
-
-        return true;
+        return Arrays.equals(_b, smObj._b);
+//        byte[] aa = _b;
+//        byte[] bb = smObj._b;
+//        for (int j = 0; j < _cols; j++) {
+//            if (aa[j] != bb[j])
+//                return false;
+//        }
+//
+//        return true;
     }
 
     public byte getByte(int i) {

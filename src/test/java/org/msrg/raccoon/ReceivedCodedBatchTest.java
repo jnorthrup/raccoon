@@ -60,14 +60,20 @@ public class ReceivedCodedBatchTest extends TestCase {
         for (int maxIndex = 0; maxIndex < 1000; maxIndex++) {
             for (int maxReturnSize = 0; maxReturnSize < 1000; maxReturnSize++) {
                 List<Integer> set;
-                try {
+//                try {
                     set = _rcb.getRandomIndex(maxIndex, maxReturnSize);
-                } catch (IllegalArgumentException argEx) {
-                    if (maxIndex < maxReturnSize)
-                        continue;
-                    else
-                        throw argEx;
-                }
+                    if (set == null) {
+                        if (maxIndex < maxReturnSize)
+                            continue;
+                        else
+                            throw new IllegalArgumentException("bad random idx");
+                    }
+//                } catch (IllegalArgumentException argEx) {
+//                    if (maxIndex < maxReturnSize)
+//                        continue;
+//                    else
+//                        throw argEx;
+//                }
                 assertTrue(set.size() == maxReturnSize);
                 for (Integer i : set)
                     assertTrue(i < maxIndex);

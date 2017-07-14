@@ -49,16 +49,16 @@ public abstract class CodingEngine {
     /**
      * Tasks priority queues
      */
-    protected final List<CodingEngineEvent> _lowPriorityEventQueue =
+    protected final LinkedList<CodingEngineEvent> _lowPriorityEventQueue =
             new LinkedList<CodingEngineEvent>();
-    protected final List<CodingEngineEvent> _normalPriorityEventQueue =
+    protected final LinkedList<CodingEngineEvent> _normalPriorityEventQueue =
             new LinkedList<CodingEngineEvent>();
-    protected final List<CodingEngineEvent> _highPriorityEventQueue =
+    protected final LinkedList<CodingEngineEvent> _highPriorityEventQueue =
             new LinkedList<CodingEngineEvent>();
-    protected final List<CodingTask> _outstandingTasks = new LinkedList<CodingTask>();
-    protected final Collection<CodingRunnable> _threads = new HashSet<CodingRunnable>();
-    protected final Set<CodingRunnable> _freeThreads = new HashSet<CodingRunnable>();
-    protected final Set<CodingRunnable> _busyThreads = new HashSet<CodingRunnable>();
+    protected final LinkedList<CodingTask> _outstandingTasks = new LinkedList<CodingTask>();
+    protected final Collection<CodingRunnable> _threads = new LinkedHashSet<CodingRunnable>();
+    protected final Set<CodingRunnable> _freeThreads = new LinkedHashSet<CodingRunnable>();
+    protected final Set<CodingRunnable> _busyThreads = new LinkedHashSet<CodingRunnable>();
     @NotNull
     private final MyThread thread;
     protected int _threadCount;
@@ -93,7 +93,7 @@ public abstract class CodingEngine {
                 else if (codingEngine._freeThreads.isEmpty())
                     return;
                 else
-                    cTask1 = codingEngine._outstandingTasks.remove(0);
+                    cTask1 = codingEngine._outstandingTasks.removeFirst(); //remove(0);
             } else if (codingEngine._freeThreads.isEmpty()) {
                 codingEngine._outstandingTasks.add(cTask1);
                 return;
@@ -221,7 +221,7 @@ public abstract class CodingEngine {
 
     public void threadCheckin(CodingRunnable cThread) {
         synchronized (_lock) {
-            _threadCheckins.put(cThread, new Long(System.currentTimeMillis()));
+            _threadCheckins.put(cThread, /*new Long*/(System.currentTimeMillis()));
         }
     }
 
@@ -298,19 +298,19 @@ public abstract class CodingEngine {
                     if (event != null) {
                         if (eventFrom_normalPriorityCodingEventQueue) {
                             eventFrom_normalPriorityCodingEventQueue = false;
-                            if (_normalPriorityEventQueue.remove(0) != event)
+                            if (_normalPriorityEventQueue.removeFirst() != event)
                                 throw new IllegalStateException();
                         }
 
                         if (eventFrom_highPriorityCodingTasksEventQueue) {
                             eventFrom_highPriorityCodingTasksEventQueue = false;
-                            if (_highPriorityEventQueue.remove(0) != event)
+                            if (_highPriorityEventQueue.removeFirst() != event)
                                 throw new IllegalStateException();
                         }
 
                         if (eventFrom_lowPriorityCodingEventQueue) {
                             eventFrom_lowPriorityCodingEventQueue = false;
-                            if (_lowPriorityEventQueue.remove(0) != event)
+                            if (_lowPriorityEventQueue.removeFirst() != event)
                                 throw new IllegalStateException();
                         }
                     }
@@ -326,13 +326,13 @@ public abstract class CodingEngine {
                     }
 
                     if (!_highPriorityEventQueue.isEmpty()) {
-                        event = _highPriorityEventQueue.get(0);
+                        event = _highPriorityEventQueue.getFirst();
                         eventFrom_highPriorityCodingTasksEventQueue = true;
                     } else if (!_normalPriorityEventQueue.isEmpty()) {
-                        event = _normalPriorityEventQueue.get(0);
+                        event = _normalPriorityEventQueue.getFirst();
                         eventFrom_normalPriorityCodingEventQueue = true;
                     } else if (!_lowPriorityEventQueue.isEmpty()) {
-                        event = _lowPriorityEventQueue.get(0);
+                        event = _lowPriorityEventQueue.getFirst();
                         eventFrom_lowPriorityCodingEventQueue = true;
                     } else
                         throw new IllegalStateException();
